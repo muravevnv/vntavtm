@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body>
+<body class="text-graphite">
   @@include('header.html')
   <main>
     <section
@@ -26,7 +26,7 @@
         <img src="./img/hero/main-img.png" alt="">
       </picture>
       <div class="my-container relative z-1 md:px-0">
-        <h1 class="max-w-[711px] text-[46px] leading-[130%] mb-6 text-white font-semibold 
+        <h1 class="max-w-[711px] text-[46px] leading-[130%] mb-6 text-white font-semibold multi-layer-text-shadow
         lg:max-w-[454px] lg:text-[32px] lg:leading-[130%]
         md:text-[28px] md:leading-[120%] md:px-6 md:mb-12">Стоимость шкафа автоматики для
           вентиляции за 2 минуты</h1>
@@ -38,7 +38,8 @@
             </div>
             <div class="flex flex-col items-end max-w-[280px] w-full lg:max-w-[260px] md:max-w-full">
               <a href="#"
-                class="w-full p-5 bg-accent text-white inline-flex items-center justify-center gap-[6px] rounded-2xl text-4 leading-[140%] lg:p-4">
+                class="w-full p-5 bg-accent hover:bg-sky-500 text-white inline-flex items-center justify-center gap-[6px] rounded-2xl 
+                text-4 leading-[140%] lg:p-4">
                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M17.566 21.501H7.434C6.366 21.501 5.5 20.635 5.5 19.567V5.43595C5.5 4.36795 6.366 3.50195 7.434 3.50195H17.565C18.634 3.50195 19.5 4.36795 19.5 5.43595V19.566C19.5 20.635 18.634 21.501 17.566 21.501V21.501Z"
@@ -85,7 +86,7 @@
                 </svg>
                 Рассчитать цену
               </a>
-              <div class="text-[12px] leading-[140%] mt-1">*автоматический расчет</div>
+              <div class="text-[12px] leading-[140%] mt-1 text-gray-500">*автоматический расчет</div>
             </div>
           </div>
           <div
@@ -484,7 +485,7 @@
                 </span>
               </label>
               <button type="submit"
-                class="w-full flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary font-semibold text-white">
+                class="w-full flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary font-semibold text-white cursor-pointer hover:bg-[#FA9A25]">
                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12.5 17V3" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
                     stroke-linecap="round" stroke-linejoin="round" />
@@ -822,7 +823,8 @@
             </div>
           </div>
           <a href="#"
-            class="max-w-[335px] w-full bg-primary inline-flex items-center justify-center gap-[6px] p-5 rounded-2xl text-white font-semibold md:max-w-full">
+            class="max-w-[335px] w-full bg-primary inline-flex items-center justify-center gap-[6px] p-5 
+            rounded-2xl text-white font-semibold md:max-w-full cursor-pointer hover:bg-[#FA9A25]">
             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M17.566 21.501H7.434C6.366 21.501 5.5 20.635 5.5 19.567V5.43595C5.5 4.36795 6.366 3.50195 7.434 3.50195H17.565C18.634 3.50195 19.5 4.36795 19.5 5.43595V19.566C19.5 20.635 18.634 21.501 17.566 21.501V21.501Z"
@@ -1039,7 +1041,8 @@
               </div>
             </div>
             <button
-              class="max-w-[310px] w-full bg-primary inline-flex items-center justify-center p-5 rounded-2xl text-white font-semibold mt-10 lg:mt-8 md:max-w-full">
+              class="max-w-[310px] w-full bg-primary inline-flex items-center justify-center p-5 rounded-2xl 
+              text-white font-semibold mt-10 cursor-pointer hover:bg-[#FA9A25] lg:mt-8 md:max-w-full">
               Подробнее о компании
             </button>
           </div>

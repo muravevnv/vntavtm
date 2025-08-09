@@ -6,8 +6,8 @@
     --font-sans: "Manrope", sans-serif;
     --color-primary: #3b8bea;
     --color-graphite: #323338;
-    --color-graphite-100: #384c57;
-    --color-graphite-200: #58595d;
+    --color-graphite-100: #58595d;
+    --color-graphite-200: #384c57;
     --color-graphite-400: #404043;
     --color-accent: #fa9a25;
     --color-gray: #a4a4a4;
@@ -43,67 +43,80 @@
   @import "./components/slider-nav-btn.css";
   @import "./components/usage-card.css";
   @import "./components/client-logo-card.css";
-  
 }
 
+@layer utilities {
+  .text-graphite {
+    color: var(--color-graphite);
+  }
 
+  .text-graphite-100 {
+    color: var(--color-graphite-100);
+  }
 
-.text-primary {
-  color: var(--color-primary);
-}
+  .text-graphite-200 {
+    color: var(--color-graphite-200);
+  }
 
-.bg-primary {
-  background-color: var(--color-primary);
-}
+  .text-graphite-r00 {
+    color: var(--color-graphite-400);
+  }
 
-.text-graphite {
-  color: var(--color-graphite);
-}
+  .text-primary {
+    color: var(--color-primary);
+  }
 
-.text-graphite-100 {
-  color: var(--color-graphite-100);
-}
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
 
-.text-accent {
-  color: var(--color-accent);
-}
+  .text-graphite {
+    color: var(--color-graphite);
+  }
 
-.bg-accent {
-  background-color: var(--color-accent);
-}
+  .text-graphite-100 {
+    color: var(--color-graphite-100);
+  }
 
-.text-gray-500 {
-  color: var(--color-gray-500);
-}
+  .text-accent {
+    color: var(--color-accent);
+  }
 
-.bg-gray-50 {
-  background-color: var(--color-gray-50);
-}
+  .bg-accent {
+    background-color: var(--color-accent);
+  }
 
-.border-gray {
-  border-color: var(--color-gray);
-}
+  .text-gray-500 {
+    color: var(--color-gray-500);
+  }
 
-.box-shadow {
-  box-shadow: -6px 7px 20px 0px #0000001a, 
-  -24px 28px 37px 0px #00000017,
-    -54px 63px 50px 0px #0000000d, 
-    -96px 112px 59px 0px #00000003,
-    -150px 174px 64px 0px #00000000;
-}
+  .bg-gray-50 {
+    background-color: var(--color-gray-50);
+  }
 
-.box-shadow-gray {
-  box-shadow: 0px 1px 2px 0px #babcbf4a, 
-  0px 4px 4px 0px #babcbf42,
-    0px 8px 5px 0px #babcbf26, 
-    0px 14px 6px 0px #babcbf0a,
-    0px 23px 6px 0px #babcbf03;
-}
+  .border-gray {
+    border-color: var(--color-gray);
+  }
 
-.swiper-button-disabled {
-  display: none !important;
-}
+  .box-shadow {
+    box-shadow: -6px 7px 20px 0px #0000001a, -24px 28px 37px 0px #00000017,
+      -54px 63px 50px 0px #0000000d, -96px 112px 59px 0px #00000003,
+      -150px 174px 64px 0px #00000000;
+  }
 
-.box-shadow-gray-100 {
+  .box-shadow-gray {
+    box-shadow: 0px 1px 2px 0px #babcbf4a, 0px 4px 4px 0px #babcbf42,
+      0px 8px 5px 0px #babcbf26, 0px 14px 6px 0px #babcbf0a,
+      0px 23px 6px 0px #babcbf03;
+  }
 
+  .swiper-button-disabled {
+    display: none !important;
+  }
+
+  .multi-layer-text-shadow {
+    text-shadow: 3px 2px 8px rgba(0, 0, 0, 0.1),
+      12px 7px 14px rgba(0, 0, 0, 0.09), 27px 16px 19px rgba(0, 0, 0, 0.05),
+      48px 29px 22px rgba(0, 0, 0, 0.01), 75px 45px 24px rgba(0, 0, 0, 0);
+  }
 }
