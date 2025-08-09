@@ -1,0 +1,11 @@
+.slider-nav-btn {
+  @apply hidden lg:flex absolute top-20 z-10 rounded-full items-center justify-center size-10 bg-white shadow-md;
+}
+
+.slider-prev {
+  @apply right-[5px];
+}
+
+.slider-next {
+  @apply left-[5px];
+}

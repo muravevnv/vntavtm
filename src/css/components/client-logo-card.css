@@ -1,0 +1,7 @@
+.client-logo-card {
+  @apply flex items-center justify-center h-50 lg:h-[149px] md:h-[152px] grayscale hover:grayscale-0 duration-300;
+}
+
+.client-logo-card img {
+  @apply max-h-full max-w-full object-contain;
+}

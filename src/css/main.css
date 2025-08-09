@@ -1,0 +1,109 @@
+@import "./base.css";
+@import "tailwindcss";
+
+@layer theme {
+  :root {
+    --font-sans: "Manrope", sans-serif;
+    --color-primary: #3b8bea;
+    --color-graphite: #323338;
+    --color-graphite-100: #384c57;
+    --color-graphite-200: #58595d;
+    --color-graphite-400: #404043;
+    --color-accent: #fa9a25;
+    --color-gray: #a4a4a4;
+    --color-gray-50: #f4f6fb;
+    --color-gray-400: #5a5b5f;
+
+    --breakpoint-sm: 22.5rem;
+    --breakpoint-md: 30rem;
+    --breakpoint-lg: 48rem;
+    --breakpoint-xl: 80rem;
+  }
+}
+
+@theme {
+  --breakpoint-*: initial;
+}
+
+@custom-variant 2xl (@media (max-width: 1535px));
+@custom-variant xl (@media (max-width: 1279px));
+@custom-variant lg (@media (max-width: 1023px));
+@custom-variant md (@media (max-width: 767px));
+@custom-variant sm (@media (max-width: 639px));
+
+@layer components {
+  .my-container {
+    @apply mx-auto w-full max-w-[1234px] px-8 md:px-6;
+    /* 
+      px-6 = 24px (1.5rem)
+      px-8 = 32px (2rem)
+    */
+  }
+
+  @import "./components/slider-nav-btn.css";
+  @import "./components/usage-card.css";
+  @import "./components/client-logo-card.css";
+  
+}
+
+
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.text-graphite {
+  color: var(--color-graphite);
+}
+
+.text-graphite-100 {
+  color: var(--color-graphite-100);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.bg-accent {
+  background-color: var(--color-accent);
+}
+
+.text-gray-500 {
+  color: var(--color-gray-500);
+}
+
+.bg-gray-50 {
+  background-color: var(--color-gray-50);
+}
+
+.border-gray {
+  border-color: var(--color-gray);
+}
+
+.box-shadow {
+  box-shadow: -6px 7px 20px 0px #0000001a, 
+  -24px 28px 37px 0px #00000017,
+    -54px 63px 50px 0px #0000000d, 
+    -96px 112px 59px 0px #00000003,
+    -150px 174px 64px 0px #00000000;
+}
+
+.box-shadow-gray {
+  box-shadow: 0px 1px 2px 0px #babcbf4a, 
+  0px 4px 4px 0px #babcbf42,
+    0px 8px 5px 0px #babcbf26, 
+    0px 14px 6px 0px #babcbf0a,
+    0px 23px 6px 0px #babcbf03;
+}
+
+.swiper-button-disabled {
+  display: none !important;
+}
+
+.box-shadow-gray-100 {
+
+}

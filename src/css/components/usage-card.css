@@ -1,0 +1,53 @@
+/* Базовая карточка */
+.usage-card {
+  @apply w-full h-80 flex items-end p-6 relative z-1 rounded-xl overflow-hidden 
+           lg:h-70 lg:p-4 md:h-65;
+}
+
+.usage-card::before {
+  @apply content-[''] absolute size-full inset-0 z-1 transition-opacity duration-300;
+  background: linear-gradient(
+    180deg,
+    rgba(50, 51, 56, 0) 52.65%,
+    rgba(50, 51, 56, 0.7) 81.49%
+  );
+}
+
+.usage-card::after {
+  @apply content-[''] absolute size-full inset-0 opacity-0 z-1 transition-opacity duration-300;
+  background: #3b8bea80;
+}
+
+.usage-card:hover::before {
+  @apply opacity-0;
+}
+
+.usage-card:hover::after {
+  @apply opacity-100;
+}
+
+.usage-card picture {
+  @apply absolute inset-0 size-full z-0;
+}
+
+.usage-card img {
+  @apply size-full object-cover;
+}
+
+.usage-card-content {
+  @apply relative z-2 text-white flex flex-col items-start gap-[6px];
+}
+
+/* Специальная карточка "Все проекты" */
+.all-projects-card {
+  @apply w-full h-80 flex flex-col items-start justify-between p-6 bg-[#3B8BEA] rounded-xl text-white relative z-1
+           lg:h-70 lg:p-4 md:h-65;
+}
+
+.all-projects-button {
+  @apply size-11 bg-white rounded-lg flex items-center justify-center;
+}
+
+.all-projects-button svg path {
+  @apply stroke-[#3B8BEA];
+}
