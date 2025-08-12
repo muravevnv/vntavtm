@@ -1434,6 +1434,12 @@
       display: inline;
     }
   }
+  .lg\:size-11 {
+    @media (max-width: 1023px) {
+      width: calc(var(--spacing) * 11);
+      height: calc(var(--spacing) * 11);
+    }
+  }
   .lg\:h-30 {
     @media (max-width: 1023px) {
       height: calc(var(--spacing) * 30);
@@ -1467,6 +1473,11 @@
   .lg\:h-\[462px\] {
     @media (max-width: 1023px) {
       height: 462px;
+    }
+  }
+  .lg\:h-auto {
+    @media (max-width: 1023px) {
+      height: auto;
     }
   }
   .lg\:min-h-\[164px\] {
@@ -1619,6 +1630,11 @@
       justify-content: space-between;
     }
   }
+  .lg\:justify-center {
+    @media (max-width: 1023px) {
+      justify-content: center;
+    }
+  }
   .lg\:gap-0 {
     @media (max-width: 1023px) {
       gap: calc(var(--spacing) * 0);
@@ -1680,6 +1696,11 @@
            column-gap: calc(var(--spacing) * 4);
     }
   }
+  .lg\:self-stretch {
+    @media (max-width: 1023px) {
+      align-self: stretch;
+    }
+  }
   .lg\:overflow-hidden {
     @media (max-width: 1023px) {
       overflow: hidden;
@@ -1688,6 +1709,11 @@
   .lg\:overflow-visible {
     @media (max-width: 1023px) {
       overflow: visible;
+    }
+  }
+  .lg\:rounded-lg {
+    @media (max-width: 1023px) {
+      border-radius: var(--radius-lg);
     }
   }
   .lg\:border-t-\[1px\] {
@@ -1699,6 +1725,11 @@
   .lg\:border-t-\[\#FFFFFF1A\] {
     @media (max-width: 1023px) {
       border-top-color: #FFFFFF1A;
+    }
+  }
+  .lg\:bg-\[\#3B8BEA\] {
+    @media (max-width: 1023px) {
+      background-color: #3B8BEA;
     }
   }
   .lg\:p-4 {
@@ -1866,6 +1897,11 @@
     @media (max-width: 1023px) {
       --tw-leading: 145%;
       line-height: 145%;
+    }
+  }
+  .lg\:text-white {
+    @media (max-width: 1023px) {
+      color: var(--color-white);
     }
   }
   .md\:left-\[34px\] {
