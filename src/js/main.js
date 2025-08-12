@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (recomendedSlider) {
     new Swiper(recomendedSlider, {
-      slidesPerView: 'auto',
+      slidesPerView: "auto",
       spaceBetween: 12,
       navigation: {
         nextEl: "[data-slider-prev='recomended']",
@@ -11,11 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       breakpoints: {
         560: {
-          slidesPerView: 'auto',
+          slidesPerView: "auto",
           spaceBetween: 16,
         },
         768: {
-          slidesPerView: 'auto',
+          slidesPerView: "auto",
           spaceBetween: 16,
         },
         1024: {
@@ -55,4 +55,55 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     });
   }
+
+  $('[data-catalog-block="toggle-btn"]').on("click", function () {
+    const $parent = $(this).closest('[data-catalog-block="block"]');
+    const $content = $parent.find('[data-catalog-block="content"]');
+
+    $(this).toggleClass("is-active");
+    $content.toggleClass("is-open");
+  });
+
+  const videoPlayer = {
+    init() {
+      this.bindEvents();
+    },
+
+    bindEvents() {
+      $(document).on("click", '[data-video="play-btn"]', this.handlePlayClick);
+      $(document).on("click", '[data-video="player"]', this.handlePlayerClick);
+      $(document).on("ended", '[data-video="player"]', this.handleVideoEnded);
+    },
+
+    handlePlayClick(e) {
+      const $btn = $(e.currentTarget);
+      const $player = $btn
+        .closest('[data-video="block"]')
+        .find('[data-video="player"]');
+
+      $player[0].play();
+      $btn.hide();
+    },
+
+    handlePlayerClick(e) {
+      const $player = $(e.currentTarget);
+      const $btn = $player
+        .closest('[data-video="block"]')
+        .find('[data-video="play-btn"]');
+
+      $player[0].pause();
+      $btn.show();
+    },
+
+    handleVideoEnded(e) {
+      const $player = $(e.currentTarget);
+      const $btn = $player
+        .closest('[data-video="block"]')
+        .find('[data-video="play-btn"]');
+
+      $btn.show();
+    },
+  };
+
+  videoPlayer.init();
 });

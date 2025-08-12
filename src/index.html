@@ -21,7 +21,7 @@
       <picture class="absolute top-0 left-0 size-full md:h-[350px]">
         <img src="./img/hero/bg.png" alt="Баннер" class="size-full object-cover">
       </picture>
-      <picture class="absolute max-w-[800px] right-0 top-[14px] lg:max-w-[630px] lg:top-[54px] lg:right-[-80px]">
+      <picture class="absolute max-w-[800px] right-0 top-[14px] lg:max-w-[630px] lg:top-[54px] lg:right-[-80px] md:max-w-none md:right-[-40px] md:min-w-[460px] md:top-[10px]">
         <img src="./img/hero/main-img.png" alt="">
       </picture>
       <div class="my-container relative z-1 md:px-0">
@@ -154,103 +154,143 @@
             </div>
           </div>
           <div class="grid grid-cols-3 gap-4 xl:grid-cols-2 lg:flex lg:flex-col">
-            <div
-              class="p-6 bg-gray-50 rounded-xl flex items-start justify-between gap-4 min-h-[200px] lg:min-h-[166px] lg:p-4">
-              <div class="flex flex-col items-start justify-between h-full lg:self-stretch lg:h-auto">
-                <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
-                  Щиты управления вентиляцией
+            <div class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group
+              hover:[box-shadow:0px_2px_3px_0px_#8B99A21A,0px_6px_6px_0px_#8B99A217,0px_14px_8px_0px_#8B99A20D,0px_24px_10px_0px_#8B99A203,0px_38px_11px_0px_#8B99A200]"
+              data-catalog-block="block">
+              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]">
+                <div class="flex flex-col items-start justify-between h-auto self-stretch">
+                  <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
+                    Щиты управления вентиляцией
+                  </div>
+                  <a href="#"
+                    class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                      <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                      <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
+                        stroke-linecap="square" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                  <button type="button"
+                    class="hidden lg:size-11 lg:bg-[#3B8BEA] lg:text-white lg:rounded-lg lg:flex lg:items-center lg:justify-center"
+                    data-catalog-block="toggle-btn">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 11.5L12 15.5L8 11.5" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
                 </div>
-                <a href="#" class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                    <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                    <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                  </svg>
-                </a>
-                <button type="button"
-                  class="hidden lg:size-11 lg:bg-[#3B8BEA] lg:text-white lg:rounded-lg lg:flex lg:items-center lg:justify-center">
-                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 11.5L12 15.5L8 11.5" stroke="white" style="stroke:white;stroke-opacity:1;"
-                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </button>
+                <picture class="h-35 w-auto shrink-0 lg:h-30">
+                  <img src="./img/products/product-01.png" alt="Щит управления" class="w-auto h-full">
+                </picture>
               </div>
-              <picture class="h-35 w-auto shrink-0 lg:h-30">
-                <img src="./img/products/product-01.png" alt="Щит управления" class="w-auto h-full">
-              </picture>
+              <div class="absolute opacity-0 -z-1 bg-gray-50 flex flex-col p-4 top-0 left-0 w-full h-full group-hover:opacity-100 group-hover:z-2 transition-all
+                lg:opacity-100 lg:static lg:hidden lg:pt-0" data-catalog-block="content">
+                <a href="#" class="text-sm mb-[10px] font-semibold lg:hidden hover:text-[#3B8BEA] transition-color">Щиты управления вентиляцией</a>
+                <div class="flex flex-col gap-[6px] font-semibold lg:gap-3 md:gap-[10px]">
+                  <a href="#" class="text-xs leading-[140%] text-[#5A5B5F] lg:text-[17px] md:text-sm hover:text-[#3B8BEA] transition-color">Щиты управления вентилятором</a>
+                  <a href="#" class="text-xs leading-[140%] text-[#5A5B5F] lg:text-[17px] md:text-sm hover:text-[#3B8BEA] transition-color">Щиты управления приточной вентиляцией</a>
+                  <a href="#" class="text-xs leading-[140%] text-[#5A5B5F] lg:text-[17px] md:text-sm hover:text-[#3B8BEA] transition-color">Щиты управления приточно-вытяжной вентиляцией</a>
+                </div>
+                <div class="flex flex-col gap-[6px] pt-[9px] mt-[10px] border-t-[1px] border-[#CDCFD4] font-semibold lg:gap-3 md:gap-[10px]">
+                  <a href="#" class="text-xs leading-[140%] lg:text-[17px] md:text-sm text-[#78859F] hover:text-[#3B8BEA] transition-color">Шкафы управления вентиляцией по техническому
+                    заданию</a>
+                  <a href="#" class="text-xs leading-[140%] lg:text-[17px] md:text-sm text-[#78859F] hover:text-[#3B8BEA] transition-color">Калькулятор шкафов управления
+                    вентиляцией</a>
+                </div>
+              </div>
             </div>
-            <div
-              class="p-6 bg-gray-50 rounded-xl flex items-start justify-between gap-4 min-h-[200px] lg:min-h-[166px] lg:p-4">
-              <div class="flex flex-col items-start justify-between h-full">
-                <div class="text-[18px] font-semibold lg:text-[22px] md:text-[16px]">
-                  Шкафы управления тепловыми завесами
+            <div class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group"
+              data-catalog-block="block">
+              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]">
+                <div class="flex flex-col items-start justify-between h-auto self-stretch">
+                  <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
+                    Шкафы управления тепловыми завесами
+                  </div>
+                  <a href="#"
+                    class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                      <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                      <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
+                        stroke-linecap="square" stroke-linejoin="round" />
+                    </svg>
+                  </a>
                 </div>
-                <a href="#" class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                    <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                    <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                  </svg>
-                </a>
+                <picture class="h-35 w-auto shrink-0 lg:h-30">
+                  <img src="./img/products/product-02.png" alt="Щит управления" class="w-auto h-full">
+                </picture>
               </div>
-              <picture class="h-35 w-auto shrink-0 lg:h-30">
-                <img src="./img/products/product-02.png" alt="Щит управления" class="w-auto h-full">
-              </picture>
             </div>
-            <div
-              class="p-6 bg-gray-50 rounded-xl flex items-start justify-between gap-4 min-h-[200px] lg:min-h-[166px] lg:p-4">
-              <div class="flex flex-col items-start justify-between h-full lg:h-auto lg:self-stretch">
-                <div class="text-[18px] font-semibold lg:text-[22px] md:text-[16px]">
-                  Пожарная автоматика
+            <div class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group
+              hover:[box-shadow:0px_2px_3px_0px_#8B99A21A,0px_6px_6px_0px_#8B99A217,0px_14px_8px_0px_#8B99A20D,0px_24px_10px_0px_#8B99A203,0px_38px_11px_0px_#8B99A200]"
+              data-catalog-block="block">
+              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]">
+                <div class="flex flex-col items-start justify-between self-stretch h-auto">
+                  <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
+                    Щиты управления вентиляцией
+                  </div>
+                  <a href="#"
+                    class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                      <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                      <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
+                        stroke-linecap="square" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                  <button type="button"
+                    class="hidden lg:size-11 lg:bg-[#3B8BEA] lg:text-white lg:rounded-lg lg:flex lg:items-center lg:justify-center"
+                    data-catalog-block="toggle-btn">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 11.5L12 15.5L8 11.5" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
                 </div>
-                <a href="#" class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                    <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                    <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                  </svg>
-                </a>
-                <button type="button"
-                  class="hidden lg:size-11 lg:bg-[#3B8BEA] lg:text-white lg:rounded-lg lg:flex lg:items-center lg:justify-center">
-                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 11.5L12 15.5L8 11.5" stroke="white" style="stroke:white;stroke-opacity:1;"
-                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </button>
+                <picture class="h-35 w-auto shrink-0 lg:h-30">
+                  <img src="./img/products/product-03.png" alt="Щит управления" class="w-auto h-full">
+                </picture>
               </div>
-              <picture class="h-35 w-auto shrink-0 lg:h-30">
-                <img src="./img/products/product-03.png" alt="Щит управления" class="w-auto h-full">
-              </picture>
+              <div class="absolute opacity-0 -z-1 bg-gray-50 flex flex-col p-4 top-0 left-0 w-full h-full group-hover:opacity-100 group-hover:z-2 transition-all
+                lg:opacity-100 lg:static lg:hidden lg:pt-0" data-catalog-block="content">
+                <a href="#" class="text-sm mb-[10px] font-semibold lg:hidden hover:text-[#3B8BEA] transition-color">Пожарная автоматика</a>
+                <div class="flex flex-col gap-[6px] font-semibold lg:gap-3 md:gap-[10px]">
+                  <a href="#" class="text-xs leading-[140%] text-[#5A5B5F] lg:text-[17px] md:text-sm hover:text-[#3B8BEA] transition-color">Щиты дымоудаления</a>
+                  <a href="#" class="text-xs leading-[140%] text-[#5A5B5F] lg:text-[17px] md:text-sm hover:text-[#3B8BEA] transition-color">Щиты подпора воздуха</a>
+                  <a href="#" class="text-xs leading-[140%] text-[#5A5B5F] lg:text-[17px] md:text-sm hover:text-[#3B8BEA] transition-color">Щиты управления клапанами</a>
+                </div>
+              </div>
             </div>
-            <div
-              class="p-6 bg-gray-50 rounded-xl flex items-start justify-between gap-4 min-h-[200px] lg:min-h-[166px] lg:p-4">
-              <div class="flex flex-col items-start justify-between h-full">
-                <div class="text-[18px] font-semibold lg:text-[22px] md:text-[16px]">
-                  Шкафы диспетчеризации и SCADA
+            <div class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group"
+              data-catalog-block="block">
+              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]">
+                <div class="flex flex-col items-start justify-between self-stretch h-auto">
+                  <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
+                    Шкафы диспетчеризации и SCADA
+                  </div>
+                  <a href="#"
+                    class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                      <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                      <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
+                        stroke-linecap="square" stroke-linejoin="round" />
+                    </svg>
+                  </a>
                 </div>
-                <a href="#" class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                    <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                    <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                  </svg>
-                </a>
+                <picture class="h-35 w-auto shrink-0 lg:h-30">
+                  <img src="./img/products/product-04.png" alt="Щит управления" class="w-auto h-full">
+                </picture>
               </div>
-              <picture class="h-35 w-auto shrink-0 lg:h-30">
-                <img src="./img/products/product-04.png" alt="Щит управления" class="w-auto h-full">
-              </picture>
             </div>
           </div>
         </div>
@@ -261,180 +301,211 @@
             </div>
           </div>
           <div class="grid grid-cols-3 gap-4 xl:grid-cols-2 lg:flex lg:flex-col">
-            <div
-              class="p-6 bg-gray-50 rounded-xl flex items-start justify-between gap-4 min-h-[200px] lg:min-h-[166px] lg:p-4">
-              <div class="flex flex-col items-start justify-between h-full">
-                <div class="text-[18px] font-semibold lg:text-[22px] md:text-[16px]">
-                  Панели управления
+            <div class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group">
+              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]">
+                <div class="flex flex-col items-start justify-between self-stretch h-auto">
+                  <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
+                    Панели управления
+                  </div>
+                  <a href="#"
+                    class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                      <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                      <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
+                        stroke-linecap="square" stroke-linejoin="round" />
+                    </svg>
+                  </a>
                 </div>
-                <a href="#" class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                    <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                    <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                  </svg>
-                </a>
+                <picture class="h-35 w-auto shrink-0 lg:h-30">
+                  <img src="./img/products/product-05.png" alt="Щит управления" class="w-auto h-full">
+                </picture>
               </div>
-              <picture class="h-35 w-auto shrink-0 lg:h-30">
-                <img src="./img/products/product-05.png" alt="Щит управления" class="w-auto h-full">
-              </picture>
             </div>
-            <div
-              class="p-6 bg-gray-50 rounded-xl flex items-start justify-between gap-4 min-h-[200px] lg:min-h-[166px] lg:p-4">
-              <div class="flex flex-col items-start justify-between h-full">
-                <div class="text-[18px] font-semibold lg:text-[22px] md:text-[16px]">
-                  Контроллеры
+            <div class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group">
+              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]">
+                <div class="flex flex-col items-start justify-between self-stretch h-auto">
+                  <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
+                    Контроллеры
+                  </div>
+                  <a href="#"
+                    class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                      <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                      <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
+                        stroke-linecap="square" stroke-linejoin="round" />
+                    </svg>
+                  </a>
                 </div>
-                <a href="#" class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                    <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                    <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                  </svg>
-                </a>
+                <picture class="h-35 w-auto shrink-0 lg:h-30">
+                  <img src="./img/products/product-06.png" alt="Щит управления" class="w-auto h-full">
+                </picture>
               </div>
-              <picture class="h-35 w-auto shrink-0 lg:h-30">
-                <img src="./img/products/product-06.png" alt="Щит управления" class="w-auto h-full">
-              </picture>
             </div>
-            <div
-              class="p-6 bg-gray-50 rounded-xl flex items-start justify-between gap-4 min-h-[200px] lg:min-h-[166px] lg:p-4">
-              <div class="flex flex-col items-start justify-between h-full lg:self-stretch lg:h-auto">
-                <div class="text-[18px] font-semibold lg:text-[22px] md:text-[16px]">
-                  Датчики
+            <div class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group
+              hover:[box-shadow:0px_2px_3px_0px_#8B99A21A,0px_6px_6px_0px_#8B99A217,0px_14px_8px_0px_#8B99A20D,0px_24px_10px_0px_#8B99A203,0px_38px_11px_0px_#8B99A200]"
+              data-catalog-block="block">
+              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]">
+                <div class="flex flex-col items-start justify-between self-stretch h-auto">
+                  <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
+                    Датчики
+                  </div>
+                  <a href="#"
+                    class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                      <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                      <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
+                        stroke-linecap="square" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                  <button type="button"
+                    class="hidden lg:size-11 lg:bg-[#3B8BEA] lg:text-white lg:rounded-lg lg:flex lg:items-center lg:justify-center"
+                    data-catalog-block="toggle-btn">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 11.5L12 15.5L8 11.5" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
                 </div>
-                <a href="#" class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                    <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                    <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                  </svg>
-                </a>
-                <button type="button"
-                  class="hidden lg:size-11 lg:bg-[#3B8BEA] lg:text-white lg:rounded-lg lg:flex lg:items-center lg:justify-center">
-                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 11.5L12 15.5L8 11.5" stroke="white" style="stroke:white;stroke-opacity:1;"
-                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </button>
+                <picture class="h-35 w-auto shrink-0 lg:h-30">
+                  <img src="./img/products/product-07.png" alt="Щит управления" class="w-auto h-full">
+                </picture>
               </div>
-              <picture class="h-35 w-auto shrink-0 lg:h-30">
-                <img src="./img/products/product-07.png" alt="Щит управления" class="w-auto h-full">
-              </picture>
+              <div class="absolute opacity-0 -z-1 bg-gray-50 flex flex-col p-4 top-0 left-0 w-full h-full group-hover:opacity-100 group-hover:z-2 transition-all
+                lg:opacity-100 lg:static lg:hidden lg:pt-0" data-catalog-block="content">
+                <a href="#" class="text-sm mb-[10px] font-semibold lg:hidden hover:text-[#3B8BEA] transition-color">Датчики</a>
+                <div class="flex flex-col gap-[6px] font-semibold lg:gap-3 md:gap-[10px]">
+                  <a href="#" class="text-xs leading-[140%] text-[#5A5B5F] lg:text-[17px] md:text-sm hover:text-[#3B8BEA] transition-color">Датчики температуры</a>
+                  <a href="#" class="text-xs leading-[140%] text-[#5A5B5F] lg:text-[17px] md:text-sm hover:text-[#3B8BEA] transition-color">Датчики влажности</a>
+                  <a href="#" class="text-xs leading-[140%] text-[#5A5B5F] lg:text-[17px] md:text-sm hover:text-[#3B8BEA] transition-color">Датчики давления воздуха</a>
+                  <a href="#" class="text-xs leading-[140%] text-[#5A5B5F] lg:text-[17px] md:text-sm hover:text-[#3B8BEA] transition-color">Датчики СО2</a>
+                  <a href="#" class="text-xs leading-[140%] text-[#5A5B5F] lg:text-[17px] md:text-sm hover:text-[#3B8BEA] transition-color">Термостат</a>
+                  <a href="#" class="text-xs leading-[140%] text-[#5A5B5F] lg:text-[17px] md:text-sm hover:text-[#3B8BEA] transition-color">Датчики давления воды</a>
+                </div>
+              </div>
             </div>
-            <div
-              class="p-6 bg-gray-50 rounded-xl flex items-start justify-between gap-4 min-h-[200px] lg:min-h-[166px] lg:p-4">
-              <div class="flex flex-col items-start justify-between h-full">
-                <div class="text-[18px] font-semibold lg:text-[22px] md:text-[16px]">
-                  Регуляторы скорости
+            <div class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group">
+              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]">
+                <div class="flex flex-col items-start justify-between self-stretch h-auto">
+                  <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
+                    Регуляторы скорости
+                  </div>
+                  <a href="#"
+                    class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                      <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                      <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
+                        stroke-linecap="square" stroke-linejoin="round" />
+                    </svg>
+                  </a>
                 </div>
-                <a href="#" class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                    <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                    <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                  </svg>
-                </a>
+                <picture class="h-35 w-auto shrink-0 lg:h-30">
+                  <img src="./img/products/product-08.png" alt="Щит управления" class="w-auto h-full">
+                </picture>
               </div>
-              <picture class="h-35 w-auto shrink-0 lg:h-30">
-                <img src="./img/products/product-08.png" alt="Щит управления" class="w-auto h-full">
-              </picture>
             </div>
-            <div
-              class="p-6 bg-gray-50 rounded-xl flex items-start justify-between gap-4 min-h-[200px] lg:min-h-[166px] lg:p-4">
-              <div class="flex flex-col items-start justify-between h-full">
-                <div class="text-[18px] font-semibold lg:text-[22px] md:text-[16px]">
-                  Приводы для воздушных заслонок
+            <div class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group">
+              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]">
+                <div class="flex flex-col items-start justify-between self-stretch h-auto">
+                  <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
+                    Приводы для воздушных заслонок
+                  </div>
+                  <a href="#"
+                    class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                      <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                      <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
+                        stroke-linecap="square" stroke-linejoin="round" />
+                    </svg>
+                  </a>
                 </div>
-                <a href="#" class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                    <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                    <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                  </svg>
-                </a>
+                <picture class="h-35 w-auto shrink-0 lg:h-30">
+                  <img src="./img/products/product-09.png" alt="Щит управления" class="w-auto h-full">
+                </picture>
               </div>
-              <picture class="h-35 w-auto shrink-0 lg:h-30">
-                <img src="./img/products/product-09.png" alt="Щит управления" class="w-auto h-full">
-              </picture>
             </div>
-            <div
-              class="p-6 bg-gray-50 rounded-xl flex items-start justify-between gap-4 min-h-[200px] lg:min-h-[166px] lg:p-4">
-              <div class="flex flex-col items-start justify-between h-full">
-                <div class="text-[18px] font-semibold lg:text-[22px] md:text-[16px]">
-                  Смесительные узлы для вентиляции
+            <div class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group">
+              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]">
+                <div class="flex flex-col items-start justify-between self-stretch h-auto">
+                  <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
+                    Смесительные узлы для вентиляции
+                  </div>
+                  <a href="#"
+                    class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                      <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                      <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
+                        stroke-linecap="square" stroke-linejoin="round" />
+                    </svg>
+                  </a>
                 </div>
-                <a href="#" class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                    <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                    <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                  </svg>
-                </a>
+                <picture class="h-35 w-auto shrink-0 lg:h-30">
+                  <img src="./img/products/product-10.png" alt="Щит управления" class="w-auto h-full">
+                </picture>
               </div>
-              <picture class="h-35 w-auto shrink-0 lg:h-30">
-                <img src="./img/products/product-10.png" alt="Щит управления" class="w-auto h-full">
-              </picture>
             </div>
-            <div
-              class="p-6 bg-gray-50 rounded-xl flex items-start justify-between gap-4 min-h-[200px] lg:min-h-[166px] lg:p-4">
-              <div class="flex flex-col items-start justify-between h-full">
-                <div class="text-[18px] font-semibold lg:text-[22px] md:text-[16px]">
-                  Детали смесительных узлов
+            <div class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group">
+              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]">
+                <div class="flex flex-col items-start justify-between self-stretch h-auto">
+                  <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
+                    Детали смесительных узлов
+                  </div>
+                  <a href="#"
+                    class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                      <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                      <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
+                        stroke-linecap="square" stroke-linejoin="round" />
+                    </svg>
+                  </a>
                 </div>
-                <a href="#" class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                    <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                    <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                  </svg>
-                </a>
+                <picture class="h-35 w-auto shrink-0 lg:h-30">
+                  <img src="./img/products/product-11.png" alt="Щит управления" class="w-auto h-full">
+                </picture>
               </div>
-              <picture class="h-35 w-auto shrink-0 lg:h-30">
-                <img src="./img/products/product-11.png" alt="Щит управления" class="w-auto h-full">
-              </picture>
             </div>
-            <div
-              class="p-6 bg-gray-50 rounded-xl flex items-start justify-between gap-4 min-h-[200px] lg:min-h-[166px] lg:p-4">
-              <div class="flex flex-col items-start justify-between h-full">
-                <div class="text-[18px] font-semibold lg:text-[22px] md:text-[16px]">
-                  Преобразователи частоты
+            <div class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group">
+              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]">
+                <div class="flex flex-col items-start justify-between self-stretch h-auto">
+                  <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
+                    Преобразователи частоты
+                  </div>
+                  <a href="#"
+                    class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                      <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
+                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                      <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
+                        stroke-linecap="square" stroke-linejoin="round" />
+                    </svg>
+                  </a>
                 </div>
-                <a href="#" class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                    <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                    <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                  </svg>
-                </a>
+                <picture class="h-35 w-auto shrink-0 lg:h-30">
+                  <img src="./img/products/product-12.png" alt="Щит управления" class="w-auto h-full">
+                </picture>
               </div>
-              <picture class="h-35 w-auto shrink-0 lg:h-30">
-                <img src="./img/products/product-12.png" alt="Щит управления" class="w-auto h-full">
-              </picture>
             </div>
           </div>
         </div>
@@ -1078,20 +1149,20 @@
               Подробнее о компании
             </button>
           </div>
-          <a href="#" class="relative flex items-center justify-center rounded-2xl overflow-hidden w-[59%] 
-            lg:w-full lg:h-[445px] md:h-[375px] md:rounded-none md:order-3">
-            <picture class="absolute size-full inset-0">
-              <img src="./img/about/video.jpg" class="size-full object-cover" alt="Вент Автоматика">
-            </picture>
-            <span
-              class="flex items-center justify-center size-[98px] bg-white text-[#3B8BEA] rounded-[50%] z-1 hover:bg-[#3B8BEA] hover:text-white transition-all">
+          <div class="relative flex items-center justify-center rounded-2xl overflow-hidden w-[59%] 
+            lg:w-full lg:h-[445px] md:h-[375px] md:rounded-none md:order-3" data-video="block">
+            <video class="block absolute size-full object-cover inset-0" poster="./img/about/video.jpg" data-video="player" playsinline>
+              <source src="https://videos.pexels.com/video-files/14894140/14894140-uhd_2560_1440_30fps.mp4">
+            </video>
+            <button type="button" data-video="play-btn" class="flex items-center justify-center size-[98px] bg-white 
+              text-[#3B8BEA] rounded-[50%] z-1 hover:bg-[#3B8BEA] hover:text-white transition-all cursor-pointer">
               <svg width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M23.506 12.7924C24.3871 13.3291 24.3871 14.6709 23.506 15.2076L2.81599 27.8111C1.93484 28.3478 0.833496 27.6769 0.833496 26.6035V1.39664C0.833496 0.323176 1.93484 -0.347843 2.81599 0.188888L23.506 12.7924Z"
                   fill="currentColor" />
               </svg>
-            </span>
-          </a>
+            </button>
+          </div>
         </div>
         <div
           class="relative p-10 pb-5 md:order-2 bg-cover bg-no-repeat bg-[url('../img/cycle/cycle-bg.jpg')] mt-[66px] text-white rounded-3xl overflow-hidden 
@@ -1377,6 +1448,7 @@
   </main>
 
   @@include('footer.html')
+  <script src="./js/jquery.min.js"></script>
   <script src="./js/swiper-bundle.js"></script>
   <script src="./js/main.js"></script>
 </body>

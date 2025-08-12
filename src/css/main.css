@@ -148,3 +148,12 @@
     background-color: #3B8BEA;
    }
 }
+
+
+[data-catalog-block="toggle-btn"].is-active {
+  transform: rotate(180deg);
+}
+
+[data-catalog-block="content"].is-open {
+  display: flex;
+}
