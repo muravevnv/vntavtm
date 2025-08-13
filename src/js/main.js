@@ -100,4 +100,58 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   videoPlayer.init();
+
+  // Основные элементы
+  var $mainMenu = $('[data-menu="main"]');
+  var $sectionMenu = $('[data-menu="section"]');
+
+  // Инициализация - скрываем section меню и готовим к анимации
+  $sectionMenu.hide().css({
+    position: "relative",
+    transform: "translateX(-100%)",
+    transition: "transform 0.3s ease, opacity 0.3s ease",
+    width: "100%",
+    opacity: 0,
+  });
+
+  // Показ section меню с анимацией
+  $('[data-menu="section-link"]').on("click", function () {
+    $mainMenu.animate({ opacity: 0 }, 150, function () {
+      $(this).hide();
+      $sectionMenu.show().css({
+        transform: "translateX(0)",
+        opacity: 1,
+      });
+    });
+  });
+
+  // Скрытие section меню с анимацией
+  $('[data-menu="back"]').on("click", function () {
+    $sectionMenu.css({
+      transform: "translateX(-10%)",
+      opacity: 0,
+    });
+
+    setTimeout(function () {
+      $sectionMenu.hide();
+      $mainMenu.show().css("opacity", 0).animate({ opacity: 1 }, 150);
+    }, 300); // Должно совпадать с длительностью transition
+  });
+
+  // Аккордеон
+  $('[data-menu="dropdown-btn"]').on("click", function () {
+    $(this).toggleClass("is-active");
+    $('[data-menu="dropdown-list"]').slideToggle(300);
+  });
+
+  $('[data-menu="open-btn"]').on('click', () => {
+    $('[data-menu="menu"]').removeClass('translate-x-[-100%]');
+    $('[data-menu="menu-content"]').removeClass('translate-x-[-100%]');
+  })
+
+  $('[data-menu="close-btn"]').on('click', () => {
+    $('[data-menu="menu"]').addClass('translate-x-[-100%]');
+    $('[data-menu="menu-content"]').addClass('translate-x-[-100%]');
+  })
+
 });

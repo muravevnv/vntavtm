@@ -47,7 +47,7 @@
             class="text-[14px] leading-[140%] font-semibold text-primary lg:text-[11px] md:text-[10px] hover:underline transition-all">+7 (800) 551-76-68</a>
         </div>
       </div>
-      <button class="flex items-center gap-[10px] ml-auto leading-[140%] font-semibold text-[#3B8BEA]">
+      <button class="hidden md:flex items-center gap-[10px] ml-auto leading-[140%] font-semibold text-[#3B8BEA]">
         <svg width="23" height="23" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M21.0834 16.7144V19.5894C21.0845 19.8563 21.0298 20.1205 20.9229 20.3651C20.8159 20.6096 20.6591 20.8291 20.4624 21.0096C20.2658 21.19 20.0336 21.3274 19.7808 21.4129C19.5279 21.4984 19.26 21.5301 18.9942 21.5061C16.0453 21.1857 13.2126 20.178 10.7238 18.564C8.40829 17.0927 6.44515 15.1295 4.97379 12.814C3.35418 10.3139 2.34627 7.46748 2.0317 4.50528C2.00776 4.24026 2.03925 3.97317 2.12418 3.721C2.20912 3.46883 2.34563 3.2371 2.52502 3.04058C2.70442 2.84406 2.92277 2.68704 3.16617 2.57953C3.40957 2.47201 3.6727 2.41636 3.93879 2.41611H6.81379C7.27887 2.41153 7.72975 2.57623 8.08239 2.87949C8.43503 3.18276 8.66536 3.60391 8.73045 4.06444C8.8518 4.98451 9.07684 5.88789 9.40129 6.75736C9.53023 7.10037 9.55813 7.47315 9.4817 7.83154C9.40527 8.18992 9.2277 8.51888 8.97004 8.77944L7.75295 9.99652C9.1172 12.3958 11.1037 14.3823 13.503 15.7465L14.72 14.5294C14.9806 14.2718 15.3096 14.0942 15.6679 14.0178C16.0263 13.9413 16.3991 13.9693 16.7421 14.0982C17.6116 14.4226 18.515 14.6477 19.435 14.769C19.9006 14.8347 20.3257 15.0692 20.6296 15.4279C20.9335 15.7866 21.095 16.2445 21.0834 16.7144Z"
@@ -134,7 +134,7 @@
             </svg>
           </a>
           <a href="#"
-            class="items-center justify-center size-8 xs:size-6 hidden lg:flex hover:opacity-[0.6] transition-opacity">
+            class="items-center justify-center size-8 xs:size-6 hidden xl:flex hover:opacity-[0.6] transition-opacity" data-menu="open-btn">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 16H25M7 10H25M7 22H25" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round" />
@@ -145,9 +145,172 @@
     </div>
   </div>
 </header>
+  <div class="fixed inset-0 h-svh w-full z-50 translate-x-[-100%]" data-menu="menu">
+  <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50" data-menu="close-btn"></div>
+  <div class="absolute top-0 left-0 w-[375px] h-full z-50 py-7 px-5 bg-[#78859F] overflow-y-auto md:w-full translate-x-[-100%] transition-transform duration-500" data-menu="menu-content">
+    <div class="flex items-center justify-between mb-[31px]">
+      <a href="#" class="block w-37 h-10 ">
+        <img src="./img/logo-white.svg" class="block w-37 h-10" alt="Вент Автоматика">
+      </a>
+      <button type="button" class="hidden md:flex items-center justify-center size-8 rounded-[50%] bg-[#F4F6FB]" data-menu="close-btn">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.66663 1.66602L12.3333 12.3327" stroke="#78859F"
+            style="stroke:#78859F;stroke:color(display-p3 0.4718 0.5201 0.6250);stroke-opacity:1;" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M12.3333 1.66602L1.66663 12.3327" stroke="#78859F"
+            style="stroke:#78859F;stroke:color(display-p3 0.4718 0.5201 0.6250);stroke-opacity:1;" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+    <div class="w-full" data-menu="main">
+      <ul class="w-full flex flex-col items-start justify-center gap-5">
+        <li class="w-full flex items-center justify-between leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Продукция</a>
+          <button type="button" class="size-6 flex items-center justify-center" data-menu="section-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 8L15 12L11 16" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </li>
+        <li class="flex items-center leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">О компании</a>
+        </li>
+        <li class="flex items-center leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Как заказать</a>
+        </li>
+        <li class="flex items-center leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Контакты</a>
+        </li>
+        <li class="flex items-center leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Документация</a>
+        </li>
+        <li class="flex items-center leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">НОВИНКИ</a>
+        </li>
+        <li class="flex items-center leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Zentec</a>
+        </li>
+      </ul>
+      <div class="flex flex-col gap-6 mt-20">
+        <div class="flex flex-col gap-3 items-start">
+          <div class="flex items-center gap-4">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22.0001 16.9201V19.9201C22.0012 20.1986 21.9441 20.4743 21.8326 20.7294C21.721 20.9846 21.5574 21.2137 21.3521 21.402C21.1469 21.5902 20.9046 21.7336 20.6408 21.8228C20.377 21.912 20.0974 21.9452 19.8201 21.9201C16.7429 21.5857 13.7871 20.5342 11.1901 18.8501C8.77388 17.3148 6.72539 15.2663 5.19006 12.8501C3.50003 10.2413 2.4483 7.27109 2.12006 4.1801C2.09507 3.90356 2.12793 3.62486 2.21656 3.36172C2.30518 3.09859 2.44763 2.85679 2.63482 2.65172C2.82202 2.44665 3.04986 2.28281 3.30385 2.17062C3.55783 2.05843 3.8324 2.00036 4.11006 2.0001H7.11006C7.59536 1.99532 8.06585 2.16718 8.43382 2.48363C8.80179 2.80008 9.04213 3.23954 9.11005 3.7201C9.23668 4.68016 9.47151 5.62282 9.81006 6.5301C9.9446 6.88802 9.97372 7.27701 9.89396 7.65098C9.81421 8.02494 9.62892 8.36821 9.36005 8.6401L8.09006 9.9101C9.51361 12.4136 11.5865 14.4865 14.0901 15.9101L15.3601 14.6401C15.6319 14.3712 15.9752 14.1859 16.3492 14.1062C16.7231 14.0264 17.1121 14.0556 17.4701 14.1901C18.3773 14.5286 19.32 14.7635 20.2801 14.8901C20.7658 14.9586 21.2095 15.2033 21.5266 15.5776C21.8437 15.9519 22.0122 16.4297 22.0001 16.9201Z"
+                stroke="white" stroke-opacity="0.7" style="stroke:white;stroke-opacity:0.7;" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="text-[#FFFFFFB2] text-[15px] font-medium leading-[140%]">Телефон</span>
+          </div>
+          <a href="tel:+78005517668" class="text-lg leading-[135%] font-medium text-white">+7 (800) 551-76-68</a>
+        </div>
+        <div class="flex flex-col gap-3 items-start">
+          <div class="flex items-center gap-4">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6M22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6M22 6L12 13L2 6"
+                stroke="white" stroke-opacity="0.7" style="stroke:white;stroke-opacity:0.7;" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="text-[#FFFFFFB2] text-[15px] font-medium leading-[140%]">Почта</span>
+          </div>
+          <a href="mailto:536193488@ventavtomatika.ru"
+            class="text-lg leading-[135%] font-medium text-white">mail+536193488@ventavtomatika.ru</a>
+        </div>
+      </div>
+    </div>
+    <div class="w-full hidden" data-menu="section">
+      <button class="size-6 flex items-center justify-center mb-6" data-menu="back">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 12L22 12" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+          <path d="M8 18L2 12" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+          <path d="M8 6L2 12" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <ul class="w-full flex flex-col gap-3 items-start justify-center">
+        <li class="w-full leading-[140%]">
+          <span href="#" class="flex items-center justify-between gap-2 text-lg font-semibold text-white"
+            data-menu="dropdown-btn">
+            Шкафы управления
+            вентиляцией
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 11.5L12 15.5L8 11.5" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+          <div data-menu="dropdown-list" class="pt-3">
+            <ul class="flex flex-col items-start gap-3">
+              <li class="leading-[140%]">
+                <a href="#" class="text-[15px] text-[#FFFFFFCC]">
+                  Шкафы управления вентиляцией по техническому заданию
+                </a>
+              </li>
+              <li class="leading-[140%]">
+                <a href="#" class="text-[15px] text-[#FFFFFFCC]">
+                  Шкафы управления приточной вентиляцией
+                </a>
+              </li>
+              <li class="leading-[140%]">
+                <a href="#" class="text-[15px] text-[#FFFFFFCC]">
+                  Шкафы управления приточно-вытяжной вентиляцией
+                </a>
+              </li>
+              <li class="leading-[140%]">
+                <a href="#" class="text-[15px] text-[#FFFFFFCC]">
+                  Шкафы управления вентилятором
+                  Стоимость шкафа автоматики для вентиляции за 2 минуты
+                  Документация
+                </a>
+              </li>
+            </ul>
+            <ul class="flex flex-col items-start gap-3 pt-4 mt-4 border-t-[1px] border-[#FFFFFF33]">
+              <li class="leading-[140%]">
+                <a href="#" class="text-[15px] text-[#FFFFFFCC]">
+                  OEM-производство
+                </a>
+              </li>
+              <li class="leading-[140%]">
+                <a href="#" class="text-[15px] text-[#FFFFFFCC]">
+                  Калькулятор шкафов управления вентиляцией
+                </a>
+              </li>
+              <li class="leading-[140%]">
+                <a href="#" class="text-[15px] text-white">
+                  НОВИНКИ
+                </a>
+              </li>
+              <li class="leading-[140%]">
+                <a href="#" class="text-[15px] text-white">
+                  ZENTEC
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Шкафы управления вентиляцией</a>
+        </li>
+        <li class="leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Шкафы пожарной автоматики</a>
+        </li>
+        <li class="leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Шкафы управления тепловыми завесами</a>
+        </li>
+        <li class="leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Шкафы диспетчеризации и SCADA</a>
+        </li>
+        <li class="leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Автоматика для вентиляции</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>;
   <main>
-    <section class="relative overflow-hidden pt-[166px] pb-[218px] mt-[-32px] mb-[-24px] 
-      lg:pt-35 lg:pb-30 lg:mb-0 lg:mt-[-70px] md:pb-0 md:pt-[146px] md:mt-[-20px]">
+    <section class="relative overflow-hidden pt-[196px] pb-[218px] mt-[-50px] mb-[-24px] 
+      lg:pt-35 lg:pb-30 lg:mb-0 lg:mt-[-70px] md:pb-0 md:pt-[146px] md:mt-[-50px]">
       <picture class="absolute top-0 left-0 size-full md:h-[350px]">
         <img src="./img/hero/bg.png" alt="Баннер" class="size-full object-cover">
       </picture>

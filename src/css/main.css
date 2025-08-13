@@ -164,3 +164,11 @@
 [data-catalog-block="content"].is-open {
   display: flex;
 }
+
+[data-menu="dropdown-btn"].is-active svg {
+  transform: rotate(180deg);
+}
+
+[data-menu="menu"].is-open {
+  transform: translateX(0) !important;
+}
