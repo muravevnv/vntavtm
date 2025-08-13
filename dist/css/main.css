@@ -849,6 +849,9 @@
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
   }
+  .py-16 {
+    padding-block: calc(var(--spacing) * 16);
+  }
   .py-\[5px\] {
     padding-block: 5px;
   }
@@ -881,9 +884,6 @@
   }
   .pt-\[54px\] {
     padding-top: 54px;
-  }
-  .pt-\[62px\] {
-    padding-top: 62px;
   }
   .pt-\[66px\] {
     padding-top: 66px;
@@ -1721,11 +1721,6 @@
       gap: calc(var(--spacing) * 10);
     }
   }
-  .lg\:gap-\[6px\] {
-    @media (max-width: 1023px) {
-      gap: 6px;
-    }
-  }
   .lg\:gap-\[10px\] {
     @media (max-width: 1023px) {
       gap: 10px;
@@ -1803,6 +1798,11 @@
       padding-inline: calc(var(--spacing) * 10);
     }
   }
+  .lg\:py-10 {
+    @media (max-width: 1023px) {
+      padding-block: calc(var(--spacing) * 10);
+    }
+  }
   .lg\:py-15 {
     @media (max-width: 1023px) {
       padding-block: calc(var(--spacing) * 15);
@@ -1826,11 +1826,6 @@
   .lg\:pt-6 {
     @media (max-width: 1023px) {
       padding-top: calc(var(--spacing) * 6);
-    }
-  }
-  .lg\:pt-10 {
-    @media (max-width: 1023px) {
-      padding-top: calc(var(--spacing) * 10);
     }
   }
   .lg\:pt-15 {
