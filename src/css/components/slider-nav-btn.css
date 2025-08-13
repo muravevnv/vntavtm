@@ -1,5 +1,5 @@
 .slider-nav-btn {
-  @apply hidden lg:flex absolute top-20 z-10 rounded-full items-center justify-center size-10 bg-white shadow-md;
+  @apply flex rounded-full items-center justify-center size-10 text-[#323338] bg-white shadow-md cursor-pointer hover:bg-[#3B8BEA] hover:text-white transition-all;
 }
 
 .slider-prev {

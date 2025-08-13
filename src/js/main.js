@@ -42,15 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         768: {
           slidesPerView: 4,
-          centeredSlides: true,
-          initialSlide: 2,
         },
         1024: {
           slidesPerView: 5,
-          centeredSlides: false,
-          allowTouchMove: false,
-          initialSlide: 0,
-          loop: false,
         },
       },
     });
