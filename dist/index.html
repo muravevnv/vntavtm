@@ -25,7 +25,7 @@
       </div>
       <div class="flex items-center gap-8 md:hidden">
         <a href="#"
-          class="text-[14px] leading-[140%] text-gray-500 font-semibold xl:hidden hover:underline transition-all">Документы</a>
+          class="text-[14px] leading-[140%] text-gray-500 font-semibold xl:hidden hover:text-[#323338] transition-all">Документы</a>
         <div
           class="flex items-center gap-6 text-[14px] xl:gap-[10px] lg:text-[11px] md:text-[10px] md:gap-4 sm:flex-wrap">
           <div class="flex items-center gap-2 xl:gap-1">
@@ -1674,7 +1674,7 @@
             </div>
           </a>
         </div>
-        <div class="mt-6 p-6 rounded-3xl bg-primary text-white flex items-start 
+        <div data-request="form" class="mt-6 p-6 rounded-3xl bg-primary text-white flex items-start 
           lg:flex-col lg:gap-6 md:rounded-none md:w-[calc(100% + 48px)] md:mt-8 md:-mx-6 md:py-8 md:px-6">
           <div class="flex flex-col gap-[10px] items-start w-[34%] pr-4 lg:w-full">
             <h3 class="text-2xl font-semibold md:text-base">Получайте статьи по e-mail</h3>
@@ -1692,7 +1692,7 @@
                 </div>
                 <span class="hidden text-xs text-[#F55353] mt-[6px]">Обязательное поле для заполнения</span>
               </div>
-              <button
+              <button type="button" data-request="btn"
                 class="w-[305px] shrink-0 bg-[#323338] inline-flex items-center justify-center p-5 
                 rounded-2xl text-white font-semibold lg:w-auto lg:px-10 md:w-full cursor-pointer hover:bg-[#050506] transition-all">
                 <span>Подписаться</span>
@@ -1703,6 +1703,18 @@
             </div>
           </div>
         </div>
+        <div data-request="complete" class="hidden relative mt-6 p-6 pl-[132px] min-h-[150px] rounded-3xl bg-primary text-white
+          lg:py-8 lg:px-6 md:w-[calc(100% + 48px)] md:mt-8 md:-mx-6 md:py-6 md:px-6 md:rounded-none">
+          <div class="flex items-center mb-3 lg:gap-6 lg:mb-6 md:flex-col md:items-start md:mb-4">
+            <img src="./img/icons/complete.svg" class="absolute top-[50%] left-6 translate-y-[-50%] lg:static lg:translate-y-0 lg:size-16 md:size-18">
+            <h3 class="text-2xl font-semibold leading-[140%] lg:max-w-[320px] md:text-lg">Почти готово — подтвердите подписку</h3>
+          </div>
+          <div class="text-[15px] leading-[140%] font-medium mb-4 md:mb-15">
+            Зайдите в свою почту, откройте наше письмо и нажмите «Подтвердить подписку». Без этого мы не сможем отправлять вам новые статьи.
+          </div>
+          <div class="text-xs text-[#FFFFFFE5]">Не видите письмо? Проверьте «Спам» или «Промоакции».</div>
+        </div> 
+
         <div
           class="mt-[66px] text-[17px] leading-[160%] text-[#5A5B5F] font-medium lg:mt-15 lg:text-[15px] lg:leading-[140%] md:mt-8 md:text-sm">
           «ВентАвтоматика» — отечественная компания, специализирующаяся на производстве щитов управления вентиляцией.

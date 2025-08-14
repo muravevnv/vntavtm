@@ -154,4 +154,9 @@ document.addEventListener("DOMContentLoaded", () => {
     $('[data-menu="menu-content"]').addClass('translate-x-[-100%]');
   })
 
+  $('[data-request="btn"]').on('click', () => {
+    $('[data-request="complete"]').removeClass('hidden');
+    $('[data-request="form"]').addClass('hidden');
+  })
+
 });
