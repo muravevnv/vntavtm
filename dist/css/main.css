@@ -973,6 +973,9 @@
   .py-\[10px\] {
     padding-block: 10px;
   }
+  .py-\[66px\] {
+    padding-block: 66px;
+  }
   .pt-2 {
     padding-top: calc(var(--spacing) * 2);
   }
@@ -2030,9 +2033,9 @@
       padding-block: calc(var(--spacing) * 10);
     }
   }
-  .lg\:py-\[50px\] {
+  .lg\:py-15 {
     @media (max-width: 1023px) {
-      padding-block: 50px;
+      padding-block: calc(var(--spacing) * 15);
     }
   }
   .lg\:py-\[60px\] {
@@ -2566,6 +2569,11 @@
   .md\:px-6 {
     @media (max-width: 767px) {
       padding-inline: calc(var(--spacing) * 6);
+    }
+  }
+  .md\:px-8 {
+    @media (max-width: 767px) {
+      padding-inline: calc(var(--spacing) * 8);
     }
   }
   .md\:py-3 {
