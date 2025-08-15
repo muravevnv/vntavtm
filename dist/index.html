@@ -59,20 +59,56 @@
   </div>
   <div class="bg-blue-500 text-white rounded-b-[24px]">
     <div class="max-w-[1234px] mx-auto flex items-center justify-between gap-8 py-4 px-8 md:gap-2">
-      <a href="#" class="relative block w-[130px] h-[40px] shrink-0 lg:w-[148px] lg:h-[40px] md:w-[133px] md:h-[38px] xs:w-[118px]">
+      <a href="#"
+        class="relative block w-[130px] h-[40px] shrink-0 lg:w-[148px] lg:h-[40px] md:w-[133px] md:h-[38px] xs:w-[118px]">
         <img src="./img/logo-white.svg" alt="" class="absolute min-w-[146px] h-[40px] left-[-17px] top-[-9px] 
         lg:relative lg:top-[-6px] lg:left-0 md:w-[116px] md:h-[38px] md:min-w-[138px] md:left-[-5px] xs:min-w-[118px]">
       </a>
-      <nav class="flex items-center gap-8 text-white leading-[140%] text-[16px] font-semibold xl:hidden">
-        <a href="#" class="hover:opacity-[0.6] transition-opacity">Продукция</a>
-        <a href="#" class="hover:opacity-[0.6] transition-opacity">О компании</a>
-        <a href="#" class="hover:opacity-[0.6] transition-opacity">Статьи</a>
-        <a href="#" class="hover:opacity-[0.6] transition-opacity">Как заказать</a>
-        <a href="#" class="hover:opacity-[0.6] transition-opacity">Контакты</a>
+      <nav class="xl:hidden">
+        <ul class="flex items-center gap-8 text-white leading-[140%] text-[16px] font-semibold">
+          <li class="leading-[140%] relative">
+            <a href="#" class="border-b-[1px] border-[transparent] hover:border-white">Продукция</a>
+            <ul
+              class="hidden absolute flex-col rounded-b-3xl items-start gap-6 top-[100%] mt-[25px] left-[-35px] bg-white text-black w-full p-4 min-w-[426px]">
+              <li>
+                <a href="#" class="hover:opacity-[0.6] transition-opacity">Шкафы управления вентиляцией</a>
+                <ul class="absolute left-[426px] top-0 h-full min-w-[554px] p-8 bg-[#F7F7FB] rounded-br-3xl">
+                  <li>
+                    <a href="#">Шкафы управления вентиляцией по техническому заданию</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="hover:opacity-[0.6] transition-opacity">Шкафы пожарной автоматики</a>
+              </li>
+              <li>
+                <a href="#" class="hover:opacity-[0.6] transition-opacity">Шкафы управления тепловыми завесами</a>
+              </li>
+              <li>
+                <a href="#" class="hover:opacity-[0.6] transition-opacity">Шкафы диспетчеризации и SCADA</a>
+              </li>
+              <li>
+                <a href="#" class="hover:opacity-[0.6] transition-opacity">Автоматика для вентиляции</a>
+              </li>
+            </ul>
+          </li>
+          <li class="leading-[140%]">
+            <a href="#" class="border-b-[1px] border-[transparent] hover:border-white">О компании</a>
+          </li>
+          <li class="leading-[140%]">
+            <a href="#" class="border-b-[1px] border-[transparent] hover:border-white">Статьи</a>
+          </li>
+          <li class="leading-[140%]">
+            <a href="#" class="border-b-[1px] border-[transparent] hover:border-white">Как заказать</a>
+          </li>
+          <li class="leading-[140%]">
+            <a href="#" class="border-b-[1px] border-[transparent] hover:border-white">Контакты</a>
+          </li>
+        </ul>
       </nav>
       <div class="flex items-center gap-8 xl:w-full md:w-auto md:justify-end">
         <div class="w-[306px] relative xl:w-full md:hidden">
-          <input type="text" class="
+          <input type="text" data-search="input" class="
             w-full 
             border-b-1 
             outline-none
@@ -85,6 +121,13 @@
             pr-[24px]
             placeholder:text-white
             " placeholder="Поиск по сайту" />
+          <button type="button" data-search="clear-btn" style="display: none;"
+            class="absolute top-[7px] right-6 flex items-center justify-center size-[23px] cursor-pointer">
+            <svg width="16" height="16" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.6665 1.66699L12.3332 12.3337" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M12.3332 1.66699L1.6665 12.3337" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
           <button type="button" class="absolute top-[7px] right-0 flex items-center justify-center size-[23px]">
             <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="10.5978" cy="11.0978" r="6.76769" stroke="white" style="stroke:white;stroke-opacity:1;"
@@ -104,8 +147,7 @@
                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </a>
-          <a href="#"
-            class="flex items-center justify-center size-8 xs:size-6 hover:opacity-[0.6] transition-opacity">
+          <a href="#" class="flex items-center justify-center size-8 xs:size-6 hover:opacity-[0.6] transition-opacity">
             <svg class="w-full h-auto" width="32" height="32" viewBox="0 0 32 32" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M7.95889 8.83398L7.06956 4.83398H4.49756" stroke="white" style="stroke:white;stroke-opacity:1;"
@@ -124,8 +166,7 @@
                 stroke-linejoin="round" />
             </svg>
           </a>
-          <a href="#"
-            class="flex items-center justify-center size-8 xs:size-6 hover:opacity-[0.6] transition-opacity">
+          <a href="#" class="flex items-center justify-center size-8 xs:size-6 hover:opacity-[0.6] transition-opacity">
             <svg class="w-full h-auto" width="32" height="32" viewBox="0 0 32 32" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -134,7 +175,8 @@
             </svg>
           </a>
           <a href="#"
-            class="items-center justify-center size-8 xs:size-6 hidden xl:flex hover:opacity-[0.6] transition-opacity" data-menu="open-btn">
+            class="items-center justify-center size-8 xs:size-6 hidden xl:flex hover:opacity-[0.6] transition-opacity"
+            data-menu="open-btn">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 16H25M7 10H25M7 22H25" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round" />
@@ -165,14 +207,14 @@
     </div>
     <div class="w-full" data-menu="main">
       <ul class="w-full flex flex-col items-start justify-center gap-5">
-        <li class="w-full flex items-center justify-between leading-[140%]">
+        <li class="w-full flex items-center justify-between leading-[140%]" data-menu="section-link">
           <a href="#" class="text-lg font-semibold text-white">Продукция</a>
-          <button type="button" class="size-6 flex items-center justify-center" data-menu="section-link">
+          <span class="size-6 flex items-center justify-center">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11 8L15 12L11 16" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"
                 stroke-linejoin="round" />
             </svg>
-          </button>
+          </span>
         </li>
         <li class="flex items-center leading-[140%]">
           <a href="#" class="text-lg font-semibold text-white">О компании</a>
@@ -314,16 +356,17 @@
       <picture class="absolute top-0 left-0 size-full md:h-[350px]">
         <img src="./img/hero/bg.png" alt="Баннер" class="size-full object-cover">
       </picture>
-      <picture
-        class="absolute max-w-[1400px] right-[10%] top-[14px] 3xl:right-0 2xl:right-[-20%] lg:max-w-[1000px] lg:top-[54px] lg:right-[-20%] md:max-w-none md:right-[-180px] md:min-w-[790px] md:top-[10px]">
-        <img src="./img/hero/main-img.png" alt="">
-      </picture>
       <div class="my-container relative z-1 md:px-0">
-        <h1 class="max-w-[711px] text-[46px] leading-[130%] mb-6 text-white font-semibold multi-layer-text-shadow
+        <picture
+          class="absolute z-0 max-w-[1580px] right-[-490px] top-[-165px] lg:max-w-[1100px] lg:top-[-120px] lg:right-[-30%] md:max-w-none md:right-[-180px] md:min-w-[790px] md:top-[-120px]">
+          <img src="./img/hero/main-img.png" alt="">
+        </picture>
+        <h1 class="relative z-1 max-w-[711px] text-[46px] leading-[130%] mb-6 text-white font-semibold multi-layer-text-shadow
         lg:max-w-[454px] lg:text-[32px] lg:leading-[130%]
-        md:text-[28px] md:leading-[120%] md:px-6 md:mb-12">Стоимость шкафа автоматики для&nbsp;вентиляции за&nbsp;2&nbsp;минуты</h1>
+        md:text-[28px] md:leading-[120%] md:px-6 md:mb-12">Стоимость шкафа автоматики для&nbsp;вентиляции
+          за&nbsp;2&nbsp;минуты</h1>
         <div
-          class="max-w-[639px] pt-4 pb-6 pr-4 pl-6 rounded-3xl bg-white lg:max-w-[611px] 
+          class="relative z-1 max-w-[639px] pt-4 pb-6 pr-4 pl-6 rounded-3xl bg-white lg:max-w-[611px] 
           md:max-w-full md:w-full md:rounded-b-[0px] md:rounded-t-2xl md:px-6 md:py-8 md:border-b-[1px] border-[#D6D6D7]">
           <div class="flex gap-6 lg:gap-4 md:flex-col">
             <div class="text-[17px] pt-2  font-medium md:w-full md:leading-[130%] md:pt-0">
@@ -452,7 +495,8 @@
               class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group
               hover:[box-shadow:0px_2px_3px_0px_#8B99A21A,0px_6px_6px_0px_#8B99A217,0px_14px_8px_0px_#8B99A20D,0px_24px_10px_0px_#8B99A203,0px_38px_11px_0px_#8B99A200]"
               data-catalog-block="block">
-              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]">
+              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]"
+                data-catalog-block="toggle-btn">
                 <div class="flex flex-col items-start justify-between h-auto self-stretch">
                   <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
                     Щиты управления вентиляцией
@@ -469,8 +513,7 @@
                     </svg>
                   </a>
                   <button type="button"
-                    class="hidden lg:size-11 lg:bg-[#3B8BEA] lg:text-white lg:rounded-lg lg:flex lg:items-center lg:justify-center"
-                    data-catalog-block="toggle-btn">
+                    class="hidden lg:size-11 lg:bg-[#3B8BEA] lg:text-white lg:rounded-lg lg:flex lg:items-center lg:justify-center">
                     <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M16 11.5L12 15.5L8 11.5" stroke="white" style="stroke:white;stroke-opacity:1;"
                         stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -535,7 +578,8 @@
               class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group
               hover:[box-shadow:0px_2px_3px_0px_#8B99A21A,0px_6px_6px_0px_#8B99A217,0px_14px_8px_0px_#8B99A20D,0px_24px_10px_0px_#8B99A203,0px_38px_11px_0px_#8B99A200]"
               data-catalog-block="block">
-              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]">
+              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]"
+                data-catalog-block="toggle-btn">
                 <div class="flex flex-col items-start justify-between self-stretch h-auto">
                   <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
                     Щиты управления вентиляцией
@@ -552,8 +596,7 @@
                     </svg>
                   </a>
                   <button type="button"
-                    class="hidden lg:size-11 lg:bg-[#3B8BEA] lg:text-white lg:rounded-lg lg:flex lg:items-center lg:justify-center"
-                    data-catalog-block="toggle-btn">
+                    class="hidden lg:size-11 lg:bg-[#3B8BEA] lg:text-white lg:rounded-lg lg:flex lg:items-center lg:justify-center">
                     <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M16 11.5L12 15.5L8 11.5" stroke="white" style="stroke:white;stroke-opacity:1;"
                         stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -661,7 +704,8 @@
               class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group
               hover:[box-shadow:0px_2px_3px_0px_#8B99A21A,0px_6px_6px_0px_#8B99A217,0px_14px_8px_0px_#8B99A20D,0px_24px_10px_0px_#8B99A203,0px_38px_11px_0px_#8B99A200]"
               data-catalog-block="block">
-              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]">
+              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]"
+                data-catalog-block="toggle-btn">
                 <div class="flex flex-col items-start justify-between self-stretch h-auto">
                   <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
                     Датчики
@@ -678,8 +722,7 @@
                     </svg>
                   </a>
                   <button type="button"
-                    class="hidden lg:size-11 lg:bg-[#3B8BEA] lg:text-white lg:rounded-lg lg:flex lg:items-center lg:justify-center"
-                    data-catalog-block="toggle-btn">
+                    class="hidden lg:size-11 lg:bg-[#3B8BEA] lg:text-white lg:rounded-lg lg:flex lg:items-center lg:justify-center">
                     <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M16 11.5L12 15.5L8 11.5" stroke="white" style="stroke:white;stroke-opacity:1;"
                         stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -1388,51 +1431,53 @@
         <div class="relative overflow-hidden lg:overflow-visible" data-slider="our-clients">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a href="#" class="client-logo-card">
+              <div class="client-logo-card">
                 <img src="./img/clients/client-01.png" alt="">
-              </a>
+              </div>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="client-logo-card">
+              <div class="client-logo-card">
                 <img src="./img/clients/client-02.png" alt="">
-              </a>
+              </div>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="client-logo-card">
+              <div class="client-logo-card">
                 <img src="./img/clients/client-03.png" alt="">
-              </a>
+              </div>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="client-logo-card">
+              <div class="client-logo-card">
                 <img src="./img/clients/client-04.png" alt="">
-              </a>
+              </div>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="client-logo-card">
+              <div class="client-logo-card">
                 <img src="./img/clients/client-05.png" alt="">
-              </a>
+              </div>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="client-logo-card">
+              <div class="client-logo-card">
                 <img src="./img/clients/client-01.png" alt="">
-              </a>
+              </div>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="client-logo-card">
+              <div class="client-logo-card">
                 <img src="./img/clients/client-02.png" alt="">
-              </a>
+              </div>
             </div>
           </div>
           <button type="button" class="slider-nav-btn slider-prev absolute z-2 top-[50%] translate-y-[-50%]"
             data-slider-prev="our-clients">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path d="M11 8L15 12L11 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M11 8L15 12L11 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
             </svg>
           </button>
           <button type="button" class="slider-nav-btn slider-next absolute z-2 top-[50%] translate-y-[-50%]"
             data-slider-next="our-clients">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path d="M13 16L9 12L13 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M13 16L9 12L13 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
             </svg>
           </button>
         </div>
@@ -1481,14 +1526,14 @@
               data-video="player" playsinline>
               <source src="https://videos.pexels.com/video-files/14894140/14894140-uhd_2560_1440_30fps.mp4">
             </video>
-            <button type="button" data-video="play-btn" class="flex items-center justify-center size-[98px] bg-white 
-              text-[#3B8BEA] rounded-[50%] z-1 hover:bg-[#3B8BEA] hover:text-white transition-all cursor-pointer">
-              <svg class="relative left-[4px]" width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M23.506 12.7924C24.3871 13.3291 24.3871 14.6709 23.506 15.2076L2.81599 27.8111C1.93484 28.3478 0.833496 27.6769 0.833496 26.6035V1.39664C0.833496 0.323176 1.93484 -0.347843 2.81599 0.188888L23.506 12.7924Z"
-                  fill="currentColor" />
-              </svg>
-            </button>
+            <span data-video="play-icon"
+              class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex items-center justify-center size-[98px]">
+              <img src="./img/icons/play.svg">
+            </span>
+            <span style="display: none;" data-video="pause-icon"
+              class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex items-center justify-center size-[98px]">
+              <img src="./img/icons/pause.svg">
+            </span>
           </div>
         </div>
         <div
@@ -1580,11 +1625,12 @@
     </section>
     <section class="py-14 lg:py-[60px] lg:pt-[50px] md:py-6">
       <div class="my-container">
-        <div class="flex items-center justify-between lg:items-end mb-8 lg:mb-6 md:mb-6">
+        <div class="flex items-end justify-between mb-8 lg:mb-6 md:mb-6">
           <h2 class="text-[34px] leading-[130%] text-primary font-bold lg:text-[30px] md:text-2xl">
             Последние статьи
           </h2>
-          <a href="#" class="text-lg flex items-center font-semibold text-[#323338CC] hover:text-[#3B8BEA] transition-color">
+          <a href="#"
+            class="text-lg flex items-center font-semibold text-[#323338CC] hover:text-[#3B8BEA] transition-color">
             <span class="text-current font-semibold md:hidden">Смотреть все статьи</span>
             <span class="hidden md:inline">Все</span>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1607,16 +1653,14 @@
                 Как управляем — контактором или твердотельными реле?
               </div>
               <div class="relative z-1 flex items-center justify-between">
-                <span class="md:text-sm group-hover:text-[#3B8BEA]">Читать далее</span>
+                <span class="md:text-sm group-hover:text-[#3B8BEA] font-medium transition-color">Читать далее</span>
                 <span class="text-[#FFFFFFCC] md:text-xs">11 апреля 2025</span>
-                <div class="size-11 bg-primary text-white rounded-lg flex items-center justify-center">
+                <div
+                  class="size-11 bg-primary text-white rounded-lg flex items-center justify-center transition-all group-hover:bg-white group-hover:text-[#3B8BEA]">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                    <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
-                    <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                      stroke-linecap="square" stroke-linejoin="round" />
+                    <path d="M18.75 12L4.5 12" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round" />
+                    <path d="M15 16.5L19.5 12" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round" />
+                    <path d="M15 7.5L19.5 12" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round" />
                   </svg>
                 </div>
               </div>
@@ -1634,7 +1678,7 @@
             </div>
             <div class="flex items-center justify-between">
               <span class="text-lg leading-[140%] font-semibold text-primary md:text-sm">Читать далее</span>
-              <span class="text-[17px] leading-[140%] text-[#5A5B5F] md:text-xs">18 февраля 2025</span>
+              <span class="text-[17px] leading-[140%] text-[#5A5B5F] font-medium md:text-xs">18 февраля 2025</span>
               <div class="size-11 bg-primary text-white rounded-lg flex items-center justify-center">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
@@ -1660,7 +1704,7 @@
             </div>
             <div class="flex items-center justify-between">
               <span class="text-lg font-semibold text-primary md:text-sm">Читать далее</span>
-              <span class="text-[17px] text-[#5A5B5F] md:text-xs">18 февраля 2025</span>
+              <span class="text-[17px] leading-[140%] text-[#5A5B5F] font-medium md:text-xs">18 февраля 2025</span>
               <div class="size-11 bg-primary text-white rounded-lg flex items-center justify-center">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
@@ -1706,14 +1750,17 @@
         <div data-request="complete" class="hidden relative mt-6 p-6 pl-[132px] min-h-[150px] rounded-3xl bg-primary text-white
           lg:py-8 lg:px-6 md:w-[calc(100% + 48px)] md:mt-8 md:-mx-6 md:py-6 md:px-6 md:rounded-none">
           <div class="flex items-center mb-3 lg:gap-6 lg:mb-6 md:flex-col md:items-start md:mb-4">
-            <img src="./img/icons/complete.svg" class="absolute top-[50%] left-6 translate-y-[-50%] lg:static lg:translate-y-0 lg:size-16 md:size-18">
-            <h3 class="text-2xl font-semibold leading-[140%] lg:max-w-[320px] md:text-lg">Почти готово — подтвердите подписку</h3>
+            <img src="./img/icons/complete.svg"
+              class="absolute top-[50%] left-6 translate-y-[-50%] lg:static lg:translate-y-0 lg:size-16 md:size-18">
+            <h3 class="text-2xl font-semibold leading-[140%] lg:max-w-[320px] md:text-lg">Почти готово — подтвердите
+              подписку</h3>
           </div>
           <div class="text-[15px] leading-[140%] font-medium mb-4 md:mb-15">
-            Зайдите в свою почту, откройте наше письмо и нажмите «Подтвердить подписку». Без этого мы не сможем отправлять вам новые статьи.
+            Зайдите в свою почту, откройте наше письмо и нажмите «Подтвердить подписку». Без этого мы не сможем
+            отправлять вам новые статьи.
           </div>
           <div class="text-xs text-[#FFFFFFE5]">Не видите письмо? Проверьте «Спам» или «Промоакции».</div>
-        </div> 
+        </div>
 
         <div
           class="mt-[66px] text-[17px] leading-[160%] text-[#5A5B5F] font-medium lg:mt-15 lg:text-[15px] lg:leading-[140%] md:mt-8 md:text-sm">
@@ -1734,15 +1781,15 @@
     <section class="pt-[66px] pb-[86px] -mb-6 bg-[#F4F6FB] md:pt-8 md:pb-10 md:-mb-2">
       <div class="my-container">
         <div class="grid grid-cols-3 gap-[25px] lg:grid-cols-1 lg:gap-6">
-          <a href="#"
-            class="flex flex-col items-center justify-between gap-8 px-8 py-6 rounded-[22px]
+          <a href="#" class="flex flex-col items-center justify-between gap-8 px-8 py-6 rounded-[22px]
              bg-white box-shadow-card lg:gap-6 md:px-4 md:py-5 group">
             <div class="flex flex-col items-center gap-1">
               <div class="flex items-center gap-2">
                 <img src="./img/icons/question.svg" class="size-[30px]" alt="">
                 <h3 class="font-semibold text-2xl leading-[140%] lg:text-[22px] md:text-lg">Вопрос</h3>
               </div>
-              <div class="text-[17px] text-center text-[#323338CC] px-4 lg:text-base md:text-[15px] md:px-0">Напишите нам — поможем
+              <div class="text-[17px] text-center text-[#323338CC] px-4 lg:text-base md:text-[15px] md:px-0">Напишите
+                нам — поможем
                 разобраться
               </div>
             </div>
@@ -1752,8 +1799,7 @@
               Задать вопрос
             </div>
           </a>
-          <a href="#"
-            class="flex flex-col items-center justify-between gap-8 px-8 py-6 rounded-[22px] 
+          <a href="#" class="flex flex-col items-center justify-between gap-8 px-8 py-6 rounded-[22px] 
             box-shadow-card bg-white lg:gap-6 md:px-4 md:py-5 group">
             <div class="flex flex-col items-center gap-1">
               <div class="flex items-center gap-2">
@@ -1770,8 +1816,7 @@
               Задать вопрос
             </div>
           </a>
-          <a href="#"
-            class="flex flex-col items-center justify-between gap-8 px-8 py-6 rounded-[22px] 
+          <a href="#" class="flex flex-col items-center justify-between gap-8 px-8 py-6 rounded-[22px] 
             box-shadow-card bg-white lg:gap-6 md:px-4 md:py-5 group">
             <div class="flex flex-col items-center gap-1">
               <div class="flex items-center gap-2">
@@ -1883,8 +1928,8 @@
               class="text-sm text-[#3B8BEA] font-semibold md:text-[13px] hover:underline">
               sale@ventavtomatica
             </a>
-            <a href="#" class="text-sm text-[#FFFFFFCC] md:text-[13px] hover:underline">г. Санкт-Петербург, ул.
-              Парковая, д.6, лит. А</a>
+            <div class="text-sm text-[#FFFFFFCC] md:text-[13px]">г. Санкт-Петербург, ул.
+              Парковая, д.6, лит. А</div>
           </div>
         </div>
         <div class="flex flex-col lg:justify-between lg:gap-[31px] md:gap-[28px]">
@@ -1962,7 +2007,7 @@
           </a>
         </div>
         <a href="#"
-          class="inline-flex items-center gap-2 bg-[#78859F] text-white text-sm font-semibold py-[10px] px-[18px] rounded-[10px]">
+          class="inline-flex items-center gap-2 bg-[#78859F] text-white text-sm font-semibold py-[10px] px-[18px] rounded-[10px] hover:bg-[#3B8BEA] hover:text-white transition-all">
           <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M7.53615 10.9017C6.65865 10.0242 5.99715 9.04173 5.55765 8.04498C5.46465 7.83423 5.5194 7.58748 5.68215 7.42473L6.2964 6.81048C6.79965 6.30723 6.79965 5.59548 6.36015 5.15598L5.47965 4.27623C4.8939 3.69048 3.9444 3.69048 3.35865 4.27623L2.86965 4.76448C2.3139 5.32023 2.08215 6.12198 2.23215 6.91698C2.60265 8.87673 3.74115 11.0225 5.5779 12.8592C7.41465 14.696 9.5604 15.8345 11.5202 16.205C12.3152 16.355 13.1169 16.1232 13.6727 15.5675L14.1609 15.0792C14.7467 14.4935 14.7467 13.544 14.1609 12.9582L13.2812 12.0785C12.8417 11.639 12.1292 11.639 11.6904 12.0785L11.0132 12.7565C10.8504 12.9192 10.6037 12.974 10.3929 12.881C9.39615 12.4407 8.41365 11.7785 7.53615 10.9017Z"
