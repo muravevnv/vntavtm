@@ -110,6 +110,8 @@ document.addEventListener("DOMContentLoaded", () => {
     $('[data-menu="menu-content"]').addClass("translate-x-[-100%]");
     $sectionMenu.hide();
     $mainMenu.show().css("opacity", 0).animate({ opacity: 1 }, 150);
+    $('[data-menu="dropdown-list"]').slideUp(300);
+    $('[data-menu="dropdown-btn"]').removeClass("is-active");
   });
 
   $('[data-request="btn"]').on("click", () => {
@@ -197,5 +199,86 @@ document.addEventListener("DOMContentLoaded", () => {
   // Обработка окончания видео
   $video.on("ended", function () {
     $playIcon.show();
+  });
+});
+
+$(document).ready(function () {
+  const $dropdownParents = $('[data-header="dropdown-parent"]');
+  const $dropdownMenus = $('[data-header="dropdown-menu"]');
+  const $dropdownSubparents = $('[data-header="dropdown-subparent"]');
+  const $dropdownSubmenus = $('[data-header="dropdown-submenu"]');
+
+  let hideTimeout;
+  const delay = 200; // Задержка перед скрытием меню
+
+  // Функция для скрытия всех меню
+  function hideAllMenus() {
+    $dropdownMenus.addClass("opacity-0 pointer-events-none");
+    $dropdownSubmenus.addClass("opacity-0 pointer-events-none");
+  }
+
+  // Обработчики для меню первого уровня
+  $dropdownParents.each(function () {
+    const $parent = $(this);
+    const $menu = $parent.find('[data-header="dropdown-menu"]');
+
+    $parent.on("mouseenter", function () {
+      clearTimeout(hideTimeout);
+      hideAllMenus();
+      $menu.removeClass("opacity-0 pointer-events-none");
+    });
+
+    $parent.on("mouseleave", function () {
+      hideTimeout = setTimeout(function () {
+        $menu.addClass("opacity-0 pointer-events-none");
+      }, delay);
+    });
+
+    $menu.on("mouseenter", function () {
+      clearTimeout(hideTimeout);
+    });
+
+    $menu.on("mouseleave", function () {
+      hideTimeout = setTimeout(function () {
+        $menu.addClass("opacity-0 pointer-events-none");
+      }, delay);
+    });
+  });
+
+  // Обработчики для меню второго уровня
+  $dropdownSubparents.each(function () {
+    const $subparent = $(this);
+    const $submenu = $subparent.find('[data-header="dropdown-submenu"]');
+    const $menu = $subparent.closest('[data-header="dropdown-menu"]');
+
+    $subparent.on("mouseenter", function () {
+      clearTimeout(hideTimeout);
+      $submenu.removeClass("opacity-0 pointer-events-none");
+
+      // Добавляем padding-right к меню второго уровня
+      $menu.css("padding-right", "554px");
+
+      // Устанавливаем минимальную высоту меню второго уровня равной высоте подменю
+      const submenuHeight = $submenu[0].scrollHeight;
+      $menu.css("min-height", submenuHeight +  "px");
+    });
+
+    $subparent.on("mouseleave", function () {
+      hideTimeout = setTimeout(function () {
+        $submenu.addClass("opacity-0 pointer-events-none");
+        $menu.css({ "padding-right": "", "min-height": "" });
+      }, delay);
+    });
+
+    $submenu.on("mouseenter", function () {
+      clearTimeout(hideTimeout);
+    });
+
+    $submenu.on("mouseleave", function () {
+      hideTimeout = setTimeout(function () {
+        $submenu.addClass("opacity-0 pointer-events-none");
+        $menu.css({ "padding-right": "", "min-height": "" });
+      }, delay);
+    });
   });
 });

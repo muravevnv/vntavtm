@@ -49,32 +49,107 @@
         lg:relative lg:top-[-6px] lg:left-0 md:w-[116px] md:h-[38px] md:min-w-[138px] md:left-[-5px] xs:min-w-[118px]">
       </a>
       <nav class="xl:hidden">
-        <ul class="flex items-center gap-8 text-white leading-[140%] text-[16px] font-semibold">
-          <li class="leading-[140%] relative">
-            <a href="#" class="border-b-[1px] border-[transparent] hover:border-white">Продукция</a>
-            <ul
-              class="hidden absolute flex-col rounded-b-3xl items-start gap-6 top-[100%] mt-[25px] left-[-35px] bg-white text-black w-full p-4 min-w-[426px]">
-              <li>
-                <a href="#" class="hover:opacity-[0.6] transition-opacity">Шкафы управления вентиляцией</a>
-                <ul class="absolute left-[426px] top-0 h-full min-w-[554px] p-8 bg-[#F7F7FB] rounded-br-3xl">
-                  <li>
-                    <a href="#">Шкафы управления вентиляцией по техническому заданию</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="hover:opacity-[0.6] transition-opacity">Шкафы пожарной автоматики</a>
-              </li>
-              <li>
-                <a href="#" class="hover:opacity-[0.6] transition-opacity">Шкафы управления тепловыми завесами</a>
-              </li>
-              <li>
-                <a href="#" class="hover:opacity-[0.6] transition-opacity">Шкафы диспетчеризации и SCADA</a>
-              </li>
-              <li>
-                <a href="#" class="hover:opacity-[0.6] transition-opacity">Автоматика для вентиляции</a>
-              </li>
-            </ul>
+        <ul class="flex items-center gap-8 text-white leading-[140%] text-[16px] font-semibold ">
+          <li class="leading-[140%] relative" data-header="dropdown-parent">
+            <a href="#" class="border-b-[1px] border-[transparent] hover:border-white"
+              data-header="dropdown-link">Продукция</a>
+            <div data-header="dropdown-menu"
+              class="overflow-hidden opacity-0 pointer-events-none absolute top-[100%] left-[-35px] mt-[25px] bg-white rounded-b-3xl min-w-[426px]
+              shadow-[0px_2px_3px_0px_#0000001A,0px_6px_6px_0px_#00000017,-1px_14px_8px_0px_#0000000D,-1px_24px_10px_0px_#00000003,-2px_38px_11px_0px_#00000000]">
+              <ul class="flex flex-col p-8 items-start gap-6 text-black w-full min-w-[426px]">
+                <li class="w-full group" data-header="dropdown-subparent">
+                  <a href="#" class="text-[#78859F] text-lg font-semibold hover:text-[#3B8BEA]"
+                    data-header="dropdown-sublink">Шкафы
+                    управления вентиляцией</a>
+                  <div
+                    class="pointer-events-none opacity-0 min-w-[554px] absolute left-[426px] top-0 rounded-br-3xl bg-[#F7F7FB]"
+                    data-header="dropdown-submenu">
+                    <ul class=" flex flex-col gap-6 h-full p-8">
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#78859F] font-medium">
+                          Шкафы управления вентиляцией по техническому заданию
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#78859F] font-medium">
+                          Шкафы управления приточной вентиляцией
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#78859F] font-medium">
+                          Шкафы управления приточно-вытяжной вентиляцией
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#78859F] font-medium">
+                          Шкафы управления вентилятором
+                        </a>
+                      </li>
+                      <li class="block w-full h-[1px] border-b-[1px] border-[#D0D0D4]">
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#78859F] font-semibold">
+                          OEM-производство
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#5A5B5F] font-semibold">
+                          Калькулятор шкафов управления вентиляцией
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#FD5D5D] font-bold uppercase">
+                          НОВИНКИ
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#3B8BEA] font-bold uppercase">
+                          ZENTEC
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="text-[#78859F] text-lg font-semibold hover:text-[#3B8BEA]">Шкафы пожарной
+                    автоматики</a>
+                </li>
+                <li>
+                  <a href="#" class="text-[#78859F] text-lg font-semibold hover:text-[#3B8BEA]">Шкафы управления
+                    тепловыми завесами</a>
+                </li>
+                <li>
+                  <a href="#" class="text-[#78859F] text-lg font-semibold hover:text-[#3B8BEA]">Шкафы диспетчеризации и
+                    SCADA</a>
+                </li>
+                <li data-header="dropdown-subparent">
+                  <a href="#" class="text-[#78859F] text-lg font-semibold hover:text-[#3B8BEA]" data-header="dropdown-sublink">Автоматика для
+                    вентиляции
+                  </a>
+                  <div
+                    class="pointer-events-none opacity-0 min-w-[554px] h-full absolute left-[426px] top-0 rounded-br-3xl bg-[#F7F7FB]"
+                    data-header="dropdown-submenu">
+                    <ul class=" flex flex-col gap-6 h-full p-8">
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#78859F] font-medium">
+                          Щиты дымоудаления
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#78859F] font-medium">
+                          Щиты подпора воздуха
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#78859F] font-medium">
+                          Щиты управления клапанами
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="leading-[140%]">
             <a href="#" class="border-b-[1px] border-[transparent] hover:border-white">О компании</a>
@@ -102,14 +177,16 @@
             text-[14px] 
             leading-[140%]
             py-[8.5px]
-            pr-[24px]
+            pr-12
             placeholder:text-white
             " placeholder="Поиск по сайту" />
           <button type="button" data-search="clear-btn" style="display: none;"
             class="absolute top-[7px] right-6 flex items-center justify-center size-[23px] cursor-pointer">
             <svg width="16" height="16" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1.6665 1.66699L12.3332 12.3337" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M12.3332 1.66699L1.6665 12.3337" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M1.6665 1.66699L12.3332 12.3337" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M12.3332 1.66699L1.6665 12.3337" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
             </svg>
           </button>
           <button type="button" class="absolute top-[7px] right-0 flex items-center justify-center size-[23px]">
