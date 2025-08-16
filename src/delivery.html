@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Доставка и оплата</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/swiper-bundle.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="text-graphite">
+  @@include('header.html')
+  @@include('menu.html')
+  <main>
+    <section class="pt-[13px] lg:pt-3">
+      <div class="my-container">
+        <ul class="flex items-center gap-3">
+          <li class="flex items-center gap-3 text-sm leading-[140%] after:content-['/']">
+            <a href="#" class=" text-[#323338]">Главная</a>
+          </li>
+          <li class="flex items-center gap-3 text-sm leading-[140%]">
+            <a href="#" class=" text-[#323338B2]">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="pt-5 pb-[63px] lg:pt-6 lg:pb-[50px] md:pt-[18px] md:pb-8">
+      <div class="my-container">
+        <h1 class="text-[34px] leading-[130%] font-bold text-[#3B8BEA] mb-[31px] lg:text-[30px] lg:mb-6 md:text-2xl">
+          Доставка и оплата
+        </h1>
+        <div class="flex flex-col gap-[30px] lg:gap-6">
+          <h2 class="flex items-center gap-4 text-2xl text-[#78859F] font-semibold leading-[140%]">
+            <img src="./img/icons/delivery-box.svg" alt="">
+            Способы доставки
+          </h2>
+          <div class="flex items-stretch gap-10 bg-[#F4F6FB] rounded-3xl p-6 lg:flex-col lg:gap-6 md:p-4">
+            <div class="max-w-[466px] lg:max-w-full">
+              <h3 class="text-2xl leading-[130%] font-semibold mb-6 lg:text-[22px] md:text-lg">
+                Самовывоз со склада Санкт-Петергбурга
+              </h3>
+              <div class="flex flex-col gap-4">
+                <div class="text-[17px] leading-[140%] font-medium lg:max-w-[480px] md:text-[15px]">
+                  Санкт-Петербург, ст.м. "Московские ворота", ул. Парковая д.6, лит. А (офис), лит.И (склад)
+                </div>
+                <a href="#" class="text-[17px] leading-[140%] font-semibold text-[#3B8BEA]">Точка в Я.Навигаторе</a>
+                <div class="text-[17px] leading-[140%] font-medium lg:text-base md:text-[15px]">
+                  <span class="block text-[#323338B2] leading-[75%] mb-[6px]">Режим работы склада:</span>
+                  <p>пн-пт с 10.00 до 18.00</p>
+                </div>
+                <a href="#" class="text-[15px] font-medium text-[#5A5B5F] flex items-center gap-[10px]">
+                  <img src="./img/icons/pdf.svg" alt="">
+                  Схема проезда на склад
+                </a>
+              </div>
+            </div>
+            <div class="w-full lg:h-[280px] md:h-[295px]">
+              <div class="size-full overflow-hidden rounded-3xl" id="delivery-map"></div>
+            </div>
+          </div>
+          <div class="flex items-center gap-10 bg-[#F4F6FB] rounded-3xl p-6 lg:flex-col lg:gap-6">
+            <div class="max-w-[444px] flex flex-col items-start gap-4 lg:max-w-full">
+              <h3 class="text-2xl leading-[140%] font-semibold md:text-lg">
+                Доставка транспортными
+                компаниями
+              </h3>
+              <div class="text-[17px] leading-[140%] lg:text-base lg:leading-[138%] md:text-[15px]">
+                Мы отправляем заказы за счёт получателя выбранной вами транспортной компанией: СДЭК, ПЭК или Деловые
+                линии. Осуществляем доставку до терминала транспортной компании в Санкт-Петербурге бесплатно.
+              </div>
+            </div>
+            <div class="flex items-center gap-4 lg:w-full md:grid md:grid-cols-2">
+              <a href="#" class="w-full flex items-center justify-center overflow-hidden rounded-2xl">
+                <img src="./img/delivery/delivery-01.png" class="w-full" alt="СДЭК">
+              </a>
+              <a href="#" class="w-full flex items-center justify-center overflow-hidden rounded-2xl">
+                <img src="./img/delivery/delivery-02.png" class="w-full" alt="Деловые линии">
+              </a>
+              <a href="#" class="w-full flex items-center justify-center overflow-hidden rounded-2xl">
+                <img src="./img/delivery/delivery-03.png" class="w-full" alt="Яндекс Маркет">
+              </a>
+              <a href="#" class="w-full flex items-center justify-center overflow-hidden rounded-2xl">
+                <img src="./img/delivery/delivery-04.png" class="w-full" alt="ПЭК">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-[30px] mt-[46px] lg:gap-6 lg:mt-15 md:mt-8">
+          <h2 class="flex items-center gap-4 text-2xl text-[#78859F] font-semibold leading-[140%]">
+            <img src="./img/icons/cards.svg" alt="">
+            Как мы принимаем оплату
+          </h2>
+          <div class="self-start flex items-center gap-4 p-[15px] border-[1px] border-[#FD5D5D] rounded-2xl 
+            text-[17px] leading-[140%] text-[#FD5D5D] lg:text-base lg:w-full md:items-start">
+            <img src="./img/icons/alert.svg" class="shrink-0 size-8 lg:size-6 md:size-5 md:text-[15px]" alt="">
+            Работаем только с юр.лицами и ИП. Оплата по счету, 100% предоплата
+          </div>
+          <div class="grid grid-cols-3 gap-10 lg:flex lg:flex-col">
+            <div class="w-full">
+              <div class="relative flex items-start gap-[10px] p-4 min-h-[130px] bg-[#3B8BEA] text-white rounded-2xl lg:min-h-auto 
+              before:absolute before:size-6 before:top-[50%] before:-right-8 before:translate-y-[-50%] 
+              before:bg-[url('../img/icons/chevron-right-primary.svg')] before:bg-no-repeat before:bg-contain
+              lg:before:right-auto lg:before:translate-y-0 lg:before:translate-x-[-50%] lg:before:left-[50%] lg:before:top-auto lg:before:-bottom-8
+              lg:before:rotate-90">
+                <div class="flex items-center justify-center size-[30px] shrink-0 rounded-[10px] bg-white 
+              text-[#3B8BEA] text-lg leading-1 font-semibold">1</div>
+                <div class="flex flex-col items-start">
+                  <h3 class="text-lg leading-[140%] font-semibold mb-2 lg:text-base">Счёт в личном кабинете</h3>
+                  <div class="text-[15px] leading-[140%] md:text-sm">Формируется автоматически после оформления заказа.</div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full">
+              <div class="relative flex items-start gap-[10px] p-4 min-h-[130px] bg-[#3B8BEA] text-white rounded-2xl lg:min-h-auto 
+              before:absolute before:size-6 before:top-[50%] before:-right-8 before:translate-y-[-50%] 
+              before:bg-[url('../img/icons/chevron-right-primary.svg')] before:bg-no-repeat before:bg-contain
+              lg:before:right-auto lg:before:translate-y-0 lg:before:translate-x-[-50%] lg:before:left-[50%] lg:before:top-auto lg:before:-bottom-8
+              lg:before:rotate-90">
+                <div class="flex items-center justify-center size-[30px] shrink-0 rounded-[10px] bg-white 
+              text-[#3B8BEA] text-lg leading-1 font-semibold">2</div>
+                <div class="flex flex-col items-start">
+                  <h3 class="text-lg leading-[140%] font-semibold mb-2 lg:text-base">Резерв 3 дня</h3>
+                  <div class="text-[15px] leading-[140%] md:text-sm">Товар резервируем на 72 ч: неоплаченный счёт аннулируется.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full">
+              <div
+                class="flex items-start gap-[10px] p-4 min-h-[130px] bg-[#3B8BEA] text-white rounded-2xl lg:min-h-auto">
+                <div class="flex items-center justify-center size-[30px] shrink-0 rounded-[10px] bg-white 
+              text-[#3B8BEA] text-lg leading-1 font-semibold">3</div>
+                <div class="flex flex-col items-start">
+                  <h3 class="text-lg leading-[140%] font-semibold mb-2 lg:text-base">Отгрузка 3 рабочих дня</h3>
+                  <div class="text-[15px] leading-[140%] md:text-sm">После оплаты отправляем товар со склада, изделия «под заказ» —
+                    по готовности на производстве.</div>
+                </div>
+              </div>
+              <div class="mt-[10px] text-sm text-[#32333899] font-semibold leading-[140%]">
+                Документы: УПД, инструкции, паспорта на изделия — в отгрузке
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-[30px] lg:gap-6">
+            <div class="flex flex-col gap-4 bg-[#F4F6FB] rounded-3xl p-6 lg:gap-[22px] md:p-4 md:rounded-e-2xl">
+              <div class="text-lg leading-[140%] font-semibold">Реквизиты ООО "ГК Автоматика"</div>
+              <div class="grid grid-cols-4 gap-3 md:flex md:flex-col">
+                <div class="flex flex-col items-start">
+                  <div class="text-[#5A5B5F] text-[15px] leading-[140%] font-medium mb-1 md:text-[17px]">ИНН</div>
+                  <div class="text-lg font-semibold leading-[140%]">7810774157</div>
+                </div>
+                <div class="flex flex-col items-start">
+                  <div class="text-[#5A5B5F] text-[15px] leading-[140%] font-medium mb-1 md:text-[17px]">ОГРН</div>
+                  <div class="text-lg font-semibold leading-[140%]">1197847185876</div>
+                </div>
+                <div class="flex flex-col items-start">
+                  <div class="text-[#5A5B5F] text-[15px] leading-[140%] font-medium mb-1 md:text-[17px]">ОКПО</div>
+                  <div class="text-lg font-semibold leading-[140%]">41502050</div>
+                </div>
+                <div class="flex flex-col items-start">
+                  <div class="text-[#5A5B5F] text-[15px] leading-[140%] font-medium mb-1 md:text-[17px]">КПП</div>
+                  <div class="text-lg font-semibold leading-[140%]">781001001</div>
+                </div>
+              </div>
+              <a href="#" class="text-[15px] font-medium text-[#5A5B5F] flex items-center gap-[10px]">
+                <img src="./img/icons/pdf.svg" alt="">
+                Схема проезда на склад
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  @@include('footer.html')
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_api_ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/swiper-bundle.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/maps.js"></script>
+</body>
+
+</html>
