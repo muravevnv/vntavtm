@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/swiper-bundle.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="text-graphite">
+  <header class="font-sans relative z-10">
+  <div class="bg-white">
+    <div class="max-w-[1234px] mx-auto flex justify-between py-[10px] px-8 md:py-3">
+      <div class="flex items-center gap-2 md:hidden">
+        <div class="text-[14px] leading-[125%] font-bold lg:text-[11px]">
+          Производство систем автоматики для вентиляции
+        </div>
+        <div class="text-[11px] opacity-[0.7] text-graphite-200 xl:hidden">Поставки по России и СНГ</div>
+      </div>
+      <div class="flex items-center gap-8 md:hidden">
+        <a href="#"
+          class="text-[14px] leading-[140%] text-gray-500 font-semibold xl:hidden hover:text-[#323338] transition-all">Документы</a>
+        <div
+          class="flex items-center gap-6 text-[14px] xl:gap-[10px] lg:text-[11px] md:text-[10px] md:gap-4 sm:flex-wrap">
+          <div class="flex items-center gap-2 xl:gap-1">
+            <a href="#" class="leading-[140%] font-semibold text-primary hover:underline transition-all">
+              mail+536193488@ventavtomatika.ru
+            </a>
+            <button class="flex size-6 xl:size-[18px] md:size-4 cursor-pointer text-[#5A5B5F] hover:text-[#3B8BEA]">
+              <svg class="w-full h-auto" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect x="6.99805" y="6.99609" width="14.0058" height="14.0058" rx="2" stroke="currentColor"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M6.99825 17.0019H4.99742C3.89239 17.0019 2.99658 16.1061 2.99658 15.0011V4.99693C2.99658 3.8919 3.89239 2.99609 4.99742 2.99609H15.0016C16.1066 2.99609 17.0024 3.8919 17.0024 4.99693V6.99776"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <a href="#"
+            class="text-[14px] leading-[140%] font-semibold text-primary lg:text-[11px] md:text-[10px] hover:underline transition-all">+7 (800) 551-76-68</a>
+        </div>
+      </div>
+      <button class="hidden md:flex items-center gap-[10px] ml-auto leading-[140%] font-semibold text-[#3B8BEA]">
+        <svg width="23" height="23" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M21.0834 16.7144V19.5894C21.0845 19.8563 21.0298 20.1205 20.9229 20.3651C20.8159 20.6096 20.6591 20.8291 20.4624 21.0096C20.2658 21.19 20.0336 21.3274 19.7808 21.4129C19.5279 21.4984 19.26 21.5301 18.9942 21.5061C16.0453 21.1857 13.2126 20.178 10.7238 18.564C8.40829 17.0927 6.44515 15.1295 4.97379 12.814C3.35418 10.3139 2.34627 7.46748 2.0317 4.50528C2.00776 4.24026 2.03925 3.97317 2.12418 3.721C2.20912 3.46883 2.34563 3.2371 2.52502 3.04058C2.70442 2.84406 2.92277 2.68704 3.16617 2.57953C3.40957 2.47201 3.6727 2.41636 3.93879 2.41611H6.81379C7.27887 2.41153 7.72975 2.57623 8.08239 2.87949C8.43503 3.18276 8.66536 3.60391 8.73045 4.06444C8.8518 4.98451 9.07684 5.88789 9.40129 6.75736C9.53023 7.10037 9.55813 7.47315 9.4817 7.83154C9.40527 8.18992 9.2277 8.51888 8.97004 8.77944L7.75295 9.99652C9.1172 12.3958 11.1037 14.3823 13.503 15.7465L14.72 14.5294C14.9806 14.2718 15.3096 14.0942 15.6679 14.0178C16.0263 13.9413 16.3991 13.9693 16.7421 14.0982C17.6116 14.4226 18.515 14.6477 19.435 14.769C19.9006 14.8347 20.3257 15.0692 20.6296 15.4279C20.9335 15.7866 21.095 16.2445 21.0834 16.7144Z"
+            fill="#3B8BEA" style="fill:#3B8BEA;fill:color(display-p3 0.2314 0.5451 0.9176);fill-opacity:1;" />
+        </svg>
+        Позвонить
+      </button>
+    </div>
+  </div>
+  <div class="bg-blue-500 text-white rounded-b-[24px]">
+    <div class="max-w-[1234px] mx-auto flex items-center justify-between gap-8 py-4 px-8 md:gap-2">
+      <a href="#"
+        class="relative block w-[130px] h-[40px] shrink-0 lg:w-[148px] lg:h-[40px] md:w-[133px] md:h-[38px] xs:w-[118px]">
+        <img src="./img/logo-white.svg" alt="" class="absolute min-w-[146px] h-[40px] left-[-17px] top-[-9px] 
+        lg:relative lg:top-[-6px] lg:left-0 md:w-[116px] md:h-[38px] md:min-w-[138px] md:left-[-5px] xs:min-w-[118px]">
+      </a>
+      <nav class="xl:hidden">
+        <ul class="flex items-center gap-8 text-white leading-[140%] text-[16px] font-semibold ">
+          <li class="leading-[140%] relative" data-header="dropdown-parent">
+            <a href="#" class="border-b-[1px] border-[transparent] hover:border-white"
+              data-header="dropdown-link">Продукция</a>
+            <div data-header="dropdown-menu"
+              class="overflow-hidden opacity-0 pointer-events-none absolute top-[100%] left-[-35px] mt-[25px] bg-white rounded-b-3xl min-w-[426px]
+              shadow-[0px_2px_3px_0px_#0000001A,0px_6px_6px_0px_#00000017,-1px_14px_8px_0px_#0000000D,-1px_24px_10px_0px_#00000003,-2px_38px_11px_0px_#00000000]">
+              <ul class="flex flex-col p-8 items-start gap-6 text-black w-full min-w-[426px]">
+                <li class="w-full group" data-header="dropdown-subparent">
+                  <a href="#" class="text-[#78859F] text-lg font-semibold hover:text-[#3B8BEA]"
+                    data-header="dropdown-sublink">Шкафы
+                    управления вентиляцией</a>
+                  <div
+                    class="pointer-events-none opacity-0 min-w-[554px] absolute left-[426px] top-0 rounded-br-3xl bg-[#F7F7FB]"
+                    data-header="dropdown-submenu">
+                    <ul class=" flex flex-col gap-6 h-full p-8">
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#78859F] font-medium">
+                          Шкафы управления вентиляцией по техническому заданию
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#78859F] font-medium">
+                          Шкафы управления приточной вентиляцией
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#78859F] font-medium">
+                          Шкафы управления приточно-вытяжной вентиляцией
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#78859F] font-medium">
+                          Шкафы управления вентилятором
+                        </a>
+                      </li>
+                      <li class="block w-full h-[1px] border-b-[1px] border-[#D0D0D4]">
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#78859F] font-semibold">
+                          OEM-производство
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#5A5B5F] font-semibold">
+                          Калькулятор шкафов управления вентиляцией
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#FD5D5D] font-bold uppercase">
+                          НОВИНКИ
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#3B8BEA] font-bold uppercase">
+                          ZENTEC
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="text-[#78859F] text-lg font-semibold hover:text-[#3B8BEA]">Шкафы пожарной
+                    автоматики</a>
+                </li>
+                <li>
+                  <a href="#" class="text-[#78859F] text-lg font-semibold hover:text-[#3B8BEA]">Шкафы управления
+                    тепловыми завесами</a>
+                </li>
+                <li>
+                  <a href="#" class="text-[#78859F] text-lg font-semibold hover:text-[#3B8BEA]">Шкафы диспетчеризации и
+                    SCADA</a>
+                </li>
+                <li data-header="dropdown-subparent">
+                  <a href="#" class="text-[#78859F] text-lg font-semibold hover:text-[#3B8BEA]" data-header="dropdown-sublink">Автоматика для
+                    вентиляции
+                  </a>
+                  <div
+                    class="pointer-events-none opacity-0 min-w-[554px] h-full absolute left-[426px] top-0 rounded-br-3xl bg-[#F7F7FB]"
+                    data-header="dropdown-submenu">
+                    <ul class=" flex flex-col gap-6 h-full p-8">
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#78859F] font-medium">
+                          Щиты дымоудаления
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#78859F] font-medium">
+                          Щиты подпора воздуха
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#78859F] font-medium">
+                          Щиты управления клапанами
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="leading-[140%]">
+            <a href="#" class="border-b-[1px] border-[transparent] hover:border-white">О компании</a>
+          </li>
+          <li class="leading-[140%]">
+            <a href="#" class="border-b-[1px] border-[transparent] hover:border-white">Статьи</a>
+          </li>
+          <li class="leading-[140%]">
+            <a href="#" class="border-b-[1px] border-[transparent] hover:border-white">Как заказать</a>
+          </li>
+          <li class="leading-[140%]">
+            <a href="#" class="border-b-[1px] border-[transparent] hover:border-white">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="flex items-center gap-8 xl:w-full md:w-auto md:justify-end">
+        <div class="w-[306px] relative xl:w-full md:hidden">
+          <input type="text" data-search="input" class="
+            w-full 
+            border-b-1 
+            outline-none
+            border-[#FFFFFF99] 
+            bg-transparent 
+            text-white 
+            text-[14px] 
+            leading-[140%]
+            py-[8.5px]
+            pr-12
+            placeholder:text-white
+            " placeholder="Поиск по сайту" />
+          <button type="button" data-search="clear-btn" style="display: none;"
+            class="absolute top-[7px] right-6 flex items-center justify-center size-[23px] cursor-pointer">
+            <svg width="16" height="16" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.6665 1.66699L12.3332 12.3337" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M12.3332 1.66699L1.6665 12.3337" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <button type="button" class="absolute top-[7px] right-0 flex items-center justify-center size-[23px]">
+            <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10.5978" cy="11.0978" r="6.76769" stroke="white" style="stroke:white;stroke-opacity:1;"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M19.1698 19.6698L15.3828 15.8828" stroke="white" style="stroke:white;stroke-opacity:1;"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="#"
+            class="items-center justify-center size-8 hidden md:flex xs:size-6 hover:opacity-[0.6] transition-opacity">
+            <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10.5978" cy="11.0978" r="6.76769" stroke="white" style="stroke:white;stroke-opacity:1;"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M19.1698 19.6698L15.3828 15.8828" stroke="white" style="stroke:white;stroke-opacity:1;"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a href="#" class="flex items-center justify-center size-8 xs:size-6 hover:opacity-[0.6] transition-opacity">
+            <svg class="w-full h-auto" width="32" height="32" viewBox="0 0 32 32" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.95889 8.83398L7.06956 4.83398H4.49756" stroke="white" style="stroke:white;stroke-opacity:1;"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10.3078 19.7807L7.9585 8.83398H24.8358C25.6852 8.83398 26.3172 9.61665 26.1398 10.4473L24.1372 19.7807C24.0052 20.3953 23.4625 20.834 22.8332 20.834H11.6105C10.9825 20.834 10.4398 20.3953 10.3078 19.7807Z"
+                stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M23.2866 25.6667C23.0106 25.6667 22.7866 25.8907 22.7892 26.1667C22.7892 26.4427 23.0132 26.6667 23.2892 26.6667C23.5652 26.6667 23.7892 26.4427 23.7892 26.1667C23.7879 25.8907 23.5639 25.6667 23.2866 25.6667"
+                stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M11.8082 25.6667C11.5322 25.6667 11.3082 25.8907 11.3109 26.1667C11.3096 26.4427 11.5336 26.6667 11.8096 26.6667C12.0856 26.6667 12.3096 26.4427 12.3096 26.1667C12.3096 25.8907 12.0856 25.6667 11.8082 25.6667"
+                stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a href="#" class="flex items-center justify-center size-8 xs:size-6 hover:opacity-[0.6] transition-opacity">
+            <svg class="w-full h-auto" width="32" height="32" viewBox="0 0 32 32" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.26167 23.3127C9.395 22.4973 10.5976 21.8526 11.8693 21.3783C13.1411 20.9039 14.518 20.6667 16 20.6667C17.482 20.6667 18.8589 20.9039 20.1307 21.3783C21.4024 21.8526 22.605 22.4973 23.7383 23.3127C24.6188 22.4016 25.3269 21.3256 25.8627 20.0847C26.3987 18.8436 26.6667 17.482 26.6667 16C26.6667 13.0444 25.6278 10.5278 23.55 8.45C21.4722 6.37222 18.9556 5.33333 16 5.33333C13.0444 5.33333 10.5278 6.37222 8.45 8.45C6.37222 10.5278 5.33333 13.0444 5.33333 16C5.33333 17.482 5.60133 18.8436 6.13733 20.0847C6.67311 21.3256 7.38122 22.4016 8.26167 23.3127ZM16.0007 16.6667C14.8771 16.6667 13.9294 16.281 13.1577 15.5097C12.3859 14.7383 12 13.7909 12 12.6673C12 11.5438 12.3857 10.5961 13.157 9.82433C13.9283 9.05256 14.8758 8.66667 15.9993 8.66667C17.1229 8.66667 18.0706 9.05233 18.8423 9.82367C19.6141 10.595 20 11.5424 20 12.666C20 13.7896 19.6143 14.7372 18.843 15.509C18.0717 16.2808 17.1242 16.6667 16.0007 16.6667ZM16 28C14.3264 28 12.7598 27.6884 11.3 27.0653C9.84022 26.4422 8.57011 25.5906 7.48967 24.5103C6.40944 23.4299 5.55778 22.1598 4.93467 20.7C4.31156 19.2402 4 17.6736 4 16C4 14.3264 4.31156 12.7598 4.93467 11.3C5.55778 9.84022 6.40944 8.57011 7.48967 7.48967C8.57011 6.40944 9.84022 5.55778 11.3 4.93467C12.7598 4.31155 14.3264 4 16 4C17.6736 4 19.2402 4.31155 20.7 4.93467C22.1598 5.55778 23.4299 6.40944 24.5103 7.48967C25.5906 8.57011 26.4422 9.84022 27.0653 11.3C27.6884 12.7598 28 14.3264 28 16C28 17.6736 27.6884 19.2402 27.0653 20.7C26.4422 22.1598 25.5906 23.4299 24.5103 24.5103C23.4299 25.5906 22.1598 26.4422 20.7 27.0653C19.2402 27.6884 17.6736 28 16 28ZM16 26.6667C17.2291 26.6667 18.4386 26.4517 19.6283 26.0217C20.8179 25.5919 21.846 25.0034 22.7127 24.2563C21.846 23.5606 20.8434 23.0106 19.705 22.6063C18.5666 22.2021 17.3316 22 16 22C14.6684 22 13.4291 22.1979 12.282 22.5937C11.1351 22.9894 10.1369 23.5437 9.28733 24.2563C10.154 25.0034 11.1821 25.5919 12.3717 26.0217C13.5614 26.4517 14.7709 26.6667 16 26.6667ZM16 15.3333C16.7487 15.3333 17.3803 15.0761 17.895 14.5617C18.4094 14.047 18.6667 13.4153 18.6667 12.6667C18.6667 11.918 18.4094 11.2863 17.895 10.7717C17.3803 10.2572 16.7487 10 16 10C15.2513 10 14.6197 10.2572 14.105 10.7717C13.5906 11.2863 13.3333 11.918 13.3333 12.6667C13.3333 13.4153 13.5906 14.047 14.105 14.5617C14.6197 15.0761 15.2513 15.3333 16 15.3333Z"
+                fill="white" style="fill:white;fill-opacity:1;" />
+            </svg>
+          </a>
+          <a href="#"
+            class="items-center justify-center size-8 xs:size-6 hidden xl:flex hover:opacity-[0.6] transition-opacity"
+            data-menu="open-btn">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 16H25M7 10H25M7 22H25" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+  <div class="fixed inset-0 h-svh w-full z-50 translate-x-[-100%]" data-menu="menu">
+  <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50" data-menu="close-btn"></div>
+  <div class="absolute top-0 left-0 w-[375px] h-full z-50 py-7 px-5 bg-[#78859F] overflow-y-auto md:w-full translate-x-[-100%] transition-transform duration-500" data-menu="menu-content">
+    <div class="flex items-center justify-between mb-[31px]">
+      <a href="#" class="block w-37 h-10 ">
+        <img src="./img/logo-white.svg" class="block w-37 h-10" alt="Вент Автоматика">
+      </a>
+      <button type="button" class="hidden md:flex items-center justify-center size-8 rounded-[50%] bg-[#F4F6FB]" data-menu="close-btn">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.66663 1.66602L12.3333 12.3327" stroke="#78859F"
+            style="stroke:#78859F;stroke:color(display-p3 0.4718 0.5201 0.6250);stroke-opacity:1;" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M12.3333 1.66602L1.66663 12.3327" stroke="#78859F"
+            style="stroke:#78859F;stroke:color(display-p3 0.4718 0.5201 0.6250);stroke-opacity:1;" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+    <div class="w-full" data-menu="main">
+      <ul class="w-full flex flex-col items-start justify-center gap-5">
+        <li class="w-full flex items-center justify-between leading-[140%]" data-menu="section-link">
+          <a href="#" class="text-lg font-semibold text-white">Продукция</a>
+          <span class="size-6 flex items-center justify-center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 8L15 12L11 16" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </span>
+        </li>
+        <li class="flex items-center leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">О компании</a>
+        </li>
+        <li class="flex items-center leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Как заказать</a>
+        </li>
+        <li class="flex items-center leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Контакты</a>
+        </li>
+        <li class="flex items-center leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Документация</a>
+        </li>
+        <li class="flex items-center leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">НОВИНКИ</a>
+        </li>
+        <li class="flex items-center leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Zentec</a>
+        </li>
+      </ul>
+      <div class="flex flex-col gap-6 mt-20">
+        <div class="flex flex-col gap-3 items-start">
+          <div class="flex items-center gap-4">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22.0001 16.9201V19.9201C22.0012 20.1986 21.9441 20.4743 21.8326 20.7294C21.721 20.9846 21.5574 21.2137 21.3521 21.402C21.1469 21.5902 20.9046 21.7336 20.6408 21.8228C20.377 21.912 20.0974 21.9452 19.8201 21.9201C16.7429 21.5857 13.7871 20.5342 11.1901 18.8501C8.77388 17.3148 6.72539 15.2663 5.19006 12.8501C3.50003 10.2413 2.4483 7.27109 2.12006 4.1801C2.09507 3.90356 2.12793 3.62486 2.21656 3.36172C2.30518 3.09859 2.44763 2.85679 2.63482 2.65172C2.82202 2.44665 3.04986 2.28281 3.30385 2.17062C3.55783 2.05843 3.8324 2.00036 4.11006 2.0001H7.11006C7.59536 1.99532 8.06585 2.16718 8.43382 2.48363C8.80179 2.80008 9.04213 3.23954 9.11005 3.7201C9.23668 4.68016 9.47151 5.62282 9.81006 6.5301C9.9446 6.88802 9.97372 7.27701 9.89396 7.65098C9.81421 8.02494 9.62892 8.36821 9.36005 8.6401L8.09006 9.9101C9.51361 12.4136 11.5865 14.4865 14.0901 15.9101L15.3601 14.6401C15.6319 14.3712 15.9752 14.1859 16.3492 14.1062C16.7231 14.0264 17.1121 14.0556 17.4701 14.1901C18.3773 14.5286 19.32 14.7635 20.2801 14.8901C20.7658 14.9586 21.2095 15.2033 21.5266 15.5776C21.8437 15.9519 22.0122 16.4297 22.0001 16.9201Z"
+                stroke="white" stroke-opacity="0.7" style="stroke:white;stroke-opacity:0.7;" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="text-[#FFFFFFB2] text-[15px] font-medium leading-[140%]">Телефон</span>
+          </div>
+          <a href="tel:+78005517668" class="text-lg leading-[135%] font-medium text-white">+7 (800) 551-76-68</a>
+        </div>
+        <div class="flex flex-col gap-3 items-start">
+          <div class="flex items-center gap-4">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6M22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6M22 6L12 13L2 6"
+                stroke="white" stroke-opacity="0.7" style="stroke:white;stroke-opacity:0.7;" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="text-[#FFFFFFB2] text-[15px] font-medium leading-[140%]">Почта</span>
+          </div>
+          <a href="mailto:536193488@ventavtomatika.ru"
+            class="text-lg leading-[135%] font-medium text-white">mail+536193488@ventavtomatika.ru</a>
+        </div>
+      </div>
+    </div>
+    <div class="w-full hidden" data-menu="section">
+      <button class="size-6 flex items-center justify-center mb-6" data-menu="back">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 12L22 12" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+          <path d="M8 18L2 12" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+          <path d="M8 6L2 12" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <ul class="w-full flex flex-col gap-3 items-start justify-center">
+        <li class="w-full leading-[140%]">
+          <span href="#" class="flex items-center justify-between gap-2 text-lg font-semibold text-white"
+            data-menu="dropdown-btn">
+            Шкафы управления
+            вентиляцией
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 11.5L12 15.5L8 11.5" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+          <div data-menu="dropdown-list" style="display: none;" class="pt-3">
+            <ul class="flex flex-col items-start gap-3">
+              <li class="leading-[140%]">
+                <a href="#" class="text-[15px] text-[#FFFFFFCC]">
+                  Шкафы управления вентиляцией по техническому заданию
+                </a>
+              </li>
+              <li class="leading-[140%]">
+                <a href="#" class="text-[15px] text-[#FFFFFFCC]">
+                  Шкафы управления приточной вентиляцией
+                </a>
+              </li>
+              <li class="leading-[140%]">
+                <a href="#" class="text-[15px] text-[#FFFFFFCC]">
+                  Шкафы управления приточно-вытяжной вентиляцией
+                </a>
+              </li>
+              <li class="leading-[140%]">
+                <a href="#" class="text-[15px] text-[#FFFFFFCC]">
+                  Шкафы управления вентилятором
+                  Стоимость шкафа автоматики для вентиляции за 2 минуты
+                  Документация
+                </a>
+              </li>
+            </ul>
+            <ul class="flex flex-col items-start gap-3 pt-4 mt-4 border-t-[1px] border-[#FFFFFF33]">
+              <li class="leading-[140%]">
+                <a href="#" class="text-[15px] text-[#FFFFFFCC]">
+                  OEM-производство
+                </a>
+              </li>
+              <li class="leading-[140%]">
+                <a href="#" class="text-[15px] text-[#FFFFFFCC]">
+                  Калькулятор шкафов управления вентиляцией
+                </a>
+              </li>
+              <li class="leading-[140%]">
+                <a href="#" class="text-[15px] text-white">
+                  НОВИНКИ
+                </a>
+              </li>
+              <li class="leading-[140%]">
+                <a href="#" class="text-[15px] text-white">
+                  ZENTEC
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Шкафы управления вентиляцией</a>
+        </li>
+        <li class="leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Шкафы пожарной автоматики</a>
+        </li>
+        <li class="leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Шкафы управления тепловыми завесами</a>
+        </li>
+        <li class="leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Шкафы диспетчеризации и SCADA</a>
+        </li>
+        <li class="leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Автоматика для вентиляции</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <main>
+    <section class="pt-[13px] lg:pt-3">
+      <div class="my-container">
+        <ul class="flex items-center gap-3 whitespace-nowrap overflow-hidden overflow-ellipsis">
+          <li class="flex items-center gap-3 text-sm leading-[140%] after:content-['/']">
+            <a href="#" class=" text-[#323338] hover:underline">Главная</a>
+          </li>
+          <li class="flex items-center gap-3 text-sm leading-[140%] after:content-['/']">
+            <a href="#" class=" text-[#323338]">Статьи</a>
+          </li>
+          <li class="flex items-center gap-3 text-sm leading-[140%]">
+            <a href="#" class=" text-[#323338B2]">Щиты управления электрокалорифером. Как управляем — контактором
+              илитвердотельными реле?</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="pt-[31px] lg:pt-4">
+      <div class="my-container md:p-0">
+        <div
+          class="relative flex items-end rounded-3xl overflow-hidden z-1 h-[480px] lg:h-[460px] md:h-[375px] md:rounded-none
+          before:content-[''] before:absolute before:inset-0 before:bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,rgba(0,0,0,0.6)_100%)]">
+          <picture class="absolute inset-0 size-full -z-1">
+            <img src="./img/article/main.jpg" class="size-full object-cover" alt="Щиты управления электрокалорифером.">
+          </picture>
+          <div class="flex flex-col gap-4 p-10 text-white relative z-2 lg:p-8 md:p-6">
+            <h1 class="text-[46px] leading-[120%] font-bold lg:text-[32px] md:text-2xl">
+              Щиты управления электрокалорифером. Как управляем — контактором илитвердотельными реле?
+            </h1>
+            <div class="text-lg leading-[140%] lg:text-base">10 февраля 2025</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pt-[64px] lg:pt-8 md:pt-6">
+      <div class="my-container max-w-[890px] mx-auto lg:max-w-[600px]">
+        <div class="w-full">
+          <h2 class="text-2xl leading-[140%] font-semibold mb-6 lg:text-[22px] md:text-lg">
+            Рассмотрим принципы работы, а также основные преимещества и недостатки регулирования температуры с помощью
+            контактораи твердотельного реле
+          </h2>
+          <div class="text-[17px] leading-[140%] md:text-[15px]">
+            <p class="mb-4">
+              Как будем управлять электрическим нагревателем — с помощью контактора или твердотельного реле?
+            </p>
+            <p class="mb-4">
+              На рынке автоматики вентиляции представлены оба варианта. Вроде функция у них одна и та же —
+              регулирование температуры, но отличия между ними всё‑таки есть. Давайте разбираться.
+            </p>
+            <p class="mb-4">
+              Контактор — двухпозиционный электромагнитный аппарат, предназначенный для частых дистанционных включений
+              и выключений силовых электрических цепей в нормальном режиме работы. Разновидность
+              электромагнитного реле.
+            </p>
+            <p class="mb-4">
+              Твердотельное рыле — электронное устройство, являющееся типом реле без механических движущихся частей,
+              служащее для включения и выключения высокомощностной цепи с помощью низких напряжений, подаваемых
+              на клеммы управления. ТТР содержит датчик, который реагирует на вход (управляющий сигнал)
+              и твердотельную электронику, включающую высокомощностную цепь. Этот тип реле может использоваться
+              в сетях постоянного и переменного тока. Устройство применяется для тех же функций,
+              что и обычное электромагнитное (электромеханическое) реле, но не содержит движущихся частей.
+            </p>
+            <p>
+              Серийные твердотельные реле используют технологии полупроводниковых устройств, чтобы переключать токи
+              до сотен ампер. ТТР имеют более высокую скорость переключения, чем электромеханические реле и имеют
+              полную гальваническую развязку. Твердотельные реле менее приспособлены к выдерживанию кратковременных
+              перегрузок (превышению предельно допустимых токов и напряжений), чем их электромеханические аналоги,
+              и имеют чуть большее сопротивление в замкнутом состоянии.
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-full flex items-center justify-between gap-6 mt-10 pt-10 border-t-[1px] border-[#DCDCDC] md:pt-6 md:mt-6 md:flex-col md:items-start">
+          <div class="flex items-center gap-6 lg:flex-col lg:items-start lg:gap-4 md:gap-3">
+            <span class="text-[17px] leading-[140%] font-medium text-[#323338CC]">Теги</span>
+            <div class="flex items-center gap-3">
+              <a href="#" class="text-sm font-medium py-2 px-4 bg-[#F4F6FB] rounded-xl">Новинки</a>
+              <a href="#" class="text-sm font-medium py-2 px-4 bg-[#F4F6FB] rounded-xl">Обзоры</a>
+              <a href="#" class="text-sm font-medium py-2 px-4 bg-[#F4F6FB] rounded-xl">Автоматика</a>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 lg:flex-col lg:items-end md:items-start md:gap-3">
+            <span class="text-[17px] leading-[140%] font-medium text-[#323338CC]">Поделиться статьей </span>
+            <div class="flex items-center gap-2">
+              <a href="#" class="size-10 flex items-center justify-center bg-[#3B8BEA] rounded-full">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.68847 12.4418L6.93439 15.196C6.93439 15.196 6.93439 15.1961 6.93432 15.1961C6.93432 15.1961 6.93432 15.1961 6.93426 15.1961C5.79536 16.3351 3.94212 16.3351 2.8031 15.1961C2.25131 14.6443 1.9475 13.9107 1.9475 13.1305C1.9475 12.3503 2.25131 11.6168 2.8029 11.065C2.80297 11.065 2.80303 11.0649 2.8031 11.0648L5.55718 8.31068C5.9374 7.93039 5.9374 7.31382 5.55712 6.9336C5.1769 6.55338 4.56032 6.55338 4.18004 6.9336L1.42596 9.68775C1.42576 9.68794 1.42557 9.6882 1.42537 9.6884C0.506219 10.6079 0 11.8303 0 13.1305C0 14.4309 0.506414 15.6536 1.42602 16.5732C2.37523 17.5223 3.62195 17.9969 4.86874 17.9969C6.11553 17.9969 7.36232 17.5223 8.3114 16.5732C8.31146 16.5732 8.31146 16.5731 8.31146 16.5731L11.0655 13.8189C11.4458 13.4387 11.4458 12.8221 11.0655 12.4418C10.6853 12.0616 10.0688 12.0616 9.68847 12.4418Z"
+                    fill="white" style="fill:white;fill-opacity:1;" />
+                  <path
+                    d="M17.9994 4.86837C17.9994 3.56789 17.4929 2.34525 16.5733 1.42565C14.6749 -0.472644 11.5862 -0.472579 9.68793 1.42565C9.68786 1.42578 9.68773 1.42584 9.68767 1.42597L6.93365 4.17993C6.55337 4.56014 6.55337 5.17679 6.93365 5.557C7.12385 5.74721 7.373 5.84225 7.62222 5.84225C7.87137 5.84225 8.12065 5.74714 8.31072 5.557L11.0647 2.80305C11.0648 2.80292 11.0649 2.80285 11.0651 2.80272C12.204 1.66383 14.0572 1.66376 15.1962 2.80272C15.748 3.35451 16.0519 4.08813 16.0519 4.86837C16.0519 5.64853 15.7481 6.38203 15.1964 6.93382L15.1962 6.93401L12.4421 9.68816C12.0619 10.0684 12.0619 10.685 12.4422 11.0652C12.6323 11.2554 12.8816 11.3505 13.1307 11.3505C13.3799 11.3505 13.6291 11.2554 13.8193 11.0652L16.5734 8.31109C16.5736 8.31089 16.5738 8.31063 16.574 8.31044C17.4931 7.39096 17.9994 6.16852 17.9994 4.86837Z"
+                    fill="white" style="fill:white;fill-opacity:1;" />
+                  <path
+                    d="M5.5567 12.442C5.74684 12.6322 5.99605 12.7273 6.2452 12.7273C6.49441 12.7273 6.74363 12.6322 6.93377 12.442L12.4421 6.93372C12.8224 6.55351 12.8224 5.93693 12.4421 5.55665C12.0619 5.17643 11.4453 5.17643 11.065 5.55665L5.5567 11.0649C5.17641 11.4452 5.17641 12.0618 5.5567 12.442Z"
+                    fill="white" style="fill:white;fill-opacity:1;" />
+                </svg>
+              </a>
+              <a href="#" class="size-10 flex items-center justify-center bg-[#3B8BEA] rounded-full">
+                <svg width="18" height="18" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13.1399 3.89054C12.8051 3.15072 12.3245 2.48649 11.7142 1.91407C11.104 1.34705 10.3966 0.898838 9.60816 0.585627C8.79274 0.261615 7.9287 0.0996094 7.03767 0.0996094C6.14664 0.0996094 5.2826 0.261615 4.46717 0.585627C3.67874 0.898838 2.97132 1.34165 2.3611 1.91407C1.75087 2.48649 1.27026 3.15072 0.93545 3.89054C0.589838 4.65737 0.411621 5.4782 0.411621 6.32063C0.411621 7.79488 0.962435 9.20973 1.97227 10.333L1.43225 13.2761L4.30517 11.9962C5.1638 12.3634 6.07643 12.5471 7.03226 12.5471C7.92329 12.5471 8.78733 12.385 9.60276 12.061C10.3912 11.7478 11.0986 11.305 11.7088 10.7326C12.3191 10.1602 12.7997 9.49594 13.1345 8.75612C13.4801 7.98929 13.6583 7.16846 13.6583 6.32603C13.6637 5.4782 13.4855 4.66277 13.1399 3.89054Z"
+                    fill="white" style="fill:white;fill-opacity:1;" />
+                  <path
+                    d="M9.72685 7.56315C9.44604 7.42274 9.24085 7.33634 9.09504 7.28234C9.00324 7.24994 8.78722 7.15273 8.71162 7.21214C8.47401 7.40654 8.2202 7.95736 7.95019 8.05997C7.28057 7.93036 6.65955 7.47135 6.17353 7.00153C5.95752 6.79632 5.55791 6.2131 5.47151 6.05649C5.45531 5.89449 5.74691 5.67848 5.81171 5.55428C6.14652 5.17626 5.89272 4.93866 5.84952 4.78205C5.77392 4.62004 5.64432 4.32843 5.53091 4.09082C5.43371 3.93422 5.41209 3.70201 5.23928 3.61561C4.50486 3.23759 4.08366 3.99362 3.91086 4.38784C2.86862 6.89892 9.13283 11.6781 10.4073 8.38398C10.4721 8.09777 10.4451 7.98976 10.3479 7.86016C10.1535 7.72515 9.92665 7.66575 9.72685 7.56315Z"
+                    fill="#3B8BEA" style="fill:#3B8BEA;fill:color(display-p3 0.2314 0.5451 0.9176);fill-opacity:1;" />
+                </svg>
+              </a>
+              <a href="#" class="size-10 flex items-center justify-center bg-[#3B8BEA] rounded-full">
+                <svg width="18" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.7913 2.82072L2.86312 7.80603C1.98083 8.1604 1.98594 8.65259 2.70125 8.87207L6.02042 9.90749L13.7 5.06217C14.0631 4.84124 14.3949 4.96009 14.1222 5.20217L7.90021 10.8175H7.89875L7.90021 10.8182L7.67125 14.2395C8.00667 14.2395 8.15469 14.0856 8.34281 13.904L9.955 12.3363L13.3084 14.8133C13.9268 15.1538 14.3708 14.9788 14.5247 14.2409L16.726 3.86634C16.9514 2.9629 16.3811 2.55384 15.7913 2.82072Z"
+                    fill="white" style="fill:white;fill-opacity:1;" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16 lg:py-15 md:py-8">
+      <div class="my-container">
+        <div data-request="form" class="p-6 rounded-3xl bg-primary text-white flex items-start 
+          lg:flex-col lg:gap-6 md:rounded-none md:w-[calc(100% + 48px)] md:-mx-6 md:py-8 md:px-8">
+          <div class="flex flex-col gap-[10px] items-start w-[34%] pr-4 lg:w-full">
+            <h3 class="text-2xl font-semibold md:text-base">Подпишитесь на рассылку</h3>
+            <div class="text-[15px] md:text-sm">и получайте обзоры, статьи и рекомендации от наших экспертов</div>
+          </div>
+          <div class="flex flex-col items-start gap-4 w-[66%] lg:w-full">
+            <div class="flex items-start gap-4 w-full md:flex-col">
+              <div class="w-full">
+                <div class="w-full flex items-center bg-white roder-[1px] border-white rounded-2xl p-[20px]">
+                  <span class="pr-5 mr-5 border-r-[1px] border-gray md:pr-4 md:mr-4">
+                    <img src="./img/icons/email.svg" class="size-6" alt="">
+                  </span>
+                  <input type="text" placeholder="Электронная почта"
+                    class="w-full outline-0 text-[17px] leading-[140%] font-medium text-[#323338] placeholder:text-[#A4A4A4]">
+                </div>
+                <span class="hidden text-xs text-[#F55353] mt-[6px]">Обязательное поле для заполнения</span>
+              </div>
+              <button type="button" data-request="btn"
+                class="w-[305px] shrink-0 bg-[#323338] inline-flex items-center justify-center p-5 
+                rounded-2xl text-white font-semibold lg:w-auto lg:px-10 md:w-full cursor-pointer hover:bg-[#050506] transition-all">
+                <span>Подписаться</span>
+              </button>
+            </div>
+            <div class="text-sm lg:text-xs">
+              Нажимая на кнопку «Отправить», вы подтверждаете своё согласие на обработку персональных данных
+            </div>
+          </div>
+        </div>
+        <div data-request="complete" class="hidden relative p-6 pl-[132px] min-h-[150px] rounded-3xl bg-primary text-white
+          lg:py-8 lg:px-6 md:w-[calc(100% + 48px)] md:-mx-6 md:py-6 md:px-6 md:rounded-none">
+          <div class="flex items-center mb-3 lg:gap-6 lg:mb-6 md:flex-col md:items-start md:mb-4">
+            <img src="./img/icons/complete.svg"
+              class="absolute top-[50%] left-6 translate-y-[-50%] lg:static lg:translate-y-0 lg:size-16 md:size-18">
+            <h3 class="text-2xl font-semibold leading-[140%] lg:max-w-[320px] md:text-lg">Почти готово — подтвердите
+              подписку</h3>
+          </div>
+          <div class="text-[15px] leading-[140%] font-medium mb-4 md:mb-15">
+            Зайдите в свою почту, откройте наше письмо и нажмите «Подтвердить подписку». Без этого мы не сможем
+            отправлять вам новые статьи.
+          </div>
+          <div class="text-xs text-[#FFFFFFE5]">Не видите письмо? Проверьте «Спам» или «Промоакции».</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="py-16 bg-[#323338] text-white rounded-t-3xl lg:py-10 md:py-8">
+  <div class="my-container">
+    <div class="flex items-start gap-4 lg:flex-col lg:pt-0 lg:gap-0">
+      <div class="contents lg:flex lg:items-start lg:justify-between lg:w-full lg:gap-[50px] md:flex-col md:gap-8">
+        <div class="flex flex-col gap-4 w-[214px] lg:w-[146px] lg:shring-0 md:w-full md:gap-3">
+          <a href="#" class="w-40 h-11 lg:w-[130px] lg:h-[33px]">
+            <img src="./img/logo.svg" alt="Вент Автоматика">
+          </a>
+          <div class="text-xs leading-[150%] opacity-80 max-w-[186px] lg:max-w-full lg:text-[11px]">
+            Производство систем автоматики для вентиляции
+          </div>
+        </div>
+        <nav class="flex flex-col w-[26%] lg:w-auto">
+          <a href="#" class="text-base leading-[140%] font-semibold text-white hover:text-[#3B8BEA] mb-4 md:mb-3 md:text-[15px]">Продукция</a>
+          <ul class="flex flex-col gap-3 md:gap-[10px]">
+            <li class="leading-[100%]">
+              <a href="#"
+                class="text-sm leading-[140%] font-medium text-[#FFFFFFCC] md:text-[13px] md:leading-[154%] hover:text-[#3B8BEA] transition-color">Шкафы
+                управления
+                вентиляцией</a>
+            </li>
+            <li class="leading-[100%]">
+              <a href="#"
+                class="text-sm leading-[140%] font-medium text-[#FFFFFFCC] md:text-[13px] md:leading-[154%] hover:text-[#3B8BEA] transition-color">Шкафы
+                пожарной автоматики</a>
+            </li>
+            <li class="leading-[100%]">
+              <a href="#"
+                class="text-sm leading-[140%] font-medium text-[#FFFFFFCC] md:text-[13px] md:leading-[154%] hover:text-[#3B8BEA] transition-color">Шкафы
+                управления тепловыми
+                завесами</a>
+            </li>
+            <li class="leading-[100%]">
+              <a href="#"
+                class="text-sm leading-[140%] font-medium text-[#FFFFFFCC] md:text-[13px] md:leading-[154%] hover:text-[#3B8BEA] transition-color">Шкафы
+                диспетчеризации и
+                SCADA</a>
+            </li>
+            <li class="leading-[100%]">
+              <a href="#"
+                class="text-sm leading-[140%] font-medium text-[#FFFFFFCC] md:text-[13px] md:leading-[154%] hover:text-[#3B8BEA] transition-color">Автоматика
+                для вентиляции</a>
+            </li>
+            <li class="leading-[100%]">
+              <a href="#"
+                class="text-sm leading-[140%] font-medium text-[#FFFFFFCC] md:text-[13px] md:leading-[154%] hover:text-[#3B8BEA] transition-color">OEM-производство</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="flex flex-col w-[26%] lg:w-auto">
+          <ul class="flex flex-col gap-4 md:gap-3">
+            <li class="leading-[100%]">
+              <a href="#"
+                class="text-base leading-[140%] font-semibold text-white md:text-[15px] hover:text-[#3B8BEA] transition-color">О
+                компании</a>
+            </li>
+            <li class="leading-[100%]">
+              <a href="#"
+                class="text-base leading-[140%] font-semibold text-white md:text-[15px] hover:text-[#3B8BEA] transition-color">Доставка
+                и оплата</a>
+            </li>
+            <li class="leading-[100%]">
+              <a href="#"
+                class="text-base leading-[140%] font-semibold text-white md:text-[15px] hover:text-[#3B8BEA] transition-color">Как
+                заказать шкаф вентиляции</a>
+            </li>
+            <li class="leading-[100%]">
+              <a href="#"
+                class="text-base leading-[140%] font-semibold text-white md:text-[15px] hover:text-[#3B8BEA] transition-color">Документация</a>
+            </li>
+            <li class="leading-[100%]">
+              <a href="#"
+                class="text-base leading-[140%] font-semibold text-white md:text-[15px] hover:text-[#3B8BEA] transition-color">Статьи</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="flex flex-col gap-6 w-[26%] lg:w-full lg:flex-row lg:justify-between 
+        lg:items-stretch lg:mt-6 lg:pt-6 lg:border-t-[1px] lg:border-t-[#FFFFFF1A] md:flex-col md:gap-[30px]">
+        <div class="flex flex-col">
+          <h3 class="text-base leading-[140%]  font-semibold mb-4 md:text-[15px]">Контакты</h3>
+          <div class="flex flex-col items-start gap-3 md:gap-[10px]">
+            <a href="tel:+78005517668" class="text-sm text-[#3B8BEA] font-semibold md:text-[13px] hover:underline">
+              +7 (800) 551-76-68
+            </a>
+            <a href="mailto:sale@ventavtomatica"
+              class="text-sm text-[#3B8BEA] font-semibold md:text-[13px] hover:underline">
+              sale@ventavtomatica
+            </a>
+            <div class="text-sm text-[#FFFFFFCC] md:text-[13px]">г. Санкт-Петербург, ул.
+              Парковая, д.6, лит. А</div>
+          </div>
+        </div>
+        <div class="flex flex-col lg:justify-between lg:gap-[31px] md:gap-[28px]">
+          <div class="flex flex-col lg:items-end md:items-start">
+            <h3 class="text-base leading-[140%] font-semibold mb-3 md:text-[15px]">Отдел технической поддержки</h3>
+            <a href="mailto:support@ventavtomatika.ru"
+              class="text-sm text-[#3B8BEA] font-semibold md:text-[13px] hover:underline">
+              support@ventavtomatika.ru
+            </a>
+          </div>
+          <div class="hidden lg:flex lg:items-center lg:gap-4 md:flex-row-reverse md:justify-between">
+            <div class="flex items-center gap-2">
+              <a href="#" class="size-8 flex items-center justify-center bg-[#3B8BEA] rounded-[50%]">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13.1399 3.89054C12.8051 3.15072 12.3245 2.48649 11.7142 1.91407C11.104 1.34705 10.3966 0.898838 9.60816 0.585627C8.79274 0.261615 7.9287 0.0996094 7.03767 0.0996094C6.14664 0.0996094 5.2826 0.261615 4.46717 0.585627C3.67874 0.898838 2.97132 1.34165 2.3611 1.91407C1.75087 2.48649 1.27026 3.15072 0.93545 3.89054C0.589838 4.65737 0.411621 5.4782 0.411621 6.32063C0.411621 7.79488 0.962435 9.20973 1.97227 10.333L1.43225 13.2761L4.30517 11.9962C5.1638 12.3634 6.07643 12.5471 7.03226 12.5471C7.92329 12.5471 8.78733 12.385 9.60276 12.061C10.3912 11.7478 11.0986 11.305 11.7088 10.7326C12.3191 10.1602 12.7997 9.49594 13.1345 8.75612C13.4801 7.98929 13.6583 7.16846 13.6583 6.32603C13.6637 5.4782 13.4855 4.66277 13.1399 3.89054Z"
+                    fill="white" style="fill:white;fill-opacity:1;" />
+                  <path
+                    d="M9.72685 7.56315C9.44604 7.42274 9.24085 7.33634 9.09504 7.28234C9.00324 7.24994 8.78722 7.15273 8.71162 7.21214C8.47401 7.40654 8.2202 7.95736 7.95019 8.05997C7.28057 7.93036 6.65955 7.47135 6.17353 7.00153C5.95752 6.79632 5.55791 6.2131 5.47151 6.05649C5.45531 5.89449 5.74691 5.67848 5.81171 5.55428C6.14652 5.17626 5.89272 4.93866 5.84952 4.78205C5.77392 4.62004 5.64432 4.32843 5.53091 4.09082C5.43371 3.93422 5.41209 3.70201 5.23928 3.61561C4.50486 3.23759 4.08366 3.99362 3.91086 4.38784C2.86862 6.89892 9.13283 11.6781 10.4073 8.38398C10.4721 8.09777 10.4451 7.98976 10.3479 7.86016C10.1535 7.72515 9.92665 7.66575 9.72685 7.56315Z"
+                    fill="#3B8BEA" style="fill:#3B8BEA;fill:color(display-p3 0.2314 0.5451 0.9176);fill-opacity:1;" />
+                </svg>
+              </a>
+              <a href="#" class="size-8 flex items-center justify-center bg-[#3B8BEA] rounded-[50%]">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.8325 2.55657L2.49001 6.54482C1.78418 6.82832 1.78826 7.22207 2.36051 7.39766L5.01584 8.22599L11.1595 4.34974C11.45 4.17299 11.7154 4.26807 11.4973 4.46174L6.51968 8.95399H6.51851L6.51968 8.95457L6.33651 11.6916C6.60484 11.6916 6.72326 11.5685 6.87376 11.4232L8.16351 10.1691L10.8463 12.1507C11.3409 12.4231 11.6962 12.2831 11.8193 11.6927L13.5803 3.39307C13.7606 2.67032 13.3044 2.34307 12.8325 2.55657Z"
+                    fill="white" style="fill:white;fill-opacity:1;" />
+                </svg>
+              </a>
+            </div>
+            <a href="#"
+              class="inline-flex items-center gap-2 bg-[#78859F] text-white text-sm font-semibold py-[10px] px-[18px] rounded-[10px]">
+              <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M7.53615 10.9017C6.65865 10.0242 5.99715 9.04173 5.55765 8.04498C5.46465 7.83423 5.5194 7.58748 5.68215 7.42473L6.2964 6.81048C6.79965 6.30723 6.79965 5.59548 6.36015 5.15598L5.47965 4.27623C4.8939 3.69048 3.9444 3.69048 3.35865 4.27623L2.86965 4.76448C2.3139 5.32023 2.08215 6.12198 2.23215 6.91698C2.60265 8.87673 3.74115 11.0225 5.5779 12.8592C7.41465 14.696 9.5604 15.8345 11.5202 16.205C12.3152 16.355 13.1169 16.1232 13.6727 15.5675L14.1609 15.0792C14.7467 14.4935 14.7467 13.544 14.1609 12.9582L13.2812 12.0785C12.8417 11.639 12.1292 11.639 11.6904 12.0785L11.0132 12.7565C10.8504 12.9192 10.6037 12.974 10.3929 12.881C9.39615 12.4407 8.41365 11.7785 7.53615 10.9017Z"
+                  stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M9.68994 4.37707V2.62207" stroke="white" style="stroke:white;stroke-opacity:1;"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12.8179 5.61477L14.0554 4.38477" stroke="white" style="stroke:white;stroke-opacity:1;"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M14.0625 8.75H15.81" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span>Заказать звонок</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center justify-between w-full mt-10 lg:pt-6 lg:border-t-[1px] lg:border-t-[#FFFFFF1A] lg:mt-6">
+      <div class="flex flex-col items-start gap-[6px]">
+        <span class="text-xs text-[#3B8BEA]">ООО “ГК Автоматика”</span>
+        <a href="#" class="text-xs text-[#3B8BEA] underline">Политика конфиденциальности и пользовательское
+          соглашение</a>
+      </div>
+      <div class="flex items-center gap-4 lg:hidden">
+        <div class="flex items-center gap-2">
+          <a href="#" class="size-8 flex items-center justify-center bg-[#3B8BEA] rounded-[50%]">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13.1399 3.89054C12.8051 3.15072 12.3245 2.48649 11.7142 1.91407C11.104 1.34705 10.3966 0.898838 9.60816 0.585627C8.79274 0.261615 7.9287 0.0996094 7.03767 0.0996094C6.14664 0.0996094 5.2826 0.261615 4.46717 0.585627C3.67874 0.898838 2.97132 1.34165 2.3611 1.91407C1.75087 2.48649 1.27026 3.15072 0.93545 3.89054C0.589838 4.65737 0.411621 5.4782 0.411621 6.32063C0.411621 7.79488 0.962435 9.20973 1.97227 10.333L1.43225 13.2761L4.30517 11.9962C5.1638 12.3634 6.07643 12.5471 7.03226 12.5471C7.92329 12.5471 8.78733 12.385 9.60276 12.061C10.3912 11.7478 11.0986 11.305 11.7088 10.7326C12.3191 10.1602 12.7997 9.49594 13.1345 8.75612C13.4801 7.98929 13.6583 7.16846 13.6583 6.32603C13.6637 5.4782 13.4855 4.66277 13.1399 3.89054Z"
+                fill="white" style="fill:white;fill-opacity:1;" />
+              <path
+                d="M9.72685 7.56315C9.44604 7.42274 9.24085 7.33634 9.09504 7.28234C9.00324 7.24994 8.78722 7.15273 8.71162 7.21214C8.47401 7.40654 8.2202 7.95736 7.95019 8.05997C7.28057 7.93036 6.65955 7.47135 6.17353 7.00153C5.95752 6.79632 5.55791 6.2131 5.47151 6.05649C5.45531 5.89449 5.74691 5.67848 5.81171 5.55428C6.14652 5.17626 5.89272 4.93866 5.84952 4.78205C5.77392 4.62004 5.64432 4.32843 5.53091 4.09082C5.43371 3.93422 5.41209 3.70201 5.23928 3.61561C4.50486 3.23759 4.08366 3.99362 3.91086 4.38784C2.86862 6.89892 9.13283 11.6781 10.4073 8.38398C10.4721 8.09777 10.4451 7.98976 10.3479 7.86016C10.1535 7.72515 9.92665 7.66575 9.72685 7.56315Z"
+                fill="#3B8BEA" style="fill:#3B8BEA;fill:color(display-p3 0.2314 0.5451 0.9176);fill-opacity:1;" />
+            </svg>
+          </a>
+          <a href="#" class="size-8 flex items-center justify-center bg-[#3B8BEA] rounded-[50%]">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12.8325 2.55657L2.49001 6.54482C1.78418 6.82832 1.78826 7.22207 2.36051 7.39766L5.01584 8.22599L11.1595 4.34974C11.45 4.17299 11.7154 4.26807 11.4973 4.46174L6.51968 8.95399H6.51851L6.51968 8.95457L6.33651 11.6916C6.60484 11.6916 6.72326 11.5685 6.87376 11.4232L8.16351 10.1691L10.8463 12.1507C11.3409 12.4231 11.6962 12.2831 11.8193 11.6927L13.5803 3.39307C13.7606 2.67032 13.3044 2.34307 12.8325 2.55657Z"
+                fill="white" style="fill:white;fill-opacity:1;" />
+            </svg>
+          </a>
+        </div>
+        <a href="#"
+          class="inline-flex items-center gap-2 bg-[#78859F] text-white text-sm font-semibold py-[10px] px-[18px] rounded-[10px] hover:bg-[#3B8BEA] hover:text-white transition-all">
+          <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M7.53615 10.9017C6.65865 10.0242 5.99715 9.04173 5.55765 8.04498C5.46465 7.83423 5.5194 7.58748 5.68215 7.42473L6.2964 6.81048C6.79965 6.30723 6.79965 5.59548 6.36015 5.15598L5.47965 4.27623C4.8939 3.69048 3.9444 3.69048 3.35865 4.27623L2.86965 4.76448C2.3139 5.32023 2.08215 6.12198 2.23215 6.91698C2.60265 8.87673 3.74115 11.0225 5.5779 12.8592C7.41465 14.696 9.5604 15.8345 11.5202 16.205C12.3152 16.355 13.1169 16.1232 13.6727 15.5675L14.1609 15.0792C14.7467 14.4935 14.7467 13.544 14.1609 12.9582L13.2812 12.0785C12.8417 11.639 12.1292 11.639 11.6904 12.0785L11.0132 12.7565C10.8504 12.9192 10.6037 12.974 10.3929 12.881C9.39615 12.4407 8.41365 11.7785 7.53615 10.9017Z"
+              stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M9.68994 4.37707V2.62207" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M12.8179 5.61477L14.0554 4.38477" stroke="white" style="stroke:white;stroke-opacity:1;"
+              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M14.0625 8.75H15.81" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span>Заказать звонок</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/swiper-bundle.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

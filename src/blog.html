@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Статьи</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/swiper-bundle.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="text-graphite">
+  @@include('header.html')
+  @@include('menu.html')
+  <main>
+    <section class="pt-[13px] lg:pt-3">
+      <div class="my-container">
+        <ul class="flex items-center gap-3">
+          <li class="flex items-center gap-3 text-sm leading-[140%] after:content-['/']">
+            <a href="#" class=" text-[#323338] hover:underline">Главная</a>
+          </li>
+          <li class="flex items-center gap-3 text-sm leading-[140%]">
+            <a href="#" class=" text-[#323338B2]">Статьи</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="pt-[31px] lg:pt-6 md:pt-[18px]">
+      <div class="my-container">
+        <h1
+          class="max-w-[700px] text-[34px] leading-[130%] font-bold text-[#3B8BEA] mb-[31px] lg:text-[30px] lg:mb-6 md:text-2xl">
+          Статьи
+        </h1>
+        <form action="#" class="flex items-center flex-wrap gap-[10px] mb-[31px]">
+          <div class="relative">
+            <input type="checkbox" id="blog_all" class="peer absolute top-0 left-0 opacity-0 w-0 h-0" name="blog">
+            <label for="blog_all" class="block py-2 px-4 bg-[#EDEDED] rounded-3xl text-[#323338] text-sm font-semibold 
+              leading-[140%] cursor-pointer peer-checked:bg-[#3B8BEA] peer-checked:text-white">Все (25)</label>
+          </div>
+          <div class="relative">
+            <input type="checkbox" id="blog_01" class="peer absolute top-0 left-0 opacity-0 w-0 h-0" name="blog">
+            <label for="blog_01" class="block py-2 px-4 bg-[#EDEDED] rounded-3xl text-[#323338] text-sm font-semibold 
+              leading-[140%] cursor-pointer peer-checked:bg-[#3B8BEA] peer-checked:text-white">Новинки (1)</label>
+          </div>
+          <div class="relative">
+            <input type="checkbox" id="blog_02" class="peer absolute top-0 left-0 opacity-0 w-0 h-0" name="blog">
+            <label for="blog_02" class="block py-2 px-4 bg-[#EDEDED] rounded-3xl text-[#323338] text-sm font-semibold 
+              leading-[140%] cursor-pointer peer-checked:bg-[#3B8BEA] peer-checked:text-white">Обзоры (2)</label>
+          </div>
+          <div class="relative">
+            <input type="checkbox" id="blog_03" class="peer absolute top-0 left-0 opacity-0 w-0 h-0" name="blog">
+            <label for="blog_03" class="block py-2 px-4 bg-[#EDEDED] rounded-3xl text-[#323338] text-sm font-semibold 
+              leading-[140%] cursor-pointer peer-checked:bg-[#3B8BEA] peer-checked:text-white">Автоматика (5)</label>
+          </div>
+          <div class="relative">
+            <input type="checkbox" id="blog_04" class="peer absolute top-0 left-0 opacity-0 w-0 h-0" name="blog">
+            <label for="blog_04" class="block py-2 px-4 bg-[#EDEDED] rounded-3xl text-[#323338] text-sm font-semibold 
+              leading-[140%] cursor-pointer peer-checked:bg-[#3B8BEA] peer-checked:text-white">Управление вентиляцией
+              (10)</label>
+          </div>
+          <div class="relative">
+            <input type="checkbox" id="blog_05" class="peer absolute top-0 left-0 opacity-0 w-0 h-0" name="blog">
+            <label for="blog_05" class="block py-2 px-4 bg-[#EDEDED] rounded-3xl text-[#323338] text-sm font-semibold 
+              leading-[140%] cursor-pointer peer-checked:bg-[#3B8BEA] peer-checked:text-white">Управление тепловыми
+              пунктами (1)</label>
+          </div>
+          <div class="relative">
+            <input type="checkbox" id="blog_06" class="peer absolute top-0 left-0 opacity-0 w-0 h-0" name="blog">
+            <label for="blog_06" class="block py-2 px-4 bg-[#EDEDED] rounded-3xl text-[#323338] text-sm font-semibold 
+              leading-[140%] cursor-pointer peer-checked:bg-[#3B8BEA] peer-checked:text-white">Управление насосами
+              (1)</label>
+          </div>
+          <div class="relative">
+            <input type="checkbox" id="blog_07" class="peer absolute top-0 left-0 opacity-0 w-0 h-0" name="blog">
+            <label for="blog_07" class="block py-2 px-4 bg-[#EDEDED] rounded-3xl text-[#323338] text-sm font-semibold 
+              leading-[140%] cursor-pointer peer-checked:bg-[#3B8BEA] peer-checked:text-white">Диспетчеризация и SCADA
+              (1)</label>
+          </div>
+          <div class="relative">
+            <input type="checkbox" id="blog_08" class="peer absolute top-0 left-0 opacity-0 w-0 h-0" name="blog">
+            <label for="blog_08" class="block py-2 px-4 bg-[#EDEDED] rounded-3xl text-[#323338] text-sm font-semibold 
+              leading-[140%] cursor-pointer peer-checked:bg-[#3B8BEA] peer-checked:text-white">Управление тепловыми
+              пунктами (1)</label>
+          </div>
+          <button type="reset" class="inline-flex items-center gap-[10px] py-2 px-4 bg-[#5A5B5F] rounded-3xl text-white text-sm font-semibold 
+              leading-[140%] cursor-pointer peer-checked:bg-[#3B8BEA] peer-checked:text-white hover:bg-black transition-all">
+            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.867578 11.2827L0.0253906 10.466L4.65742 5.97435L0.0253906 1.48268L0.867578 0.666016L5.49961 5.15768L10.1316 0.666016L10.9738 1.48268L6.3418 5.97435L10.9738 10.466L10.1316 11.2827L5.49961 6.79102L0.867578 11.2827Z"
+                fill="white" />
+            </svg>
+            Сбросить
+          </button>
+        </form>
+        <div class="grid grid-cols-3 grid-flow-dense gap-y-[31px] gap-x-6 lg:grid-cols-2 lg:gap-6 md:grid-cols-1 md:gap-4">
+          <a href="#" class="flex flex-col rounded-2xl p-4 border-[1px] border-[#DCDCDC]">
+            <div class="relative p-[10px] flex items-end h-[200px] z-1 rounded-[10px] overflow-hidden">
+              <picture class="h-[200px] w-full absolute top-0 left-0 -z-1">
+                <img src="./img/blog/img-01.png" class="size-full object-cover" alt="">
+              </picture>
+              <div class="flex items-center flex-wrap gap-x-2 gap-y-1">
+                <span class="bg-[#2F4259CC] py-1 px-[10px] rounded-[6px]">
+                  <span class="text-white text-[15px] font-semibold leading-[140%]">Новинки</span>
+                </span>
+                <span class="bg-[#2F4259CC] py-1 px-[10px] rounded-[6px]">
+                  <span class="text-white text-[15px] font-semibold leading-[140%]">Автоматика</span>
+                </span>
+              </div>
+            </div>
+            <div class="mt-4">
+              <h3 class="text-lg font-semibold leading-[140%] mb-2">
+                Реле с 2 перекидными контактами: технические характеристики
+              </h3>
+              <div class="text-[17px] leading-[140%] text-[#323338B2] font-medium">
+                Контакты реле, которые находятся в разомкнутом…
+                <span class="text-[#3B8BEA]">читать далее</span>
+              </div>
+              <div class="text-right mt-5 text-[17px] leading-[140%] text-[#A4A4A4] font-medium">
+                12 января 2025
+              </div>
+            </div>
+          </a>
+          <a href="#" class="flex flex-col rounded-2xl p-4 border-[1px] border-[#DCDCDC]">
+            <div class="relative p-[10px] flex items-end h-[200px] z-1 rounded-[10px] overflow-hidden">
+              <picture class="h-[200px] w-full absolute top-0 left-0 -z-1">
+                <img src="./img/blog/img-02.png" class="size-full object-cover" alt="">
+              </picture>
+              <div class="flex items-center flex-wrap gap-x-2 gap-y-1">
+                <span class="bg-[#2F4259CC] py-1 px-[10px] rounded-[6px]">
+                  <span class="text-white text-[15px] font-semibold leading-[140%]">Новинки</span>
+                </span>
+                <span class="bg-[#2F4259CC] py-1 px-[10px] rounded-[6px]">
+                  <span class="text-white text-[15px] font-semibold leading-[140%]">Управление тепловыми пунктами</span>
+                </span>
+              </div>
+            </div>
+            <div class="mt-4">
+              <h3 class="text-lg font-semibold leading-[140%] mb-2">
+                Реле с 4 перекидными контактами: технические характеристики
+              </h3>
+              <div class="text-[17px] leading-[140%] text-[#323338B2] font-medium">
+                Контакты реле, которые находятся в разомкнутом…
+                <span class="text-[#3B8BEA]">читать далее</span>
+              </div>
+              <div class="text-right mt-5 text-[17px] leading-[140%] text-[#A4A4A4] font-medium">
+                12 января 2025
+              </div>
+            </div>
+          </a>
+          <a href="#" class="flex flex-col rounded-2xl p-4 border-[1px] border-[#DCDCDC]">
+            <div class="relative p-[10px] flex items-end h-[200px] z-1 rounded-[10px] overflow-hidden">
+              <picture class="h-[200px] w-full absolute top-0 left-0 -z-1">
+                <img src="./img/blog/img-03.png" class="size-full object-cover" alt="">
+              </picture>
+              <div class="flex items-center flex-wrap gap-x-2 gap-y-1">
+                <span class="bg-[#2F4259CC] py-1 px-[10px] rounded-[6px]">
+                  <span class="text-white text-[15px] font-semibold leading-[140%]">Новинки</span>
+                </span>
+                <span class="bg-[#2F4259CC] py-1 px-[10px] rounded-[6px]">
+                  <span class="text-white text-[15px] font-semibold leading-[140%]">Автоматика</span>
+                </span>
+              </div>
+            </div>
+            <div class="mt-4">
+              <h3 class="text-lg font-semibold leading-[140%] mb-2">
+                Реле с 1 перекидным контактом
+              </h3>
+              <div class="text-[17px] leading-[140%] text-[#323338B2] font-medium">
+                Контакты реле, которые находятся в разомкнутом…
+                <span class="text-[#3B8BEA]">читать далее</span>
+              </div>
+              <div class="text-right mt-5 text-[17px] leading-[140%] text-[#A4A4A4] font-medium">
+                12 января 2025
+              </div>
+            </div>
+          </a>
+          <div class="flex items-center justify-between gap-11 p-6 rounded-3xl bg-[#F4F6FB] col-span-3 
+            lg:col-span-2 md:flex-col md:gap-6 md:items-start md:col-span-1">
+            <div>
+              <h3 class="text-2xl font-semibold mb-3 lg:text-[22px] md:text-lg">
+                Собираетесь закупить автоматику? 
+              </h3>
+              <div class="text-[17px] leading-[140%] font-medium lg:text-[15px]">
+                Бесплатно рассчитаем шкаф и пришлем КП за 2 минуты
+              </div>
+            </div>
+            <a href="#" class="max-w-[320px] w-full flex items-center justify-center gap-2 p-5 rounded-2xl bg-[#3B8BEA] 
+                font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all
+                lg:max-w-[240px] md:max-w-full md:w-full">
+              Заполнить бриф
+            </a>
+          </div>
+          <a href="#" class="flex flex-col rounded-2xl p-4 border-[1px] border-[#DCDCDC]">
+            <div class="relative p-[10px] flex items-end h-[200px] z-1 rounded-[10px] overflow-hidden">
+              <picture class="h-[200px] w-full absolute top-0 left-0 -z-1">
+                <img src="./img/blog/img-01.png" class="size-full object-cover" alt="">
+              </picture>
+              <div class="flex items-center flex-wrap gap-x-2 gap-y-1">
+                <span class="bg-[#2F4259CC] py-1 px-[10px] rounded-[6px]">
+                  <span class="text-white text-[15px] font-semibold leading-[140%]">Новинки</span>
+                </span>
+                <span class="bg-[#2F4259CC] py-1 px-[10px] rounded-[6px]">
+                  <span class="text-white text-[15px] font-semibold leading-[140%]">Автоматика</span>
+                </span>
+              </div>
+            </div>
+            <div class="mt-4">
+              <h3 class="text-lg font-semibold leading-[140%] mb-2">
+                Реле с 2 перекидными контактами: технические характеристики
+              </h3>
+              <div class="text-[17px] leading-[140%] text-[#323338B2] font-medium">
+                Контакты реле, которые находятся в разомкнутом…
+                <span class="text-[#3B8BEA]">читать далее</span>
+              </div>
+              <div class="text-right mt-5 text-[17px] leading-[140%] text-[#A4A4A4] font-medium">
+                12 января 2025
+              </div>
+            </div>
+          </a>
+          <a href="#" class="flex flex-col rounded-2xl p-4 border-[1px] border-[#DCDCDC]">
+            <div class="relative p-[10px] flex items-end h-[200px] z-1 rounded-[10px] overflow-hidden">
+              <picture class="h-[200px] w-full absolute top-0 left-0 -z-1">
+                <img src="./img/blog/img-02.png" class="size-full object-cover" alt="">
+              </picture>
+              <div class="flex items-center flex-wrap gap-x-2 gap-y-1">
+                <span class="bg-[#2F4259CC] py-1 px-[10px] rounded-[6px]">
+                  <span class="text-white text-[15px] font-semibold leading-[140%]">Новинки</span>
+                </span>
+                <span class="bg-[#2F4259CC] py-1 px-[10px] rounded-[6px]">
+                  <span class="text-white text-[15px] font-semibold leading-[140%]">Управление тепловыми пунктами</span>
+                </span>
+              </div>
+            </div>
+            <div class="mt-4">
+              <h3 class="text-lg font-semibold leading-[140%] mb-2">
+                Реле с 4 перекидными контактами: технические характеристики
+              </h3>
+              <div class="text-[17px] leading-[140%] text-[#323338B2] font-medium">
+                Контакты реле, которые находятся в разомкнутом…
+                <span class="text-[#3B8BEA]">читать далее</span>
+              </div>
+              <div class="text-right mt-5 text-[17px] leading-[140%] text-[#A4A4A4] font-medium">
+                12 января 2025
+              </div>
+            </div>
+          </a>
+          <a href="#" class="flex flex-col rounded-2xl p-4 border-[1px] border-[#DCDCDC]">
+            <div class="relative p-[10px] flex items-end h-[200px] z-1 rounded-[10px] overflow-hidden">
+              <picture class="h-[200px] w-full absolute top-0 left-0 -z-1">
+                <img src="./img/blog/img-03.png" class="size-full object-cover" alt="">
+              </picture>
+              <div class="flex items-center flex-wrap gap-x-2 gap-y-1">
+                <span class="bg-[#2F4259CC] py-1 px-[10px] rounded-[6px]">
+                  <span class="text-white text-[15px] font-semibold leading-[140%]">Новинки</span>
+                </span>
+                <span class="bg-[#2F4259CC] py-1 px-[10px] rounded-[6px]">
+                  <span class="text-white text-[15px] font-semibold leading-[140%]">Автоматика</span>
+                </span>
+              </div>
+            </div>
+            <div class="mt-4">
+              <h3 class="text-lg font-semibold leading-[140%] mb-2">
+                Реле с 1 перекидным контактом
+              </h3>
+              <div class="text-[17px] leading-[140%] text-[#323338B2] font-medium">
+                Контакты реле, которые находятся в разомкнутом…
+                <span class="text-[#3B8BEA]">читать далее</span>
+              </div>
+              <div class="text-right mt-5 text-[17px] leading-[140%] text-[#A4A4A4] font-medium">
+                12 января 2025
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="mt-8 lg:mt-6">
+          <a href="#"
+            class="w-full shrink-0 bg-[#3B8BEA1A] inline-flex items-center justify-center p-[15px] 
+                rounded-2xl text-[#3B8BEA] font-semibold cursor-pointer hover:bg-[#3B8BEA] hover:text-white transition-all">
+            Показать еще
+          </a>
+          <div class="flex items-center gap-2 mt-6">
+            <a href="#"
+              class="size-[36px] flex items-center justify-center font-base bg-[#3B8BEA] text-white font-semibold rounded-lg hover:bg-[#3B8BEA] hover:text-white transition-all">1</a>
+            <a href="#"
+              class="size-[36px] flex items-center justify-center font-base text-[#3B8BEA] font-semibold rounded-lg hover:bg-[#3B8BEA] hover:text-white transition-all">2</a>
+            <a href="#"
+              class="size-[36px] flex items-center justify-center font-base text-[#3B8BEA] font-semibold rounded-lg hover:bg-[#3B8BEA] hover:text-white transition-all">3</a>
+            <a href="#"
+              class="size-[36px] flex items-center justify-center font-base text-[#3B8BEA] font-semibold rounded-lg hover:bg-[#3B8BEA] hover:text-white transition-all">4</a>
+            <a href="#"
+              class="size-[36px] flex items-center justify-center font-base text-[#3B8BEA] font-semibold rounded-lg md:hidden hover:bg-[#3B8BEA] hover:text-white transition-all">5</a>
+            <a href="#"
+              class="size-[36px] flex items-center justify-center font-base text-[#3B8BEA] font-semibold rounded-lg md:hidden hover:bg-[#3B8BEA] hover:text-white transition-all">6</a>
+            <a href="#"
+              class="size-[36px] flex items-center justify-center font-base text-[#3B8BEA] font-semibold rounded-lg md:hidden hover:bg-[#3B8BEA] hover:text-white transition-all">7</a>
+            <a href="#"
+              class="size-[36px] flex items-center justify-center font-base text-[#3B8BEA] font-semibold rounded-lg md:hidden hover:bg-[#3B8BEA] hover:text-white transition-all">8</a>
+            <a href="#"
+              class="size-[36px] flex items-center justify-center font-base text-[#3B8BEA] font-semibold rounded-lg md:hidden hover:bg-[#3B8BEA] hover:text-white transition-all">9</a>
+            <a href="#"
+              class="size-[36px] flex items-center justify-center font-base text-[#3B8BEA] font-semibold rounded-lg md:hidden hover:bg-[#3B8BEA] hover:text-white transition-all">10</a>
+            <a href="#"
+              class="size-[36px] flex items-center justify-center font-base text-[#3B8BEA] font-semibold rounded-lg md:hidden hover:bg-[#3B8BEA] hover:text-white transition-all">11</a>
+            <a href="#"
+              class="size-[36px] flex items-center justify-center font-base text-[#323338B2] font-semibold rounded-lg">...</a>
+            <a href="#"
+              class="py-[10px] px-6 bg-transparent border-[1px] border-[#3B8BEA] text-[#3B8BEA] leading-[134%] text-xs font-semibold rounded-[9px] hover:bg-[#3B8BEA] hover:text-white transition-all">Дальше</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16 lg:py-15 md:py-8">
+      <div class="my-container">
+        <div data-request="form" class="p-6 rounded-3xl bg-primary text-white flex items-start 
+          lg:flex-col lg:gap-6 md:rounded-none md:w-[calc(100% + 48px)] md:-mx-6 md:py-8 md:px-8">
+          <div class="flex flex-col gap-[10px] items-start w-[34%] pr-4 lg:w-full">
+            <h3 class="text-2xl font-semibold md:text-base">Подпишитесь на рассылку</h3>
+            <div class="text-[15px] md:text-sm">и получайте обзоры, статьи и рекомендации от наших экспертов</div>
+          </div>
+          <div class="flex flex-col items-start gap-4 w-[66%] lg:w-full">
+            <div class="flex items-start gap-4 w-full md:flex-col">
+              <div class="w-full">
+                <div class="w-full flex items-center bg-white roder-[1px] border-white rounded-2xl p-[20px]">
+                  <span class="pr-5 mr-5 border-r-[1px] border-gray md:pr-4 md:mr-4">
+                    <img src="./img/icons/email.svg" class="size-6" alt="">
+                  </span>
+                  <input type="text" placeholder="Электронная почта"
+                    class="w-full outline-0 text-[17px] leading-[140%] font-medium text-[#323338] placeholder:text-[#A4A4A4]">
+                </div>
+                <span class="hidden text-xs text-[#F55353] mt-[6px]">Обязательное поле для заполнения</span>
+              </div>
+              <button type="button" data-request="btn"
+                class="w-[305px] shrink-0 bg-[#323338] inline-flex items-center justify-center p-5 
+                rounded-2xl text-white font-semibold lg:w-auto lg:px-10 md:w-full cursor-pointer hover:bg-[#050506] transition-all">
+                <span>Подписаться</span>
+              </button>
+            </div>
+            <div class="text-sm lg:text-xs">
+              Нажимая на кнопку «Отправить», вы подтверждаете своё согласие на обработку персональных данных
+            </div>
+          </div>
+        </div>
+        <div data-request="complete" class="hidden relative p-6 pl-[132px] min-h-[150px] rounded-3xl bg-primary text-white
+          lg:py-8 lg:px-6 md:w-[calc(100% + 48px)] md:-mx-6 md:py-6 md:px-6 md:rounded-none">
+          <div class="flex items-center mb-3 lg:gap-6 lg:mb-6 md:flex-col md:items-start md:mb-4">
+            <img src="./img/icons/complete.svg"
+              class="absolute top-[50%] left-6 translate-y-[-50%] lg:static lg:translate-y-0 lg:size-16 md:size-18">
+            <h3 class="text-2xl font-semibold leading-[140%] lg:max-w-[320px] md:text-lg">Почти готово — подтвердите
+              подписку</h3>
+          </div>
+          <div class="text-[15px] leading-[140%] font-medium mb-4 md:mb-15">
+            Зайдите в свою почту, откройте наше письмо и нажмите «Подтвердить подписку». Без этого мы не сможем
+            отправлять вам новые статьи.
+          </div>
+          <div class="text-xs text-[#FFFFFFE5]">Не видите письмо? Проверьте «Спам» или «Промоакции».</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include('footer.html')
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/swiper-bundle.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

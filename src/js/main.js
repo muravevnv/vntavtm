@@ -281,4 +281,12 @@ $(document).ready(function () {
       }, delay);
     });
   });
+
+
+  $('[data-accordion="head"]').on('click', function () {
+    const $block = $(this).closest('[data-accordion="block"]');
+    const $body = $block.find('[data-accordion="body"]');
+    $block.toggleClass('is-open');
+    $body.slideToggle();
+  })
 });
