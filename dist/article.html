@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Главная</title>
+  <title>Статья детальная</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
@@ -462,13 +462,13 @@
       </div>
     </section>
     <section class="pt-[64px] lg:pt-8 md:pt-6">
-      <div class="my-container max-w-[890px] mx-auto lg:max-w-[600px]">
+      <div class="my-container max-w-[954px] mx-auto lg:max-w-[664px]">
         <div class="w-full">
-          <h2 class="text-2xl leading-[140%] font-semibold mb-6 lg:text-[22px] md:text-lg">
+          <h3 class="text-2xl leading-[140%] font-semibold mb-6 lg:text-[22px] md:text-lg">
             Рассмотрим принципы работы, а также основные преимещества и недостатки регулирования температуры с помощью
             контактораи твердотельного реле
-          </h2>
-          <div class="text-[17px] leading-[140%] md:text-[15px]">
+          </h3>
+          <div class="text-[17px] leading-[140%] font-medium md:text-[15px]">
             <p class="mb-4">
               Как будем управлять электрическим нагревателем — с помощью контактора или твердотельного реле?
             </p>
@@ -498,8 +498,193 @@
             </p>
           </div>
         </div>
-        <div
-          class="w-full flex items-center justify-between gap-6 mt-10 pt-10 border-t-[1px] border-[#DCDCDC] md:pt-6 md:mt-6 md:flex-col md:items-start">
+        <div class="w-full pt-10 md:pt-6">
+          <h2 class="text-[34px] leading-[130%] font-bold mb-6 lg:text-[30px] md:text-2xl">
+            Управление электрокалорифером с помощью контактора
+          </h2>
+          <div class="text-[17px] leading-[140%] font-medium mb-6 md:text-[15px]">
+            В данном случае регулировка температуры происходит с помощью включения и отключения контактора. Предположим,
+            уставка температуры — 21 °C. Так, если температура опускается ниже уставки, то контактор включает
+            нагреватель, а после достижения уставки он его отключает.
+          </div>
+          <div class="relative overflow-hidden">
+            <button type="button" class="slider-nav-btn slider-prev absolute z-2 top-[47%] translate-y-[-50%] md:hidden"
+              data-slider-prev="article-slider">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M11 8L15 12L11 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button type="button" class="slider-nav-btn slider-next absolute z-2 top-[47%] translate-y-[-50%] md:hidden"
+              data-slider-next="article-slider">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M13 16L9 12L13 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="overflow-hidden" data-slider="article-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <figure>
+                    <picture class="block size-full">
+                      <img src="./img/article/img-01.jpg" class="w-full block rounded-3xl" alt="">
+                    </picture>
+                    <figcaption class="text-[15px] text-[#5A5B5F] mt-4">Подпись к фотографии/ фотографиям</figcaption>
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure>
+                    <picture class="block size-full">
+                      <img src="./img/article/img-01.jpg" class="w-full block rounded-3xl" alt="">
+                    </picture>
+                    <figcaption class="text-[15px] text-[#5A5B5F] mt-4">Подпись к фотографии/ фотографиям</figcaption>
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure>
+                    <picture class="block size-full">
+                      <img src="./img/article/img-01.jpg" class="w-full block rounded-3xl" alt="">
+                    </picture>
+                    <figcaption class="text-[15px] text-[#5A5B5F] mt-4">Подпись к фотографии/ фотографиям</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full pt-10 md:pt-6">
+          <h3 class="text-2xl leading-[140%] font-semibold mb-4 lg:text-[22px] md:text-lg">Плюсы щитов управления
+            с контактором</h3>
+          <ul class="mb-6 list-disc pl-6 font-medium">
+            <li class="text-[17px] leading-[140%] mb-1 md:text-[15px] md:mb-0">
+              Низкая цена
+            </li>
+            <li class="text-[17px] leading-[140%] md:text-[15px]">
+              Щит с контактором дешевле, чем щит с твердотельными реле
+            </li>
+          </ul>
+          <h3 class="text-2xl leading-[140%] font-semibold mb-4 lg:text-[22px] md:text-lg">Минусы</h3>
+          <ul class="list-disc pl-6 font-medium">
+            <li class="text-[17px] leading-[140%]">
+              Низкая надёжность и точность поддержания температуры. У контактора есть определённый ресурс службы —
+              количество циклов срабатывания (другими словами, срок жизни — от 100 тысяч до 4 миллионов срабатываний
+              в зависимости от класса). Поэтому приходится выбирать — либо больший срок службы в ущерб точности
+              поддержания температуры, либо наоборот. Если контактор будет слишком часто включаться/отключаться, то срок
+              его службы будет меньше, а точность поддержания температуры выше. Если будет срабатывать реже, то,
+              соответственно, срок его службы будет больше, а точность ниже.
+            </li>
+          </ul>
+        </div>
+        <div class="w-full pt-10 md:pt-6">
+          <h2 class="text-[34px] leading-[140%] font-bold mb-6 lg:text-[30px] md:text-2xl">Управление электрокалорифером
+            с помощью твердотельных
+            реле</h2>
+          <figure class="mb-6">
+            <picture class="block size-full">
+              <img src="./img/article/img-02.jpg" class="w-full block rounded-3xl md:h-[327px] md:object-cover" alt="">
+            </picture>
+            <figcaption class="text-[15px] text-[#5A5B5F] font-medium mt-4">Подпись к фотографии/ фотографиям
+            </figcaption>
+          </figure>
+          <div class="mb-6">
+            <div class="flex items-start gap-4 p-8 bg-[#3B8BEA1A] rounded-3xl lg:p-6 ">
+              <img src="./img/icons/quote.svg" class="size-10 shrink-0 md:size-4" alt="">
+              <span class="text-[17px] leading-[140%] font-medium text-[#3B8BEA] md:text-base">
+                Твердотельные реле поддерживают необходимую уставку температуры с помощью электронного
+                замыкания/размыкания
+                контакта
+              </span>
+            </div>
+          </div>
+          <div class="mb-6 lg:hidden">
+            <div class="flex items-start gap-4 p-8 bg-[#FD5D5D1A] rounded-3xl">
+              <img src="./img/icons/alert.svg" class="size-10 shrink-0" alt="">
+              <span class="text-[17px] leading-[140%] font-medium">
+                Твердотельные реле поддерживают необходимую уставку температуры с помощью электронного
+                замыкания/размыкания
+                контакта
+              </span>
+            </div>
+          </div>
+          <h3 class="text-2xl leading-[140%] font-semibold mb-4 lg:text-[22px] md:text-lg">
+            Плюсы щитов управления с твердотельным реле
+          </h3>
+          <ol class="list-decimal pl-6 font-medium mb-6">
+            <li class="text-[17px] leading-[140%] md:text-[15px]">
+              Надёжность. У «твердотелок» нет механических контактов, а значит, количество циклов срабатывания
+              неограниченно
+            </li>
+            <li class="text-[17px] leading-[140%] md:text-[15px]">
+              Точность поддержания температуры. Так как ресурс срабатывания у реле неограничен,
+              оно включается/отключается так часто, как необходимо для точного поддержания температуры
+            </li>
+            <li class="text-[17px] leading-[140%] md:text-[15px]">
+              Дополнительная защита. В щитах управления с твердотельными реле также используется контактор,
+              но уже только в качестве защиты — на случай, если произойдёт «пробой» реле
+            </li>
+          </ol>
+          <h3 class="text-2xl leading-[140%] font-semibold mb-4 lg:text-[22px] md:text-lg">Минусы</h3>
+          <ul class="list-disc pl-6 font-medium">
+            <li class="text-[17px] leading-[140%] md:text-[15px]">
+              Наличие <a href="#" class="text-[#3B8BEA]">радиатора</a>. В процессе коммутации реле греются, и это тепло
+              необходимо отводить. Для этих целей
+              в щитах управления с твердотельными реле используются радиаторы
+            </li>
+            <li class="text-[17px] leading-[140%] md:text-[15px]">Более высокая стоимость. Из-за дополнительных
+              элементов (контактора и радиатора)</li>
+          </ul>
+        </div>
+        <div class="pt-10">
+          <div class="border-[1px] border-[#DBDBDB] rounded-2xl overflow-hidden">
+            <table class="w-full text-left">
+              <thead>
+                <tr>
+                  <th class="p-3 text-lg font-semibold leading-[140%] text-center lg:text-base" colspan="2">
+                    Виды энергии
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th
+                    class="text-sm p-4 border-[1px] border-[#DBDBDB] bg-[#F4F6FB] border-l-0 md:text-xs md:p-3 md:pr-2">
+                    Энергия топлива</th>
+                  <td class="text-sm p-4 border-[1px] border-[#DBDBDB] bg-[#F4F6FB] border-r-0 md:text-xs md:p-3">
+                    Человек постоянно сталкивается с различными видами энергии. Можно с уверенностью сказать,
+                    что развитие
+                    технического прогресса — это преобразование одного вида энергии в другой.
+                  </td>
+                </tr>
+                <tr>
+                  <th class="text-sm p-4 border-[1px] border-[#DBDBDB] border-l-0 md:text-xs md:p-3 md:pr-2">Энергия
+                    пара</th>
+                  <td class="text-sm p-4 border-[1px] border-[#DBDBDB] border-r-0 md:text-xs md:p-3">
+                    Например, тепловая энергия топлива в топке паровоза переходит в тепловую энергию пара в котле,
+                    расположенного левее топки.
+                  </td>
+                </tr>
+                <tr>
+                  <th
+                    class="text-sm p-4 border-[1px] border-[#DBDBDB] bg-[#F4F6FB] border-l-0 border-b-0 md:text-xs md:p-3 md:pr-2">
+                    Механическая энерегия</th>
+                  <td
+                    class="text-sm p-4 border-[1px] border-[#DBDBDB] bg-[#F4F6FB] border-r-0 border-b-0 md:text-xs md:p-3">
+                    Она же, в свою очередь, преобразуется в механическую энергию поршня, который прикреплён к колёсам.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="mt-4 text-[17px] text-[#5A5B5F] md:text-[15px]">Название таблицы</div>
+          </div>
+        </div>
+        <div class="pt-10">
+          <div class="text-[17px] leading-[140%] font-medium md:text-[15px]">
+            Надеюсь, этот экспресс-анализ оборудования оказался вам полезным, и теперь при выборе автоматики
+            для управления электрокалорифером вы будете учитывать не только стоимость, но и функционал.
+          </div>
+        </div>
+        <div class="w-full flex items-center justify-between gap-6 mt-10 pt-10 border-t-[1px] 
+          border-[#DCDCDC] md:pt-6 md:mt-6 md:flex-col md:items-start">
           <div class="flex items-center gap-6 lg:flex-col lg:items-start lg:gap-4 md:gap-3">
             <span class="text-[17px] leading-[140%] font-medium text-[#323338CC]">Теги</span>
             <div class="flex items-center gap-3">

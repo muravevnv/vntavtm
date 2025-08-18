@@ -50,6 +50,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  const articleSlider = document.querySelector('[data-slider="article-slider"]');
+
+  if (articleSlider) {
+    new Swiper(articleSlider, {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      navigation: {
+        nextEl: '[data-slider-prev="article-slider"]',
+        prevEl: '[data-slider-next="article-slider"]',
+      }
+    });
+  }
+
   $('[data-catalog-block="toggle-btn"]').on("click", function () {
     const $parent = $(this).closest('[data-catalog-block="block"]');
     const $content = $parent.find('[data-catalog-block="content"]');
@@ -260,7 +273,7 @@ $(document).ready(function () {
 
       // Устанавливаем минимальную высоту меню второго уровня равной высоте подменю
       const submenuHeight = $submenu[0].scrollHeight;
-      $menu.css("min-height", submenuHeight +  "px");
+      $menu.css("min-height", submenuHeight + "px");
     });
 
     $subparent.on("mouseleave", function () {
@@ -282,11 +295,10 @@ $(document).ready(function () {
     });
   });
 
-
-  $('[data-accordion="head"]').on('click', function () {
+  $('[data-accordion="head"]').on("click", function () {
     const $block = $(this).closest('[data-accordion="block"]');
     const $body = $block.find('[data-accordion="body"]');
-    $block.toggleClass('is-open');
+    $block.toggleClass("is-open");
     $body.slideToggle();
-  })
+  });
 });
