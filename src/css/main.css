@@ -180,3 +180,8 @@
 [data-accordion="block"].is-open [data-accordion="head"] svg {
   transform: rotate(45deg) scale(1.2);
 }
+
+[data-tab="btn"].is-active {
+  background-color: #3b8bea;
+  color: #fff;
+}
