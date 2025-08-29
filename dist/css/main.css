@@ -607,6 +607,9 @@
   .h-\[1px\] {
     height: 1px;
   }
+  .h-\[28px\] {
+    height: 28px;
+  }
   .h-\[40px\] {
     height: 40px;
   }
@@ -670,6 +673,9 @@
   .w-40 {
     width: calc(var(--spacing) * 40);
   }
+  .w-\[21px\] {
+    width: 21px;
+  }
   .w-\[26\%\] {
     width: 26%;
   }
@@ -717,6 +723,9 @@
   }
   .w-\[306px\] {
     width: 306px;
+  }
+  .w-\[338px\] {
+    width: 338px;
   }
   .w-\[375px\] {
     width: 375px;
@@ -783,6 +792,9 @@
   }
   .max-w-\[639px\] {
     max-width: 639px;
+  }
+  .max-w-\[640px\] {
+    max-width: 640px;
   }
   .max-w-\[660px\] {
     max-width: 660px;
@@ -1101,6 +1113,9 @@
   .border-\[\#DCDCDC\] {
     border-color: #DCDCDC;
   }
+  .border-\[\#E0E0E0\] {
+    border-color: #E0E0E0;
+  }
   .border-\[\#EDEDED\] {
     border-color: #EDEDED;
   }
@@ -1275,6 +1290,9 @@
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
@@ -1335,6 +1353,9 @@
   .pt-\[9px\] {
     padding-top: 9px;
   }
+  .pt-\[10px\] {
+    padding-top: 10px;
+  }
   .pt-\[13px\] {
     padding-top: 13px;
   }
@@ -1389,6 +1410,9 @@
   .pb-\[2px\] {
     padding-bottom: 2px;
   }
+  .pb-\[11px\] {
+    padding-bottom: 11px;
+  }
   .pb-\[21px\] {
     padding-bottom: 21px;
   }
@@ -1409,6 +1433,9 @@
   }
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
+  }
+  .pl-5 {
+    padding-left: calc(var(--spacing) * 5);
   }
   .pl-6 {
     padding-left: calc(var(--spacing) * 6);
@@ -1667,6 +1694,11 @@
   }
   .transition-all {
     transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-colors {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
@@ -2490,6 +2522,11 @@
       width: 148px;
     }
   }
+  .lg\:w-\[280px\] {
+    @media (max-width: 1023px) {
+      width: 280px;
+    }
+  }
   .lg\:w-\[calc\(100\%\+48px\)\] {
     @media (max-width: 1023px) {
       width: calc(100% + 48px);
@@ -2669,6 +2706,11 @@
   .lg\:justify-center {
     @media (max-width: 1023px) {
       justify-content: center;
+    }
+  }
+  .lg\:justify-start {
+    @media (max-width: 1023px) {
+      justify-content: flex-start;
     }
   }
   .lg\:gap-0 {
@@ -3391,6 +3433,11 @@
       -webkit-line-clamp: 2;
     }
   }
+  .md\:block {
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
   .md\:contents {
     @media (max-width: 767px) {
       display: contents;
@@ -3426,6 +3473,12 @@
     @media (max-width: 767px) {
       width: calc(var(--spacing) * 5);
       height: calc(var(--spacing) * 5);
+    }
+  }
+  .md\:size-6 {
+    @media (max-width: 767px) {
+      width: calc(var(--spacing) * 6);
+      height: calc(var(--spacing) * 6);
     }
   }
   .md\:size-12 {
@@ -3624,6 +3677,11 @@
   .md\:gap-\[10px\] {
     @media (max-width: 767px) {
       gap: 10px;
+    }
+  }
+  .md\:gap-\[14px\] {
+    @media (max-width: 767px) {
+      gap: 14px;
     }
   }
   .md\:gap-\[22px\] {
@@ -3900,6 +3958,11 @@
   .md\:pb-\[10px\] {
     @media (max-width: 767px) {
       padding-bottom: 10px;
+    }
+  }
+  .md\:pb-\[13px\] {
+    @media (max-width: 767px) {
+      padding-bottom: 13px;
     }
   }
   .md\:pb-\[22px\] {
@@ -4388,11 +4451,22 @@
 [data-menu="menu"].is-open {
   transform: translateX(0) !important;
 }
-[data-accordion="block"].is-open [data-accordion="head"] {
+[data-accordion-type="faq"].is-open [data-accordion="head"] {
   color: #3b8bea;
 }
-[data-accordion="block"].is-open [data-accordion="head"] svg {
+[data-accordion-type="faq"].is-open [data-accordion="head"] svg {
   transform: rotate(45deg) scale(1.2);
+}
+[data-accordion-type="dropdown"].is-open [data-accordion="head"] svg {
+  transform: rotate(180deg);
+  stroke: #3B8BEA;
+}
+[data-accordion-type="docs"].is-open [data-accordion="head"] svg {
+  transform: rotate(180deg);
+  stroke: #3B8BEA;
+}
+[data-accordion-type="docs"].is-open [data-accordion="head"] {
+  color: #3B8BEA;
 }
 [data-tab="btn"].is-active {
   background-color: #3b8bea;

@@ -173,12 +173,26 @@
   transform: translateX(0) !important;
 }
 
-[data-accordion="block"].is-open [data-accordion="head"] {
+[data-accordion-type="faq"].is-open [data-accordion="head"] {
   color: #3b8bea;
 }
 
-[data-accordion="block"].is-open [data-accordion="head"] svg {
+[data-accordion-type="faq"].is-open [data-accordion="head"] svg {
   transform: rotate(45deg) scale(1.2);
+}
+
+[data-accordion-type="dropdown"].is-open [data-accordion="head"] svg {
+  transform: rotate(180deg);
+  stroke: #3B8BEA;
+}
+
+[data-accordion-type="docs"].is-open [data-accordion="head"] svg {
+  transform: rotate(180deg);
+  stroke: #3B8BEA;
+}
+
+[data-accordion-type="docs"].is-open [data-accordion="head"] {
+  color: #3B8BEA;
 }
 
 [data-tab="btn"].is-active {
