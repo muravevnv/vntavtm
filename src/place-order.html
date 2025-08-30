@@ -21,10 +21,10 @@
       <div class="my-container">
         <ul class="flex items-center gap-3">
           <li class="flex items-center gap-3 text-sm leading-[140%] after:content-['/']">
-            <a href="#" class=" text-[#323338]">Главная</a>
+            <a href="#" class=" text-[#323338] hover:underline">Главная</a>
           </li>
           <li class="flex items-center gap-3 text-sm leading-[140%]">
-            <a href="#" class=" text-[#323338B2]">Как оформить заказ</a>
+            <a href="#" class=" text-[#323338B2] pointer-events-none">Как оформить заказ</a>
           </li>
         </ul>
       </div>
@@ -36,19 +36,19 @@
         <nav
           class="grid grid-cols-4 bg-[#F4F6FB] rounded-2xl overflow-hidden 
           md:flex md:overflow-x-auto md:w-[calc(100% + 48px)] md:px-6 md:-mx-6 md:bg-transparent md:gap-[10px] md:rounded-none [&::-webkit-scrollbar]:hidden">
-          <a href="#" class="text-base leading-[150%] font-semibold text-center p-[10px] 
+          <a href="#v_01" class="text-base leading-[150%] font-semibold text-center p-[10px] 
             lg:text-sm
             md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0
             hover:bg-[#3B8BEA] hover:text-white transition-all">Онлайн</a>
-          <a href="#" class="text-base leading-[150%] font-semibold text-center p-[10px] 
+          <a href="#v_02" class="text-base leading-[150%] font-semibold text-center p-[10px] 
             md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0
             hover:bg-[#3B8BEA] hover:text-white transition-all">Калькулятор</a>
-          <a href="#" class="text-base leading-[150%] font-semibold text-center p-[10px] 
+          <a href="#v_03" class="text-base leading-[150%] font-semibold text-center p-[10px] 
             lg:text-sm
             md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0
             hover:bg-[#3B8BEA] hover:text-white transition-all">Опросный
             лист</a>
-          <a href="#" class="text-base leading-[150%] font-semibold text-center p-[10px] 
+          <a href="#v_04" class="text-base leading-[150%] font-semibold text-center p-[10px] 
             lg:text-sm
             md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0
             hover:bg-[#3B8BEA] hover:text-white transition-all">Файл
@@ -56,7 +56,7 @@
         </nav>
       </div>
     </section>
-    <section class="pt-[66px] lg:pt-8 md:pt-6">
+    <section class="pt-[66px] lg:pt-8 md:pt-6" id="v_01">
       <div class="my-container">
         <div class="grid grid-cols-[0.94fr_1fr] items-center gap-12 lg:grid-cols-1 lg:gap-8 md:gap-6">
           <div class="w-full">
@@ -64,7 +64,7 @@
               1</div>
             <h3 class="text-2xl leading-[140%] font-semibold mb-6 lg:mb-4 lg:text-[22px] md:text-lg">Онлайн заказ
               через личный кабинет</h3>
-            <ol class="list-decimal list-inside flex flex-col items-start gap-3">
+            <ol class="list-decimal pl-[22px] flex flex-col items-start gap-3">
               <li class="text-[17px] leading-[140%] font-medium lg:text-base md:text-[15px]">Выбираете готовый шкаф в <a
                   href="#" class="text-[#3B8BEA]">каталоге</a></li>
               <li class="text-[17px] leading-[140%] font-medium lg:text-base md:text-[15px]">Нажимаете «Оформить» — счёт
@@ -77,7 +77,7 @@
               </li>
             </ol>
             <a href="#" class="max-w-[305px] w-full mt-8 relative z-1 inline-block py-5 px-6 bg-[#3B8BEA1A] rounded-2xl text-[#3B8BEA] text-center font-semibold 
-              lg:mt-6 md:max-w-full hover:bg-[#3B8BEA] hover:text-white transition-all">Перейти в личный
+              lg:mt-6 md:max-w-full hover:text-white transition-all">Перейти в личный
               кабинет</a>
           </div>
           <div class="w-full">
@@ -91,7 +91,7 @@
         </div>
       </div>
     </section>
-    <section class="pt-[66px] lg:pt-15 md:pt-8">
+    <section class="pt-[66px] lg:pt-15 md:pt-8" id="v_02">
       <div class="my-container">
         <div class="grid grid-cols-[0.94fr_1fr] items-center gap-12 lg:grid-cols-1 lg:gap-8 md:gap-6">
           <div class="w-full">
@@ -105,7 +105,7 @@
               предложение за 2 минуты без участия менеджера
             </div>
             <a href="#" class="max-w-[315px] w-full mt-8 relative z-1 inline-block py-5 px-6 bg-[#3B8BEA] rounded-2xl text-white text-center font-semibold 
-              lg:mt-6 md:max-w-full hover:bg-[#3B8BEA] hover:text-white transition-all">
+              lg:mt-6 md:max-w-full hover:bg-[#2C6CB8] hover:text-white transition-all">
               Рассчитать стоимость щита
             </a>
           </div>
@@ -119,9 +119,9 @@
         </div>
       </div>
     </section>
-    <section class="pt-[66px] lg:pt-15 md:pt-8">
+    <section class="pt-[66px] lg:pt-15 md:pt-8" id="v_03">
       <div class="my-container">
-        <div class="grid grid-cols-2 gap-12 p-10 bg-[#F4F6FB] rounded-3xl lg:p-8 lg:pb-10 lg:grid-cols-1 lg:gap-4
+        <div class="grid grid-cols-2 items-center gap-12 p-10 bg-[#F4F6FB] rounded-3xl lg:p-8 lg:pb-10 lg:grid-cols-1 lg:gap-4
           md:px-4 md:py-5">
           <div class="w-full">
             <div class="text-lg leading-[140%] font-semibold mb-1 text-[#3B8BEA] lg:text-base lg:leading-[85%]">Вариант
@@ -133,7 +133,7 @@
             </div>
             <a href="#" class="max-w-[305px] w-full mt-8 relative z-1 inline-block py-5 px-6 bg-[#3B8BEA] 
               rounded-2xl text-white text-center font-semibold lg:hidden
-              lg:mt-6 md:max-w-full hover:bg-[#3B8BEA] hover:text-white transition-all">
+              lg:mt-6 md:max-w-full hover:bg-[#2C6CB8] hover:text-white transition-all">
               Скачать опросный лист
             </a>
           </div>
@@ -161,7 +161,7 @@
         </div>
       </div>
     </section>
-    <section class="pt-[66px] lg:pt-15 md:pt-8">
+    <section class="pt-[66px] lg:pt-15 md:pt-8" id="v_04">
       <div class="my-container md:px-0">
         <div
           class="grid grid-cols-[0.985fr_1fr] gap-10 p-10 bg-[#F4F6FB] rounded-3xl lg:p-8 lg:pb-10 lg:grid-cols-1 lg:gap-6 md:p-0">
@@ -171,10 +171,10 @@
             <h3 class="text-2xl leading-[140%] font-semibold mb-[10px] lg:mb-[10px] lg:text-[22px] md:text-lg">
               Отправить проект АОВ
             </h3>
-            <div class="text-[17px] leading-[140%] mb-3 lg:text-base lg:leading-[136%] lg:mb-0 md:leading-[140%] md:text-[15px]">
-              Если вам удобнее заполнить файл на своем компьютере, а не использовать калькулятор, скачайте опросный лист
+            <div class="text-[17px] leading-[140%] font-medium mb-3 lg:text-base lg:leading-[136%] lg:mb-0 md:leading-[140%]">
+              Отправьте нам проект. Наши инженеры сами подберут для вас весь комплект автоматики. Свяжемся с вами в течение рабочего дня
             </div>
-            <picture class="lg:hidden">
+            <picture class="relative left-[-10px] lg:hidden">
               <img src="./img/aob/main.png" alt="">
             </picture>
           </div>
@@ -203,8 +203,8 @@
                   <span class="hidden text-xs text-[#F55353] mt-[6px]">Обязательное поле для заполнения</span>
                 </div>
                 <div class="w-full leading-0">
-                  <textarea name="message" placeholder="Напишите ваш вопрос..."
-                    class="w-full outline-0 text-[17px] leading-[140%] font-medium px-5 py-4 bg-[#F4F6FB] rounded-2xl h-[120px] text-[#323338] placeholder:text-[#A4A4A4]"></textarea>
+                  <textarea name="message" placeholder="Комментарий (задача, особенности проекта)"
+                    class="block w-full outline-0 text-[17px] leading-[140%] font-medium px-5 py-4 bg-[#F4F6FB] rounded-2xl h-[120px] text-[#323338] placeholder:text-[#A4A4A4]"></textarea>
                 </div>
                 <div class="w-full">
                   <label class="w-full cursor-pointer block" for="id_input_file">
@@ -233,7 +233,7 @@
                   </span>
                 </label>
                 <button type="submit" class="w-full relative z-1 inline-block py-5 px-6 bg-[#3B8BEA] rounded-2xl text-white text-center 
-                  font-semibold hover:bg-[#3B8BEA] hover:text-white transition-all cursor-pointer">
+                  font-semibold hover:bg-[#2C6CB8] hover:text-white transition-all cursor-pointer">
                   Отправить проект
                 </button>
               </div>
@@ -247,10 +247,10 @@
         <h2 class="text-[34px] leading-[130%] text-primary font-bold mb-6 lg:text-[30px] lg:mb-6 md:text-2xl">FAQ —
           частые
           вопросы</h2>
-        <div class="flex flex-col gap-[1px]">
-          <div class="w-full border-t-[1px] border-[#EDEDED] is-open" data-accordion="block">
-            <div class="flex items-start justify-between gap-4 py-4 cursor-pointer" data-accordion="head">
-              <div class="text-lg font-semibold lg:text-base">
+        <div class="flex flex-col">
+          <div class="w-full border-t-[1px] border-[#EDEDED] is-open" data-accordion="block"  data-accordion-type="faq">
+            <div class="flex items-start justify-between gap-4 pt-4 pb-[15px] cursor-pointer" data-accordion="head">
+              <div class="text-lg font-semibold leading-[140%] lg:text-base">
                 Сколько времени занимает изготовление шкафа по ТЗ?
               </div>
               <svg class="size-6 shrink-0" width="24" height="25" viewBox="0 0 24 25" fill="none"
@@ -260,14 +260,14 @@
                   fill="currentColor" />
               </svg>
             </div>
-            <div class="pb-[21px] text-[17px] leading-[140%] text-[#5A5B5F] md:text-[15px]" data-accordion="block">
+            <div class="pb-[21px] pt-[4px] text-[17px] font-medium leading-[140%] text-[#5A5B5F] pr-6 md:text-[15px] md:pr-0" data-accordion="body">
               Стандартный срок — от 15 рабочих дней после согласования схемы и оплаты счёта. Точный срок будет указан в
               коммерческом предложении.
             </div>
           </div>
-          <div class="w-full border-t-[1px] border-[#EDEDED]">
-            <div class="flex items-start justify-between gap-4 py-4 cursor-pointer">
-              <div class="text-lg font-semibold lg:text-base">
+          <div class="w-full border-t-[1px] border-[#EDEDED]" data-accordion="block"  data-accordion-type="faq">
+            <div class="flex items-start justify-between gap-4 pt-4 pb-[15px] cursor-pointer" data-accordion="head">
+              <div class="text-lg font-semibold leading-[140%] lg:text-base">
                 Как получить оригиналы закрывающих документов?
               </div>
               <svg class="size-6 shrink-0" width="24" height="25" viewBox="0 0 24 25" fill="none"
@@ -277,14 +277,14 @@
                   fill="currentColor" />
               </svg>
             </div>
-            <div class="pb-[21px] text-[17px] leading-[140%] text-[#5A5B5F] md:text-[15px]" style="display: none;">
+            <div class="pb-[21px] pt-[4px] text-[17px] font-medium leading-[140%] text-[#5A5B5F] pr-6 md:text-[15px] md:pr-0" style="display: none;" data-accordion="body">
               Стандартный срок — от 15 рабочих дней после согласования схемы и оплаты счёта. Точный срок будет указан в
               коммерческом предложении.
             </div>
           </div>
-          <div class="w-full border-t-[1px] border-[#EDEDED]">
-            <div class="flex items-center justify-between gap-4 py-4 cursor-pointer">
-              <div class="text-lg font-semibold lg:text-base">
+          <div class="w-full border-t-[1px] border-[#EDEDED]" data-accordion="block"  data-accordion-type="faq">
+            <div class="flex items-center justify-between gap-4 pt-4 pb-[15px] cursor-pointer" data-accordion="head">
+              <div class="text-lg font-semibold leading-[140%] lg:text-base">
                 Можно ли оплатить частями?
               </div>
               <svg class="size-6 shrink-0" width="24" height="25" viewBox="0 0 24 25" fill="none"
@@ -294,14 +294,14 @@
                   fill="currentColor" />
               </svg>
             </div>
-            <div class="pb-[21px] text-[17px] leading-[140%] text-[#5A5B5F] md:text-[15px]" style="display: none;">
+            <div class="pb-[21px] pt-[4px] text-[17px] font-medium leading-[140%] text-[#5A5B5F] pr-6 md:text-[15px] md:pr-0" style="display: none;" data-accordion="body">
               Стандартный срок — от 15 рабочих дней после согласования схемы и оплаты счёта. Точный срок будет указан в
               коммерческом предложении.
             </div>
           </div>
-          <div class="w-full border-t-[1px] border-[#EDEDED]">
-            <div class="flex items-center justify-between gap-4 py-4 cursor-pointer">
-              <div class="text-lg font-semibold lg:text-base">
+          <div class="w-full border-t-[1px] border-[#EDEDED]" data-accordion="block"  data-accordion-type="faq">
+            <div class="flex items-center justify-between gap-4 pt-4 pb-[15px] cursor-pointer" data-accordion="head">
+              <div class="text-lg font-semibold leading-[140%] lg:text-base">
                 Как рассчитывается доставка?
               </div>
               <svg class="size-6 shrink-0" width="24" height="25" viewBox="0 0 24 25" fill="none"
@@ -311,14 +311,14 @@
                   fill="currentColor" />
               </svg>
             </div>
-            <div class="pb-[21px] text-[17px] leading-[140%] text-[#5A5B5F] md:text-[15px]" style="display: none;">
+            <div class="pb-[21px] pt-[4px] text-[17px] font-medium leading-[140%] text-[#5A5B5F] pr-6 md:text-[15px] md:pr-0" style="display: none;" data-accordion="body">
               Стандартный срок — от 15 рабочих дней после согласования схемы и оплаты счёта. Точный срок будет указан в
               коммерческом предложении.
             </div>
           </div>
-          <div class="w-full border-t-[1px] border-[#EDEDED]">
-            <div class="flex items-center justify-between gap-4 py-4 cursor-pointer">
-              <div class="text-lg font-semibold lg:text-base">
+          <div class="w-full border-t-[1px] border-[#EDEDED]" data-accordion="block"  data-accordion-type="faq">
+            <div class="flex items-center justify-between gap-4 pt-4 pb-[15px] cursor-pointer" data-accordion="head">
+              <div class="text-lg font-semibold leading-[140%] lg:text-base">
                 Что делать, если нужен шкаф, которого нет в каталоге?
               </div>
               <svg class="size-6 shrink-0" width="24" height="25" viewBox="0 0 24 25" fill="none"
@@ -328,14 +328,14 @@
                   fill="currentColor" />
               </svg>
             </div>
-            <div class="pb-[21px] text-[17px] leading-[140%] text-[#5A5B5F] md:text-[15px]" style="display: none;">
+            <div class="pb-[21px] pt-[4px] text-[17px] font-medium leading-[140%] text-[#5A5B5F] pr-6 md:text-[15px] md:pr-0" style="display: none;" data-accordion="body">
               Стандартный срок — от 15 рабочих дней после согласования схемы и оплаты счёта. Точный срок будет указан в
               коммерческом предложении.
             </div>
           </div>
-          <div class="w-full border-t-[1px] border-[#EDEDED]">
-            <div class="flex items-center justify-between gap-4 py-4 cursor-pointer">
-              <div class="text-lg font-semibold lg:text-base">
+          <div class="w-full border-t-[1px] border-[#EDEDED]" data-accordion="block"  data-accordion-type="faq">
+            <div class="flex items-center justify-between gap-4 pt-4 pb-[15px] cursor-pointer" data-accordion="head">
+              <div class="text-lg font-semibold leading-[140%] lg:text-base">
                 Какие способы оплаты предусмотрены?
               </div>
               <svg class="size-6 shrink-0" width="24" height="25" viewBox="0 0 24 25" fill="none"
@@ -345,7 +345,7 @@
                   fill="currentColor" />
               </svg>
             </div>
-            <div class="pb-[21px] text-[17px] leading-[140%] text-[#5A5B5F] md:text-[15px]" style="display: none;">
+            <div class="pb-[21px] pt-[4px] text-[17px] font-medium leading-[140%] text-[#5A5B5F] pr-6 md:text-[15px] md:pr-0" style="display: none;" data-accordion="body">
               Стандартный срок — от 15 рабочих дней после согласования схемы и оплаты счёта. Точный срок будет указан в
               коммерческом предложении.
             </div>

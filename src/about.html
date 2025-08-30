@@ -28,13 +28,14 @@
               <a href="#" class=" text-white hover:underline">Главная</a>
             </li>
             <li class="flex items-center gap-3 text-sm leading-[140%]">
-              <a href="#" class=" text-[#FFFFFFB2]">О компании</a>
+              <a href="#" class=" text-[#FFFFFFB2] pointer-events-none">О компании</a>
             </li>
           </ul>
         </div>
         <div class="flex justify-between gap-16 items-end md:flex-col md:items-start md:gap-[42px]">
           <div class="flex flex-col items-start gap-6 max-w-[822px] text-white md:gap-4">
-            <h1 class="text-[46px] leading-[120%] font-semibold lg:text-[32px] lg:leading-[130%] md:text-[28px] md:leading-[122%]">
+            <h1
+              class="text-[46px] leading-[120%] font-semibold lg:text-[32px] lg:leading-[130%] md:text-[28px] md:leading-[122%]">
               «ВентАвтоматика» — производство шкафов управления вениляцией
             </h1>
             <div class="max-w-[660px] text-[17px] leading-[140%] font-medium lg:text-base md:text-[15px]">
@@ -55,7 +56,8 @@
       class="relative mt-[-117px] pt-12 pb-16 rounded-t-3xl z-1 bg-white lg:rounded-none lg:pt-4 lg:pb-8 lg:mt-0 md:pb-12">
       <div class="my-container">
         <div class="grid grid-cols-4 md:flex md:flex-col md:items-start">
-          <div class="flex flex-col items-start gap-3 py-6 px-10 border-r-[1px] border-[#EDEDED] 
+          <div
+            class="flex flex-col items-start gap-3 py-6 px-10 border-r-[1px] border-[#EDEDED] 
             lg:pl-0 lg:pr-4 lg:pb-4 lg:pt-6 md:w-full md:py-6 md:px-0 md:border-r-0 md:border-b-[2px] md:pb-[22px] md:gap-2">
             <h3 class="text-[46px] leading-[100%] font-semibold text-[#3B8BEA] lg:text-[30px] lg:leading-[130%]">2017
             </h3>
@@ -228,17 +230,19 @@
               </figure>
             </div>
           </div>
-          <button type="button" class="flex rounded-full items-center justify-center size-10 text-[#323338] bg-white shadow-md cursor-pointer hover:bg-[#3B8BEA] hover:text-white 
+          <button type="button"
+            class="flex rounded-full items-center justify-center size-10 text-[#323338] bg-white shadow-md cursor-pointer hover:bg-[#3B8BEA] hover:text-white 
             transition-all absolute z-2 top-[46%] translate-y-[-50%] left-[-20px] lg:left-[-8px] md:left-4 md:top-[42%]"
-            data-slider-prev="our-clients">
+            data-slider-prev="develop-slider">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path d="M13 16L9 12L13 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                 stroke-linejoin="round" />
             </svg>
           </button>
-          <button type="button" class="flex rounded-full items-center justify-center size-10 text-[#323338] bg-white shadow-md cursor-pointer hover:bg-[#3B8BEA] hover:text-white 
+          <button type="button"
+            class="flex rounded-full items-center justify-center size-10 text-[#323338] bg-white shadow-md cursor-pointer hover:bg-[#3B8BEA] hover:text-white 
             transition-all absolute z-2 top-[46%] translate-y-[-50%] right-[-28px] lg:right-[-8px] md:right-4 md:top-[42%]"
-            data-slider-next="our-clients">
+            data-slider-next="develop-slider">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path d="M11 8L15 12L11 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                 stroke-linejoin="round" />
@@ -401,35 +405,52 @@
         <div class="flex items-start lg:flex-col lg:gap-8">
           <nav
             class="flex flex-col items-start gap-4 w-[241px] shrink-0 lg:flex-row lg:overflow-y-auto lg:w-[calc(100%+48px)] lg:-mx-6 lg:px-6 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-            <button type="button" data-tab="btn" data-id="projects_01" class="w-full text-left py-[10px] px-4 rounded-2xl 
+            <button type="button" data-tabs-btn="projects_01" class="w-full text-left py-[10px] px-4 rounded-2xl 
               text-base leading-[150%] font-semibold lg:px-6 md:min-w-[254px]
                 bg-[#EDEDED] text-[#323338] whitespace-nowrap cursor-pointer is-active">
               Магазины, маркеты, ТРЦ
             </button>
-            <button type="button" data-tab="btn" data-id="projects_02" class="w-full text-left py-[10px] px-4 rounded-2xl 
+            <button type="button" data-tabs-btn="projects_02" class="w-full text-left py-[10px] px-4 rounded-2xl 
               text-base leading-[150%] font-semibold lg:px-6 md:min-w-[254px]
                 bg-[#EDEDED] text-[#323338] whitespace-nowrap cursor-pointer">
               Рестораны, кафе
             </button>
-            <button type="button" data-tab="btn" data-id="projects_03" class="w-full text-left py-[10px] px-4 rounded-2xl 
+            <button type="button" data-tabs-btn="projects_03" class="w-full text-left py-[10px] px-4 rounded-2xl 
               text-base leading-[150%] font-semibold lg:px-6 md:min-w-[254px]
                 bg-[#EDEDED] text-[#323338] whitespace-nowrap cursor-pointer">
               Промышленные объекты
             </button>
-            <button type="button" data-tab="btn" data-id="projects_04" class="w-full text-left py-[10px] px-4 rounded-2xl 
+            <button type="button" data-tabs-btn="projects_04" class="w-full text-left py-[10px] px-4 rounded-2xl 
               text-base leading-[150%] font-semibold lg:px-6 md:min-w-[254px]
                 bg-[#EDEDED] text-[#323338] whitespace-nowrap cursor-pointer">
               Медицинские учреждения
             </button>
-            <button type="button" data-tab="btn" data-id="projects_05" class="w-full text-left py-[10px] px-4 rounded-2xl 
+            <button type="button" data-tabs-btn="projects_05" class="w-full text-left py-[10px] px-4 rounded-2xl 
               text-base leading-[150%] font-semibold lg:px-6 md:min-w-[254px]
                 bg-[#EDEDED] text-[#323338] whitespace-nowrap cursor-pointer">
               Школы, детские сады
             </button>
           </nav>
           <div class="w-[calc(100%-241px)] pl-6 lg:pl-0 lg:w-full">
-            <div class="relative" data-tabs="content" data-id="projects_01">
-              <div class="overflow-hidden h-[584px] lg:h-auto lg:overflow-visible lg:pr-2" data-slider="projects-slider">
+            <div class="relative" data-tabs-content="projects_01">
+              <button type="button" class="flex rounded-full items-center justify-center size-10 text-[#323338] bg-white shadow-md 
+                cursor-pointer hover:bg-[#3B8BEA] hover:text-white transition-all absolute z-2 top-[49%] 
+                translate-y-[-50%] left-[-24px] lg:hidden" data-slider-prev="projects-slider">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M13 16L9 12L13 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button type="button" class="flex rounded-full items-center justify-center size-10 text-[#323338] bg-white shadow-md 
+                cursor-pointer hover:bg-[#3B8BEA] hover:text-white transition-all absolute z-2 top-[49%] 
+                translate-y-[-50%] right-[-24px] lg:hidden" data-slider-next="projects-slider">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M11 8L15 12L11 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+              <div class="overflow-hidden h-[584px] lg:h-auto lg:overflow-visible lg:pr-2"
+                data-slider="projects-slider">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="h-[275px] relative flex flex-col overflow-hidden rounded-2xl z-1 lg:h-[320px] md:h-[300px]
@@ -539,7 +560,7 @@
                 </div>
               </div>
             </div>
-            <div class="relative hidden" data-tabs="content" data-id="projects_02">
+            <div class="relative" style="display: none;" data-tabs-content="projects_02">
               <div class="overflow-hidden h-[584px] lg:h-auto lg:overflow-visible" data-slider="projects-slider">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -575,6 +596,69 @@
                 </div>
               </div>
             </div>
+            <div class="relative" style="display: none;" data-tabs-content="projects_03">
+              <div class="overflow-hidden h-[584px] lg:h-auto lg:overflow-visible" data-slider="projects-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="h-[275px] relative flex flex-col overflow-hidden rounded-2xl z-1 lg:h-[320px] md:h-[300px]
+                    before:absolute before:inset-0 before:size-full before:bg-[url('../img/projects/img-overlay.png')] 
+                    before:bg-cover before:bg-no-repeat">
+                      <picture class="absolute top-0 left-0 block size-full -z-1">
+                        <img src="./img/projects/img-01.jpg" class="size-full object-cover" alt="">
+                      </picture>
+                      <div class="relative z-1 p-6 flex flex-col items-start mt-auto text-white">
+                        <h5 class="text-lg leading-[140%] font-semibold mb-1">Универсам «Пятерочка»</h5>
+                        <div class="text-sm leading-[140%]">
+                          Московская область
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="relative" style="display: none;" data-tabs-content="projects_04">
+              <div class="overflow-hidden h-[584px] lg:h-auto lg:overflow-visible" data-slider="projects-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="h-[275px] relative flex flex-col overflow-hidden rounded-2xl z-1 lg:h-[320px] md:h-[300px]
+                    before:absolute before:inset-0 before:size-full before:bg-[url('../img/projects/img-overlay.png')] 
+                    before:bg-cover before:bg-no-repeat">
+                      <picture class="absolute top-0 left-0 block size-full -z-1">
+                        <img src="./img/projects/img-02.jpg" class="size-full object-cover" alt="">
+                      </picture>
+                      <div class="relative z-1 p-6 flex flex-col items-start mt-auto text-white">
+                        <h5 class="text-lg leading-[140%] font-semibold mb-1">Универсам «Пятерочка»</h5>
+                        <div class="text-sm leading-[140%]">
+                          Московская область
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="relative" style="display: none;" data-tabs-content="projects_05">
+              <div class="overflow-hidden h-[584px] lg:h-auto lg:overflow-visible" data-slider="projects-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="h-[275px] relative flex flex-col overflow-hidden rounded-2xl z-1 lg:h-[320px] md:h-[300px]
+                    before:absolute before:inset-0 before:size-full before:bg-[url('../img/projects/img-overlay.png')] 
+                    before:bg-cover before:bg-no-repeat">
+                      <picture class="absolute top-0 left-0 block size-full -z-1">
+                        <img src="./img/projects/img-03.jpg" class="size-full object-cover" alt="">
+                      </picture>
+                      <div class="relative z-1 p-6 flex flex-col items-start mt-auto text-white">
+                        <h5 class="text-lg leading-[140%] font-semibold mb-1">Универсам «Пятерочка»</h5>
+                        <div class="text-sm leading-[140%]">
+                          Московская область
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -583,8 +667,7 @@
       <div class="my-container md:p-0">
         <div class="p-10 bg-[#F4F6FB] rounded-3xl flex items-start gap-6 lg:flex-col lg:p-8 md:px-6 md:rounded-none">
           <div class="max-w-[465px] w-full lg:max-w-full">
-            <h2
-              class="text-[34px] leading-[130%] text-primary font-bold mb-4 lg:text-[30px] md:text-2xl md:mb-4">
+            <h2 class="text-[34px] leading-[130%] text-primary font-bold mb-4 lg:text-[30px] md:text-2xl md:mb-4">
               Сертификаты
             </h2>
             <div class="text-2xl leading-[140%] font-semibold lg:text-[22px] md:text-lg">

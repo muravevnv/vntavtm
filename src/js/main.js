@@ -50,6 +50,53 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  const developSlider = document.querySelector(
+    '[data-slider="develop-slider"]'
+  );
+
+  if (developSlider) {
+    new Swiper(developSlider, {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      navigation: {
+        nextEl: '[data-slider-next="develop-slider"]',
+        prevEl: '[data-slider-prev="develop-slider"]',
+      },
+      breakpoints: {
+        1024: {
+          slidesPerView: "auto",
+        },
+      },
+    });
+  }
+
+  const projectsSlider = document.querySelectorAll(
+    '[data-slider="projects-slider"]'
+  );
+
+  if (projectsSlider.length > 0)
+    projectsSlider.forEach((slider) => {
+      new Swiper(slider, {
+        slidesPerView: 1,
+        spaceBetween: 16,
+        navigation: {
+          nextEl: '[data-slider-next="projects-slider"]',
+          prevEl: '[data-slider-prev="projects-slider"]',
+        },
+        breakpoints: {
+          560: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+            grid: {
+              rows: 2,
+            },
+          },
+        },
+      });
+    });
+
   const articleSlider = document.querySelector(
     '[data-slider="article-slider"]'
   );
@@ -312,18 +359,27 @@ $(document).ready(function () {
     $(`[data-doc-section="${dataLink}"]`).show();
 
     if (window.matchMedia("(max-width: 767px)").matches) {
-      $('[data-doc-title]').hide();
-      $('[data-doc-nav]').hide();
+      $("[data-doc-title]").hide();
+      $("[data-doc-nav]").hide();
     }
   });
 
-  $('[data-doc-back]').on('click', function() {
+  $("[data-doc-back]").on("click", function () {
     $("[data-doc-section]").hide();
-    $('[data-doc-title]').show();
-    $('[data-doc-nav]').show();
-  })
+    $("[data-doc-title]").show();
+    $("[data-doc-nav]").show();
+  });
 
   if (window.matchMedia("(max-width: 767px)").matches) {
-    $('[data-doc-section]').hide();
+    $("[data-doc-section]").hide();
   }
+
+  $("[data-tabs-btn]").on("click", function () {
+    const tabId = $(this).attr("data-tabs-btn");
+    console.log(tabId);
+    $("[data-tabs-btn]").removeClass("is-active");
+    $(this).addClass("is-active");
+    $("[data-tabs-content]").hide();
+    $(`[data-tabs-content="${tabId}"]`).show();
+  });
 });
