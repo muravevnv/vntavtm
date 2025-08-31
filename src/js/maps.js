@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+  
   if (document.querySelector("#map")) {
     ymaps.ready(init);
     function init() {

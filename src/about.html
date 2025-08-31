@@ -43,12 +43,15 @@
               Более 20 000 наших изделий уже работают на объектах по всей России и СНГ.
             </div>
           </div>
-          <a href="#" class="flex flex-col items-center gap-3 w-[154px] shrink-0 md:flex-row md:w-auto">
-            <img src="./img/icons/play.svg" class="block size-[98px] lg:size-[72px] md:size-[56px]">
-            <span class="block text-lg font-semibold text-center text-white leading-[140%] lg:text-[16px]">
-              Смотреть видео о&nbsp;заводе
-            </span>
-          </a>
+          <div x-data="{openVideoAbout: false}">
+            <div @click='openVideoAbout = true' class="flex flex-col items-center gap-3 w-[154px] shrink-0 cursor-pointer md:flex-row md:w-auto">
+              <img src="./img/icons/play.svg" class="block size-[98px] lg:size-[72px] md:size-[56px]">
+              <span class="block text-lg font-semibold text-center text-white leading-[140%] lg:text-[16px]">
+                Смотреть видео о&nbsp;заводе
+              </span>
+            </div>
+             @@include('popups/popup-video.html')
+          </div>
         </div>
       </div>
     </section>
@@ -767,9 +770,9 @@
     </section>
   </main>
   @@include('footer.html')
-  @@include('popups/popup-video.html')
   <script src="./js/jquery.min.js"></script>
   <script src="./js/swiper-bundle.js"></script>
+  <script src="./js/alpine.js"></script>
   <script src="./js/main.js"></script>
 </body>
 
