@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Попапы</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/swiper-bundle.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="text-graphite">
+  @@include('header.html')
+  @@include('menu.html')
+  <main>
+    <section class="py-[66px] lg:py-10">
+      <div class="my-container">
+        <div x-data="{openCallOrderPopup: false}">
+          <button @click='openCallOrderPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+                font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+            Заказать звонок
+          </button>
+          @@include('popups/call-order.html')
+        </div>
+        <div x-data="{openSuccessOrderPopup: false}">
+          <button @click='openSuccessOrderPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+                font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+            Заявка отправлена
+          </button>
+          @@include('popups/success-order.html')
+        </div>
+        <div x-data="{openGetCatalogPopup: false}">
+          <button @click='openGetCatalogPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+                font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+            Получите каталог продукции
+          </button>
+          @@include('popups/get-catalog.html')
+        </div>
+        <div x-data="{openAskQuestionPopup: false}">
+          <button @click='openAskQuestionPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+                font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+            Задать вопрос
+          </button>
+          @@include('popups/ask-question.html')
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include('footer.html')
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/jquery.mask.min.js"></script>
+  <script src="./js/swiper-bundle.js"></script>
+  <script src="./js/alpine.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

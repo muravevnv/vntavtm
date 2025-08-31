@@ -382,4 +382,10 @@ $(document).ready(function () {
     $("[data-tabs-content]").hide();
     $(`[data-tabs-content="${tabId}"]`).show();
   });
+
+  $('input[type="tel"]').mask("+7 (999) 999-99-99", {
+    translation: {
+      9: { pattern: /[0-9]/ },
+    },
+  });
 });
