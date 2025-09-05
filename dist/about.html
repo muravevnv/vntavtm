@@ -455,13 +455,14 @@
             </div>
           </div>
           <div x-data="{openVideoAbout: false}">
-            <div @click='openVideoAbout = true' class="flex flex-col items-center gap-3 w-[154px] shrink-0 cursor-pointer md:flex-row md:w-auto">
+            <div @click='openVideoAbout = true'
+              class="flex flex-col items-center gap-3 w-[154px] shrink-0 cursor-pointer md:flex-row md:w-auto">
               <img src="./img/icons/play.svg" class="block size-[98px] lg:size-[72px] md:size-[56px]">
               <span class="block text-lg font-semibold text-center text-white leading-[140%] lg:text-[16px]">
                 Смотреть видео о&nbsp;заводе
               </span>
             </div>
-             <div 
+            <div 
   x-show="openVideoAbout" 
   x-cloak role="dialog" aria-modal="true"
   class="fixed inset-0 w-[100vw] h-[100svh] z-50 overflow-y-auto">
@@ -1402,7 +1403,8 @@
     </div>
   </div>
 </footer>
-  <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+  <script src="./js/jquery.mask.min.js"></script>
   <script src="./js/swiper-bundle.js"></script>
   <script src="./js/alpine.js"></script>
   <script src="./js/main.js"></script>
