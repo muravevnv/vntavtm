@@ -432,10 +432,10 @@
       <div class="my-container">
         <ul class="flex items-center gap-3">
           <li class="flex items-center gap-3 text-sm leading-[140%] after:content-['/']">
-            <a href="#" class=" text-[#323338] hover:underline">Главная</a>
+            <a href="#" class=" text-[#323338] font-medium hover:underline">Главная</a>
           </li>
           <li class="flex items-center gap-3 text-sm leading-[140%]">
-            <a href="#" class=" text-[#323338B2] pointer-events-none">Как оформить заказ</a>
+            <a href="#" class=" text-[#323338B2] font-medium pointer-events-none">Как оформить заказ</a>
           </li>
         </ul>
       </div>
@@ -488,7 +488,7 @@
               </li>
             </ol>
             <a href="#" class="max-w-[305px] w-full mt-8 relative z-1 inline-block py-5 px-6 bg-[#3B8BEA1A] rounded-2xl text-[#3B8BEA] text-center font-semibold 
-              lg:mt-6 md:max-w-full hover:text-white transition-all">Перейти в личный
+              lg:mt-6 md:max-w-full hover:text-white hover:bg-[#3B8BEA] transition-all">Перейти в личный
               кабинет</a>
           </div>
           <div class="w-full">
@@ -511,7 +511,7 @@
             <h3 class="text-2xl leading-[140%] font-semibold mb-6 lg:mb-4 lg:text-[22px] md:text-lg">
               Калькулятор стоимости
             </h3>
-            <div class="text-[17px] leading-[140%] lg:max-w-[540px] lg:text-base lg:leading-[136%] md:text-[15px]">
+            <div class="text-[17px] leading-[140%] font-medium lg:max-w-[540px] lg:text-base lg:leading-[136%] md:text-[15px]">
               Рассчитайте шкаф управления по своим параметрам. Перейдите в калькулятор — получите коммерческое
               предложение за 2 минуты без участия менеджера
             </div>
@@ -552,7 +552,7 @@
             <ol class="list-decimal pl-[21px] flex flex-col items-start gap-3">
               <li
                 class="text-[17px] leading-[140%] font-medium lg:text-base md:text-[15px] lg:leading-[136%] md:leading-[140%]">
-                Скачать PDF / DOCX из раздела Документация
+                Скачать PDF / DOCX из раздела <a href="#" class="text-[#3B8BEA] hover:text-[#2C6CB8] transition-colors">Документация</a>
               </li>
               <li
                 class="text-[17px] leading-[140%] font-medium lg:text-base md:text-[15px] lg:leading-[136%] md:leading-[140%]">
@@ -560,7 +560,7 @@
               </li>
               <li
                 class="text-[17px] leading-[140%] font-medium lg:text-base md:text-[15px] lg:leading-[136%] md:leading-[140%]">
-                Отправить файл на info@ventavtomatika.ru
+                Отправить файл на <a href="mailto:info@ventavtomatika.ru" class="text-[#3B8BEA] hover:text-[#2C6CB8] transition-colors">info@ventavtomatika.ru</a>
               </li>
               <li
                 class="text-[17px] leading-[140%] font-medium lg:text-base md:text-[15px] lg:leading-[136%] md:leading-[140%]">
@@ -606,7 +606,7 @@
                     <span class="pr-5 mr-5 border-r-[1px] border-gray md:pr-4 md:mr-4">
                       <img src="./img/icons/tel.svg" class="size-6" alt="">
                     </span>
-                    <input type="text" placeholder="Электронная почта"
+                    <input type="tel" placeholder="+7 (000) 000-00-00"
                       class="w-full outline-0 text-[17px] leading-[140%] font-medium text-[#323338] placeholder:text-[#A4A4A4]">
                   </div>
                   <span class="hidden text-xs text-[#F55353] mt-[6px]">Обязательное поле для заполнения</span>
@@ -785,7 +785,7 @@
       </div>
     </section>
   </main>
-  <footer class="py-16 bg-[#323338] text-white rounded-t-3xl lg:py-10 md:py-8">
+  <footer class="py-16 bg-[#323338] text-white rounded-t-3xl lg:py-10 md:py-8 relative z-1">
   <div class="my-container">
     <div class="flex items-start gap-4 lg:flex-col lg:pt-0 lg:gap-0">
       <div class="contents lg:flex lg:items-start lg:justify-between lg:w-full lg:gap-[50px] md:flex-col md:gap-8">
@@ -972,11 +972,13 @@
     </div>
   </div>
 </footer>
-    <script src="./js/jquery.min.js"></script>
-  <script src="./js/jquery.mask.min.js"></script>
-  <script src="./js/swiper-bundle.js"></script>
-  <script src="./js/alpine.js"></script>
-  <script src="./js/main.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_api_ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="./js/jquery.min.js" type="text/javascript"></script>
+  <script src="./js/jquery.mask.min.js" type="text/javascript"></script>
+  <script src="./js/swiper-bundle.js" type="text/javascript"></script>
+  <script src="./js/alpine.js" type="text/javascript"></script>
+  <script src="./js/main.js" type="text/javascript"></script>
+  <script src="./js/maps.js" type="text/javascript"></script>
 </body>
 
 </html>
