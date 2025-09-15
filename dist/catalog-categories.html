@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Главная</title>
+  <title>Каталог Категория</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
@@ -428,62 +428,272 @@
   </div>
 </div>
   <main>
-    <div class="my-container py-10">
-      <h3 class="text-xl font-semibold mb-3">Главная</h3>
-      <ol class="list-decimal pl-4 mb-6">
-        <li>
-          <a href="home.html">Главная</a>
-        </li>
-      </ol>
-      <h3 class="text-xl font-semibold mb-3">Дополнительные страницы</h3>
-      <ol class="list-decimal pl-4 mb-6">
-        <li>
-          <a href="contacts.html">Контакты</a>
-        </li>
-        <li>
-          <a href="delivery.html">Доставка и оплата</a>
-        </li>
-        <li>
-          <a href="place-order.html">Как оформить заказ</a>
-        </li>
-        <li>
-          <a href="about.html">О компании</a>
-        </li>
-        <li>
-          <a href="documentation.html">Документация</a>
-        </li>
-        <li>
-          <a href="oem.html">OEM-производство шкафов</a>
-        </li>
-        <li>
-          <a href="blog.html">Статьи (список)</a>
-        </li>
-        <li>
-          <a href="article.html">Статья (детальная)</a>
-        </li>
-      </ol>
-      <h3 class="text-xl font-semibold mb-3">Каталог</h3>
-      <ol class="list-decimal pl-4 mb-6">
-        <li>
-          <a href="catalog.html">Каталог</a>
-        </li>
-        <li>
-          <a href="catalog-production.html">Каталог.Продукция</a>
-        </li>
-        <li>
-          <a href="catalog-categories.html">Каталог.Категория</a>
-        </li>
-      </ol>
-      <h3 class="text-xl font-semibold mb-3">Поапы</h3>
-      <ol class="list-decimal pl-4">
-        <li>
-          <a href="popups.html">Попапы</a>
-        </li>
-      </ol>
-
-    </div>
+    <section class="pt-[13px] lg:pt-3">
+      <div class="my-container">
+        <ul class="flex items-center gap-3 whitespace-nowrap overflow-hidden overflow-ellipsis">
+          <li class="flex items-center gap-3 text-sm leading-[140%] after:content-['/']">
+            <a href="#" class=" text-[#323338] font-medium hover:underline">Главная</a>
+          </li>
+          <li class="items-center hidden gap-3 lg:flex after:content-['/']">
+            <span class="flex items-center justify-center w-[46px] h-[20px] bg-[#EDEDED] rounded-3xl">
+              <span class="relative top-[-5px]">...</span>
+            </span>
+          </li>
+          <li class="flex items-center gap-3 text-sm leading-[140%] after:content-['/'] lg:hidden">
+            <a href="#" class=" text-[#323338] font-medium hover:underline">Продукция</a>
+          </li>
+          <li class="flex items-center gap-3 text-sm leading-[140%] after:content-['/'] lg:hidden">
+            <a href="#" class=" text-[#323338] font-medium hover:underline">Шкафы управления вентиляцией</a>
+          </li>
+          <li class="flex items-center gap-3 text-sm leading-[140%]">
+            <a href="#" class=" text-[#323338B2] font-medium pointer-events-none">
+              Шкафы управления вентиляцией по техническому заданию
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="pt-[31px] pb-[66px] lg:pt-6 lg:pb-15 md:pt-[18px] md:pb-8">
+      <div class="my-container">
+        <h1
+          class="text-[34px] leading-[130%] font-bold text-[#3B8BEA] mb-[31px] lg:text-[30px] md:text-2xl md:mb-[10px]">
+          Шкафы управления вентиляцией по техническому заданию
+        </h1>
+        <div class="w-full mb-8 p-6 rounded-3xl flex items-center justify-between gap-[91px] bg-[#F4F6FB] 
+          lg:flex-col lg:gap-6 lg:items-start md:gap-4 md:p-4 md:mb-6">
+          <div class="text-[17px] leading-[140%] font-medium lg:w-full md:text-[15px]">
+            Компания ВентАвтоматика осуществляет проектирование и производство щитов автоматики любой сложности
+            по техническому заданию заказчика.
+          </div>
+          <button class="w-[275px] shrink-0 relative z-1 inline-block py-5 px-6 bg-[#3B8BEA] rounded-2xl text-white text-center 
+            font-semibold hover:bg-[#2C6CB8] hover:text-white transition-all cursor-pointer md:py-[15px] md:w-full">
+            Отправить проект
+          </button>
+        </div>
+        <h3 class="text-2xl leading-[140%] font-semibold text-[#3B8BEA] mb-6 md:text-lg">
+          Примеры произведенных нестандартных щитов управления
+        </h3>
+        <div class="grid grid-cols-2 gap-4 lg:flex lg:items-start lg:flex-col">
+          <div class="w-full flex items-center rounded-3xl overflow-hidden border-[2px] 
+            border-[#EDEDED] md:items-start md:rounded-2xl">
+            <picture class="w-[247px] shrink-0 md:w-[32%]">
+              <img src="./img/products/shield.png" alt="Щит управления вентилятором">
+            </picture>
+            <div class="w-full pt-6 px-4 pb-[44px] md:pt-[14px] md:pr-[14px] md:pl-[6px] md:pb-[14px]">
+              <h4 class="mb-4 text-[18px] leading-[140%] font-semibold md:text-base md:mb-2">
+                Щит управления <br> вентилятором
+              </h4>
+              <div class="w-full flex flex-col items-start gap-[6px] md:gap-1">
+                <div class="text-sm leading-[140%] font-medium text-[#323338] md:text-xs">
+                  Вентилятор:
+                  <span class="font-semibold pl-1 md:font-normal">~220В</span>
+                </div>
+                <div class="text-sm leading-[140%] font-medium text-[#323338] md:text-xs">
+                  Мощность:
+                  <span class="font-semibold pl-1 md:font-normal">до 2,2 кВт</span>
+                </div>
+                <div class="text-sm leading-[140%] font-medium text-[#323338] md:text-xs">
+                  Тип пуска вентилятора:
+                  <span class="font-semibold pl-1 md:font-normal">прямой</span>
+                </div>
+                <div class="text-sm leading-[140%] font-medium text-[#323338] md:text-xs">
+                  Резерв вентилятора:
+                  <span class="font-semibold pl-1 md:font-normal">нет</span>
+                </div>
+                <div class="text-sm leading-[140%] font-medium text-[#323338] md:text-xs">
+                  Корпус:
+                  <span class="font-semibold pl-1 md:font-normal">металл, IP31</span>
+                </div>
+                <div class="text-sm leading-[140%] font-medium text-[#323338] md:text-xs">
+                  Габариты Ш х В х Г:
+                  <span class="font-semibold pl-1 md:font-normal">310 х 395 х 220</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full flex items-center rounded-3xl overflow-hidden border-[2px] border-[#EDEDED] md:items-start md:rounded-2xl">
+            <picture class="w-[247px] shrink-0 md:w-[32%]">
+              <img src="./img/products/shield.png" alt="Щит управления вентилятором">
+            </picture>
+            <div class="w-full pt-6 px-4 pb-[44px] md:pt-[14px] md:pr-[14px] md:pl-[6px] md:pb-[14px]">
+              <h4 class="mb-4 text-[18px] leading-[140%] font-semibold md:text-base md:mb-2">
+                Щит управления <br> вентилятором
+              </h4>
+              <div class="w-full flex flex-col items-start gap-[6px] md:gap-1">
+                <div class="text-sm leading-[140%] font-medium text-[#323338] md:text-xs">
+                  Вентилятор:
+                  <span class="font-semibold pl-1 md:font-normal">~220В</span>
+                </div>
+                <div class="text-sm leading-[140%] font-medium text-[#323338] md:text-xs">
+                  Мощность:
+                  <span class="font-semibold pl-1 md:font-normal">до 2,2 кВт</span>
+                </div>
+                <div class="text-sm leading-[140%] font-medium text-[#323338] md:text-xs">
+                  Тип пуска вентилятора:
+                  <span class="font-semibold pl-1 md:font-normal">прямой</span>
+                </div>
+                <div class="text-sm leading-[140%] font-medium text-[#323338] md:text-xs">
+                  Резерв вентилятора:
+                  <span class="font-semibold pl-1 md:font-normal">нет</span>
+                </div>
+                <div class="text-sm leading-[140%] font-medium text-[#323338] md:text-xs">
+                  Корпус:
+                  <span class="font-semibold pl-1 md:font-normal">металл, IP31</span>
+                </div>
+                <div class="text-sm leading-[140%] font-medium text-[#323338] md:text-xs">
+                  Габариты Ш х В х Г:
+                  <span class="font-semibold pl-1 md:font-normal">310 х 395 х 220</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full flex items-center rounded-3xl overflow-hidden border-[2px] border-[#EDEDED] md:items-start md:rounded-2xl">
+            <picture class="w-[247px] shrink-0 md:w-[32%]">
+              <img src="./img/products/shield.png" alt="Щит управления вентилятором">
+            </picture>
+            <div class="w-full pt-6 px-4 pb-[44px] md:pt-[14px] md:pr-[14px] md:pl-[6px] md:pb-[14px]">
+              <h4 class="mb-4 text-[18px] leading-[140%] font-semibold md:text-base md:mb-2">
+                Щит управления <br> вентилятором
+              </h4>
+              <div class="w-full flex flex-col items-start gap-[6px] md:gap-1">
+                <div class="text-sm leading-[140%] font-medium text-[#323338] md:text-xs">
+                  Вентилятор:
+                  <span class="font-semibold pl-1 md:font-normal">~220В</span>
+                </div>
+                <div class="text-sm leading-[140%] font-medium text-[#323338] md:text-xs">
+                  Мощность:
+                  <span class="font-semibold pl-1 md:font-normal">до 2,2 кВт</span>
+                </div>
+                <div class="text-sm leading-[140%] font-medium text-[#323338] md:text-xs">
+                  Тип пуска вентилятора:
+                  <span class="font-semibold pl-1 md:font-normal">прямой</span>
+                </div>
+                <div class="text-sm leading-[140%] font-medium text-[#323338] md:text-xs">
+                  Резерв вентилятора:
+                  <span class="font-semibold pl-1 md:font-normal">нет</span>
+                </div>
+                <div class="text-sm leading-[140%] font-medium text-[#323338] md:text-xs">
+                  Корпус:
+                  <span class="font-semibold pl-1 md:font-normal">металл, IP31</span>
+                </div>
+                <div class="text-sm leading-[140%] font-medium text-[#323338] md:text-xs">
+                  Габариты Ш х В х Г:
+                  <span class="font-semibold pl-1 md:font-normal">310 х 395 х 220</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full flex items-center rounded-3xl overflow-hidden border-[2px] border-[#EDEDED] md:items-start md:rounded-2xl">
+            <picture class="w-[247px] shrink-0 md:w-[32%]">
+              <img src="./img/products/shield.png" alt="Щит управления вентилятором">
+            </picture>
+            <div class="w-full pt-6 px-4 pb-[44px] md:pt-[14px] md:pr-[14px] md:pl-[6px] md:pb-[14px]">
+              <h4 class="mb-4 text-[18px] leading-[140%] font-semibold md:text-base md:mb-2">
+                Щит управления <br> вентилятором
+              </h4>
+              <div class="w-full flex flex-col items-start gap-[6px] md:gap-1">
+                <div class="text-sm leading-[140%] font-medium text-[#323338] md:text-xs">
+                  Вентилятор:
+                  <span class="font-semibold pl-1 md:font-normal">~220В</span>
+                </div>
+                <div class="text-sm leading-[140%] font-medium text-[#323338] md:text-xs">
+                  Мощность:
+                  <span class="font-semibold pl-1 md:font-normal">до 2,2 кВт</span>
+                </div>
+                <div class="text-sm leading-[140%] font-medium text-[#323338] md:text-xs">
+                  Тип пуска вентилятора:
+                  <span class="font-semibold pl-1 md:font-normal">прямой</span>
+                </div>
+                <div class="text-sm leading-[140%] font-medium text-[#323338] md:text-xs">
+                  Резерв вентилятора:
+                  <span class="font-semibold pl-1 md:font-normal">нет</span>
+                </div>
+                <div class="text-sm leading-[140%] font-medium text-[#323338] md:text-xs">
+                  Корпус:
+                  <span class="font-semibold pl-1 md:font-normal">металл, IP31</span>
+                </div>
+                <div class="text-sm leading-[140%] font-medium text-[#323338] md:text-xs">
+                  Габариты Ш х В х Г:
+                  <span class="font-semibold pl-1 md:font-normal">310 х 395 х 220</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pt-[66px] pb-[86px] -mb-[20px] bg-[#F4F6FB] lg:pt-15 lg:pb-[70px] md:pt-8 md:pb-[52px]">
+      <div class="my-container md:px-8">
+        <h2 class="max-w-[780px] w-full text-[34px] leading-[130%] font-bold text-[#3B8BEA] mb-8 
+          lg:text-[30px] lg:mb-6 md:text-2xl md:pr-3">
+          Узнать стоимость сборки и сделать заказ можно удобным для вас способом
+        </h2>
+        <div class="grid grid-cols-3 gap-4 lg:grid-cols-1">
+          <a href="#" class="flex flex-col items-center justify-between gap-8 px-8 py-6 rounded-[22px]
+             bg-white box-shadow-card md:px-4 md:py-5 md:gap-6 group">
+            <div class="flex flex-col items-center gap-4">
+              <div class="flex items-center gap-2">
+                <img src="./img/icons/calculator-accent.svg" class="size-[30px]" alt="">
+                <h3 class="font-semibold text-2xl leading-[140%] lg:text-[22px]">Калькулятор</h3>
+              </div>
+              <div
+                class="text-[17px] text-center leading-[140%] font-medium text-[#323338CC] px-4 md:px-0">
+                Используйте калькулятор для&nbsp;расчета щита по&nbsp;нужным параметрам
+              </div>
+            </div>
+            <div
+              class="w-full flex item-center justify-center p-[18px] rounded-2xl border-[2px] 
+              border-[#3B8BEA] text-white bg-[#3B8BEA] font-semibold group-hover:bg-white 
+              group-hover:text-[#3B8BEA] transition-all md:py-[15px] md:text-base md:leading-[140%]">
+              Рассчитать цену
+            </div>
+          </a>
+          <a href="#" class="flex flex-col items-center justify-between gap-8 px-8 py-6 rounded-[22px] 
+            box-shadow-card bg-white md:px-4 md:py-5 md:gap-6 group">
+            <div class="flex flex-col items-center gap-4">
+              <div class="flex items-center gap-2">
+                <img src="./img/icons/mail-stroke.svg" class="size-[30px]" alt="">
+                <h3 class="font-semibold text-2xl leading-[140%] lg:text-[22px]">Напишите нам</h3>
+              </div>
+              <div
+                class="text-[17px] leading-[140%] text-center font-medium text-[#323338CC] px-4 md:px-0">
+                Просто отправьте проект или параметры установки, и мы подберем для вас шкаф управления
+              </div>
+            </div>
+            <div
+              class="w-full flex item-center justify-center p-[18px] rounded-2xl border-[2px] 
+              border-[#3B8BEA] text-white bg-[#3B8BEA] font-semibold group-hover:bg-white 
+                group-hover:text-[#3B8BEA] transition-all md:py-[15px] md:text-base md:leading-[140%]">
+              Отправить проект
+            </div>
+          </a>
+          <a href="#" class="flex flex-col items-center justify-between gap-8 px-8 py-6 rounded-[22px] 
+            box-shadow-card bg-white md:px-4 md:py-5 md:gap-6 group">
+            <div class="flex flex-col items-center gap-4">
+              <div class="flex items-center gap-2">
+                <img src="./img/icons/chat-cloude-question.svg" class="size-[30px]" alt="">
+                <h3 class="font-semibold text-2xl leading-[140%] lg:text-[22px]">Опросный лист</h3>
+              </div>
+              <div
+                class="text-[17px] text-center leading-[140%] font-medium text-[#323338CC] px-4 md:px-0">
+                Скачайте и заполните опросный лист и отправьте нам на почту <span
+                  class="text-[#3B8BEA]">info@ventavtomatika.ru</span>
+              </div>
+            </div>
+            <div
+              class="w-full flex item-center justify-center p-[18px] rounded-2xl border-[2px] border-[#3B8BEA] 
+              text-white bg-[#3B8BEA] font-semibold group-hover:bg-white group-hover:text-[#3B8BEA] transition-all
+               md:py-[15px] md:text-base md:leading-[140%]">
+              Документация
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
-
   <footer class="py-16 bg-[#323338] text-white rounded-t-3xl lg:py-10 md:py-8 relative z-1">
   <div class="my-container">
     <div class="flex items-start gap-4 lg:flex-col lg:pt-0 lg:gap-0">
@@ -671,9 +881,13 @@
     </div>
   </div>
 </footer>
-  <script src="./js/jquery.min.js"></script>
-  <script src="./js/swiper-bundle.js"></script>
-  <script src="./js/main.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_api_ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="./js/jquery.min.js" type="text/javascript"></script>
+  <script src="./js/jquery.mask.min.js" type="text/javascript"></script>
+  <script src="./js/swiper-bundle.js" type="text/javascript"></script>
+  <script src="./js/alpine.js" type="text/javascript"></script>
+  <script src="./js/main.js" type="text/javascript"></script>
+  <script src="./js/maps.js" type="text/javascript"></script>
 </body>
 
 </html>

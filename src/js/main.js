@@ -388,4 +388,16 @@ $(document).ready(function () {
       9: { pattern: /[0-9]/ },
     },
   });
+
+  $('[data-catalog-layout="lines"]').on("click", function () {
+    $('[data-catalog-layout="container"]').addClass("is-layout-lines");
+    $(this).addClass("is-active");
+    $('[data-catalog-layout="grid"]').removeClass("is-active");
+  });
+
+  $('[data-catalog-layout="grid"]').on("click", function () {
+    $('[data-catalog-layout="container"]').removeClass("is-layout-lines");
+    $(this).addClass("is-active");
+    $('[data-catalog-layout="lines"]').removeClass("is-active");
+  });
 });
