@@ -400,4 +400,37 @@ $(document).ready(function () {
     $(this).addClass("is-active");
     $('[data-catalog-layout="lines"]').removeClass("is-active");
   });
+
+  const $scrollContainer = $('[data-scrollable="container"]');
+  const $stickySection = $('[data-scrollable="sticky-section"]');
+
+  // Функция проверки достижения конца скролла
+  function checkScrollEnd() {
+    const scrollHeight = $scrollContainer[0].scrollHeight;
+    const scrollTop = $scrollContainer.scrollTop();
+    const clientHeight = $scrollContainer[0].clientHeight;
+
+    // Проверяем, достигли ли мы конца скролла (добавляем небольшую погрешность в 1px)
+    const isAtEnd = scrollHeight - scrollTop <= clientHeight + 1;
+
+    // Добавляем или удаляем класс
+    $stickySection.toggleClass("is-end", isAtEnd);
+  }
+
+  $('[data-catalog-filters="btn-open"]').on("click", function () {
+    $('[data-catalog-filters="popup"]').addClass("is-open");
+    $scrollContainer.on("scroll", checkScrollEnd);
+  });
+
+  $('[data-catalog-filters="btn-close"]').on("click", function () {
+    $('[data-catalog-filters="popup"]').removeClass("is-open");
+  });
+
+  $("[data-tippy-html]").each(function () {
+    tippy(this, {
+      content: $(this).attr("data-tippy-html"),
+      allowHTML: true,
+      placement: "top-end",
+    });
+  });
 });
