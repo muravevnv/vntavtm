@@ -13,9 +13,17 @@ $(document).ready(function () {
       // Создаем содержимое для попапа
       var popupContent = `
                 <div class="custom-popup">
-                    <img src="https://example.com/path/to/image.jpg" alt="Описание места">
-                    <h3>Интересное место</h3>
-                    <p>Это описание нашего интересного места. Здесь может быть любой текст, который вы хотите показать пользователям при клике на метку.</p>
+                  <picture class="custom-popup__img">
+                    <img src="./img/contacts/map-content.png" alt="ВентАвтоматика">
+                  </picture>
+                  <div class="custom-popup__address">
+                    <div class="custom-popup__address-label">
+                      Адрес:
+                    </div>
+                    <div class="custom-popup__address-desc">
+                      Санкт-Петербург, ст.м. "Московские ворота", ул. Парковая д.6, лит. А (офис), лит.И (склад)
+                    </div>
+                  </div>
                 </div>
             `;
 

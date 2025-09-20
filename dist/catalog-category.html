@@ -446,11 +446,12 @@
           <li class="flex items-center gap-3 text-sm leading-[140%] after:content-['/'] lg:hidden">
             <a href="#" class=" text-[#323338] font-medium hover:underline">Шкафы управления вентиляцией</a>
           </li>
-          <li class="flex items-center gap-3 text-sm leading-[140%]">
+          <li class="text-sm leading-[140%] max-w-full min-w-[1px] line-clamp-1 overflow-hidden overflow-ellipsis">
             <a href="#" class=" text-[#323338B2] font-medium pointer-events-none">
               Шкафы управления вентиляцией по техническому заданию
             </a>
           </li>
+
         </ul>
       </div>
     </section>
@@ -511,7 +512,7 @@
                             </a>
                           </li>
                           <li class="leading-0">
-                            <a href="#" class="text-sm leading-[140%] font-medium text-[#323338] lg:text-base">
+                            <a href="#" class="text-sm leading-[140%] font-medium text-[#3B8BEA] lg:text-base">
                               Шкафы управления приточно-вытяжной вентиляцией
                             </a>
                           </li>
@@ -687,12 +688,11 @@
                   class="w-full pt-6 lg:pt-4 lg:bg-[#F4F6FB] lg:sticky lg:bottom-0 lg:flex lg:items-center lg:gap-[10px] lg:w-[calc(100%+48px)] lg:px-6 lg:-mx-6
                     lg:shadow-[0px_-4px_9px_0px_#00000008,0px_-16px_16px_0px_#00000008,0px_-36px_22px_0px_#00000005,0px_-65px_26px_0px_#00000000,0px_-101px_28px_0px_#00000000]"
                   data-scrollable="sticky-section">
-                  <button type="reset" class="w-full p-[9px] text-xs font-semibold flex items-center justify-center gap-[10px] rounded-[10px] border-[1px] border-[#3B8BEA] text-[#3B8BEA]
-                        lg:font-base lg:p-[15px] lg:rounded-2xl ">
-                    Сбросить
-                    <span class="lg:hidden">фильтры</span>
+                  <button type="reset" class="w-full p-[9px] text-xs font-semibold flex items-center justify-center rounded-[10px] border-[1px] border-[#3B8BEA] text-[#3B8BEA]
+                        lg:font-base lg:p-[15px] lg:rounded-2xl hover:bg-[#3B8BEA] hover:text-white cursor-pointer transition-colors">
+                    Сбросить&nbsp;<span class="lg:hidden">фильтры</span>
                   </button>
-                  <button type="reset" class="hidden w-full p-[9px] text-xs font-semibold  items-center justify-center gap-[10px] rounded-[10px] border-[1px] border-[#3B8BEA] bg-[#3B8BEA] text-white hover:bg-[#2C6CB8] lg:flex
+                  <button type="reset" class="hidden w-full p-[9px] text-xs font-semibold  items-center justify-center rounded-[10px] border-[1px] border-[#3B8BEA] bg-[#3B8BEA] text-white hover:bg-[#2C6CB8] lg:flex
                         lg:font-base lg:p-[15px] lg:rounded-2xl">
                     Применить
                   </button>
@@ -730,7 +730,7 @@
                 </svg>
               </button>
               <div
-                class="contents md:flex md:gap-[10px] md:w-[calc(100% + 48px)] md:-mx-6 md:px-6 md:overflow-x-auto [&::-webkit-scrollbar]:hidden">
+                class="contents md:flex md:gap-[10px] md:w-[calc(100%+48px)] md:-mx-6 md:px-6 md:overflow-x-auto [&::-webkit-scrollbar]:hidden">
                 <div
                   class="py-2 px-3 flex items-center gap-[10px] rounded-lg bg-[#3B8BEA] text-white whitespace-nowrap">
                   <span class="text-xs font-semibold leading-[140%]">Вентилятор: 3-фазный</span>
@@ -744,7 +744,7 @@
                 </div>
               </div>
               <button
-                class="py-2 px-3 flex items-center gap-[10px] rounded-lg bg-[#EDEDED] text-[#3B8BEA] cursor-pointer md:order-[-2]">
+                class="py-2 px-3 flex items-center gap-[10px] rounded-lg bg-[#EDEDED] text-[#3B8BEA] cursor-pointer md:order-[-2] hover:bg-[#2C6CB8] hover:text-white transition-all">
                 <span class="text-xs font-semibold leading-[140%]">Сбросить фильтры</span>
               </button>
               <div class="absolute top-0 right-0 flex items-center gap-[10px] shrink-0 lg:top-[5px] md:order-[-1]">
@@ -1849,7 +1849,7 @@
     <section class="pt-[66px] lg:pt-15 md:pt-0">
       <div class="my-container">
         <div class="w-full pt-8 lg:pt-0">
-          <div class="relative p-6 bg-[#3B8BEA] rounded-3xl md:w-[calc(100%+48px)] md:-mx-6 md:px-6 md:py-8 md:rounded-none">
+          <div class="relative p-6 bg-[#3B8BEA] rounded-3xl md:w-[calc(100%+48px)] md:-mx-6 md:px-6 md:pb-8 md:pt-6 md:rounded-none">
             <h3 class="text-2xl leading-[140%] text-white font-semibold mb-[10px] md:text-lg">Не нашли нужный шкаф управления?</h3>
             <div class="text-[17px] leading-[140%] font-medium text-white mb-6 md:text-sm">Закажите разработку индивидуального решения</div>
             <a href="#" class="w-[305px] shrink-0 bg-[#323338] inline-flex items-center justify-center p-5 
@@ -1862,7 +1862,7 @@
         </div>
       </div>
     </section>
-    <section class="py-[66px] overflow-hidden lg:pt-[50px] lg:pb-15 md:pt-6 md:pb-8">
+    <section class="pt-[56px] pb-[66px] overflow-hidden lg:pt-[50px] lg:pb-15 md:pt-6 md:pb-8">
       <div class="my-container">
         <h2 class="text-[34px] leading-[130%] text-primary font-bold mb-6 lg:text-[30px] md:text-2xl">
           Недавно смотрели
@@ -2135,7 +2135,7 @@
         </div>
       </div>
     </section>
-    <section class="bg-[#F4F6FB] pt-[66px] pb-[86px] -mb-[20px] lg:py-15 lg:pb-[80px] md:py-8 md:pb-[52px]">
+    <section class="bg-[#F4F6FB] pt-[56px] pb-[86px] -mb-[20px] lg:pt-[50px] lg:pb-[80px] md:pt-6 md:pb-[52px]">
       <div class="my-container">
         <div class="text-[17px] leading-[160%] font-medium text-[#5A5B5F] lg:text-base lg:leading-[162%] md:text-sm md:leading-[142%]">
           «ВентАвтоматика» - отечественная компания, специализирующаяся на производстве щитов управления вентиляцией.
@@ -2237,9 +2237,9 @@
             <a href="tel:+78005517668" class="text-sm text-[#3B8BEA] font-semibold md:text-[13px] hover:underline">
               +7 (800) 551-76-68
             </a>
-            <a href="mailto:sale@ventavtomatica"
+            <a href="mailto:sale@ventavtomatika.ru"
               class="text-sm text-[#3B8BEA] font-semibold md:text-[13px] hover:underline">
-              sale@ventavtomatica
+              sale@ventavtomatika.ru
             </a>
             <div class="text-sm text-[#FFFFFFCC] md:text-[13px]">г. Санкт-Петербург, ул.
               Парковая, д.6, лит. А</div>
@@ -2344,6 +2344,7 @@
 <script src="./js/jquery.mask.min.js" type="text/javascript"></script>
 <script src="./js/swiper-bundle.js" type="text/javascript"></script>
 <script src="./js/alpine.js" type="text/javascript"></script>
+<script src="./js/fs-lightbox.min.js" type="text/javascript"></script>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
 <script src="./js/main.js" type="text/javascript"></script>

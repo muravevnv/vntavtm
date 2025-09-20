@@ -1,8 +1,35 @@
 <div 
+  x-data="{
+    openVideoAbout: false,
+    initVideo() {
+      // Получаем элемент видео после инициализации Alpine
+      this.$nextTick(() => {
+        const video = this.$refs.video;
+        if (video) {
+          // Сбрасываем видео в начало при инициализации
+          video.currentTime = 0;
+          video.pause();
+        }
+      });
+    }
+  }"
+  x-init="initVideo()"
+  @open-video.window="
+    openVideoAbout = true;
+    $nextTick(() => {
+      const video = $refs.video;
+      if (video) {
+        video.currentTime = 0;
+        video.play().catch(e => console.log('Autoplay prevented:', e));
+      }
+    })
+  "
   x-show="openVideoAbout" 
   x-cloak role="dialog" aria-modal="true"
   class="fixed inset-0 w-[100vw] h-[100svh] z-50 overflow-y-auto">
+  
   <div class="absolute inset-0 size-full bg-[#18191B] z-0"></div>
+  
   <div 
     x-show="openVideoAbout"
     x-transition:enter="ease-out duration-300"
@@ -11,13 +38,19 @@
     x-transition:leave="ease-in duration-200"
     x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
     x-transition:leave-end="opacity-0 translate-y-4 sm:scale-95"
-    class="max-w-[1500px] h-full p-10 mx-auto relative z-1 max-h-full md:p-5 md:px-0">
-    <div class="flex items-start justify-between gap-5 mb-10 md:px-5 md:mb-[130px]">
-      <h2
-        class="text-[34px] leading-[130%] text-white font-bold lg:text-[22px] lg:leading-[140%] lg:font-semibold lg:mb-[26px] md:text-[22px]">
-        «ВентАвтоматика» — производство шкафов управления вениляцией</h2>
+    class="max-w-[1500px] h-screen p-10 mx-auto relative z-1 md:p-5 md:px-0 flex flex-col">
+    
+    <div class="flex items-start justify-between gap-5 mb-10 md:px-5 md:mb-0">
+      <h2 class="text-[34px] leading-[130%] text-white font-bold lg:text-[22px] lg:leading-[140%] lg:font-semibold lg:mb-[26px] md:text-[22px]">
+        «ВентАвтоматика» — производство шкафов управления вениляцией
+      </h2>
+      
       <button 
-        @click='openVideoAbout = false'
+        @click='
+          openVideoAbout = false;
+          $refs.video.pause();
+          $refs.video.currentTime = 0;
+        '
         class="size-14 flex items-center justify-center shrink-0 rounded-full bg-[#242527] text-white cursor-pointer lg:size-8
         hover:bg-white hover:text-[#242527] transition-colors">
         <svg class="size-[18px] lg:size-[10px]" width="22" height="22" viewBox="0 0 22 22" fill="none"
@@ -29,8 +62,15 @@
         </svg>
       </button>
     </div>
-    <div class="w-full max-h-full">
-      <video class="block w-full object-contain" src="./video/video.mp4" playsinline></video>
+    
+    <div class="w-full max-h-full min-h-[1px] flex-1">
+      <video 
+        x-ref="video"
+        class="block w-full h-full object-contain" 
+        src="./video/video.mp4" 
+        playsinline
+        preload="metadata">
+      </video>
     </div>
   </div>
 </div>

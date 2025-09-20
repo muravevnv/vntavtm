@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
-
 <body class="text-graphite">
   @@include('header.html')
   @@include('menu.html')
@@ -44,7 +43,7 @@
             </div>
           </div>
           <div x-data="{openVideoAbout: false}">
-            <div @click='openVideoAbout = true'
+            <div @click="$dispatch('open-video')"
               class="flex flex-col items-center gap-3 w-[154px] shrink-0 cursor-pointer md:flex-row md:w-auto">
               <img src="./img/icons/play.svg" class="block size-[98px] lg:size-[72px] md:size-[56px]">
               <span class="block text-lg font-semibold text-center text-white leading-[140%] lg:text-[16px]">
@@ -255,7 +254,7 @@
         </div>
       </div>
     </section>
-    <section class="overflow-hidden pt-[56px] lg:pt-[50px] md:pt-6">
+    <section class="overflow-hidden pt-[66px] lg:pt-[50px] md:pt-6">
       <div class="my-container md:p-0">
         <div
           class="p-16 bg-[#F4F6FB] rounded-3xl flex items-start gap-16 lg:flex-col lg:p-8 md:py-8 md:px-6 md:rounded-none">
@@ -341,7 +340,7 @@
         </div>
       </div>
     </section>
-    <section class="pt-[56px] lg:pt-[50px] lg:pb-[50px] lg:overflow-hidden md:pt-6 md:pb-6" id="clients">
+    <section class="pt-[56px] lg:pt-[50px] lg:overflow-hidden md:pt-6 md:pb-6" id="clients">
       <div class="my-container">
         <h2 class="text-[34px] leading-[130%] text-primary font-bold mb-2 lg:text-[30px] md:text-2xl">
           Наши клиенты
@@ -401,7 +400,7 @@
         </div>
       </div>
     </section>
-    <section class="pt-6 lg:pt-15 md:pt-8 lg:overflow-hidden" id="projects">
+    <section class="pt-6 lg:pt-[50px] md:pt-6 lg:overflow-hidden" id="projects">
       <div class="my-container">
         <h2 class="text-[34px] leading-[130%] text-primary font-bold mb-10 lg:text-[30px] lg:mb-8 md:text-2xl md:mb-4">
           Реализованные проекты
@@ -669,7 +668,7 @@
     </section>
     <section class="pt-[40px] overflow-hidden lg:pt-15 md:pt-8" id="sertificats">
       <div class="my-container md:p-0">
-        <div class="p-10 bg-[#F4F6FB] rounded-3xl flex items-start gap-6 lg:flex-col lg:p-8 md:px-6 md:rounded-none">
+        <div class="p-10 bg-[#F4F6FB] rounded-3xl flex items-start gap-6 lg:flex-col lg:p-6 md:rounded-none">
           <div class="max-w-[465px] w-full lg:max-w-full">
             <h2 class="text-[34px] leading-[130%] text-primary font-bold mb-4 lg:text-[30px] md:text-2xl md:mb-4">
               Сертификаты
@@ -679,20 +678,20 @@
             </div>
           </div>
           <div class="grid grid-cols-3 gap-6 lg:gap-[34px] md:gap-3">
-            <a href="#" class="cursor-zoom-in" class="w-full">
+            <a data-fslightbox="gallery" href="./img/sertificats/img-01.png" href="#" class="cursor-zoom-in" class="w-full">
               <img src="./img/sertificats/img-01.png" alt="Сертификат 1">
             </a>
-            <a href="#" class="cursor-zoom-in" class="w-full">
+            <a data-fslightbox="gallery" href="./img/sertificats/img-02.png" class="cursor-zoom-in" class="w-full">
               <img src="./img/sertificats/img-02.png" alt="Сертификат 2">
             </a>
-            <a href="#" class="cursor-zoom-in" class="w-full">
+            <a data-fslightbox="gallery" href="./img/sertificats/img-03.png" class="cursor-zoom-in" class="w-full">
               <img src="./img/sertificats/img-03.png" alt="Сертификат 3">
             </a>
           </div>
         </div>
       </div>
     </section>
-    <section class="pt-[56px] pb-16 overflow-hidden lg:pt-15 lg:pb-0 md:pt-8">
+    <section class="pt-[56px] pb-[50px] overflow-hidden lg:pt-15 lg:pb-0 md:pt-8">
       <div class="my-container">
         <div class="flex flex-col items-start mb-6 gap-3 lg:mb-4">
           <h2 class="text-[34px] text-[#3B8BEA] font-bold leading-[140%] lg:text-[30px] md:text-2xl">
@@ -712,7 +711,7 @@
       <div class="my-container lg:px-0">
         <div class="relative z-0 grid grid-cols-[0.985fr_1fr] gap-10 p-10 bg-[#F4F6FB] rounded-3xl overflow-hidden 
           lg:p-8 lg:pt-[51px] lg:pb-21 lg:-mb-6 lg:grid-cols-1 lg:gap-6 lg:rounded-none md:p-0 md:mb-0">
-          <div class="w-full lg:max-w-[402px] md:px-6 md:pt-8">
+          <div class="w-full lg:max-w-[402px] md:px-6 md:pt-6">
             <h2 class="text-[34px] text-[#3B8BEA] font-bold leading-[130%] lg:text-[30px] md:text-2xl">
               Опишите задачу — <br> инженер ответит сегодня
             </h2>
