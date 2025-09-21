@@ -430,22 +430,32 @@
   <main>
     <section class="pt-[13px] lg:pt-3">
       <div class="my-container">
-        <ul class="flex items-center gap-3 whitespace-nowrap overflow-hidden overflow-ellipsis leading-1">
+        <ul class="flex items-center gap-3 whitespace-nowrap">
           <li class="flex items-center gap-3 text-sm leading-[140%] after:content-['/']">
             <a href="#" class=" text-[#323338] font-medium hover:underline">Главная</a>
           </li>
-          <li class="items-center hidden gap-3 lg:flex after:content-['/']">
-            <span class="flex items-center justify-center w-[46px] h-[20px] bg-[#EDEDED] rounded-3xl">
+          <li class="relative items-center gap-3 flex after:content-['/'] z-10">
+            <span class="flex items-center justify-center w-[46px] h-[20px] bg-[#EDEDED] rounded-3xl cursor-pointer"
+              data-breadcrumbs="toggle-btn">
               <span class="relative top-[-5px]">...</span>
             </span>
+            <ul
+              class="min-w-[350px] max-w-[350px] w-full mt-[17px] absolute flex flex-col top-[100%] items-start 
+              gap-[10px] bg-[#F4F6FB] rounded-2xl p-4 opacity-0 z-[-1] pointer-none md:left-[-85px] md:min-w-[300px] md:max-w-[300px]
+              shadow-[0px_2px_3px_0px_#0000001A,0px_6px_6px_0px_#00000017,-1px_14px_8px_0px_#0000000D,-1px_24px_10px_0px_#00000003,-2px_38px_11px_0px_#00000000]"
+              data-breadcrumbs="list">
+              <li class="text-xs leading-[140%] font-semibold text-[#5A5B5F] whitespace-normal">
+                <a href="#" class="hover:underline">Продукция</a>
+              </li>
+              <li class="text-xs leading-[140%] font-semibold text-[#5A5B5F] whitespace-normal">
+                <a href="#" class="hover:underline">Шкафы управления вентиляцией</a>
+              </li>
+              <li class="text-xs leading-[140%] font-semibold text-[#5A5B5F] whitespace-normal">
+                <a href="#" class="hover:underline">Шкафы управления приточно-вытяжной вентиляцией</a>
+              </li>
+            </ul>
           </li>
-          <li class="flex items-center gap-3 text-sm leading-[140%] after:content-['/'] lg:hidden">
-            <a href="#" class=" text-[#323338] font-medium hover:underline">Продукция</a>
-          </li>
-          <li class="flex items-center gap-3 text-sm leading-[140%] after:content-['/'] lg:hidden">
-            <a href="#" class=" text-[#323338] font-medium hover:underline">Шкафы управления вентиляцией</a>
-          </li>
-          <li class="flex items-center gap-3 text-sm leading-[140%]">
+          <li class="text-sm leading-[140%] max-w-full min-w-[1px] line-clamp-1 overflow-hidden overflow-ellipsis">
             <a href="#" class=" text-[#323338B2] font-medium pointer-events-none">
               Шкафы управления вентиляцией по техническому заданию
             </a>
@@ -508,7 +518,7 @@
                   Габариты Ш х В х Г:
                   <span class="font-semibold pl-1 md:font-normal">310 х 395 х 220</span>
                 </div>
-                                <div class="text-sm leading-[140%] font-medium text-[#323338] md:text-xs">
+                <div class="text-sm leading-[140%] font-medium text-[#323338] md:text-xs">
                   Резерв вентилятора:
                   <span class="font-semibold pl-1 md:font-normal">нет</span>
                 </div>
@@ -651,13 +661,11 @@
                 <img src="./img/icons/calculator-accent.svg" class="size-[30px]" alt="">
                 <h3 class="font-semibold text-2xl leading-[140%] lg:text-[22px]">Калькулятор</h3>
               </div>
-              <div
-                class="text-[17px] text-center leading-[140%] font-medium text-[#323338CC] px-4 md:px-0">
+              <div class="text-[17px] text-center leading-[140%] font-medium text-[#323338CC] px-4 md:px-0">
                 Используйте калькулятор для&nbsp;расчета щита по&nbsp;нужным параметрам
               </div>
             </div>
-            <div
-              class="w-full flex item-center justify-center p-[18px] rounded-2xl border-[2px] 
+            <div class="w-full flex item-center justify-center p-[18px] rounded-2xl border-[2px] 
               border-[#3B8BEA] text-white bg-[#3B8BEA] font-semibold group-hover:bg-white 
               group-hover:text-[#3B8BEA] transition-all md:py-[14px] md:text-base md:leading-[140%]">
               Рассчитать цену
@@ -670,13 +678,11 @@
                 <img src="./img/icons/mail-stroke.svg" class="size-[30px]" alt="">
                 <h3 class="font-semibold text-2xl leading-[140%] lg:text-[22px]">Напишите нам</h3>
               </div>
-              <div
-                class="text-[17px] leading-[140%] text-center font-medium text-[#323338CC] px-4 md:px-0">
+              <div class="text-[17px] leading-[140%] text-center font-medium text-[#323338CC] px-4 md:px-0">
                 Просто отправьте проект или параметры установки, и мы подберем для вас шкаф управления
               </div>
             </div>
-            <div
-              class="w-full flex item-center justify-center p-[18px] rounded-2xl border-[2px] 
+            <div class="w-full flex item-center justify-center p-[18px] rounded-2xl border-[2px] 
               border-[#3B8BEA] text-white bg-[#3B8BEA] font-semibold group-hover:bg-white 
                 group-hover:text-[#3B8BEA] transition-all md:py-[15px] md:text-base md:leading-[140%]">
               Отправить проект
@@ -689,14 +695,12 @@
                 <img src="./img/icons/chat-cloude-question.svg" class="size-[30px]" alt="">
                 <h3 class="font-semibold text-2xl leading-[140%] lg:text-[22px]">Опросный лист</h3>
               </div>
-              <div
-                class="text-[17px] text-center leading-[140%] font-medium text-[#323338CC] px-4 md:px-0">
+              <div class="text-[17px] text-center leading-[140%] font-medium text-[#323338CC] px-4 md:px-0">
                 Скачайте и заполните опросный лист и отправьте нам на почту <span
                   class="text-[#3B8BEA]">info@ventavtomatika.ru</span>
               </div>
             </div>
-            <div
-              class="w-full flex item-center justify-center p-[18px] rounded-2xl border-[2px] border-[#3B8BEA] 
+            <div class="w-full flex item-center justify-center p-[18px] rounded-2xl border-[2px] border-[#3B8BEA] 
               text-white bg-[#3B8BEA] font-semibold group-hover:bg-white group-hover:text-[#3B8BEA] transition-all
                md:py-[15px] md:text-base md:leading-[140%]">
               Документация

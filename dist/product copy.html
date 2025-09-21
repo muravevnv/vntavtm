@@ -1,0 +1,1972 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Карточка товара</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/swiper-bundle.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="text-graphite">
+  <header class="font-sans relative z-10">
+  <div class="bg-white">
+    <div class="max-w-[1234px] mx-auto flex justify-between py-[10px] px-8 md:py-2">
+      <div class="flex items-center gap-2 md:hidden">
+        <div class="text-[14px] leading-[125%] font-bold lg:text-[11px]">
+          Производство систем автоматики для вентиляции
+        </div>
+        <div class="text-[11px] opacity-[0.7] text-graphite-200 xl:hidden">Поставки по России и СНГ</div>
+      </div>
+      <div class="flex items-center gap-8 md:hidden">
+        <a href="#"
+          class="text-[14px] leading-[140%] text-gray-500 font-semibold xl:hidden hover:text-[#323338] transition-all">Документы</a>
+        <div
+          class="flex items-center gap-6 text-[14px] xl:gap-[10px] lg:text-[11px] md:text-[10px] md:gap-4 sm:flex-wrap">
+          <div class="flex items-center gap-2 xl:gap-1">
+            <a href="#" class="leading-[140%] font-semibold text-primary hover:underline transition-all">
+              mail+536193488@ventavtomatika.ru
+            </a>
+            <button class="flex size-6 xl:size-[18px] md:size-4 cursor-pointer text-[#5A5B5F] hover:text-[#3B8BEA]">
+              <svg class="w-full h-auto" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect x="6.99805" y="6.99609" width="14.0058" height="14.0058" rx="2" stroke="currentColor"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M6.99825 17.0019H4.99742C3.89239 17.0019 2.99658 16.1061 2.99658 15.0011V4.99693C2.99658 3.8919 3.89239 2.99609 4.99742 2.99609H15.0016C16.1066 2.99609 17.0024 3.8919 17.0024 4.99693V6.99776"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <a href="#"
+            class="text-[14px] leading-[140%] font-semibold text-primary lg:text-[11px] md:text-[10px] hover:underline transition-all">+7 (800) 551-76-68</a>
+        </div>
+      </div>
+      <button class="hidden md:flex items-center gap-[10px] ml-auto leading-[140%] font-semibold text-[#3B8BEA]">
+        <svg width="23" height="23" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M21.0834 16.7144V19.5894C21.0845 19.8563 21.0298 20.1205 20.9229 20.3651C20.8159 20.6096 20.6591 20.8291 20.4624 21.0096C20.2658 21.19 20.0336 21.3274 19.7808 21.4129C19.5279 21.4984 19.26 21.5301 18.9942 21.5061C16.0453 21.1857 13.2126 20.178 10.7238 18.564C8.40829 17.0927 6.44515 15.1295 4.97379 12.814C3.35418 10.3139 2.34627 7.46748 2.0317 4.50528C2.00776 4.24026 2.03925 3.97317 2.12418 3.721C2.20912 3.46883 2.34563 3.2371 2.52502 3.04058C2.70442 2.84406 2.92277 2.68704 3.16617 2.57953C3.40957 2.47201 3.6727 2.41636 3.93879 2.41611H6.81379C7.27887 2.41153 7.72975 2.57623 8.08239 2.87949C8.43503 3.18276 8.66536 3.60391 8.73045 4.06444C8.8518 4.98451 9.07684 5.88789 9.40129 6.75736C9.53023 7.10037 9.55813 7.47315 9.4817 7.83154C9.40527 8.18992 9.2277 8.51888 8.97004 8.77944L7.75295 9.99652C9.1172 12.3958 11.1037 14.3823 13.503 15.7465L14.72 14.5294C14.9806 14.2718 15.3096 14.0942 15.6679 14.0178C16.0263 13.9413 16.3991 13.9693 16.7421 14.0982C17.6116 14.4226 18.515 14.6477 19.435 14.769C19.9006 14.8347 20.3257 15.0692 20.6296 15.4279C20.9335 15.7866 21.095 16.2445 21.0834 16.7144Z"
+            fill="#3B8BEA" style="fill:#3B8BEA;fill:color(display-p3 0.2314 0.5451 0.9176);fill-opacity:1;" />
+        </svg>
+        Позвонить
+      </button>
+    </div>
+  </div>
+  <div class="bg-blue-500 text-white rounded-b-[24px]">
+    <div class="max-w-[1234px] mx-auto flex items-center justify-between gap-8 py-4 px-8 md:gap-2">
+      <a href="#"
+        class="relative block w-[130px] h-[40px] shrink-0 lg:w-[148px] lg:h-[40px] md:w-[133px] md:h-[38px] xs:w-[118px]">
+        <img src="./img/logo-white.svg" alt="" class="absolute min-w-[146px] h-[40px] left-[-17px] top-[-9px] 
+        lg:relative lg:top-[-6px] lg:left-0 md:w-[116px] md:h-[38px] md:min-w-[138px] md:left-[-5px] xs:min-w-[118px]">
+      </a>
+      <nav class="xl:hidden">
+        <ul class="flex items-center gap-8 text-white leading-[140%] text-[16px] font-semibold ">
+          <li class="leading-[140%] relative" data-header="dropdown-parent">
+            <a href="#" class="border-b-[1px] border-[transparent] hover:border-white"
+              data-header="dropdown-link">Продукция</a>
+            <div data-header="dropdown-menu"
+              class="overflow-hidden opacity-0 pointer-events-none absolute top-[100%] left-[-35px] mt-[25px] bg-white rounded-b-3xl min-w-[426px]
+              shadow-[0px_2px_3px_0px_#0000001A,0px_6px_6px_0px_#00000017,-1px_14px_8px_0px_#0000000D,-1px_24px_10px_0px_#00000003,-2px_38px_11px_0px_#00000000]">
+              <ul class="flex flex-col p-8 items-start gap-6 text-black w-full min-w-[426px]">
+                <li class="w-full group" data-header="dropdown-subparent">
+                  <a href="#" class="text-[#78859F] text-lg font-semibold hover:text-[#3B8BEA]"
+                    data-header="dropdown-sublink">Шкафы
+                    управления вентиляцией</a>
+                  <div
+                    class="pointer-events-none opacity-0 min-w-[554px] absolute left-[426px] top-0 rounded-br-3xl bg-[#F7F7FB]"
+                    data-header="dropdown-submenu">
+                    <ul class=" flex flex-col gap-6 h-full p-8">
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#78859F] font-medium">
+                          Шкафы управления вентиляцией по техническому заданию
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#78859F] font-medium">
+                          Шкафы управления приточной вентиляцией
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#78859F] font-medium">
+                          Шкафы управления приточно-вытяжной вентиляцией
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#78859F] font-medium">
+                          Шкафы управления вентилятором
+                        </a>
+                      </li>
+                      <li class="block w-full h-[1px] border-b-[1px] border-[#D0D0D4]">
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#78859F] font-semibold">
+                          OEM-производство
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#5A5B5F] font-semibold">
+                          Калькулятор шкафов управления вентиляцией
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#FD5D5D] font-bold uppercase">
+                          НОВИНКИ
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#3B8BEA] font-bold uppercase">
+                          ZENTEC
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="text-[#78859F] text-lg font-semibold hover:text-[#3B8BEA]">Шкафы пожарной
+                    автоматики</a>
+                </li>
+                <li>
+                  <a href="#" class="text-[#78859F] text-lg font-semibold hover:text-[#3B8BEA]">Шкафы управления
+                    тепловыми завесами</a>
+                </li>
+                <li>
+                  <a href="#" class="text-[#78859F] text-lg font-semibold hover:text-[#3B8BEA]">Шкафы диспетчеризации и
+                    SCADA</a>
+                </li>
+                <li data-header="dropdown-subparent">
+                  <a href="#" class="text-[#78859F] text-lg font-semibold hover:text-[#3B8BEA]" data-header="dropdown-sublink">Автоматика для
+                    вентиляции
+                  </a>
+                  <div
+                    class="pointer-events-none opacity-0 min-w-[554px] h-full absolute left-[426px] top-0 rounded-br-3xl bg-[#F7F7FB]"
+                    data-header="dropdown-submenu">
+                    <ul class=" flex flex-col gap-6 h-full p-8">
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#78859F] font-medium">
+                          Щиты дымоудаления
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#78859F] font-medium">
+                          Щиты подпора воздуха
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-[17px] leading-[140%] text-[#78859F] font-medium">
+                          Щиты управления клапанами
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="leading-[140%]">
+            <a href="#" class="border-b-[1px] border-[transparent] hover:border-white">О компании</a>
+          </li>
+          <li class="leading-[140%]">
+            <a href="#" class="border-b-[1px] border-[transparent] hover:border-white">Статьи</a>
+          </li>
+          <li class="leading-[140%]">
+            <a href="#" class="border-b-[1px] border-[transparent] hover:border-white">Как заказать</a>
+          </li>
+          <li class="leading-[140%]">
+            <a href="#" class="border-b-[1px] border-[transparent] hover:border-white">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="flex items-center gap-8 xl:w-full md:w-auto md:justify-end">
+        <div class="w-[306px] relative xl:w-full md:hidden">
+          <input type="text" data-search="input" class="
+            w-full 
+            border-b-1 
+            outline-none
+            border-[#FFFFFF99] 
+            bg-transparent 
+            text-white 
+            text-[14px] 
+            leading-[140%]
+            py-[8.5px]
+            pr-12
+            placeholder:text-white
+            " placeholder="Поиск по сайту" />
+          <button type="button" data-search="clear-btn" style="display: none;"
+            class="absolute top-[7px] right-6 flex items-center justify-center size-[23px] cursor-pointer">
+            <svg width="16" height="16" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.6665 1.66699L12.3332 12.3337" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M12.3332 1.66699L1.6665 12.3337" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <button type="button" class="absolute top-[7px] right-0 flex items-center justify-center size-[23px]">
+            <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10.5978" cy="11.0978" r="6.76769" stroke="white" style="stroke:white;stroke-opacity:1;"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M19.1698 19.6698L15.3828 15.8828" stroke="white" style="stroke:white;stroke-opacity:1;"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="#"
+            class="items-center justify-center size-8 hidden md:flex xs:size-6 hover:opacity-[0.6] transition-opacity">
+            <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10.5978" cy="11.0978" r="6.76769" stroke="white" style="stroke:white;stroke-opacity:1;"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M19.1698 19.6698L15.3828 15.8828" stroke="white" style="stroke:white;stroke-opacity:1;"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a href="#" class="flex items-center justify-center size-8 xs:size-6 hover:opacity-[0.6] transition-opacity">
+            <svg class="w-full h-auto" width="32" height="32" viewBox="0 0 32 32" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.95889 8.83398L7.06956 4.83398H4.49756" stroke="white" style="stroke:white;stroke-opacity:1;"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10.3078 19.7807L7.9585 8.83398H24.8358C25.6852 8.83398 26.3172 9.61665 26.1398 10.4473L24.1372 19.7807C24.0052 20.3953 23.4625 20.834 22.8332 20.834H11.6105C10.9825 20.834 10.4398 20.3953 10.3078 19.7807Z"
+                stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M23.2866 25.6667C23.0106 25.6667 22.7866 25.8907 22.7892 26.1667C22.7892 26.4427 23.0132 26.6667 23.2892 26.6667C23.5652 26.6667 23.7892 26.4427 23.7892 26.1667C23.7879 25.8907 23.5639 25.6667 23.2866 25.6667"
+                stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M11.8082 25.6667C11.5322 25.6667 11.3082 25.8907 11.3109 26.1667C11.3096 26.4427 11.5336 26.6667 11.8096 26.6667C12.0856 26.6667 12.3096 26.4427 12.3096 26.1667C12.3096 25.8907 12.0856 25.6667 11.8082 25.6667"
+                stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a href="#" class="flex items-center justify-center size-8 xs:size-6 hover:opacity-[0.6] transition-opacity">
+            <svg class="w-full h-auto" width="32" height="32" viewBox="0 0 32 32" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.26167 23.3127C9.395 22.4973 10.5976 21.8526 11.8693 21.3783C13.1411 20.9039 14.518 20.6667 16 20.6667C17.482 20.6667 18.8589 20.9039 20.1307 21.3783C21.4024 21.8526 22.605 22.4973 23.7383 23.3127C24.6188 22.4016 25.3269 21.3256 25.8627 20.0847C26.3987 18.8436 26.6667 17.482 26.6667 16C26.6667 13.0444 25.6278 10.5278 23.55 8.45C21.4722 6.37222 18.9556 5.33333 16 5.33333C13.0444 5.33333 10.5278 6.37222 8.45 8.45C6.37222 10.5278 5.33333 13.0444 5.33333 16C5.33333 17.482 5.60133 18.8436 6.13733 20.0847C6.67311 21.3256 7.38122 22.4016 8.26167 23.3127ZM16.0007 16.6667C14.8771 16.6667 13.9294 16.281 13.1577 15.5097C12.3859 14.7383 12 13.7909 12 12.6673C12 11.5438 12.3857 10.5961 13.157 9.82433C13.9283 9.05256 14.8758 8.66667 15.9993 8.66667C17.1229 8.66667 18.0706 9.05233 18.8423 9.82367C19.6141 10.595 20 11.5424 20 12.666C20 13.7896 19.6143 14.7372 18.843 15.509C18.0717 16.2808 17.1242 16.6667 16.0007 16.6667ZM16 28C14.3264 28 12.7598 27.6884 11.3 27.0653C9.84022 26.4422 8.57011 25.5906 7.48967 24.5103C6.40944 23.4299 5.55778 22.1598 4.93467 20.7C4.31156 19.2402 4 17.6736 4 16C4 14.3264 4.31156 12.7598 4.93467 11.3C5.55778 9.84022 6.40944 8.57011 7.48967 7.48967C8.57011 6.40944 9.84022 5.55778 11.3 4.93467C12.7598 4.31155 14.3264 4 16 4C17.6736 4 19.2402 4.31155 20.7 4.93467C22.1598 5.55778 23.4299 6.40944 24.5103 7.48967C25.5906 8.57011 26.4422 9.84022 27.0653 11.3C27.6884 12.7598 28 14.3264 28 16C28 17.6736 27.6884 19.2402 27.0653 20.7C26.4422 22.1598 25.5906 23.4299 24.5103 24.5103C23.4299 25.5906 22.1598 26.4422 20.7 27.0653C19.2402 27.6884 17.6736 28 16 28ZM16 26.6667C17.2291 26.6667 18.4386 26.4517 19.6283 26.0217C20.8179 25.5919 21.846 25.0034 22.7127 24.2563C21.846 23.5606 20.8434 23.0106 19.705 22.6063C18.5666 22.2021 17.3316 22 16 22C14.6684 22 13.4291 22.1979 12.282 22.5937C11.1351 22.9894 10.1369 23.5437 9.28733 24.2563C10.154 25.0034 11.1821 25.5919 12.3717 26.0217C13.5614 26.4517 14.7709 26.6667 16 26.6667ZM16 15.3333C16.7487 15.3333 17.3803 15.0761 17.895 14.5617C18.4094 14.047 18.6667 13.4153 18.6667 12.6667C18.6667 11.918 18.4094 11.2863 17.895 10.7717C17.3803 10.2572 16.7487 10 16 10C15.2513 10 14.6197 10.2572 14.105 10.7717C13.5906 11.2863 13.3333 11.918 13.3333 12.6667C13.3333 13.4153 13.5906 14.047 14.105 14.5617C14.6197 15.0761 15.2513 15.3333 16 15.3333Z"
+                fill="white" style="fill:white;fill-opacity:1;" />
+            </svg>
+          </a>
+          <a href="#"
+            class="items-center justify-center size-8 xs:size-6 hidden xl:flex hover:opacity-[0.6] transition-opacity"
+            data-menu="open-btn">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 16H25M7 10H25M7 22H25" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+  <div class="fixed inset-0 h-svh w-full z-50 translate-x-[-100%]" data-menu="menu">
+  <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50" data-menu="close-btn"></div>
+  <div class="absolute top-0 left-0 w-[375px] h-full z-50 py-7 px-5 bg-[#78859F] overflow-y-auto md:w-full translate-x-[-100%] transition-transform duration-500" data-menu="menu-content">
+    <div class="flex items-center justify-between mb-[31px]">
+      <a href="#" class="block w-37 h-10 ">
+        <img src="./img/logo-white.svg" class="block w-37 h-10" alt="Вент Автоматика">
+      </a>
+      <button type="button" class="hidden md:flex items-center justify-center size-8 rounded-[50%] bg-[#F4F6FB]" data-menu="close-btn">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.66663 1.66602L12.3333 12.3327" stroke="#78859F"
+            style="stroke:#78859F;stroke:color(display-p3 0.4718 0.5201 0.6250);stroke-opacity:1;" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M12.3333 1.66602L1.66663 12.3327" stroke="#78859F"
+            style="stroke:#78859F;stroke:color(display-p3 0.4718 0.5201 0.6250);stroke-opacity:1;" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+    <div class="w-full" data-menu="main">
+      <ul class="w-full flex flex-col items-start justify-center gap-5">
+        <li class="w-full flex items-center justify-between leading-[140%]" data-menu="section-link">
+          <a href="#" class="text-lg font-semibold text-white">Продукция</a>
+          <span class="size-6 flex items-center justify-center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 8L15 12L11 16" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </span>
+        </li>
+        <li class="flex items-center leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">О компании</a>
+        </li>
+        <li class="flex items-center leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Как заказать</a>
+        </li>
+        <li class="flex items-center leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Контакты</a>
+        </li>
+        <li class="flex items-center leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Документация</a>
+        </li>
+        <li class="flex items-center leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">НОВИНКИ</a>
+        </li>
+        <li class="flex items-center leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Zentec</a>
+        </li>
+      </ul>
+      <div class="flex flex-col gap-6 mt-20">
+        <div class="flex flex-col gap-3 items-start">
+          <div class="flex items-center gap-4">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22.0001 16.9201V19.9201C22.0012 20.1986 21.9441 20.4743 21.8326 20.7294C21.721 20.9846 21.5574 21.2137 21.3521 21.402C21.1469 21.5902 20.9046 21.7336 20.6408 21.8228C20.377 21.912 20.0974 21.9452 19.8201 21.9201C16.7429 21.5857 13.7871 20.5342 11.1901 18.8501C8.77388 17.3148 6.72539 15.2663 5.19006 12.8501C3.50003 10.2413 2.4483 7.27109 2.12006 4.1801C2.09507 3.90356 2.12793 3.62486 2.21656 3.36172C2.30518 3.09859 2.44763 2.85679 2.63482 2.65172C2.82202 2.44665 3.04986 2.28281 3.30385 2.17062C3.55783 2.05843 3.8324 2.00036 4.11006 2.0001H7.11006C7.59536 1.99532 8.06585 2.16718 8.43382 2.48363C8.80179 2.80008 9.04213 3.23954 9.11005 3.7201C9.23668 4.68016 9.47151 5.62282 9.81006 6.5301C9.9446 6.88802 9.97372 7.27701 9.89396 7.65098C9.81421 8.02494 9.62892 8.36821 9.36005 8.6401L8.09006 9.9101C9.51361 12.4136 11.5865 14.4865 14.0901 15.9101L15.3601 14.6401C15.6319 14.3712 15.9752 14.1859 16.3492 14.1062C16.7231 14.0264 17.1121 14.0556 17.4701 14.1901C18.3773 14.5286 19.32 14.7635 20.2801 14.8901C20.7658 14.9586 21.2095 15.2033 21.5266 15.5776C21.8437 15.9519 22.0122 16.4297 22.0001 16.9201Z"
+                stroke="white" stroke-opacity="0.7" style="stroke:white;stroke-opacity:0.7;" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="text-[#FFFFFFB2] text-[15px] font-medium leading-[140%]">Телефон</span>
+          </div>
+          <a href="tel:+78005517668" class="text-lg leading-[135%] font-medium text-white">+7 (800) 551-76-68</a>
+        </div>
+        <div class="flex flex-col gap-3 items-start">
+          <div class="flex items-center gap-4">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6M22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6M22 6L12 13L2 6"
+                stroke="white" stroke-opacity="0.7" style="stroke:white;stroke-opacity:0.7;" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="text-[#FFFFFFB2] text-[15px] font-medium leading-[140%]">Почта</span>
+          </div>
+          <a href="mailto:536193488@ventavtomatika.ru"
+            class="text-lg leading-[135%] font-medium text-white">mail+536193488@ventavtomatika.ru</a>
+        </div>
+      </div>
+    </div>
+    <div class="w-full hidden" data-menu="section">
+      <button class="size-6 flex items-center justify-center mb-6" data-menu="back">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 12L22 12" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+          <path d="M8 18L2 12" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+          <path d="M8 6L2 12" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <ul class="w-full flex flex-col gap-3 items-start justify-center">
+        <li class="w-full leading-[140%]">
+          <span href="#" class="flex items-center justify-between gap-2 text-lg font-semibold text-white"
+            data-menu="dropdown-btn">
+            Шкафы управления
+            вентиляцией
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 11.5L12 15.5L8 11.5" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+          <div data-menu="dropdown-list" style="display: none;" class="pt-3">
+            <ul class="flex flex-col items-start gap-3">
+              <li class="leading-[140%]">
+                <a href="#" class="text-[15px] text-[#FFFFFFCC]">
+                  Шкафы управления вентиляцией по техническому заданию
+                </a>
+              </li>
+              <li class="leading-[140%]">
+                <a href="#" class="text-[15px] text-[#FFFFFFCC]">
+                  Шкафы управления приточной вентиляцией
+                </a>
+              </li>
+              <li class="leading-[140%]">
+                <a href="#" class="text-[15px] text-[#FFFFFFCC]">
+                  Шкафы управления приточно-вытяжной вентиляцией
+                </a>
+              </li>
+              <li class="leading-[140%]">
+                <a href="#" class="text-[15px] text-[#FFFFFFCC]">
+                  Шкафы управления вентилятором
+                  Стоимость шкафа автоматики для вентиляции за 2 минуты
+                  Документация
+                </a>
+              </li>
+            </ul>
+            <ul class="flex flex-col items-start gap-3 pt-4 mt-4 border-t-[1px] border-[#FFFFFF33]">
+              <li class="leading-[140%]">
+                <a href="#" class="text-[15px] text-[#FFFFFFCC]">
+                  OEM-производство
+                </a>
+              </li>
+              <li class="leading-[140%]">
+                <a href="#" class="text-[15px] text-[#FFFFFFCC]">
+                  Калькулятор шкафов управления вентиляцией
+                </a>
+              </li>
+              <li class="leading-[140%]">
+                <a href="#" class="text-[15px] text-white">
+                  НОВИНКИ
+                </a>
+              </li>
+              <li class="leading-[140%]">
+                <a href="#" class="text-[15px] text-white">
+                  ZENTEC
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Шкафы управления вентиляцией</a>
+        </li>
+        <li class="leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Шкафы пожарной автоматики</a>
+        </li>
+        <li class="leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Шкафы управления тепловыми завесами</a>
+        </li>
+        <li class="leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Шкафы диспетчеризации и SCADA</a>
+        </li>
+        <li class="leading-[140%]">
+          <a href="#" class="text-lg font-semibold text-white">Автоматика для вентиляции</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <main>
+    <section class="pt-[13px] lg:pt-3">
+      <div class="my-container">
+        <ul class="flex items-center gap-3 whitespace-nowrap overflow-hidden overflow-ellipsis leading-1">
+          <li class="flex items-center gap-3 text-sm leading-[140%] after:content-['/']">
+            <a href="#" class=" text-[#323338] font-medium hover:underline">Главная</a>
+          </li>
+          <li class="items-center hidden gap-3 lg:flex after:content-['/']">
+            <span class="flex items-center justify-center w-[46px] h-[20px] bg-[#EDEDED] rounded-3xl">
+              <span class="relative top-[-5px]">...</span>
+            </span>
+          </li>
+          <li class="flex items-center gap-3 text-sm leading-[140%] after:content-['/'] lg:hidden">
+            <a href="#" class=" text-[#323338] font-medium hover:underline">Продукция</a>
+          </li>
+          <li class="flex items-center gap-3 text-sm leading-[140%] after:content-['/'] lg:hidden">
+            <a href="#" class=" text-[#323338] font-medium hover:underline">Шкафы управления вентиляцией</a>
+          </li>
+          <li class="flex items-center gap-3 text-sm leading-[140%]">
+            <a href="#" class=" text-[#323338B2] font-medium pointer-events-none">
+              Шкафы управления вентиляцией по техническому заданию
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="pt-[31px] pb-[66px] lg:pt-6 lg:pb-15 md:pt-[18px] md:pb-8 md:overflow-hidden">
+      <div class="my-container">
+        <h1 class="text-2xl leading-[140%] font-semibold text-[#3B8BEA] mb-[31px] lg:mb-6 md:text-lg">
+          Шкаф управления приточно-вытяжной вентиляцией <br> с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
+        </h1>
+        <div class="flex items-start gap-5 md:flex-col md:gap-6">
+          <div
+            class="flex items-start gap-5 w-[calc(100%-348px)] xl:flex-col xl:w-[calc(100%-500px)] lg:w-[calc(100%-341px)] md:w-full md:contents">
+            <div class="w-[53%] xl:w-full md:order-0">
+              <div class="w-full max-w-full flex items-stretch gap-2 overflow-hidden md:overflow-visible">
+                <div class="w-20 h-[96px] shrink-0 flex flex-col gap-[6px] md:hidden" data-slider="product-thumbs">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide border-[2px] border-[#EDEDED] rounded-2xl overflow-hidden">
+                      <picture class="size-full flex items-center justify-center">
+                        <img src="./img/product/img-01.png" alt="Щит Превью">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide border-[2px] border-[#EDEDED] rounded-2xl overflow-hidden">
+                      <picture class="size-full flex items-center justify-center">
+                        <img src="./img/product/img-01.png" alt="Щит Превью">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide border-[2px] border-[#EDEDED] rounded-2xl overflow-hidden">
+                      <picture class="size-full flex items-center justify-center">
+                        <img src="./img/product/img-01.png" alt="Щит Превью">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide border-[2px] border-[#EDEDED] rounded-2xl overflow-hidden">
+                      <picture class="size-full flex items-center justify-center">
+                        <img src="./img/product/img-01.png" alt="Щит Превью">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide border-[2px] border-[#EDEDED] rounded-2xl overflow-hidden">
+                      <picture class="size-full flex items-center justify-center">
+                        <img src="./img/product/img-01.png" alt="Щит Превью">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="relative w-full overflow-hidden border-[2px] border-[#EDEDED] rounded-3xl 
+                  md:border-none md:rounded-none md:px-8 md:overflow-visible" data-slider="product-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <picture
+                        class="w-full h-[427px] size-full flex items-center justify-center lg:h-[336px] md:h-[323px]">
+                        <source srcset="./img/product/main-sm.png" media="(max-width: 767px)">
+                        <img src="./img/product/main.png" class="size-full object-contain"
+                          alt="Щит управления вентилятором">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide">
+                      <picture
+                        class="w-full h-[427px] size-full flex items-center justify-center lg:h-[336px] md:h-[323px]">
+                        <source srcset="./img/product/main-sm.png" media="(max-width: 767px)">
+                        <img src="./img/product/main.png" class="size-full object-contain"
+                          alt="Щит управления вентилятором">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide">
+                      <picture
+                        class="w-full h-[427px] size-full flex items-center justify-center lg:h-[336px] md:h-[323px]">
+                        <source srcset="./img/product/main-sm.png" media="(max-width: 767px)">
+                        <img src="./img/product/main.png" class="size-full object-contain"
+                          alt="Щит управления вентилятором">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide">
+                      <picture
+                        class="w-full h-[427px] size-full flex items-center justify-center lg:h-[336px] md:h-[323px]">
+                        <source srcset="./img/product/main-sm.png" media="(max-width: 767px)">
+                        <img src="./img/product/main.png" class="size-full object-contain"
+                          alt="Щит управления вентилятором">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide">
+                      <picture
+                        class="w-full h-[427px] size-full flex items-center justify-center lg:h-[336px] md:h-[323px]">
+                        <source srcset="./img/product/main-sm.png" media="(max-width: 767px)">
+                        <img src="./img/product/main.png" class="size-full object-contain"
+                          alt="Щит управления вентилятором">
+                      </picture>
+                    </div>
+                  </div>
+                  <button
+                    class="absolute top-[50%] left-[10px] z-2 flex items-center justify-center size-10 bg-white text-[#323338] 
+                    cursor-pointer rounded-full translate-y-[-50%] md:left-0
+                    shadow-[0px_1px_2px_0px_#BABCBF4A,0px_4px_4px_0px_#BABCBF42,0px_8px_5px_0px_#BABCBF26,0px_14px_6px_0px_#BABCBF0A,0px_23px_6px_0px_#BABCBF03]"
+                    data-slider-prev="product-slider">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.4297 8L9.42969 12L13.4297 16" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <button
+                    class="absolute top-[50%] right-[10px] z-2 flex items-center justify-center size-10 bg-white text-[#323338] 
+                    cursor-pointer rounded-full translate-y-[-50%] md:right-0
+                    shadow-[0px_1px_2px_0px_#BABCBF4A,0px_4px_4px_0px_#BABCBF42,0px_8px_5px_0px_#BABCBF26,0px_14px_6px_0px_#BABCBF0A,0px_23px_6px_0px_#BABCBF03]"
+                    data-slider-next="product-slider">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4297 8L15.4297 12L11.4297 16" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="w-[47%] xl:w-full md:order-2">
+              <div class="w-full flex flex-col items-start gap-[15px] md:gap-3">
+                <div
+                  class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
+                  <div class="font-medium text-[#323338B2]">Категория</div>
+                  <div class="font-semibold text-[#323338]">
+                    Шкаф управления
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
+                  <div class="font-medium text-[#323338B2]">Вентиляторы</div>
+                  <div class="font-semibold text-[#323338]">
+                    ~220В, суммарная мощность до 1,5 кВт
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
+                  <div class="font-medium text-[#323338B2]">Тип пуска вентилятора</div>
+                  <div class="font-semibold text-[#323338]">
+                    Прямой пуск, преобразователи частоты или регуляторы скорости
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
+                  <div class="font-medium text-[#323338B2]">Управление вентиляторами</div>
+                  <div class="font-semibold text-[#323338]">
+                    Сблокированное включение
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
+                  <div class="font-medium text-[#323338B2]">Нагреватель электрический</div>
+                  <div class="font-semibold text-[#323338]">
+                    ~220В, мощностью до 3кВт
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
+                  <div class="font-medium text-[#323338B2]">Охладитель</div>
+                  <div class="font-semibold text-[#323338]">
+                    Фреоновый: 1 контур, управление через релейный «сухой» контакт
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
+                  <div class="font-medium text-[#323338B2]">Рекуператор</div>
+                  <div class="font-semibold text-[#323338]">
+                    Нет
+                  </div>
+                </div>
+              </div>
+              <div class="w-full flex flex-col items-start gap-[15px] mt-[15px]" style="display: none;"
+                data-hidden-block="content">
+                <div
+                  class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
+                  <div class="font-medium text-[#323338B2]">Приточный вентилятор</div>
+                  <div class="font-semibold text-[#323338]">
+                    ~220В, до 1,5 кВт
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
+                  <div class="font-medium text-[#323338B2]">Вытяжной вентилятор</div>
+                  <div class="font-semibold text-[#323338]">
+                    ~220В, до 1,5 кВт
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
+                  <div class="font-medium text-[#323338B2]">Автоматика</div>
+                  <div class="font-semibold text-[#3B8BEA]">
+                    Zentec
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
+                  <div class="font-medium text-[#323338B2]">Гарантия</div>
+                  <div class="font-semibold text-[#3B8BEA]">
+                    2 года
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
+                  <div class="font-medium text-[#323338B2]">Габариты</div>
+                  <div class="font-semibold text-[#3B8BEA]">
+                    408 × 278 × 153
+                  </div>
+                </div>
+              </div>
+              <button
+                class="flex items-center gap-[2px] text-sm font-medium text-[#3B8BEA] leading-[140%] mt-[15px] cursor-pointer"
+                data-hidden-block="controller">
+                <span data-hidden-block="btn" data-text-up="Развернуть" data-text-down="Свернуть">Развернуть</span>
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.4297 10L12.4297 14L8.42969 10" stroke="#3B8BEA" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="shrink-0 sticky top-4 w-[328px] xl:w-[500px] lg:w-[321px] md:w-full md:order-1 md:static">
+            <div class="w-full flex flex-col items-start">
+              <div
+                class="w-full py-5 px-6 bg-white border-[1px] border-[#F4F6FB] rounded-2xl
+                lg:p-4 md:p-0 md:bg-transparent md:border-none md:shadow-none
+                shadow-[0px_-2px_30px_0px_#1D21260D,0px_2px_2px_0px_#4A4C4F0A,0px_4px_3px_0px_#4A4C4F08,0px_8px_3px_0px_#4A4C4F03,0px_12px_3px_0px_#4A4C4F00]">
+                <div class="text-[34px] leading-[130%] font-bold text-[#5A5B5F] mb-3 lg:text-2xl">43 780 ₽</div>
+                <button class="w-full flex items-center justify-between gap-[10px] p-4 bg-[#F94D4D1A] rounded-[10px] mb-4 cursor-pointer
+                  lg:py-3 lg:px-4 lg:mb-[10px] md:py-4 md:mb-3">
+                  <span class="text-[#323338] text-xs leading-[140%] font-medium">
+                    <span class="text-[#FD5D5D] leading-[140%] font-semibold">Войдите,</span> чтобы применить скидку
+                  </span>
+                  <svg class="size-6 shrink-0" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.1797 12L4.92969 12" stroke="#FD5D5D" stroke-width="1.5" stroke-linecap="square"
+                      stroke-linejoin="round" />
+                    <path d="M15.4297 16.5L19.9297 12" stroke="#FD5D5D" stroke-width="1.5" stroke-linecap="square"
+                      stroke-linejoin="round" />
+                    <path d="M15.4297 7.5L19.9297 12" stroke="#FD5D5D" stroke-width="1.5" stroke-linecap="square"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <div class="flex items-center gap-[10px]">
+                  <div
+                    class="w-[120px] flex items-center justify-between py-[14px] px-4 bg-[#DBDBDB] rounded-xl shrink-0">
+                    <button type="button" class="flex items-center justify-center size-[15px] cursor-pointer">
+                      <svg class="size-[15px]" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4297 8H2.42969V7H13.4297V8Z"
+                          fill="#323338" />
+                      </svg>
+                    </button>
+                    <input type="text"
+                      class="block w-full h-[15px] text-[11px] leading-[150%] font-semibold text-center outline-none"
+                      value="1 шт">
+                    <button type="button"
+                      class="flex items-center justify-center size-[15px] outline-none cursor-pointer">
+                      <svg class="size-[15px]" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M13.4297 8.11114H2.42969V6.88892H13.4297V8.11114Z" fill="#323338" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.54058 2V13H7.31836L7.31836 2H8.54058Z"
+                          fill="#323338" />
+                      </svg>
+                    </button>
+                  </div>
+                  <button
+                    class="w-full flex items-center justify-center gap-[6px] py-[13px] px-[30px] bg-[#3B8BEA] 
+                    rounded-xl text-white text-center font-semibold cursor-pointer hover:bg-[#323338] transition-colors">
+                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.90598 4.96875L4.40573 2.71875H2.95898" stroke="white" stroke-width="1.2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6.22775 11.1262L4.90625 4.96875H14.3997C14.8775 4.96875 15.233 5.409 15.1332 5.87625L14.0067 11.1262C13.9325 11.472 13.6272 11.7187 13.2732 11.7187H6.9605C6.60725 11.7187 6.302 11.472 6.22775 11.1262Z"
+                        stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M13.5278 14.4375C13.3726 14.4375 13.2466 14.5635 13.2481 14.7188C13.2481 14.874 13.3741 15 13.5293 15C13.6846 15 13.8106 14.874 13.8106 14.7188C13.8098 14.5635 13.6838 14.4375 13.5278 14.4375"
+                        stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M7.07115 14.4375C6.9159 14.4375 6.7899 14.5635 6.7914 14.7188C6.79065 14.874 6.91665 15 7.0719 15C7.22715 15 7.35315 14.874 7.35315 14.7188C7.35315 14.5635 7.22715 14.4375 7.07115 14.4375"
+                        stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span class="text-xs leading-[140%] font-semibold">В корзину</span>
+                  </button>
+                </div>
+                <div class="flex items-center gap-[2px] text-xs leading-[142%] text-[#707174] mt-[10px]">
+                  Наличие:
+                  <span class="text-[#323338CC] font-semibold">изготовление 4-5 дней</span>
+                </div>
+              </div>
+              <div
+                class="w-full mt-4 py-5 px-6 bg-[#F4F6FB] rounded-2xl lg:pt-[14px] lg:pb-4 lg:px-4 lg:mt-3 md:py-4 md:mt-4">
+                <div class="text-lg font-semibold leading-[140%] mb-4 lg:text-base lg:mb-3 md:text-sm">Способы получения
+                </div>
+                <div class="text-xs leading-[140%] lg:mt-2 md:mt-[10px]">Самовывоз со склада г. Санкт-Петербург</div>
+                <div class="text-xs leading-[140%] mt-3 flex items-start gap-1 lg:mt-2 md:mt-[10px]">
+                  Доставка&nbsp;по&nbsp;России:
+                  <span class="font-semibold text-[#3B8BEA]">
+                    ПЭК, СДЭК, Деловые линии
+                  </span>
+                </div>
+              </div>
+              <div class="text-sm font-medium leading-[140%] mt-3 text-[#3B8BEA] lg:mt-[10px]">
+                Ознакомиться с условиями доставки и оплаты
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full flex flex-col gap-4 mt-11 md:mt-8">
+          <nav class="grid grid-cols-4 bg-[#F4F6FB] rounded-2xl overflow-hidden sticky top-0 z-2
+            md:flex md:overflow-x-auto md:w-[calc(100% + 48px)] md:static md:px-6 md:-mx-6 md:bg-white 
+            md:gap-[10px] md:rounded-none [&amp;::-webkit-scrollbar]:hidden">
+            <a href="#v_01" class="flex items-center justify-center text-base leading-[150%] font-semibold text-center p-[10px] 
+            lg:text-sm lg:leading-[120%]
+            md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0 md:leading-[150%]
+            hover:bg-[#3B8BEA] hover:text-white transition-all">Характеристики</a>
+            <a href="#v_02" class="flex items-center justify-center text-base leading-[150%] font-semibold text-center p-[10px] 
+            lg:text-sm lg:leading-[120%]
+            md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0 md:leading-[150%]
+            hover:bg-[#3B8BEA] hover:text-white transition-all">Описание товара</a>
+            <a href="#v_03" class="flex items-center justify-center text-base leading-[150%] font-semibold text-center p-[10px] 
+            lg:text-sm lg:leading-[120%]
+            md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0 md:leading-[150%]
+            hover:bg-[#3B8BEA] hover:text-white transition-all">Документация</a>
+            <a href="#v_04" class="flex items-center justify-center text-base leading-[150%] font-semibold text-center p-[10px] 
+            lg:text-sm lg:leading-[120%]
+            md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0 md:leading-[150%]
+            hover:bg-[#3B8BEA] hover:text-white transition-all">Сопутствующие товары</a>
+          </nav>
+          <div
+            class="w-full p-[39px] bg-white border-[1px] border-[#EDEDED] rounded-2xl lg:p-[23px] md:px-[15px]
+            shadow-[0px_2px_4px_0px_#CCCCCC1A,0px_7px_7px_0px_#CDCDCD17,0px_16px_10px_0px_#D6D6D60D,0px_29px_12px_0px_#DFDFDF03,0px_45px_13px_0px_#E3E3E300]">
+            <h3
+              class="text-[34px] leading-[130%] font-bold text-[#3B8BEA] mb-8 lg:text-[30px] lg:mb-[36px] md:text-2xl md:mb-6">
+              Характеристики товара</h3>
+            <div class="w-full">
+              <div class="w-full flex flex-col">
+                <div class="w-full flex flex-col gap-3">
+                  <div class="flex items-bottom leading-0 md:flex-col md:gap-1">
+                    <div class="relative w-[42%] lg:w-[45%] md:w-full
+                      before:w-full before:absolute before:top-[15px] before:h-[1px] before:border-[1px] 
+                      before:border-[#EDEDED] before:border-dashed before:z-0 md:before:hidden">
+                      <span
+                        class="relative text-sm leading-[140%] pr-[2px] font-medium text-[#5A5B5F] bg-white z-1">Категория</span>
+                    </div>
+                    <div class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium lg:w-[55%] md:w-full">Шкаф
+                      управления</div>
+                  </div>
+                  <div class="flex items-bottom leading-0 md:flex-col md:gap-1">
+                    <div class="relative w-[42%] lg:w-[45%] md:w-full
+                      before:w-full before:absolute before:top-[15px] before:h-[1px] before:border-[1px] 
+                      before:border-[#EDEDED]  before:border-dashed before:z-0 md:before:hidden">
+                      <span
+                        class="relative text-sm leading-[140%] pr-[2px] font-medium text-[#5A5B5F] bg-white z-1">Производитель</span>
+                    </div>
+                    <div
+                      class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium text-[#3B8BEA] lg:w-[55%] md:w-full">
+                      ГК ВентАвтоматика,
+                      Россия</div>
+                  </div>
+                  <div class="flex items-bottom leading-0 md:flex-col md:gap-1">
+                    <div class="relative w-[42%] lg:w-[45%] md:w-full
+                      before:w-full before:absolute before:top-[15px] before:h-[1px] before:border-[1px] 
+                      before:border-[#EDEDED] before:border-dashed before:z-0 md:before:hidden">
+                      <span
+                        class="relative text-sm leading-[140%] pr-[2px] font-medium text-[#5A5B5F] bg-white z-1">Гарантия</span>
+                    </div>
+                    <div
+                      class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium text-[#3B8BEA] lg:w-[55%] md:w-full">
+                      2 года
+                    </div>
+                  </div>
+                  <div class="flex items-bottom leading-0 md:flex-col md:gap-1">
+                    <div class="relative w-[42%] lg:w-[45%] md:w-full
+                      before:w-full before:absolute before:top-[15px] before:h-[1px] before:border-[1px] 
+                      before:border-[#EDEDED] before:border-dashed before:z-0 md:before:hidden">
+                      <span class="block relative text-sm leading-[140%] pr-[2px] font-medium text-[#5A5B5F] bg-white z-1
+                        lg:max-w-[200px]">
+                        Материал
+                        корпус
+                      </span>
+                    </div>
+                    <div class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium lg:w-[55%] md:w-full">пластик</div>
+                  </div>
+                  <div class="flex items-bottom leading-0 md:flex-col md:gap-1">
+                    <div class="relative w-[42%] lg:w-[45%] md:w-full
+                      before:w-full before:absolute before:top-[15px] before:h-[1px] before:border-[1px] 
+                      before:border-[#EDEDED] before:border-dashed before:z-0 md:before:hidden">
+                      <span class="block relative text-sm leading-[140%] pr-[2px] font-medium text-[#5A5B5F] bg-white z-1
+                        lg:max-w-[200px]">
+                        Габариты
+                      </span>
+                    </div>
+                    <div class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium lg:w-[55%]">40 × 7 × 53</div>
+                  </div>
+                </div>
+                <div class="w-full flex flex-col gap-3 mt-8 lg:mt-[36px] md:mt-6">
+                  <div class="flex items-start leading-0 md:flex-col md:gap-0">
+                    <div class="relative w-[42%] lg:w-[45%] md:w-full md:mb-[13px]">
+                      <span
+                        class="block relative text-lg leading-[140%] pr-[2px] font-semibold text-[#5A5B5F] bg-white z-1">
+                        Вентиляторы
+                      </span>
+                    </div>
+                    <div class="w-[58%] text-sm leading-[140%] pl-[2px] pt-1 font-medium lg:w-[55%] md:w-full">
+                      однофазный приточный и вытяжной
+                    </div>
+                  </div>
+                  <div class="flex items-start leading-0 md:flex-col md:gap-1">
+                    <div class="relative w-[42%] lg:w-[45%] md:w-full
+                      before:w-full before:absolute before:top-[15px] before:h-[1px] before:border-[1px] 
+                      before:border-[#EDEDED] before:border-dashed before:z-0 md:before:hidden">
+                      <span class="block relative text-sm leading-[140%] pr-[2px] font-medium text-[#5A5B5F] bg-white z-1
+                        lg:max-w-[200px] md:max-w-full">
+                        Управление однофазным приточным вентилятором
+                      </span>
+                    </div>
+                    <div class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium lg:w-[55%] md:w-full">
+                      (~220В) сумарной мощностью до 1,5кВт
+                    </div>
+                  </div>
+                  <div class="flex items-start leading-0 md:flex-col md:gap-1">
+                    <div class="relative w-[42%] lg:w-[45%] md:w-full
+                      before:w-full before:absolute before:top-[15px] before:h-[1px] before:border-[1px] 
+                      before:border-[#EDEDED] before:border-dashed before:z-0 md:before:hidden">
+                      <span class="block relative text-sm leading-[140%] pr-[2px] font-medium text-[#5A5B5F] bg-white z-1
+                        lg:max-w-[200px] md:max-w-full">
+                        Управление однофазным втяжным вентилятором
+                      </span>
+                    </div>
+                    <div class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium lg:w-[55%] md:w-full">
+                      (~220В) сумарной мощностью до 1,5кВт
+                    </div>
+                  </div>
+                  <div class="flex items-start leading-0 md:flex-col md:gap-1">
+                    <div class="relative w-[42%] lg:w-[45%] md:w-full
+                      before:w-full before:absolute before:top-[15px] before:h-[1px] before:border-[1px] 
+                      before:border-[#EDEDED] before:border-dashed before:z-0 md:before:hidden">
+                      <span class="block relative text-sm leading-[140%] pr-[2px] font-medium text-[#5A5B5F] bg-white z-1
+                        lg:max-w-[200px] md:max-w-full">
+                        Управление вентиляторами
+                      </span>
+                    </div>
+                    <div class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium lg:w-[55%] md:w-full">
+                      Сблокированное включение
+                    </div>
+                  </div>
+                  <div class="flex items-start leading-0 md:flex-col md:gap-1">
+                    <div class="relative w-[42%] lg:w-[45%] md:w-full
+                      before:w-full before:absolute before:top-[15px] before:h-[1px] before:border-[1px] 
+                      before:border-[#EDEDED] before:border-dashed before:z-0 md:before:hidden">
+                      <span class="block relative text-sm leading-[140%] pr-[2px] font-medium text-[#5A5B5F] bg-white z-1
+                        lg:max-w-[200px] md:max-w-full">
+                        Тип пуска вентилятора
+                      </span>
+                    </div>
+                    <div class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium lg:w-[55%] md:w-full">
+                      Прямой пуск, есть возможность управления внешними преобразователями частоты или регуляторами
+                      скорости (клеммы для управления скоростью 0–10В)
+                    </div>
+                  </div>
+                  <div class="flex items-start leading-0 md:flex-col md:gap-1">
+                    <div class="relative w-[42%] lg:w-[45%] md:w-full
+                      before:w-full before:absolute before:top-[15px] before:h-[1px] before:border-[1px] 
+                      before:border-[#EDEDED] before:border-dashed before:z-0 md:before:hidden">
+                      <span class="block relative text-sm leading-[140%] pr-[2px] font-medium text-[#5A5B5F] bg-white z-1
+                        lg:max-w-[200px] md:max-w-full">
+                        Контроль работы двигателей вентилятора
+                      </span>
+                    </div>
+                    <div class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium lg:w-[55%] md:w-full">
+                      По датчику перепада давления или термоконтактам
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full flex flex-col gap-3 mt-8 lg:mt-[36px] md:mt-6">
+                  <div class="flex items-start leading-0 md:flex-col md:gap-1">
+                    <div class="relative w-[42%] lg:w-[45%] md:w-full md:mb-[13px]">
+                      <span class="relative text-lg leading-[140%] pr-[2px] font-medium text-[#5A5B5F] bg-white z-1">
+                        Электрокалорифер
+                      </span>
+                    </div>
+                    <div
+                      class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium self-end lg:w-[55%] md:w-full md:pl-0">
+                      <ul class="flex flex-col items-start gap-3 list-disc pl-5 leading-0 pt-1 lg:pl-3 md:pt-0 md:pl-5">
+                        <li class="text-sm leading-[143%] font-medium">
+                          ~220В, мощностью до 3кВт
+                        </li>
+                        <li class="text-sm leading-[143%] font-medium">
+                          Плавное управление однофазным (~220В) электрическим нагревателем при помощи ШИМ (0–10В),
+                          мощностью до 3кВт
+                        </li>
+                        <li class="text-sm leading-[143%] font-medium">
+                          Защита электрического нагревателя по термоконтакту калорифера
+                        </li>
+                        <li class="text-sm leading-[143%] font-medium">
+                          Автоматическое отключение нагревателя при отказе вентилятора (при установке реле давления
+                          на приточном вентиляторе, или подключении термоконтакта)
+                        </li>
+                        <li class="text-sm leading-[143%] font-medium">
+                          Настраиваемое время продувки электрического калорифера
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full flex flex-col gap-3 mt-8 lg:mt-[36px] md:mt-6">
+                  <div class="flex items-start leading-0 md:flex-col md:gap-1">
+                    <div class="relative w-[42%] lg:w-[45%] md:w-full md:mb-[13px]">
+                      <span class="relative text-lg leading-[140%] pr-[2px] font-medium text-[#5A5B5F] bg-white z-1">
+                        Фреоновый охладитель
+                      </span>
+                    </div>
+                    <div
+                      class="w-[58%] text-sm leading-[140%] pl-[2px] pt-1 font-medium lg:w-[55%] md:w-full md:pl-0 md:pt-0">
+                      Управление 1 контуром через релейный «сухой» контакт. Выведены клеммы на запуск ККБ.
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full flex flex-col gap-3 mt-8 lg:mt-[36px] md:mt-6">
+                  <div class="flex items-start leading-0 md:flex-col md:gap-1">
+                    <div class="relative w-[42%] lg:w-[45%] md:w-full md:mb-[13px]">
+                      <span class="relative text-lg leading-[140%] pr-[2px] font-medium text-[#5A5B5F] bg-white z-1">
+                        Воздушные заслонки
+                      </span>
+                    </div>
+                    <div class="w-[58%] lg:w-[55%] md:w-full">
+                      <div class="text-sm leading-[140%] pl-[2px] pt-1 font-medium md:pt-0 md:pl-0">
+                        Управление заслонками (откр/закр) с напряжением 220В, как с возвратной пружиной, так и без.
+                      </div>
+                      <div class="max-w-[438px] mt-3 p-4 rounded-xl bg-[#FD5D5D1A]">
+                        <div class="text-sm leading-[140%] font-semibold text-[#FD5D5D] mb-[10px]">Обращаем внимание
+                        </div>
+                        <div class="text-xs leading-[140%] font-medium text-[#323338CC]">
+                          Некоторые приводы без возвратной пружины могут не поддерживать 2-точечное управление, которое
+                          используется в щите
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full pt-[15px] mt-8 border-t-[1px] border-[#EDEDED] lg:mt-[36px] md:mt-8 md:pt-[31px]">
+                <div class="w-full is-open" data-accordion="block" data-accordion-type="dropdown">
+                  <div class="flex items-center justify-between cursor-pointer" data-accordion="head">
+                    <span class="text-lg leading-[140%] font-semibold text-[#5A5B5F]">Прочие возможности</span>
+                    <svg class="size-6" width="24" height="25" viewBox="0 0 24 25" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 10.8414L12 14.8414L16 10.8414" stroke="#5A5B5F" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <div class="w-full flex flex-col gap-3 mt-8 md:mt-[11px]" data-accordion="body">
+                    <div class="flex items-start leading-0 md:flex-col md:gap-1">
+                      <div class="relative w-[42%] lg:w-[45%] md:w-full">
+                      </div>
+                      <div
+                        class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium self-end lg:w-[55%] md:w-full md:pl-0">
+                        <ul
+                          class="flex flex-col items-start gap-3 list-disc pl-5 leading-0 pt-[4px] lg:pl-3 md:pl-6 md:pt-0">
+                          <li class="text-sm leading-[143%] font-medium">
+                            Контроль загрязнения фильтра (по датчику перепада давления)
+                          </li>
+                          <li class="text-sm leading-[143%] font-medium">
+                            Возможность внешнего запуска/остановки установки, посредством замыкания/размыкания контакта
+                            дистанционного управления
+                          </li>
+                          <li class="text-sm leading-[143%] font-medium">
+                            Измерение температуры наружного воздуха (датчик типа NTC10k)
+                          </li>
+                          <li class="text-sm leading-[143%] font-medium">
+                            Измерение температуры приточного воздуха (датчик типа NTC10k)
+                          </li>
+                          <li class="text-sm leading-[143%] font-medium">
+                            Измерение температуры комнатного, или вытяжного воздуха (датчик типа NTC10k), для управления
+                            фреоновым охладителем
+                          </li>
+                          <li class="text-sm leading-[143%] font-medium">
+                            Переключение режимов Вентиляция/Нагрев как в автоматическом режиме, так и вручную
+                          </li>
+                          <li class="text-sm leading-[143%] font-medium">
+                            Сообщение об аварийных ситуациях и ошибках с текстовым выводом на дисплей
+                          </li>
+                          <li class="text-sm leading-[143%] font-medium">
+                            Недельный таймер
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="w-full flex pt-[31px] border-t-[1px] border-[#EDEDED] mt-8 lg:pt-0 lg:border-none lg:mt-[36px] md:mt-8">
+                <div class="py-3 px-4 bg-[#3B8BEA1A] text-[17px] leading-[140%] font-medium text-[#323338CC]
+                  rounded-xl flex items-start gap-[7px] lg:text-base md:p-3 md:text-[15px]">
+                  <svg class="size-6 shrink-0" width="24" height="25" viewBox="0 0 24 25" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M13.4992 14.0414L6.69922 20.8414C5.79922 21.7414 4.39922 21.7414 3.49922 20.8414C2.59922 19.9414 2.59922 18.5414 3.49922 17.6414L10.2992 10.8414C9.49922 8.84143 9.99922 6.54143 11.5992 4.94143C13.2992 3.24143 15.7992 2.94143 17.7992 3.74143C17.8992 3.74143 17.8992 3.84143 17.7992 3.94143L14.1992 7.54143L16.7992 10.1414L20.4992 6.54143C20.4992 6.54143 20.5992 6.54143 20.6992 6.54143C21.6992 8.54143 21.1992 11.0414 19.4992 12.7414C17.7992 14.3414 15.4992 14.7414 13.4992 14.0414Z"
+                      stroke="#323338" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  <span>Оборудование поставляется предварительно настроенным — необходимо только подключить</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full p-[39px] bg-white border-[1px] border-[#EDEDED] rounded-2xl lg:p-[23px] md:px-[15px]
+            shadow-[0px_2px_4px_0px_#CCCCCC1A,0px_7px_7px_0px_#CDCDCD17,0px_16px_10px_0px_#D6D6D60D,0px_29px_12px_0px_#DFDFDF03,0px_45px_13px_0px_#E3E3E300]">
+            <h3 class="text-[34px] leading-[130%] font-bold text-[#3B8BEA] mb-8 lg:text-[30px] md:text-2xl md:mb-6">
+              Описание товара
+            </h3>
+            <div>
+              <p class="text-[17px] leading-[140%] font-medium lg:text-base lg:leading-[138%]">
+                Как будем управлять электрическим нагревателем — с помощью контактора или твердотельного реле? <br>
+                На рынке автоматики вентиляции представлены оба варианта. Вроде функция у них одна и та же —
+                регулирование температуры, но отличия между ними всё‑таки есть. Давайте разбираться.
+              </p>
+              <p class="text-[17px] leading-[140%] font-medium mt-4 lg:text-base lg:leading-[138%]">
+                Контактор — двухпозиционный электромагнитный аппарат, предназначенный для частых дистанционных включений
+                и выключений силовых электрических цепей в нормальном режиме работы. Разновидность
+                электромагнитного реле.
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-full p-[39px] bg-white border-[1px] border-[#EDEDED] rounded-2xl lg:p-[23px] md:px-[15px]
+            shadow-[0px_2px_4px_0px_#CCCCCC1A,0px_7px_7px_0px_#CDCDCD17,0px_16px_10px_0px_#D6D6D60D,0px_29px_12px_0px_#DFDFDF03,0px_45px_13px_0px_#E3E3E300]">
+            <div class="flex items-start justify-between gap-4 mb-8 md:mb-6 md:flex-col md:gap-4">
+              <h3 class="text-[34px] leading-[130%] font-bold text-[#3B8BEA] lg:text-[30px] md:text-2xl">
+                Документация
+              </h3>
+              <a href="#"
+                class="flex items-center gap-[6px] cursor-pointer text-[#323338CC] hover:text-[#3B8BEA] transition-colors">
+                <span class="text-lg leading-[100%] font-semibold md:text-base">Скачать всю документацию</span>
+                <svg class="size-6" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 16.6331V3.21643" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M3 16.6331C3 18.7501 4.791 20.4665 7 20.4665H17C19.209 20.4665 21 18.7501 21 16.6331"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M7.00095 11.8414L12.002 16.6341L17.002 11.8414" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+            <div class="grid grid-cols-2 gap-8 lg:gap-x-6 md:grid-cols-1 md:gap-6">
+              <div class="w-full">
+                <h5 class="text-lg leading-[140%] font-semibold mb-4">Сертификаты</h5>
+                <div class="flex flex-col items-start gap-4">
+                  <a href="#" class="text-[17px] leading-[140%] font-medium text-[#5A5B5F] flex items-start gap-[10px] 
+                    hover:text-[#3B8BEA] transition-colors lg:text-base">
+                    <img class="w-[18px] h-6 shrink-0" src="./img/icons/pdf.svg" alt="PDF">
+                    <span>Сертификат соответствия</span>
+                  </a>
+                </div>
+              </div>
+              <div class="w-full">
+                <h5 class="text-lg leading-[140%] font-semibold mb-4">Инструкции</h5>
+                <div class="flex flex-col items-start gap-4">
+                  <a href="#" class="text-[17px] leading-[140%] font-medium text-[#5A5B5F] flex items-start gap-[10px] 
+                    hover:text-[#3B8BEA] transition-colors lg:text-base">
+                    <img class="w-[18px] h-6 shrink-0" src="./img/icons/pdf.svg" alt="PDF">
+                    <span>Инструкция к щиту ЩУВ-Э130-ПРС105-ВРС105</span>
+                  </a>
+                  <a href="#" class="text-[17px] leading-[140%] font-medium text-[#5A5B5F] flex items-start gap-[10px] 
+                    hover:text-[#3B8BEA] transition-colors lg:text-base">
+                    <img class="w-[18px] h-6 shrink-0" src="./img/icons/pdf.svg" alt="PDF">
+                    <span>Подводимые к щиту провода ЩУВ-Э130-ПРС105-ВРС105</span>
+                  </a>
+                  <a href="#" class="text-[17px] leading-[140%] font-medium text-[#5A5B5F] flex items-start gap-[10px] 
+                    hover:text-[#3B8BEA] transition-colors lg:text-base">
+                    <img class="w-[18px] h-6 shrink-0" src="./img/icons/pdf.svg" alt="PDF">
+                    <span>Инструкция по монтажу</span>
+                  </a>
+                </div>
+              </div>
+              <div class="w-full">
+                <h5 class="text-lg leading-[140%] font-semibold mb-4">Схемы к щиту управления</h5>
+                <div class="flex flex-col items-start gap-4">
+                  <a href="#" class="text-[17px] leading-[140%] font-medium text-[#5A5B5F] flex items-start gap-[10px] 
+                    hover:text-[#3B8BEA] transition-colors lg:text-base">
+                    <img class="w-[18px] h-6 shrink-0" src="./img/icons/jpg.svg" alt="JPG">
+                    <span>Функциональная схема для приточно-вытяжной установки с электрокалорифером (1 ступень)</span>
+                  </a>
+                  <a href="#" class="text-[17px] leading-[140%] font-medium text-[#5A5B5F] flex items-start gap-[10px] 
+                    hover:text-[#3B8BEA] transition-colors lg:text-base">
+                    <img class="w-[18px] h-6 shrink-0" src="./img/icons/jpg.svg" alt="JPG">
+                    <span>Схема внешних подключений</span>
+                  </a>
+                  <a href="#" class="text-[17px] leading-[140%] font-medium text-[#5A5B5F] flex items-start gap-[10px] 
+                    hover:text-[#3B8BEA] transition-colors lg:text-base">
+                    <img class="w-[18px] h-6 shrink-0" src="./img/icons/jpg.svg" alt="JPG">
+                    <span>Габаритные и установочные размеры ЩУВ-Э130-ПРС105-ВРС105</span>
+                  </a>
+                  <a href="#" class="text-[17px] leading-[140%] font-medium text-[#5A5B5F] flex items-start gap-[10px] 
+                    hover:text-[#3B8BEA] transition-colors lg:text-base">
+                    <img class="w-[18px] h-6 shrink-0" src="./img/icons/jpg.svg" alt="JPG">
+                    <span>Схемы к щиту управления ЩУВ Э130-ПРС105-ВРС105</span>
+                  </a>
+                </div>
+              </div>
+              <div class="w-full">
+                <h5 class="text-lg leading-[140%] font-semibold mb-4">Для проектировщиков</h5>
+                <div class="flex flex-col items-start gap-4">
+                  <a href="#" class="text-[17px] leading-[140%] font-medium text-[#5A5B5F] flex items-start gap-[10px] 
+                    hover:text-[#3B8BEA] transition-colors lg:text-base">
+                    <img class="w-[18px] h-6 shrink-0" src="./img/icons/stem.svg" alt="STEM">
+                    <span>3D-модель, STEP-формат </span>
+                  </a>
+                  <a href="#" class="text-[17px] leading-[140%] font-medium text-[#5A5B5F] flex items-start gap-[10px] 
+                    hover:text-[#3B8BEA] transition-colors lg:text-base">
+                    <img class="w-[18px] h-6 shrink-0" src="./img/icons/bim.svg" alt="BIM">
+                    <span>3D-модель, STEP-формат </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pt-[56px] overflow-hidden lg:pt-[50px] md:pt-6">
+      <div class="my-container">
+        <h2 class="text-[34px] leading-[130%] text-primary font-bold mb-6 lg:text-[30px] md:text-2xl">
+          Рекомендуем вам
+        </h2>
+        <div class="overflow-hidden lg:overflow-visible lg:relative" data-slider="recomended">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide lg:max-w-[160px]">
+              <div class="flex flex-col">
+                <a href="#" class="relative mb-4 rounded-xl border-[1px] border-[#EDEDED] overflow-hidden">
+                  <div
+                    class="absolute top-5 left-3 text-xs text-white font-semibold px-[12px] py-[5px] bg-[#58C1FD] rounded-lg">
+                    Новинка
+                  </div>
+                  <picture class="w-full">
+                    <img src="./img/catalog/catalog-rec-01.png" class="w-full h-[209px] object-contain object-center"
+                      alt="Рекомендация">
+                  </picture>
+                </a>
+                <a href="#"
+                  class="text-sm font-semibold min-h-[60px] mb-[8px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
+                  Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
+                </a>
+                <a href="#" class="flex items-center">
+                  <span class="text-lg font-semibold leading-[100%]">43 540 ₽</span>
+                </a>
+                <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary 
+                  text-xs font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+                  <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.95889 8.83398L7.06956 4.83398H4.49756" stroke="white"
+                      style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.3078 19.7807L7.9585 8.83398H24.8358C25.6852 8.83398 26.3172 9.61665 26.1398 10.4473L24.1372 19.7807C24.0052 20.3953 23.4625 20.834 22.8332 20.834H11.6105C10.9825 20.834 10.4398 20.3953 10.3078 19.7807Z"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M23.2866 25.6667C23.0106 25.6667 22.7866 25.8907 22.7892 26.1667C22.7892 26.4427 23.0132 26.6667 23.2892 26.6667C23.5652 26.6667 23.7892 26.4427 23.7892 26.1667C23.7879 25.8907 23.5639 25.6667 23.2866 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M11.8082 25.6667C11.5322 25.6667 11.3082 25.8907 11.3109 26.1667C11.3096 26.4427 11.5336 26.6667 11.8096 26.6667C12.0856 26.6667 12.3096 26.4427 12.3096 26.1667C12.3096 25.8907 12.0856 25.6667 11.8082 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide lg:max-w-[160px]">
+              <div class="flex flex-col">
+                <a href="#" class="relative mb-4 rounded-xl border-[1px] border-[#EDEDED] overflow-hidden">
+                  <div
+                    class="absolute top-5 left-3 text-xs text-white font-semibold px-[12px] py-[5px] bg-[#58C1FD] rounded-lg">
+                    Новинка
+                  </div>
+                  <picture class="w-full">
+                    <img src="./img/catalog/catalog-rec-02.png" class="w-full h-[209px] object-contain object-center"
+                      alt="Рекомендация">
+                  </picture>
+                </a>
+                <a href="#"
+                  class="text-sm font-semibold min-h-[60px] mb-[9px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
+                  Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
+                </a>
+                <a href="#" class="flex items-center">
+                  <span class="text-lg font-semibold leading-[100%]">43 540 ₽</span>
+                </a>
+                <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary text-xs 
+                  font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+                  <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.95889 8.83398L7.06956 4.83398H4.49756" stroke="white"
+                      style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.3078 19.7807L7.9585 8.83398H24.8358C25.6852 8.83398 26.3172 9.61665 26.1398 10.4473L24.1372 19.7807C24.0052 20.3953 23.4625 20.834 22.8332 20.834H11.6105C10.9825 20.834 10.4398 20.3953 10.3078 19.7807Z"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M23.2866 25.6667C23.0106 25.6667 22.7866 25.8907 22.7892 26.1667C22.7892 26.4427 23.0132 26.6667 23.2892 26.6667C23.5652 26.6667 23.7892 26.4427 23.7892 26.1667C23.7879 25.8907 23.5639 25.6667 23.2866 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M11.8082 25.6667C11.5322 25.6667 11.3082 25.8907 11.3109 26.1667C11.3096 26.4427 11.5336 26.6667 11.8096 26.6667C12.0856 26.6667 12.3096 26.4427 12.3096 26.1667C12.3096 25.8907 12.0856 25.6667 11.8082 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide lg:max-w-[160px]">
+              <div class="flex flex-col">
+                <a href="#" class="relative mb-4 rounded-xl border-[1px] border-[#EDEDED] overflow-hidden">
+                  <div
+                    class="absolute top-5 left-3 text-xs text-white font-semibold px-[12px] py-[5px] bg-[#F94D4D] rounded-lg">
+                    Хит продаж
+                  </div>
+                  <picture class="w-full">
+                    <img src="./img/catalog/catalog-rec-03.png" class="w-full h-[209px] object-contain object-center"
+                      alt="Рекомендация">
+                  </picture>
+                </a>
+                <a href="#"
+                  class="text-sm font-semibold min-h-[60px] mb-[9px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
+                  Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
+                </a>
+                <a href="#" class="flex items-center gap-3">
+                  <span class="text-lg font-semibold text-primary leading-[100%]">43 540 ₽</span>
+                  <span class="text-[10px] font-medium line-through">43 780 ₽</span>
+                </a>
+                <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary text-xs 
+                  font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+                  <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.95889 8.83398L7.06956 4.83398H4.49756" stroke="white"
+                      style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.3078 19.7807L7.9585 8.83398H24.8358C25.6852 8.83398 26.3172 9.61665 26.1398 10.4473L24.1372 19.7807C24.0052 20.3953 23.4625 20.834 22.8332 20.834H11.6105C10.9825 20.834 10.4398 20.3953 10.3078 19.7807Z"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M23.2866 25.6667C23.0106 25.6667 22.7866 25.8907 22.7892 26.1667C22.7892 26.4427 23.0132 26.6667 23.2892 26.6667C23.5652 26.6667 23.7892 26.4427 23.7892 26.1667C23.7879 25.8907 23.5639 25.6667 23.2866 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M11.8082 25.6667C11.5322 25.6667 11.3082 25.8907 11.3109 26.1667C11.3096 26.4427 11.5336 26.6667 11.8096 26.6667C12.0856 26.6667 12.3096 26.4427 12.3096 26.1667C12.3096 25.8907 12.0856 25.6667 11.8082 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide lg:max-w-[160px]">
+              <div class="flex flex-col">
+                <a href="#" class="relative mb-4 rounded-xl border-[1px] border-[#EDEDED] overflow-hidden">
+                  <picture class="w-full">
+                    <img src="./img/catalog/catalog-rec-04.png" class="w-full h-[209px] object-contain object-center"
+                      alt="Рекомендация">
+                  </picture>
+                </a>
+                <a href="#"
+                  class="text-sm font-semibold min-h-[60px] mb-[9px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
+                  Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
+                </a>
+                <a href="#" class="flex items-center gap-3">
+                  <span class="text-lg font-semibold text-primary leading-[100%]">43 540 ₽</span>
+                  <span class="text-[10px] font-medium line-through">43 780 ₽</span>
+                </a>
+                <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary text-xs 
+                  font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+                  <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.95889 8.83398L7.06956 4.83398H4.49756" stroke="white"
+                      style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.3078 19.7807L7.9585 8.83398H24.8358C25.6852 8.83398 26.3172 9.61665 26.1398 10.4473L24.1372 19.7807C24.0052 20.3953 23.4625 20.834 22.8332 20.834H11.6105C10.9825 20.834 10.4398 20.3953 10.3078 19.7807Z"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M23.2866 25.6667C23.0106 25.6667 22.7866 25.8907 22.7892 26.1667C22.7892 26.4427 23.0132 26.6667 23.2892 26.6667C23.5652 26.6667 23.7892 26.4427 23.7892 26.1667C23.7879 25.8907 23.5639 25.6667 23.2866 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M11.8082 25.6667C11.5322 25.6667 11.3082 25.8907 11.3109 26.1667C11.3096 26.4427 11.5336 26.6667 11.8096 26.6667C12.0856 26.6667 12.3096 26.4427 12.3096 26.1667C12.3096 25.8907 12.0856 25.6667 11.8082 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide lg:max-w-[160px]">
+              <div class="flex flex-col">
+                <a href="#" class="relative mb-4 rounded-xl border-[1px] border-[#EDEDED] overflow-hidden">
+                  <picture class="w-full">
+                    <img src="./img/catalog/catalog-rec-05.png" class="w-full h-[209px] object-contain object-center"
+                      alt="Рекомендация">
+                  </picture>
+                </a>
+                <a href="#"
+                  class="text-sm font-semibold min-h-[60px] mb-[9px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
+                  Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
+                </a>
+                <a href="#" class="flex items-center gap-3">
+                  <span class="text-lg font-semibold text-primary leading-[100%]">43 540 ₽</span>
+                  <span class="text-[10px] font-medium line-through">43 780 ₽</span>
+                </a>
+                <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary text-xs 
+                  font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+                  <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.95889 8.83398L7.06956 4.83398H4.49756" stroke="white"
+                      style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.3078 19.7807L7.9585 8.83398H24.8358C25.6852 8.83398 26.3172 9.61665 26.1398 10.4473L24.1372 19.7807C24.0052 20.3953 23.4625 20.834 22.8332 20.834H11.6105C10.9825 20.834 10.4398 20.3953 10.3078 19.7807Z"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M23.2866 25.6667C23.0106 25.6667 22.7866 25.8907 22.7892 26.1667C22.7892 26.4427 23.0132 26.6667 23.2892 26.6667C23.5652 26.6667 23.7892 26.4427 23.7892 26.1667C23.7879 25.8907 23.5639 25.6667 23.2866 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M11.8082 25.6667C11.5322 25.6667 11.3082 25.8907 11.3109 26.1667C11.3096 26.4427 11.5336 26.6667 11.8096 26.6667C12.0856 26.6667 12.3096 26.4427 12.3096 26.1667C12.3096 25.8907 12.0856 25.6667 11.8082 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide lg:max-w-[160px]">
+              <div class="flex flex-col">
+                <a href="#" class="relative mb-4 rounded-xl border-[1px] border-[#EDEDED] overflow-hidden">
+                  <picture class="w-full">
+                    <img src="./img/catalog/catalog-rec-06.png" class="w-full h-[209px] object-contain object-center"
+                      alt="Рекомендация">
+                  </picture>
+                </a>
+                <a href="#"
+                  class="text-sm font-semibold min-h-[60px] mb-[9px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
+                  Щит управления ЩУВ Э130-ПРС105-ВРС105
+                </a>
+                <a href="#" class="flex items-center gap-3">
+                  <span class="text-lg font-semibold text-primary leading-[100%]">43 540 ₽</span>
+                  <span class="text-[10px] font-medium line-through">43 780 ₽</span>
+                </a>
+                <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary text-xs 
+                  font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+                  <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.95889 8.83398L7.06956 4.83398H4.49756" stroke="white"
+                      style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.3078 19.7807L7.9585 8.83398H24.8358C25.6852 8.83398 26.3172 9.61665 26.1398 10.4473L24.1372 19.7807C24.0052 20.3953 23.4625 20.834 22.8332 20.834H11.6105C10.9825 20.834 10.4398 20.3953 10.3078 19.7807Z"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M23.2866 25.6667C23.0106 25.6667 22.7866 25.8907 22.7892 26.1667C22.7892 26.4427 23.0132 26.6667 23.2892 26.6667C23.5652 26.6667 23.7892 26.4427 23.7892 26.1667C23.7879 25.8907 23.5639 25.6667 23.2866 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M11.8082 25.6667C11.5322 25.6667 11.3082 25.8907 11.3109 26.1667C11.3096 26.4427 11.5336 26.6667 11.8096 26.6667C12.0856 26.6667 12.3096 26.4427 12.3096 26.1667C12.3096 25.8907 12.0856 25.6667 11.8082 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="slider-nav-btn slider-prev absolute top-20 z-2" data-slider-prev="recomended">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M11 8L15 12L11 16" stroke="#323338" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <button type="button" class="slider-nav-btn slider-next absolute top-20 z-2" data-slider-next="recomended">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M13 16L9 12L13 8" stroke="#323338" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="pt-[56px] pb-[66px] overflow-hidden lg:pt-[50px] lg:pb-15 md:pt-6 md:pb-8">
+      <div class="my-container">
+        <h2 class="text-[34px] leading-[130%] text-primary font-bold mb-6 lg:text-[30px] md:text-2xl">
+          Рекомендуем вам
+        </h2>
+        <div class="overflow-hidden lg:overflow-visible lg:relative" data-slider="recomended">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide lg:max-w-[160px]">
+              <div class="flex flex-col">
+                <a href="#" class="relative mb-4 rounded-xl border-[1px] border-[#EDEDED] overflow-hidden">
+                  <div
+                    class="absolute top-5 left-3 text-xs text-white font-semibold px-[12px] py-[5px] bg-[#58C1FD] rounded-lg">
+                    Новинка
+                  </div>
+                  <picture class="w-full">
+                    <img src="./img/catalog/catalog-rec-01.png" class="w-full h-[209px] object-contain object-center"
+                      alt="Рекомендация">
+                  </picture>
+                </a>
+                <a href="#"
+                  class="text-sm font-semibold min-h-[60px] mb-[8px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
+                  Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
+                </a>
+                <a href="#" class="flex items-center">
+                  <span class="text-lg font-semibold leading-[100%]">43 540 ₽</span>
+                </a>
+                <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary 
+                  text-xs font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+                  <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.95889 8.83398L7.06956 4.83398H4.49756" stroke="white"
+                      style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.3078 19.7807L7.9585 8.83398H24.8358C25.6852 8.83398 26.3172 9.61665 26.1398 10.4473L24.1372 19.7807C24.0052 20.3953 23.4625 20.834 22.8332 20.834H11.6105C10.9825 20.834 10.4398 20.3953 10.3078 19.7807Z"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M23.2866 25.6667C23.0106 25.6667 22.7866 25.8907 22.7892 26.1667C22.7892 26.4427 23.0132 26.6667 23.2892 26.6667C23.5652 26.6667 23.7892 26.4427 23.7892 26.1667C23.7879 25.8907 23.5639 25.6667 23.2866 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M11.8082 25.6667C11.5322 25.6667 11.3082 25.8907 11.3109 26.1667C11.3096 26.4427 11.5336 26.6667 11.8096 26.6667C12.0856 26.6667 12.3096 26.4427 12.3096 26.1667C12.3096 25.8907 12.0856 25.6667 11.8082 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide lg:max-w-[160px]">
+              <div class="flex flex-col">
+                <a href="#" class="relative mb-4 rounded-xl border-[1px] border-[#EDEDED] overflow-hidden">
+                  <div
+                    class="absolute top-5 left-3 text-xs text-white font-semibold px-[12px] py-[5px] bg-[#58C1FD] rounded-lg">
+                    Новинка
+                  </div>
+                  <picture class="w-full">
+                    <img src="./img/catalog/catalog-rec-02.png" class="w-full h-[209px] object-contain object-center"
+                      alt="Рекомендация">
+                  </picture>
+                </a>
+                <a href="#"
+                  class="text-sm font-semibold min-h-[60px] mb-[9px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
+                  Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
+                </a>
+                <a href="#" class="flex items-center">
+                  <span class="text-lg font-semibold leading-[100%]">43 540 ₽</span>
+                </a>
+                <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary text-xs 
+                  font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+                  <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.95889 8.83398L7.06956 4.83398H4.49756" stroke="white"
+                      style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.3078 19.7807L7.9585 8.83398H24.8358C25.6852 8.83398 26.3172 9.61665 26.1398 10.4473L24.1372 19.7807C24.0052 20.3953 23.4625 20.834 22.8332 20.834H11.6105C10.9825 20.834 10.4398 20.3953 10.3078 19.7807Z"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M23.2866 25.6667C23.0106 25.6667 22.7866 25.8907 22.7892 26.1667C22.7892 26.4427 23.0132 26.6667 23.2892 26.6667C23.5652 26.6667 23.7892 26.4427 23.7892 26.1667C23.7879 25.8907 23.5639 25.6667 23.2866 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M11.8082 25.6667C11.5322 25.6667 11.3082 25.8907 11.3109 26.1667C11.3096 26.4427 11.5336 26.6667 11.8096 26.6667C12.0856 26.6667 12.3096 26.4427 12.3096 26.1667C12.3096 25.8907 12.0856 25.6667 11.8082 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide lg:max-w-[160px]">
+              <div class="flex flex-col">
+                <a href="#" class="relative mb-4 rounded-xl border-[1px] border-[#EDEDED] overflow-hidden">
+                  <div
+                    class="absolute top-5 left-3 text-xs text-white font-semibold px-[12px] py-[5px] bg-[#F94D4D] rounded-lg">
+                    Хит продаж
+                  </div>
+                  <picture class="w-full">
+                    <img src="./img/catalog/catalog-rec-03.png" class="w-full h-[209px] object-contain object-center"
+                      alt="Рекомендация">
+                  </picture>
+                </a>
+                <a href="#"
+                  class="text-sm font-semibold min-h-[60px] mb-[9px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
+                  Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
+                </a>
+                <a href="#" class="flex items-center gap-3">
+                  <span class="text-lg font-semibold text-primary leading-[100%]">43 540 ₽</span>
+                  <span class="text-[10px] font-medium line-through">43 780 ₽</span>
+                </a>
+                <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary text-xs 
+                  font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+                  <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.95889 8.83398L7.06956 4.83398H4.49756" stroke="white"
+                      style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.3078 19.7807L7.9585 8.83398H24.8358C25.6852 8.83398 26.3172 9.61665 26.1398 10.4473L24.1372 19.7807C24.0052 20.3953 23.4625 20.834 22.8332 20.834H11.6105C10.9825 20.834 10.4398 20.3953 10.3078 19.7807Z"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M23.2866 25.6667C23.0106 25.6667 22.7866 25.8907 22.7892 26.1667C22.7892 26.4427 23.0132 26.6667 23.2892 26.6667C23.5652 26.6667 23.7892 26.4427 23.7892 26.1667C23.7879 25.8907 23.5639 25.6667 23.2866 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M11.8082 25.6667C11.5322 25.6667 11.3082 25.8907 11.3109 26.1667C11.3096 26.4427 11.5336 26.6667 11.8096 26.6667C12.0856 26.6667 12.3096 26.4427 12.3096 26.1667C12.3096 25.8907 12.0856 25.6667 11.8082 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide lg:max-w-[160px]">
+              <div class="flex flex-col">
+                <a href="#" class="relative mb-4 rounded-xl border-[1px] border-[#EDEDED] overflow-hidden">
+                  <picture class="w-full">
+                    <img src="./img/catalog/catalog-rec-04.png" class="w-full h-[209px] object-contain object-center"
+                      alt="Рекомендация">
+                  </picture>
+                </a>
+                <a href="#"
+                  class="text-sm font-semibold min-h-[60px] mb-[9px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
+                  Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
+                </a>
+                <a href="#" class="flex items-center gap-3">
+                  <span class="text-lg font-semibold text-primary leading-[100%]">43 540 ₽</span>
+                  <span class="text-[10px] font-medium line-through">43 780 ₽</span>
+                </a>
+                <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary text-xs 
+                  font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+                  <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.95889 8.83398L7.06956 4.83398H4.49756" stroke="white"
+                      style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.3078 19.7807L7.9585 8.83398H24.8358C25.6852 8.83398 26.3172 9.61665 26.1398 10.4473L24.1372 19.7807C24.0052 20.3953 23.4625 20.834 22.8332 20.834H11.6105C10.9825 20.834 10.4398 20.3953 10.3078 19.7807Z"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M23.2866 25.6667C23.0106 25.6667 22.7866 25.8907 22.7892 26.1667C22.7892 26.4427 23.0132 26.6667 23.2892 26.6667C23.5652 26.6667 23.7892 26.4427 23.7892 26.1667C23.7879 25.8907 23.5639 25.6667 23.2866 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M11.8082 25.6667C11.5322 25.6667 11.3082 25.8907 11.3109 26.1667C11.3096 26.4427 11.5336 26.6667 11.8096 26.6667C12.0856 26.6667 12.3096 26.4427 12.3096 26.1667C12.3096 25.8907 12.0856 25.6667 11.8082 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide lg:max-w-[160px]">
+              <div class="flex flex-col">
+                <a href="#" class="relative mb-4 rounded-xl border-[1px] border-[#EDEDED] overflow-hidden">
+                  <picture class="w-full">
+                    <img src="./img/catalog/catalog-rec-05.png" class="w-full h-[209px] object-contain object-center"
+                      alt="Рекомендация">
+                  </picture>
+                </a>
+                <a href="#"
+                  class="text-sm font-semibold min-h-[60px] mb-[9px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
+                  Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
+                </a>
+                <a href="#" class="flex items-center gap-3">
+                  <span class="text-lg font-semibold text-primary leading-[100%]">43 540 ₽</span>
+                  <span class="text-[10px] font-medium line-through">43 780 ₽</span>
+                </a>
+                <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary text-xs 
+                  font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+                  <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.95889 8.83398L7.06956 4.83398H4.49756" stroke="white"
+                      style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.3078 19.7807L7.9585 8.83398H24.8358C25.6852 8.83398 26.3172 9.61665 26.1398 10.4473L24.1372 19.7807C24.0052 20.3953 23.4625 20.834 22.8332 20.834H11.6105C10.9825 20.834 10.4398 20.3953 10.3078 19.7807Z"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M23.2866 25.6667C23.0106 25.6667 22.7866 25.8907 22.7892 26.1667C22.7892 26.4427 23.0132 26.6667 23.2892 26.6667C23.5652 26.6667 23.7892 26.4427 23.7892 26.1667C23.7879 25.8907 23.5639 25.6667 23.2866 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M11.8082 25.6667C11.5322 25.6667 11.3082 25.8907 11.3109 26.1667C11.3096 26.4427 11.5336 26.6667 11.8096 26.6667C12.0856 26.6667 12.3096 26.4427 12.3096 26.1667C12.3096 25.8907 12.0856 25.6667 11.8082 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide lg:max-w-[160px]">
+              <div class="flex flex-col">
+                <a href="#" class="relative mb-4 rounded-xl border-[1px] border-[#EDEDED] overflow-hidden">
+                  <picture class="w-full">
+                    <img src="./img/catalog/catalog-rec-06.png" class="w-full h-[209px] object-contain object-center"
+                      alt="Рекомендация">
+                  </picture>
+                </a>
+                <a href="#"
+                  class="text-sm font-semibold min-h-[60px] mb-[9px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
+                  Щит управления ЩУВ Э130-ПРС105-ВРС105
+                </a>
+                <a href="#" class="flex items-center gap-3">
+                  <span class="text-lg font-semibold text-primary leading-[100%]">43 540 ₽</span>
+                  <span class="text-[10px] font-medium line-through">43 780 ₽</span>
+                </a>
+                <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary text-xs 
+                  font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+                  <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.95889 8.83398L7.06956 4.83398H4.49756" stroke="white"
+                      style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.3078 19.7807L7.9585 8.83398H24.8358C25.6852 8.83398 26.3172 9.61665 26.1398 10.4473L24.1372 19.7807C24.0052 20.3953 23.4625 20.834 22.8332 20.834H11.6105C10.9825 20.834 10.4398 20.3953 10.3078 19.7807Z"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M23.2866 25.6667C23.0106 25.6667 22.7866 25.8907 22.7892 26.1667C22.7892 26.4427 23.0132 26.6667 23.2892 26.6667C23.5652 26.6667 23.7892 26.4427 23.7892 26.1667C23.7879 25.8907 23.5639 25.6667 23.2866 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M11.8082 25.6667C11.5322 25.6667 11.3082 25.8907 11.3109 26.1667C11.3096 26.4427 11.5336 26.6667 11.8096 26.6667C12.0856 26.6667 12.3096 26.4427 12.3096 26.1667C12.3096 25.8907 12.0856 25.6667 11.8082 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="slider-nav-btn slider-prev absolute top-20 z-2" data-slider-prev="recomended">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M11 8L15 12L11 16" stroke="#323338" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <button type="button" class="slider-nav-btn slider-next absolute top-20 z-2" data-slider-next="recomended">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M13 16L9 12L13 8" stroke="#323338" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="pt-[66px] pb-[86px] -mb-6 bg-[#F4F6FB] md:pt-8 md:pb-[52px] md:-mb-[20px]">
+      <div class="my-container">
+        <div class="grid grid-cols-3 gap-[25px] lg:grid-cols-1 lg:gap-6">
+          <a href="#" class="flex flex-col items-center justify-between gap-8 px-8 py-6 rounded-[22px]
+             bg-white box-shadow-card lg:gap-6 md:px-4 md:py-5 group">
+            <div class="flex flex-col items-center gap-1">
+              <div class="flex items-center gap-2">
+                <img src="./img/icons/question.svg" class="size-[30px]" alt="">
+                <h3 class="font-semibold text-2xl leading-[140%] lg:text-[22px] md:text-lg">Вопрос</h3>
+              </div>
+              <div class="text-[17px] text-center text-[#323338CC] px-4 lg:text-base md:text-[15px] md:px-0">Напишите
+                нам — поможем
+                разобраться
+              </div>
+            </div>
+            <div
+              class="w-full flex item-center justify-center p-[18px] rounded-2xl border-[2px] 
+              border-[#3B8BEA] text-[#3B8BEA] font-semibold group-hover:bg-[#3B8BEA] group-hover:text-white transition-all">
+              Задать вопрос
+            </div>
+          </a>
+          <a href="#" class="flex flex-col items-center justify-between gap-8 px-8 py-6 rounded-[22px] 
+            box-shadow-card bg-white lg:gap-6 md:px-4 md:py-5 group">
+            <div class="flex flex-col items-center gap-1">
+              <div class="flex items-center gap-2">
+                <img src="./img/icons/phone-ring.svg" class="size-[30px]" alt="">
+                <h3 class="font-semibold text-2xl leading-[140%] lg:text-[22px] md:text-lg">Заказать звонок</h3>
+              </div>
+              <div class="text-[17px] text-center text-[#323338CC] px-4 lg:text-base md:text-[15px] md:px-0">
+                Оставьте контакт, мы
+                перезвоним в
+                рабочее время </div>
+            </div>
+            <div
+              class="w-full flex item-center justify-center p-[18px] rounded-2xl border-[2px] border-[#3B8BEA] text-[#3B8BEA] font-semibold group-hover:bg-[#3B8BEA] group-hover:text-white transition-all">
+              Задать вопрос
+            </div>
+          </a>
+          <a href="#" class="flex flex-col items-center justify-between gap-8 px-8 py-6 rounded-[22px] 
+            box-shadow-card bg-white lg:gap-6 md:px-4 md:py-5 group">
+            <div class="flex flex-col items-center gap-1">
+              <div class="flex items-center gap-2">
+                <img src="./img/icons/chat-cloude.svg" class="size-[30px]" alt="">
+                <h3 class="font-semibold text-2xl leading-[140%] lg:text-[22px] md:text-lg">Отзыв</h3>
+              </div>
+              <div class="text-[17px] text-center text-[#323338CC] px-4 lg:text-base md:text-[15px] md:px-0">
+                Поделитесь мнением о нашей
+                работе и
+                продукции</div>
+            </div>
+            <div
+              class="w-full flex item-center justify-center p-[18px] rounded-2xl border-[2px] 
+              border-[#3B8BEA] text-[#3B8BEA] font-semibold group-hover:bg-[#3B8BEA] group-hover:text-white transition-all">
+              Задать вопрос
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="py-16 bg-[#323338] text-white rounded-t-3xl lg:py-10 md:py-8 relative z-1">
+  <div class="my-container">
+    <div class="flex items-start gap-4 lg:flex-col lg:pt-0 lg:gap-0">
+      <div class="contents lg:flex lg:items-start lg:justify-between lg:w-full lg:gap-[50px] md:flex-col md:gap-8">
+        <div class="flex flex-col gap-4 w-[214px] lg:w-[146px] lg:shring-0 md:w-full md:gap-3">
+          <a href="#" class="w-40 h-11 lg:w-[130px] lg:h-[33px]">
+            <img src="./img/logo.svg" alt="Вент Автоматика">
+          </a>
+          <div class="text-xs leading-[150%] opacity-80 max-w-[186px] lg:max-w-full lg:text-[11px]">
+            Производство систем автоматики для вентиляции
+          </div>
+        </div>
+        <nav class="flex flex-col w-[26%] lg:w-auto">
+          <a href="#" class="text-base leading-[140%] font-semibold text-white hover:text-[#3B8BEA] mb-4 md:mb-3 md:text-[15px]">Продукция</a>
+          <ul class="flex flex-col gap-3 md:gap-[10px]">
+            <li class="leading-[100%]">
+              <a href="#"
+                class="text-sm leading-[140%] font-medium text-[#FFFFFFCC] md:text-[13px] md:leading-[154%] hover:text-[#3B8BEA] transition-color">Шкафы
+                управления
+                вентиляцией</a>
+            </li>
+            <li class="leading-[100%]">
+              <a href="#"
+                class="text-sm leading-[140%] font-medium text-[#FFFFFFCC] md:text-[13px] md:leading-[154%] hover:text-[#3B8BEA] transition-color">Шкафы
+                пожарной автоматики</a>
+            </li>
+            <li class="leading-[100%]">
+              <a href="#"
+                class="text-sm leading-[140%] font-medium text-[#FFFFFFCC] md:text-[13px] md:leading-[154%] hover:text-[#3B8BEA] transition-color">Шкафы
+                управления тепловыми
+                завесами</a>
+            </li>
+            <li class="leading-[100%]">
+              <a href="#"
+                class="text-sm leading-[140%] font-medium text-[#FFFFFFCC] md:text-[13px] md:leading-[154%] hover:text-[#3B8BEA] transition-color">Шкафы
+                диспетчеризации и
+                SCADA</a>
+            </li>
+            <li class="leading-[100%]">
+              <a href="#"
+                class="text-sm leading-[140%] font-medium text-[#FFFFFFCC] md:text-[13px] md:leading-[154%] hover:text-[#3B8BEA] transition-color">Автоматика
+                для вентиляции</a>
+            </li>
+            <li class="leading-[100%]">
+              <a href="#"
+                class="text-sm leading-[140%] font-medium text-[#FFFFFFCC] md:text-[13px] md:leading-[154%] hover:text-[#3B8BEA] transition-color">OEM-производство</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="flex flex-col w-[26%] lg:w-auto">
+          <ul class="flex flex-col gap-4 md:gap-3">
+            <li class="leading-[100%]">
+              <a href="#"
+                class="text-base leading-[140%] font-semibold text-white md:text-[15px] hover:text-[#3B8BEA] transition-color">О
+                компании</a>
+            </li>
+            <li class="leading-[100%]">
+              <a href="#"
+                class="text-base leading-[140%] font-semibold text-white md:text-[15px] hover:text-[#3B8BEA] transition-color">Доставка
+                и оплата</a>
+            </li>
+            <li class="leading-[100%]">
+              <a href="#"
+                class="text-base leading-[140%] font-semibold text-white md:text-[15px] hover:text-[#3B8BEA] transition-color">Как
+                заказать шкаф вентиляции</a>
+            </li>
+            <li class="leading-[100%]">
+              <a href="#"
+                class="text-base leading-[140%] font-semibold text-white md:text-[15px] hover:text-[#3B8BEA] transition-color">Документация</a>
+            </li>
+            <li class="leading-[100%]">
+              <a href="#"
+                class="text-base leading-[140%] font-semibold text-white md:text-[15px] hover:text-[#3B8BEA] transition-color">Статьи</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="flex flex-col gap-6 w-[26%] lg:w-full lg:flex-row lg:justify-between 
+        lg:items-stretch lg:mt-6 lg:pt-6 lg:border-t-[1px] lg:border-t-[#FFFFFF1A] md:flex-col md:gap-[30px]">
+        <div class="flex flex-col">
+          <h3 class="text-base leading-[140%]  font-semibold mb-4 md:text-[15px]">Контакты</h3>
+          <div class="flex flex-col items-start gap-3 md:gap-[10px]">
+            <a href="tel:+78005517668" class="text-sm text-[#3B8BEA] font-semibold md:text-[13px] hover:underline">
+              +7 (800) 551-76-68
+            </a>
+            <a href="mailto:sale@ventavtomatika.ru"
+              class="text-sm text-[#3B8BEA] font-semibold md:text-[13px] hover:underline">
+              sale@ventavtomatika.ru
+            </a>
+            <div class="text-sm text-[#FFFFFFCC] md:text-[13px]">г. Санкт-Петербург, ул.
+              Парковая, д.6, лит. А</div>
+          </div>
+        </div>
+        <div class="flex flex-col lg:justify-between lg:gap-[31px] md:gap-[28px]">
+          <div class="flex flex-col lg:items-end md:items-start">
+            <h3 class="text-base leading-[140%] font-semibold mb-3 md:text-[15px]">Отдел технической поддержки</h3>
+            <a href="mailto:support@ventavtomatika.ru"
+              class="text-sm text-[#3B8BEA] font-semibold md:text-[13px] hover:underline">
+              support@ventavtomatika.ru
+            </a>
+          </div>
+          <div class="hidden lg:flex lg:items-center lg:gap-4 md:flex-row-reverse md:justify-between">
+            <div class="flex items-center gap-2">
+              <a href="#" class="size-8 flex items-center justify-center bg-[#3B8BEA] rounded-[50%]">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13.1399 3.89054C12.8051 3.15072 12.3245 2.48649 11.7142 1.91407C11.104 1.34705 10.3966 0.898838 9.60816 0.585627C8.79274 0.261615 7.9287 0.0996094 7.03767 0.0996094C6.14664 0.0996094 5.2826 0.261615 4.46717 0.585627C3.67874 0.898838 2.97132 1.34165 2.3611 1.91407C1.75087 2.48649 1.27026 3.15072 0.93545 3.89054C0.589838 4.65737 0.411621 5.4782 0.411621 6.32063C0.411621 7.79488 0.962435 9.20973 1.97227 10.333L1.43225 13.2761L4.30517 11.9962C5.1638 12.3634 6.07643 12.5471 7.03226 12.5471C7.92329 12.5471 8.78733 12.385 9.60276 12.061C10.3912 11.7478 11.0986 11.305 11.7088 10.7326C12.3191 10.1602 12.7997 9.49594 13.1345 8.75612C13.4801 7.98929 13.6583 7.16846 13.6583 6.32603C13.6637 5.4782 13.4855 4.66277 13.1399 3.89054Z"
+                    fill="white" style="fill:white;fill-opacity:1;" />
+                  <path
+                    d="M9.72685 7.56315C9.44604 7.42274 9.24085 7.33634 9.09504 7.28234C9.00324 7.24994 8.78722 7.15273 8.71162 7.21214C8.47401 7.40654 8.2202 7.95736 7.95019 8.05997C7.28057 7.93036 6.65955 7.47135 6.17353 7.00153C5.95752 6.79632 5.55791 6.2131 5.47151 6.05649C5.45531 5.89449 5.74691 5.67848 5.81171 5.55428C6.14652 5.17626 5.89272 4.93866 5.84952 4.78205C5.77392 4.62004 5.64432 4.32843 5.53091 4.09082C5.43371 3.93422 5.41209 3.70201 5.23928 3.61561C4.50486 3.23759 4.08366 3.99362 3.91086 4.38784C2.86862 6.89892 9.13283 11.6781 10.4073 8.38398C10.4721 8.09777 10.4451 7.98976 10.3479 7.86016C10.1535 7.72515 9.92665 7.66575 9.72685 7.56315Z"
+                    fill="#3B8BEA" style="fill:#3B8BEA;fill:color(display-p3 0.2314 0.5451 0.9176);fill-opacity:1;" />
+                </svg>
+              </a>
+              <a href="#" class="size-8 flex items-center justify-center bg-[#3B8BEA] rounded-[50%]">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.8325 2.55657L2.49001 6.54482C1.78418 6.82832 1.78826 7.22207 2.36051 7.39766L5.01584 8.22599L11.1595 4.34974C11.45 4.17299 11.7154 4.26807 11.4973 4.46174L6.51968 8.95399H6.51851L6.51968 8.95457L6.33651 11.6916C6.60484 11.6916 6.72326 11.5685 6.87376 11.4232L8.16351 10.1691L10.8463 12.1507C11.3409 12.4231 11.6962 12.2831 11.8193 11.6927L13.5803 3.39307C13.7606 2.67032 13.3044 2.34307 12.8325 2.55657Z"
+                    fill="white" style="fill:white;fill-opacity:1;" />
+                </svg>
+              </a>
+            </div>
+            <a href="#"
+              class="inline-flex items-center gap-2 bg-[#78859F] text-white text-sm font-semibold py-[10px] px-[18px] rounded-[10px]">
+              <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M7.53615 10.9017C6.65865 10.0242 5.99715 9.04173 5.55765 8.04498C5.46465 7.83423 5.5194 7.58748 5.68215 7.42473L6.2964 6.81048C6.79965 6.30723 6.79965 5.59548 6.36015 5.15598L5.47965 4.27623C4.8939 3.69048 3.9444 3.69048 3.35865 4.27623L2.86965 4.76448C2.3139 5.32023 2.08215 6.12198 2.23215 6.91698C2.60265 8.87673 3.74115 11.0225 5.5779 12.8592C7.41465 14.696 9.5604 15.8345 11.5202 16.205C12.3152 16.355 13.1169 16.1232 13.6727 15.5675L14.1609 15.0792C14.7467 14.4935 14.7467 13.544 14.1609 12.9582L13.2812 12.0785C12.8417 11.639 12.1292 11.639 11.6904 12.0785L11.0132 12.7565C10.8504 12.9192 10.6037 12.974 10.3929 12.881C9.39615 12.4407 8.41365 11.7785 7.53615 10.9017Z"
+                  stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M9.68994 4.37707V2.62207" stroke="white" style="stroke:white;stroke-opacity:1;"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12.8179 5.61477L14.0554 4.38477" stroke="white" style="stroke:white;stroke-opacity:1;"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M14.0625 8.75H15.81" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span>Заказать звонок</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center justify-between w-full mt-10 lg:pt-6 lg:border-t-[1px] lg:border-t-[#FFFFFF1A] lg:mt-6">
+      <div class="flex flex-col items-start gap-[6px]">
+        <span class="text-xs text-[#3B8BEA]">ООО “ГК Автоматика”</span>
+        <a href="#" class="text-xs text-[#3B8BEA] underline">Политика конфиденциальности и пользовательское
+          соглашение</a>
+      </div>
+      <div class="flex items-center gap-4 lg:hidden">
+        <div class="flex items-center gap-2">
+          <a href="#" class="size-8 flex items-center justify-center bg-[#3B8BEA] rounded-full hover:bg-[#2C6CB8] transition-colors">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13.1399 3.89054C12.8051 3.15072 12.3245 2.48649 11.7142 1.91407C11.104 1.34705 10.3966 0.898838 9.60816 0.585627C8.79274 0.261615 7.9287 0.0996094 7.03767 0.0996094C6.14664 0.0996094 5.2826 0.261615 4.46717 0.585627C3.67874 0.898838 2.97132 1.34165 2.3611 1.91407C1.75087 2.48649 1.27026 3.15072 0.93545 3.89054C0.589838 4.65737 0.411621 5.4782 0.411621 6.32063C0.411621 7.79488 0.962435 9.20973 1.97227 10.333L1.43225 13.2761L4.30517 11.9962C5.1638 12.3634 6.07643 12.5471 7.03226 12.5471C7.92329 12.5471 8.78733 12.385 9.60276 12.061C10.3912 11.7478 11.0986 11.305 11.7088 10.7326C12.3191 10.1602 12.7997 9.49594 13.1345 8.75612C13.4801 7.98929 13.6583 7.16846 13.6583 6.32603C13.6637 5.4782 13.4855 4.66277 13.1399 3.89054Z"
+                fill="white" style="fill:white;fill-opacity:1;" />
+              <path
+                d="M9.72685 7.56315C9.44604 7.42274 9.24085 7.33634 9.09504 7.28234C9.00324 7.24994 8.78722 7.15273 8.71162 7.21214C8.47401 7.40654 8.2202 7.95736 7.95019 8.05997C7.28057 7.93036 6.65955 7.47135 6.17353 7.00153C5.95752 6.79632 5.55791 6.2131 5.47151 6.05649C5.45531 5.89449 5.74691 5.67848 5.81171 5.55428C6.14652 5.17626 5.89272 4.93866 5.84952 4.78205C5.77392 4.62004 5.64432 4.32843 5.53091 4.09082C5.43371 3.93422 5.41209 3.70201 5.23928 3.61561C4.50486 3.23759 4.08366 3.99362 3.91086 4.38784C2.86862 6.89892 9.13283 11.6781 10.4073 8.38398C10.4721 8.09777 10.4451 7.98976 10.3479 7.86016C10.1535 7.72515 9.92665 7.66575 9.72685 7.56315Z"
+                fill="#3B8BEA" style="fill:#3B8BEA;fill:color(display-p3 0.2314 0.5451 0.9176);fill-opacity:1;" />
+            </svg>
+          </a>
+          <a href="#" class="size-8 flex items-center justify-center bg-[#3B8BEA] rounded-full hover:bg-[#2C6CB8] transition-colors">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12.8325 2.55657L2.49001 6.54482C1.78418 6.82832 1.78826 7.22207 2.36051 7.39766L5.01584 8.22599L11.1595 4.34974C11.45 4.17299 11.7154 4.26807 11.4973 4.46174L6.51968 8.95399H6.51851L6.51968 8.95457L6.33651 11.6916C6.60484 11.6916 6.72326 11.5685 6.87376 11.4232L8.16351 10.1691L10.8463 12.1507C11.3409 12.4231 11.6962 12.2831 11.8193 11.6927L13.5803 3.39307C13.7606 2.67032 13.3044 2.34307 12.8325 2.55657Z"
+                fill="white" style="fill:white;fill-opacity:1;" />
+            </svg>
+          </a>
+        </div>
+        <a href="#"
+          class="inline-flex items-center gap-2 bg-[#78859F] text-white text-sm font-semibold py-[10px] px-[18px] rounded-[10px] hover:bg-[#3B8BEA] hover:text-white transition-all">
+          <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M7.53615 10.9017C6.65865 10.0242 5.99715 9.04173 5.55765 8.04498C5.46465 7.83423 5.5194 7.58748 5.68215 7.42473L6.2964 6.81048C6.79965 6.30723 6.79965 5.59548 6.36015 5.15598L5.47965 4.27623C4.8939 3.69048 3.9444 3.69048 3.35865 4.27623L2.86965 4.76448C2.3139 5.32023 2.08215 6.12198 2.23215 6.91698C2.60265 8.87673 3.74115 11.0225 5.5779 12.8592C7.41465 14.696 9.5604 15.8345 11.5202 16.205C12.3152 16.355 13.1169 16.1232 13.6727 15.5675L14.1609 15.0792C14.7467 14.4935 14.7467 13.544 14.1609 12.9582L13.2812 12.0785C12.8417 11.639 12.1292 11.639 11.6904 12.0785L11.0132 12.7565C10.8504 12.9192 10.6037 12.974 10.3929 12.881C9.39615 12.4407 8.41365 11.7785 7.53615 10.9017Z"
+              stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M9.68994 4.37707V2.62207" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M12.8179 5.61477L14.0554 4.38477" stroke="white" style="stroke:white;stroke-opacity:1;"
+              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M14.0625 8.75H15.81" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span>Заказать звонок</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_api_ключ&lang=ru_RU" type="text/javascript"></script>
+<script src="./js/jquery.min.js" type="text/javascript"></script>
+<script src="./js/jquery.mask.min.js" type="text/javascript"></script>
+<script src="./js/swiper-bundle.js" type="text/javascript"></script>
+<script src="./js/alpine.js" type="text/javascript"></script>
+<script src="./js/fs-lightbox.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script src="./js/main.js" type="text/javascript"></script>
+<script src="./js/maps.js" type="text/javascript"></script>
+</body>
+
+</html>

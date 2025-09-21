@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Каталог Продукция</title>
+  <title>Карточка товара</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
@@ -434,406 +434,326 @@
           <li class="flex items-center gap-3 text-sm leading-[140%] after:content-['/']">
             <a href="#" class=" text-[#323338] font-medium hover:underline">Главная</a>
           </li>
-          <li class="flex items-center gap-3 text-sm leading-[140%] after:content-['/']">
-            <a href="#" class=" text-[#323338] font-medium hover:underline">Продукция</a>
+          <li class="relative items-center gap-3 flex after:content-['/'] z-10">
+            <span class="flex items-center justify-center w-[46px] h-[20px] bg-[#EDEDED] rounded-3xl cursor-pointer"
+              data-breadcrumbs="toggle-btn">
+              <span class="relative top-[-5px]">...</span>
+            </span>
+            <ul class="min-w-[350px] max-w-[350px] w-full mt-[17px] absolute flex flex-col top-[100%] items-start 
+              gap-[10px] bg-[#F4F6FB] rounded-2xl p-4 opacity-0 z-[-1] pointer-none md:left-[-85px] md:min-w-[300px] md:max-w-[300px]
+              shadow-[0px_2px_3px_0px_#0000001A,0px_6px_6px_0px_#00000017,-1px_14px_8px_0px_#0000000D,-1px_24px_10px_0px_#00000003,-2px_38px_11px_0px_#00000000]" data-breadcrumbs="list">
+              <li class="text-xs leading-[140%] font-semibold text-[#5A5B5F] whitespace-normal">
+                <a href="#" class="hover:underline">Продукция</a>
+              </li>
+              <li class="text-xs leading-[140%] font-semibold text-[#5A5B5F] whitespace-normal">
+                <a href="#" class="hover:underline">Шкафы управления вентиляцией</a>
+              </li>
+              <li class="text-xs leading-[140%] font-semibold text-[#5A5B5F] whitespace-normal">
+                <a href="#" class="hover:underline">Шкафы управления приточно-вытяжной вентиляцией</a>
+              </li>
+            </ul>
           </li>
           <li class="text-sm leading-[140%] max-w-full min-w-[1px] line-clamp-1 overflow-hidden overflow-ellipsis">
             <a href="#" class=" text-[#323338B2] font-medium pointer-events-none">
-              Шкафы управления вентиляцией
+              Шкаф управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
             </a>
           </li>
         </ul>
       </div>
     </section>
-    <section class="pt-[31px] lg:pt-6 md:pt-[18px]">
+    <section class="pt-[31px] lg:pt-6 md:pt-[18px] md:overflow-hidden">
       <div class="my-container">
-        <h1 class="text-[34px] leading-[130%] font-bold text-[#3B8BEA] mb-4 lg:text-[30px] md:text-2xl md:mb-[10px]">
-          Продукция
+        <h1 class="text-2xl leading-[140%] font-semibold text-[#3B8BEA] mb-[31px] lg:mb-6 md:text-lg">
+          Шкаф управления приточно-вытяжной вентиляцией <br> с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
         </h1>
-        <div class="flex flex-col gap-6">
-          <div class="flex flex-col gap-[6px] lg:gap-[10px] md:gap-[3px]">
-            <div class="text-2xl leading-[140%] font-semibold lg:text-[22px] md:text-[18px]">
-              Шкафы автоматики для вентиляций
-            </div>
-          </div>
-          <div class="grid grid-cols-3 gap-4 xl:grid-cols-2 lg:flex lg:flex-col">
-            <div
-              class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group
-              hover:[box-shadow:0px_2px_3px_0px_#8B99A21A,0px_6px_6px_0px_#8B99A217,0px_14px_8px_0px_#8B99A20D,0px_24px_10px_0px_#8B99A203,0px_38px_11px_0px_#8B99A200]"
-              data-catalog-block="block">
-              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]"
-                data-catalog-block="toggle-btn">
-                <div class="flex flex-col items-start justify-between h-auto self-stretch">
-                  <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
-                    Щиты управления вентиляцией
+        <div class="flex items-start gap-5 md:flex-col md:gap-6">
+          <div
+            class="flex items-start gap-5 w-[calc(100%-348px)] xl:flex-col xl:w-[calc(100%-500px)] lg:w-[calc(100%-341px)] md:w-full md:contents">
+            <div class="w-[53%] xl:w-full md:order-0">
+              <div class="w-full max-w-full flex items-stretch gap-2 overflow-hidden md:overflow-visible">
+                <div class="w-20 h-[96px] shrink-0 flex flex-col gap-[6px] md:hidden" data-slider="product-thumbs">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide border-[2px] border-[#EDEDED] rounded-2xl overflow-hidden">
+                      <picture class="size-full flex items-center justify-center">
+                        <img src="./img/product/img-01.png" alt="Щит Превью">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide border-[2px] border-[#EDEDED] rounded-2xl overflow-hidden">
+                      <picture class="size-full flex items-center justify-center">
+                        <img src="./img/product/img-01.png" alt="Щит Превью">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide border-[2px] border-[#EDEDED] rounded-2xl overflow-hidden">
+                      <picture class="size-full flex items-center justify-center">
+                        <img src="./img/product/img-01.png" alt="Щит Превью">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide border-[2px] border-[#EDEDED] rounded-2xl overflow-hidden">
+                      <picture class="size-full flex items-center justify-center">
+                        <img src="./img/product/img-01.png" alt="Щит Превью">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide border-[2px] border-[#EDEDED] rounded-2xl overflow-hidden">
+                      <picture class="size-full flex items-center justify-center">
+                        <img src="./img/product/img-01.png" alt="Щит Превью">
+                      </picture>
+                    </div>
                   </div>
-                  <a href="#"
-                    class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
-                      <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
-                      <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                        stroke-linecap="square" stroke-linejoin="round" />
+                </div>
+                <div class="relative w-full overflow-hidden border-[2px] border-[#EDEDED] rounded-3xl 
+                  md:border-none md:rounded-none md:px-8 md:overflow-visible" data-slider="product-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <picture
+                        class="w-full h-[427px] size-full flex items-center justify-center lg:h-[336px] md:h-[323px]">
+                        <source srcset="./img/product/main-sm.png" media="(max-width: 767px)">
+                        <img src="./img/product/main.png" class="size-full object-contain"
+                          alt="Щит управления вентилятором">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide">
+                      <picture
+                        class="w-full h-[427px] size-full flex items-center justify-center lg:h-[336px] md:h-[323px]">
+                        <source srcset="./img/product/main-sm.png" media="(max-width: 767px)">
+                        <img src="./img/product/main.png" class="size-full object-contain"
+                          alt="Щит управления вентилятором">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide">
+                      <picture
+                        class="w-full h-[427px] size-full flex items-center justify-center lg:h-[336px] md:h-[323px]">
+                        <source srcset="./img/product/main-sm.png" media="(max-width: 767px)">
+                        <img src="./img/product/main.png" class="size-full object-contain"
+                          alt="Щит управления вентилятором">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide">
+                      <picture
+                        class="w-full h-[427px] size-full flex items-center justify-center lg:h-[336px] md:h-[323px]">
+                        <source srcset="./img/product/main-sm.png" media="(max-width: 767px)">
+                        <img src="./img/product/main.png" class="size-full object-contain"
+                          alt="Щит управления вентилятором">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide">
+                      <picture
+                        class="w-full h-[427px] size-full flex items-center justify-center lg:h-[336px] md:h-[323px]">
+                        <source srcset="./img/product/main-sm.png" media="(max-width: 767px)">
+                        <img src="./img/product/main.png" class="size-full object-contain"
+                          alt="Щит управления вентилятором">
+                      </picture>
+                    </div>
+                  </div>
+                  <button
+                    class="absolute top-[50%] left-[10px] z-2 flex items-center justify-center size-10 bg-white text-[#323338] 
+                    cursor-pointer rounded-full translate-y-[-50%] md:left-0
+                    shadow-[0px_1px_2px_0px_#BABCBF4A,0px_4px_4px_0px_#BABCBF42,0px_8px_5px_0px_#BABCBF26,0px_14px_6px_0px_#BABCBF0A,0px_23px_6px_0px_#BABCBF03]"
+                    data-slider-prev="product-slider">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.4297 8L9.42969 12L13.4297 16" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                  </a>
-                  <button type="button"
-                    class="hidden lg:size-11 lg:bg-[#3B8BEA] lg:text-white lg:rounded-lg lg:flex lg:items-center lg:justify-center">
-                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M16 11.5L12 15.5L8 11.5" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </button>
+                  <button
+                    class="absolute top-[50%] right-[10px] z-2 flex items-center justify-center size-10 bg-white text-[#323338] 
+                    cursor-pointer rounded-full translate-y-[-50%] md:right-0
+                    shadow-[0px_1px_2px_0px_#BABCBF4A,0px_4px_4px_0px_#BABCBF42,0px_8px_5px_0px_#BABCBF26,0px_14px_6px_0px_#BABCBF0A,0px_23px_6px_0px_#BABCBF03]"
+                    data-slider-next="product-slider">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4297 8L15.4297 12L11.4297 16" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                   </button>
                 </div>
-                <picture class="h-35 w-auto shrink-0 lg:h-30">
-                  <img src="./img/products/product-01.png" alt="Щит управления" class="w-auto h-full">
-                </picture>
               </div>
-              <div class="absolute opacity-0 -z-1 bg-gray-50 flex flex-col p-4 top-0 left-0 w-full h-full group-hover:opacity-100 group-hover:z-2 transition-all
-                lg:opacity-100 lg:static lg:hidden lg:pt-0" data-catalog-block="content">
-                <a href="#" class="text-sm mb-[10px] font-semibold lg:hidden hover:text-[#3B8BEA] transition-color">Щиты
-                  управления вентиляцией</a>
-                <div class="flex flex-col gap-[6px] font-semibold lg:gap-3 md:gap-[10px]">
-                  <a href="#"
-                    class="text-xs leading-[140%] text-[#5A5B5F] lg:text-[17px] md:text-sm hover:text-[#3B8BEA] transition-color">Щиты
-                    управления вентилятором</a>
-                  <a href="#"
-                    class="text-xs leading-[140%] text-[#5A5B5F] lg:text-[17px] md:text-sm hover:text-[#3B8BEA] transition-color">Щиты
-                    управления приточной вентиляцией</a>
-                  <a href="#"
-                    class="text-xs leading-[140%] text-[#5A5B5F] lg:text-[17px] md:text-sm hover:text-[#3B8BEA] transition-color">Щиты
-                    управления приточно-вытяжной вентиляцией</a>
+            </div>
+            <div class="w-[47%] xl:w-full md:order-2">
+              <div class="w-full flex flex-col items-start gap-[15px] md:gap-3">
+                <div
+                  class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
+                  <div class="font-medium text-[#323338B2]">Категория</div>
+                  <div class="font-semibold text-[#323338]">
+                    Шкаф управления
+                  </div>
                 </div>
                 <div
-                  class="flex flex-col gap-[6px] pt-[9px] mt-[10px] border-t-[1px] border-[#CDCFD4] font-semibold lg:gap-3 md:gap-[10px]">
-                  <a href="#"
-                    class="text-xs leading-[140%] lg:text-[17px] md:text-sm text-[#78859F] hover:text-[#3B8BEA] transition-color">Шкафы
-                    управления вентиляцией по техническому
-                    заданию</a>
-                  <a href="#"
-                    class="text-xs leading-[140%] lg:text-[17px] md:text-sm text-[#78859F] hover:text-[#3B8BEA] transition-color">Калькулятор
-                    шкафов управления
-                    вентиляцией</a>
-                </div>
-              </div>
-            </div>
-            <a href="#" class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group">
-              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]">
-                <div class="flex flex-col items-start justify-between h-auto self-stretch">
-                  <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
-                    Шкафы управления тепловыми завесами
-                  </div>
-                  <div class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
-                      <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
-                      <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                        stroke-linecap="square" stroke-linejoin="round" />
-                    </svg>
+                  class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
+                  <div class="font-medium text-[#323338B2]">Вентиляторы</div>
+                  <div class="font-semibold text-[#323338]">
+                    ~220В, суммарная мощность до 1,5 кВт
                   </div>
                 </div>
-                <picture class="h-35 w-auto shrink-0 lg:h-30">
-                  <img src="./img/products/product-02.png" alt="Щит управления" class="w-auto h-full">
-                </picture>
-              </div>
-            </a>
-            <div
-              class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group
-              hover:[box-shadow:0px_2px_3px_0px_#8B99A21A,0px_6px_6px_0px_#8B99A217,0px_14px_8px_0px_#8B99A20D,0px_24px_10px_0px_#8B99A203,0px_38px_11px_0px_#8B99A200]"
-              data-catalog-block="block">
-              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]"
-                data-catalog-block="toggle-btn">
-                <div class="flex flex-col items-start justify-between self-stretch h-auto">
-                  <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
-                    Щиты управления вентиляцией
-                  </div>
-                  <a href="#"
-                    class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
-                      <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
-                      <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                        stroke-linecap="square" stroke-linejoin="round" />
-                    </svg>
-                  </a>
-                  <button type="button"
-                    class="hidden lg:size-11 lg:bg-[#3B8BEA] lg:text-white lg:rounded-lg lg:flex lg:items-center lg:justify-center">
-                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M16 11.5L12 15.5L8 11.5" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </button>
-                </div>
-                <picture class="h-35 w-auto shrink-0 lg:h-30">
-                  <img src="./img/products/product-03.png" alt="Щит управления" class="w-auto h-full">
-                </picture>
-              </div>
-              <div class="absolute opacity-0 -z-1 bg-gray-50 flex flex-col p-4 top-0 left-0 w-full h-full group-hover:opacity-100 group-hover:z-2 transition-all
-                lg:opacity-100 lg:static lg:hidden lg:pt-0" data-catalog-block="content">
-                <a href="#"
-                  class="text-sm mb-[10px] font-semibold lg:hidden hover:text-[#3B8BEA] transition-color">Пожарная
-                  автоматика</a>
-                <div class="flex flex-col gap-[6px] font-semibold lg:gap-3 md:gap-[10px]">
-                  <a href="#"
-                    class="text-xs leading-[140%] text-[#5A5B5F] lg:text-[17px] md:text-sm hover:text-[#3B8BEA] transition-color">Щиты
-                    дымоудаления</a>
-                  <a href="#"
-                    class="text-xs leading-[140%] text-[#5A5B5F] lg:text-[17px] md:text-sm hover:text-[#3B8BEA] transition-color">Щиты
-                    подпора воздуха</a>
-                  <a href="#"
-                    class="text-xs leading-[140%] text-[#5A5B5F] lg:text-[17px] md:text-sm hover:text-[#3B8BEA] transition-color">Щиты
-                    управления клапанами</a>
-                </div>
-              </div>
-            </div>
-            <a href="#" class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group">
-              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]">
-                <div class="flex flex-col items-start justify-between self-stretch h-auto">
-                  <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
-                    Шкафы диспетчеризации и SCADA
-                  </div>
-                  <div class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
-                      <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
-                      <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                        stroke-linecap="square" stroke-linejoin="round" />
-                    </svg>
+                <div
+                  class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
+                  <div class="font-medium text-[#323338B2]">Тип пуска вентилятора</div>
+                  <div class="font-semibold text-[#323338]">
+                    Прямой пуск, преобразователи частоты или регуляторы скорости
                   </div>
                 </div>
-                <picture class="h-35 w-auto shrink-0 lg:h-30">
-                  <img src="./img/products/product-04.png" alt="Щит управления" class="w-auto h-full">
-                </picture>
+                <div
+                  class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
+                  <div class="font-medium text-[#323338B2]">Управление вентиляторами</div>
+                  <div class="font-semibold text-[#323338]">
+                    Сблокированное включение
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
+                  <div class="font-medium text-[#323338B2]">Нагреватель электрический</div>
+                  <div class="font-semibold text-[#323338]">
+                    ~220В, мощностью до 3кВт
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
+                  <div class="font-medium text-[#323338B2]">Охладитель</div>
+                  <div class="font-semibold text-[#323338]">
+                    Фреоновый: 1 контур, управление через релейный «сухой» контакт
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
+                  <div class="font-medium text-[#323338B2]">Рекуператор</div>
+                  <div class="font-semibold text-[#323338]">
+                    Нет
+                  </div>
+                </div>
               </div>
-            </a>
-          </div>
-        </div>
-        <div class="flex flex-col gap-6 pt-10 lg:pt-6">
-          <div class="flex flex-col gap-4 lg:gap-[10px]">
-            <div class="text-2xl leading-[140%] font-semibold lg:text-[22px] md:text-[18px]">
-              Компоненты автоматики
+              <div class="w-full flex flex-col items-start gap-[15px] mt-[15px]" style="display: none;"
+                data-hidden-block="content">
+                <div
+                  class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
+                  <div class="font-medium text-[#323338B2]">Приточный вентилятор</div>
+                  <div class="font-semibold text-[#323338]">
+                    ~220В, до 1,5 кВт
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
+                  <div class="font-medium text-[#323338B2]">Вытяжной вентилятор</div>
+                  <div class="font-semibold text-[#323338]">
+                    ~220В, до 1,5 кВт
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
+                  <div class="font-medium text-[#323338B2]">Автоматика</div>
+                  <div class="font-semibold text-[#3B8BEA]">
+                    Zentec
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
+                  <div class="font-medium text-[#323338B2]">Гарантия</div>
+                  <div class="font-semibold text-[#3B8BEA]">
+                    2 года
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
+                  <div class="font-medium text-[#323338B2]">Габариты</div>
+                  <div class="font-semibold text-[#3B8BEA]">
+                    408 × 278 × 153
+                  </div>
+                </div>
+              </div>
+              <button
+                class="flex items-center gap-[2px] text-sm font-medium text-[#3B8BEA] leading-[140%] mt-[15px] cursor-pointer"
+                data-hidden-block="controller">
+                <span data-hidden-block="btn" data-text-up="Развернуть" data-text-down="Свернуть">Развернуть</span>
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.4297 10L12.4297 14L8.42969 10" stroke="#3B8BEA" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
             </div>
           </div>
-          <div class="grid grid-cols-3 gap-4 xl:grid-cols-2 lg:flex lg:flex-col">
-            <a href="#" class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group">
-              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]">
-                <div class="flex flex-col items-start justify-between self-stretch h-auto">
-                  <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
-                    Панели управления
+          <div class="shrink-0 sticky top-4 w-[328px] xl:w-[500px] lg:w-[321px] md:w-full md:order-1 md:static">
+            <div class="w-full flex flex-col items-start">
+              <div
+                class="w-full py-5 px-6 bg-white border-[1px] border-[#F4F6FB] rounded-2xl
+                lg:p-4 md:p-0 md:bg-transparent md:border-none md:shadow-none
+                shadow-[0px_-2px_30px_0px_#1D21260D,0px_2px_2px_0px_#4A4C4F0A,0px_4px_3px_0px_#4A4C4F08,0px_8px_3px_0px_#4A4C4F03,0px_12px_3px_0px_#4A4C4F00]">
+                <div class="text-[34px] leading-[130%] font-bold text-[#5A5B5F] mb-3 lg:text-2xl">43 780 ₽</div>
+                <button class="w-full flex items-center justify-between gap-[10px] p-4 bg-[#F94D4D1A] rounded-[10px] mb-4 cursor-pointer
+                  lg:py-3 lg:px-4 lg:mb-[10px] md:py-4 md:mb-3">
+                  <span class="text-[#323338] text-xs leading-[140%] font-medium">
+                    <span class="text-[#FD5D5D] leading-[140%] font-semibold">Войдите,</span> чтобы применить скидку
+                  </span>
+                  <svg class="size-6 shrink-0" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.1797 12L4.92969 12" stroke="#FD5D5D" stroke-width="1.5" stroke-linecap="square"
+                      stroke-linejoin="round" />
+                    <path d="M15.4297 16.5L19.9297 12" stroke="#FD5D5D" stroke-width="1.5" stroke-linecap="square"
+                      stroke-linejoin="round" />
+                    <path d="M15.4297 7.5L19.9297 12" stroke="#FD5D5D" stroke-width="1.5" stroke-linecap="square"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <div class="flex items-center gap-[10px]">
+                  <div
+                    class="w-[120px] flex items-center justify-between py-[14px] px-4 bg-[#DBDBDB] rounded-xl shrink-0">
+                    <button type="button" class="flex items-center justify-center size-[15px] cursor-pointer">
+                      <svg class="size-[15px]" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4297 8H2.42969V7H13.4297V8Z"
+                          fill="#323338" />
+                      </svg>
+                    </button>
+                    <input type="text"
+                      class="block w-full h-[15px] text-[11px] leading-[150%] font-semibold text-center outline-none"
+                      value="1 шт">
+                    <button type="button"
+                      class="flex items-center justify-center size-[15px] outline-none cursor-pointer">
+                      <svg class="size-[15px]" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M13.4297 8.11114H2.42969V6.88892H13.4297V8.11114Z" fill="#323338" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.54058 2V13H7.31836L7.31836 2H8.54058Z"
+                          fill="#323338" />
+                      </svg>
+                    </button>
                   </div>
-                  <div class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
-                      <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
-                      <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                        stroke-linecap="square" stroke-linejoin="round" />
+                  <button
+                    class="w-full flex items-center justify-center gap-[6px] py-[13px] px-[30px] bg-[#3B8BEA] 
+                    rounded-xl text-white text-center font-semibold cursor-pointer hover:bg-[#323338] transition-colors">
+                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.90598 4.96875L4.40573 2.71875H2.95898" stroke="white" stroke-width="1.2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6.22775 11.1262L4.90625 4.96875H14.3997C14.8775 4.96875 15.233 5.409 15.1332 5.87625L14.0067 11.1262C13.9325 11.472 13.6272 11.7187 13.2732 11.7187H6.9605C6.60725 11.7187 6.302 11.472 6.22775 11.1262Z"
+                        stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M13.5278 14.4375C13.3726 14.4375 13.2466 14.5635 13.2481 14.7188C13.2481 14.874 13.3741 15 13.5293 15C13.6846 15 13.8106 14.874 13.8106 14.7188C13.8098 14.5635 13.6838 14.4375 13.5278 14.4375"
+                        stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M7.07115 14.4375C6.9159 14.4375 6.7899 14.5635 6.7914 14.7188C6.79065 14.874 6.91665 15 7.0719 15C7.22715 15 7.35315 14.874 7.35315 14.7188C7.35315 14.5635 7.22715 14.4375 7.07115 14.4375"
+                        stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                  </div>
-                </div>
-                <picture class="h-35 w-auto shrink-0 lg:h-30">
-                  <img src="./img/products/product-05.png" alt="Щит управления" class="w-auto h-full">
-                </picture>
-              </div>
-            </a>
-            <a href="#" class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group">
-              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]">
-                <div class="flex flex-col items-start justify-between self-stretch h-auto">
-                  <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
-                    Контроллеры
-                  </div>
-                  <div class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
-                      <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
-                      <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                        stroke-linecap="square" stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-                <picture class="h-35 w-auto shrink-0 lg:h-30">
-                  <img src="./img/products/product-06.png" alt="Щит управления" class="w-auto h-full">
-                </picture>
-              </div>
-            </a>
-            <div
-              class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group
-              hover:[box-shadow:0px_2px_3px_0px_#8B99A21A,0px_6px_6px_0px_#8B99A217,0px_14px_8px_0px_#8B99A20D,0px_24px_10px_0px_#8B99A203,0px_38px_11px_0px_#8B99A200]"
-              data-catalog-block="block">
-              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]"
-                data-catalog-block="toggle-btn">
-                <div class="flex flex-col items-start justify-between self-stretch h-auto">
-                  <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
-                    Датчики
-                  </div>
-                  <a href="#"
-                    class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
-                      <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
-                      <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                        stroke-linecap="square" stroke-linejoin="round" />
-                    </svg>
-                  </a>
-                  <button type="button"
-                    class="hidden lg:size-11 lg:bg-[#3B8BEA] lg:text-white lg:rounded-lg lg:flex lg:items-center lg:justify-center">
-                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M16 11.5L12 15.5L8 11.5" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
+                    <span class="text-xs leading-[140%] font-semibold">В корзину</span>
                   </button>
                 </div>
-                <picture class="h-35 w-auto shrink-0 lg:h-30">
-                  <img src="./img/products/product-07.png" alt="Щит управления" class="w-auto h-full">
-                </picture>
-              </div>
-              <div class="absolute opacity-0 -z-1 bg-gray-50 flex flex-col p-4 top-0 left-0 w-full h-full group-hover:opacity-100 group-hover:z-2 transition-all
-                lg:opacity-100 lg:static lg:hidden lg:pt-0" data-catalog-block="content">
-                <a href="#"
-                  class="text-sm mb-[10px] font-semibold lg:hidden hover:text-[#3B8BEA] transition-color">Датчики</a>
-                <div class="flex flex-col gap-[6px] font-semibold lg:gap-3 md:gap-[10px]">
-                  <a href="#"
-                    class="text-xs leading-[140%] text-[#5A5B5F] lg:text-[17px] md:text-sm hover:text-[#3B8BEA] transition-color">Датчики
-                    температуры</a>
-                  <a href="#"
-                    class="text-xs leading-[140%] text-[#5A5B5F] lg:text-[17px] md:text-sm hover:text-[#3B8BEA] transition-color">Датчики
-                    влажности</a>
-                  <a href="#"
-                    class="text-xs leading-[140%] text-[#5A5B5F] lg:text-[17px] md:text-sm hover:text-[#3B8BEA] transition-color">Датчики
-                    давления воздуха</a>
-                  <a href="#"
-                    class="text-xs leading-[140%] text-[#5A5B5F] lg:text-[17px] md:text-sm hover:text-[#3B8BEA] transition-color">Датчики
-                    СО2</a>
-                  <a href="#"
-                    class="text-xs leading-[140%] text-[#5A5B5F] lg:text-[17px] md:text-sm hover:text-[#3B8BEA] transition-color">Термостат</a>
-                  <a href="#"
-                    class="text-xs leading-[140%] text-[#5A5B5F] lg:text-[17px] md:text-sm hover:text-[#3B8BEA] transition-color">Датчики
-                    давления воды</a>
+                <div class="flex items-center gap-[2px] text-xs leading-[142%] text-[#707174] mt-[10px]">
+                  Наличие:
+                  <span class="text-[#323338CC] font-semibold">изготовление 4-5 дней</span>
                 </div>
+              </div>
+              <div
+                class="w-full mt-4 py-5 px-6 bg-[#F4F6FB] rounded-2xl lg:pt-[14px] lg:pb-4 lg:px-4 lg:mt-3 md:py-4 md:mt-4">
+                <div class="text-lg font-semibold leading-[140%] mb-4 lg:text-base lg:mb-3 md:text-sm">Способы получения
+                </div>
+                <div class="text-xs leading-[140%] lg:mt-2 md:mt-[10px]">Самовывоз со склада г. Санкт-Петербург</div>
+                <div class="text-xs leading-[140%] mt-3 flex items-start gap-1 lg:mt-2 md:mt-[10px]">
+                  Доставка&nbsp;по&nbsp;России:
+                  <span class="font-semibold text-[#3B8BEA]">
+                    ПЭК, СДЭК, Деловые линии
+                  </span>
+                </div>
+              </div>
+              <div class="text-sm font-medium leading-[140%] mt-3 text-[#3B8BEA] lg:mt-[10px]">
+                Ознакомиться с условиями доставки и оплаты
               </div>
             </div>
-            <a href="#" class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group">
-              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]">
-                <div class="flex flex-col items-start justify-between self-stretch h-auto">
-                  <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
-                    Регуляторы скорости
-                  </div>
-                  <div class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
-                      <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
-                      <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                        stroke-linecap="square" stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-                <picture class="h-35 w-auto shrink-0 lg:h-30">
-                  <img src="./img/products/product-08.png" alt="Щит управления" class="w-auto h-full">
-                </picture>
-              </div>
-            </a>
-            <a href="#" class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group">
-              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]">
-                <div class="flex flex-col items-start justify-between self-stretch h-auto">
-                  <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
-                    Приводы для воздушных заслонок
-                  </div>
-                  <div class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
-                      <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
-                      <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                        stroke-linecap="square" stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-                <picture class="h-35 w-auto shrink-0 lg:h-30">
-                  <img src="./img/products/product-09.png" alt="Щит управления" class="w-auto h-full">
-                </picture>
-              </div>
-            </a>
-            <a href="#" class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group">
-              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]">
-                <div class="flex flex-col items-start justify-between self-stretch h-auto">
-                  <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
-                    Смесительные узлы для вентиляции
-                  </div>
-                  <div class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
-                      <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
-                      <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                        stroke-linecap="square" stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-                <picture class="h-35 w-auto shrink-0 lg:h-30">
-                  <img src="./img/products/product-10.png" alt="Щит управления" class="w-auto h-full">
-                </picture>
-              </div>
-            </a>
-            <a href="#" class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group">
-              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]">
-                <div class="flex flex-col items-start justify-between self-stretch h-auto">
-                  <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
-                    Детали смесительных узлов
-                  </div>
-                  <div class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
-                      <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
-                      <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                        stroke-linecap="square" stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-                <picture class="h-35 w-auto shrink-0 lg:h-30">
-                  <img src="./img/products/product-11.png" alt="Щит управления" class="w-auto h-full">
-                </picture>
-              </div>
-            </a>
-            <a href="#" class="relative overflow-hidden  min-h-[200px] bg-gray-50 rounded-xl lg:min-h-[166px] group">
-              <div class="p-6 flex items-start justify-between gap-4 min-h-[200px] lg:p-4 lg:min-h-[166px]">
-                <div class="flex flex-col items-start justify-between self-stretch h-auto">
-                  <div class="text-[18px] leading-[140%] font-semibold lg:text-[22px] md:text-[16px]">
-                    Преобразователи частоты
-                  </div>
-                  <div class="size-11 bg-primary text-white rounded-lg flex items-center justify-center lg:hidden">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M18.75 12L4.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
-                      <path d="M15 16.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;"
-                        stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
-                      <path d="M15 7.5L19.5 12" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5"
-                        stroke-linecap="square" stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-                <picture class="h-35 w-auto shrink-0 lg:h-30">
-                  <img src="./img/products/product-12.png" alt="Щит управления" class="w-auto h-full">
-                </picture>
-              </div>
-            </a>
           </div>
         </div>
       </div>
@@ -1111,114 +1031,335 @@
         </div>
       </div>
     </section>
-    <section class="pt-[56px] lg:pt-15 md:pt-8" id="v_04">
-      <div class="my-container lg:px-0">
-        <div class="grid grid-cols-[0.985fr_1fr] gap-10 p-10 bg-[#F4F6FB] rounded-3xl lg:px-10 lg:pb-15 lg:pt-[50px] lg:rounded-none 
-          lg:grid-cols-1 lg:gap-6 md:p-0 md:pb-8">
-          <div class="w-full md:px-6 md:pt-6">
-            <h3 class="text-[34px] leading-[130%] text-[#3B8BEA] font-bold mb-2 md:text-2xl md:leading-[140%] md:mb-4">
-              Не нашли нужный шкаф?
-            </h3>
-            <div class="text-2xl leading-[140%] font-medium mb-4 md:text-lg">
-              Подготовим решение по вашему ТЗ
-            </div>
-            <div class="text-[17px] leading-[140%] font-medium mb-3 lg:mb-0 md:text-[15px]">
-              Отправьте контакты и проект/описание — инженер свяжется с вами в течение 1 рабочего дня
-            </div>
-            <picture class="relative left-[-10px] lg:hidden">
-              <img src="./img/aob/main.png" alt="">
-            </picture>
-          </div>
-          <div class="w-full">
-            <form action="#" class="w-full flex flex-col gap-6 p-6 bg-white rounded-3xl md:pb-8 md:rounded-b-none">
-              <div class="flex flex-col gap-3">
-                <div class="w-full">
-                  <div class="w-full flex items-center bg-[#F4F6FB] roder-[1px] border-[#F4F6FB] rounded-2xl p-[20px]">
-                    <span class="pr-5 mr-5 border-r-[1px] border-gray md:pr-4 md:mr-4">
-                      <img src="./img/icons/tel.svg" class="size-6" alt="">
-                    </span>
-                    <input type="tel" placeholder="+7 (000) 000-00-00"
-                      class="w-full outline-0 text-[17px] leading-[140%] font-medium text-[#323338] placeholder:text-[#A4A4A4]">
+    <section class="pt-[56px] pb-[66px] overflow-hidden lg:pt-[50px] lg:pb-15 md:pt-6 md:pb-8">
+      <div class="my-container">
+        <h2 class="text-[34px] leading-[130%] text-primary font-bold mb-6 lg:text-[30px] md:text-2xl">
+          Рекомендуем вам
+        </h2>
+        <div class="overflow-hidden lg:overflow-visible lg:relative" data-slider="recomended">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide lg:max-w-[160px]">
+              <div class="flex flex-col">
+                <a href="#" class="relative mb-4 rounded-xl border-[1px] border-[#EDEDED] overflow-hidden">
+                  <div
+                    class="absolute top-5 left-3 text-xs text-white font-semibold px-[12px] py-[5px] bg-[#58C1FD] rounded-lg">
+                    Новинка
                   </div>
-                  <span class="hidden text-xs text-[#F55353] mt-[6px]">Обязательное поле для заполнения</span>
-                </div>
-                <div class="w-full">
-                  <div class="w-full flex items-center bg-[#F4F6FB] roder-[1px] border-[#F4F6FB] rounded-2xl p-[20px]">
-                    <span class="pr-5 mr-5 border-r-[1px] border-gray md:pr-4 md:mr-4">
-                      <img src="./img/icons/email.svg" class="size-6" alt="">
-                    </span>
-                    <input type="text" placeholder="Электронная почта"
-                      class="w-full outline-0 text-[17px] leading-[140%] font-medium text-[#323338] placeholder:text-[#A4A4A4]">
-                  </div>
-                  <span class="hidden text-xs text-[#F55353] mt-[6px]">Обязательное поле для заполнения</span>
-                </div>
-                <div class="w-full leading-0">
-                  <textarea name="message" placeholder="Комментарий (задача, особенности проекта)"
-                    class="block w-full outline-0 text-[17px] leading-[140%] font-medium px-5 py-4 bg-[#F4F6FB] rounded-2xl h-[120px] text-[#323338] placeholder:text-[#A4A4A4]"></textarea>
-                </div>
-                <div class="w-full flex items-stretch gap-3 md:flex-col">
-                  <label class="w-full cursor-pointer block" for="id_input_file">
-                    <input type="file" class="absolute top-0 left-0 opacity-0 w-0 h-0" id="id_input_file">
-                    <span
-                      class="flex items-center justify-center gap-[6px] w-full p-[10px] rounded-[10px] bg-[#EDEDED] text-xs text-[#3B8BEA] font-semibold">
-                      <svg width="18" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M9.125 16.5C7.975 16.5 7 16.1 6.2 15.3C5.4 14.5 5 13.525 5 12.375V4.5C5 3.675 5.29375 2.96875 5.88125 2.38125C6.46875 1.79375 7.175 1.5 8 1.5C8.825 1.5 9.53125 1.79375 10.1188 2.38125C10.7063 2.96875 11 3.675 11 4.5V11.625C11 12.15 10.8187 12.5938 10.4563 12.9563C10.0938 13.3188 9.65 13.5 9.125 13.5C8.6 13.5 8.15625 13.3188 7.79375 12.9563C7.43125 12.5938 7.25 12.15 7.25 11.625V4.5H8.375V11.625C8.375 11.8375 8.44687 12.0156 8.59062 12.1594C8.73438 12.3031 8.9125 12.375 9.125 12.375C9.3375 12.375 9.51562 12.3031 9.65938 12.1594C9.80312 12.0156 9.875 11.8375 9.875 11.625V4.5C9.875 3.975 9.69375 3.53125 9.33125 3.16875C8.96875 2.80625 8.525 2.625 8 2.625C7.475 2.625 7.03125 2.80625 6.66875 3.16875C6.30625 3.53125 6.125 3.975 6.125 4.5V12.375C6.125 13.2 6.41875 13.9063 7.00625 14.4938C7.59375 15.0813 8.3 15.375 9.125 15.375C9.95 15.375 10.6562 15.0813 11.2437 14.4938C11.8312 13.9063 12.125 13.2 12.125 12.375V4.5H13.25V12.375C13.25 13.525 12.85 14.5 12.05 15.3C11.25 16.1 10.275 16.5 9.125 16.5Z"
-                          fill="#3B8BEA"
-                          style="fill:#3B8BEA;fill:color(display-p3 0.2314 0.5451 0.9176);fill-opacity:1;" />
-                      </svg>
-                      Прикрепить проект
-                    </span>
-                  </label>
-                  <label class="w-full cursor-pointer block" for="id_input_file">
-                    <input type="file" class="absolute top-0 left-0 opacity-0 w-0 h-0" id="id_input_file">
-                    <span
-                      class="flex items-center justify-center gap-[6px] w-full p-[10px] rounded-[10px] bg-[#EDEDED] text-xs text-[#3B8BEA] font-semibold">
-                      <svg width="18" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M9.125 16.5C7.975 16.5 7 16.1 6.2 15.3C5.4 14.5 5 13.525 5 12.375V4.5C5 3.675 5.29375 2.96875 5.88125 2.38125C6.46875 1.79375 7.175 1.5 8 1.5C8.825 1.5 9.53125 1.79375 10.1188 2.38125C10.7063 2.96875 11 3.675 11 4.5V11.625C11 12.15 10.8187 12.5938 10.4563 12.9563C10.0938 13.3188 9.65 13.5 9.125 13.5C8.6 13.5 8.15625 13.3188 7.79375 12.9563C7.43125 12.5938 7.25 12.15 7.25 11.625V4.5H8.375V11.625C8.375 11.8375 8.44687 12.0156 8.59062 12.1594C8.73438 12.3031 8.9125 12.375 9.125 12.375C9.3375 12.375 9.51562 12.3031 9.65938 12.1594C9.80312 12.0156 9.875 11.8375 9.875 11.625V4.5C9.875 3.975 9.69375 3.53125 9.33125 3.16875C8.96875 2.80625 8.525 2.625 8 2.625C7.475 2.625 7.03125 2.80625 6.66875 3.16875C6.30625 3.53125 6.125 3.975 6.125 4.5V12.375C6.125 13.2 6.41875 13.9063 7.00625 14.4938C7.59375 15.0813 8.3 15.375 9.125 15.375C9.95 15.375 10.6562 15.0813 11.2437 14.4938C11.8312 13.9063 12.125 13.2 12.125 12.375V4.5H13.25V12.375C13.25 13.525 12.85 14.5 12.05 15.3C11.25 16.1 10.275 16.5 9.125 16.5Z"
-                          fill="#3B8BEA"
-                          style="fill:#3B8BEA;fill:color(display-p3 0.2314 0.5451 0.9176);fill-opacity:1;" />
-                      </svg>
-                      Прикрепить реквизиты
-                    </span>
-                  </label>
-                </div>
-              </div>
-              <div class="flex flex-col gap-4">
-                <label class="flex items-start cursor-pointer">
-                  <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer">
-                  <span
-                    class="relative inline-block shrink-0 mr-3 size-5 border-1 border-gray-300 rounded-md bg-no-repeat bg-center peer-checked:bg-[url('../img/icons/checked.svg')] peer-checked:border-[#3B8BEA]"></span>
-                  <span class="text-[14px] leading-[140%] font-medium">
-                    Нажимая на кнопку «Отправить», вы подтверждаете своё согласие на <a href="#"
-                      class="text-primary hover:underline">обработку персональных данных</a>
-                  </span>
-                </label>
-                <button type="submit" class="w-full relative z-1 inline-block py-5 px-6 bg-[#3B8BEA] rounded-2xl text-white text-center 
-                  font-semibold hover:bg-[#2C6CB8] hover:text-white transition-all cursor-pointer">
-                  Отправить
+                  <picture class="w-full">
+                    <img src="./img/catalog/catalog-rec-01.png" class="w-full h-[209px] object-contain object-center"
+                      alt="Рекомендация">
+                  </picture>
+                </a>
+                <a href="#"
+                  class="text-sm font-semibold min-h-[60px] mb-[8px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
+                  Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
+                </a>
+                <a href="#" class="flex items-center">
+                  <span class="text-lg font-semibold leading-[100%]">43 540 ₽</span>
+                </a>
+                <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary 
+                  text-xs font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+                  <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.95889 8.83398L7.06956 4.83398H4.49756" stroke="white"
+                      style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.3078 19.7807L7.9585 8.83398H24.8358C25.6852 8.83398 26.3172 9.61665 26.1398 10.4473L24.1372 19.7807C24.0052 20.3953 23.4625 20.834 22.8332 20.834H11.6105C10.9825 20.834 10.4398 20.3953 10.3078 19.7807Z"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M23.2866 25.6667C23.0106 25.6667 22.7866 25.8907 22.7892 26.1667C22.7892 26.4427 23.0132 26.6667 23.2892 26.6667C23.5652 26.6667 23.7892 26.4427 23.7892 26.1667C23.7879 25.8907 23.5639 25.6667 23.2866 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M11.8082 25.6667C11.5322 25.6667 11.3082 25.8907 11.3109 26.1667C11.3096 26.4427 11.5336 26.6667 11.8096 26.6667C12.0856 26.6667 12.3096 26.4427 12.3096 26.1667C12.3096 25.8907 12.0856 25.6667 11.8082 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  В корзину
                 </button>
               </div>
-            </form>
+            </div>
+            <div class="swiper-slide lg:max-w-[160px]">
+              <div class="flex flex-col">
+                <a href="#" class="relative mb-4 rounded-xl border-[1px] border-[#EDEDED] overflow-hidden">
+                  <div
+                    class="absolute top-5 left-3 text-xs text-white font-semibold px-[12px] py-[5px] bg-[#58C1FD] rounded-lg">
+                    Новинка
+                  </div>
+                  <picture class="w-full">
+                    <img src="./img/catalog/catalog-rec-02.png" class="w-full h-[209px] object-contain object-center"
+                      alt="Рекомендация">
+                  </picture>
+                </a>
+                <a href="#"
+                  class="text-sm font-semibold min-h-[60px] mb-[9px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
+                  Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
+                </a>
+                <a href="#" class="flex items-center">
+                  <span class="text-lg font-semibold leading-[100%]">43 540 ₽</span>
+                </a>
+                <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary text-xs 
+                  font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+                  <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.95889 8.83398L7.06956 4.83398H4.49756" stroke="white"
+                      style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.3078 19.7807L7.9585 8.83398H24.8358C25.6852 8.83398 26.3172 9.61665 26.1398 10.4473L24.1372 19.7807C24.0052 20.3953 23.4625 20.834 22.8332 20.834H11.6105C10.9825 20.834 10.4398 20.3953 10.3078 19.7807Z"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M23.2866 25.6667C23.0106 25.6667 22.7866 25.8907 22.7892 26.1667C22.7892 26.4427 23.0132 26.6667 23.2892 26.6667C23.5652 26.6667 23.7892 26.4427 23.7892 26.1667C23.7879 25.8907 23.5639 25.6667 23.2866 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M11.8082 25.6667C11.5322 25.6667 11.3082 25.8907 11.3109 26.1667C11.3096 26.4427 11.5336 26.6667 11.8096 26.6667C12.0856 26.6667 12.3096 26.4427 12.3096 26.1667C12.3096 25.8907 12.0856 25.6667 11.8082 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide lg:max-w-[160px]">
+              <div class="flex flex-col">
+                <a href="#" class="relative mb-4 rounded-xl border-[1px] border-[#EDEDED] overflow-hidden">
+                  <div
+                    class="absolute top-5 left-3 text-xs text-white font-semibold px-[12px] py-[5px] bg-[#F94D4D] rounded-lg">
+                    Хит продаж
+                  </div>
+                  <picture class="w-full">
+                    <img src="./img/catalog/catalog-rec-03.png" class="w-full h-[209px] object-contain object-center"
+                      alt="Рекомендация">
+                  </picture>
+                </a>
+                <a href="#"
+                  class="text-sm font-semibold min-h-[60px] mb-[9px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
+                  Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
+                </a>
+                <a href="#" class="flex items-center gap-3">
+                  <span class="text-lg font-semibold text-primary leading-[100%]">43 540 ₽</span>
+                  <span class="text-[10px] font-medium line-through">43 780 ₽</span>
+                </a>
+                <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary text-xs 
+                  font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+                  <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.95889 8.83398L7.06956 4.83398H4.49756" stroke="white"
+                      style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.3078 19.7807L7.9585 8.83398H24.8358C25.6852 8.83398 26.3172 9.61665 26.1398 10.4473L24.1372 19.7807C24.0052 20.3953 23.4625 20.834 22.8332 20.834H11.6105C10.9825 20.834 10.4398 20.3953 10.3078 19.7807Z"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M23.2866 25.6667C23.0106 25.6667 22.7866 25.8907 22.7892 26.1667C22.7892 26.4427 23.0132 26.6667 23.2892 26.6667C23.5652 26.6667 23.7892 26.4427 23.7892 26.1667C23.7879 25.8907 23.5639 25.6667 23.2866 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M11.8082 25.6667C11.5322 25.6667 11.3082 25.8907 11.3109 26.1667C11.3096 26.4427 11.5336 26.6667 11.8096 26.6667C12.0856 26.6667 12.3096 26.4427 12.3096 26.1667C12.3096 25.8907 12.0856 25.6667 11.8082 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide lg:max-w-[160px]">
+              <div class="flex flex-col">
+                <a href="#" class="relative mb-4 rounded-xl border-[1px] border-[#EDEDED] overflow-hidden">
+                  <picture class="w-full">
+                    <img src="./img/catalog/catalog-rec-04.png" class="w-full h-[209px] object-contain object-center"
+                      alt="Рекомендация">
+                  </picture>
+                </a>
+                <a href="#"
+                  class="text-sm font-semibold min-h-[60px] mb-[9px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
+                  Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
+                </a>
+                <a href="#" class="flex items-center gap-3">
+                  <span class="text-lg font-semibold text-primary leading-[100%]">43 540 ₽</span>
+                  <span class="text-[10px] font-medium line-through">43 780 ₽</span>
+                </a>
+                <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary text-xs 
+                  font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+                  <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.95889 8.83398L7.06956 4.83398H4.49756" stroke="white"
+                      style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.3078 19.7807L7.9585 8.83398H24.8358C25.6852 8.83398 26.3172 9.61665 26.1398 10.4473L24.1372 19.7807C24.0052 20.3953 23.4625 20.834 22.8332 20.834H11.6105C10.9825 20.834 10.4398 20.3953 10.3078 19.7807Z"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M23.2866 25.6667C23.0106 25.6667 22.7866 25.8907 22.7892 26.1667C22.7892 26.4427 23.0132 26.6667 23.2892 26.6667C23.5652 26.6667 23.7892 26.4427 23.7892 26.1667C23.7879 25.8907 23.5639 25.6667 23.2866 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M11.8082 25.6667C11.5322 25.6667 11.3082 25.8907 11.3109 26.1667C11.3096 26.4427 11.5336 26.6667 11.8096 26.6667C12.0856 26.6667 12.3096 26.4427 12.3096 26.1667C12.3096 25.8907 12.0856 25.6667 11.8082 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide lg:max-w-[160px]">
+              <div class="flex flex-col">
+                <a href="#" class="relative mb-4 rounded-xl border-[1px] border-[#EDEDED] overflow-hidden">
+                  <picture class="w-full">
+                    <img src="./img/catalog/catalog-rec-05.png" class="w-full h-[209px] object-contain object-center"
+                      alt="Рекомендация">
+                  </picture>
+                </a>
+                <a href="#"
+                  class="text-sm font-semibold min-h-[60px] mb-[9px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
+                  Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
+                </a>
+                <a href="#" class="flex items-center gap-3">
+                  <span class="text-lg font-semibold text-primary leading-[100%]">43 540 ₽</span>
+                  <span class="text-[10px] font-medium line-through">43 780 ₽</span>
+                </a>
+                <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary text-xs 
+                  font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+                  <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.95889 8.83398L7.06956 4.83398H4.49756" stroke="white"
+                      style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.3078 19.7807L7.9585 8.83398H24.8358C25.6852 8.83398 26.3172 9.61665 26.1398 10.4473L24.1372 19.7807C24.0052 20.3953 23.4625 20.834 22.8332 20.834H11.6105C10.9825 20.834 10.4398 20.3953 10.3078 19.7807Z"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M23.2866 25.6667C23.0106 25.6667 22.7866 25.8907 22.7892 26.1667C22.7892 26.4427 23.0132 26.6667 23.2892 26.6667C23.5652 26.6667 23.7892 26.4427 23.7892 26.1667C23.7879 25.8907 23.5639 25.6667 23.2866 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M11.8082 25.6667C11.5322 25.6667 11.3082 25.8907 11.3109 26.1667C11.3096 26.4427 11.5336 26.6667 11.8096 26.6667C12.0856 26.6667 12.3096 26.4427 12.3096 26.1667C12.3096 25.8907 12.0856 25.6667 11.8082 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide lg:max-w-[160px]">
+              <div class="flex flex-col">
+                <a href="#" class="relative mb-4 rounded-xl border-[1px] border-[#EDEDED] overflow-hidden">
+                  <picture class="w-full">
+                    <img src="./img/catalog/catalog-rec-06.png" class="w-full h-[209px] object-contain object-center"
+                      alt="Рекомендация">
+                  </picture>
+                </a>
+                <a href="#"
+                  class="text-sm font-semibold min-h-[60px] mb-[9px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
+                  Щит управления ЩУВ Э130-ПРС105-ВРС105
+                </a>
+                <a href="#" class="flex items-center gap-3">
+                  <span class="text-lg font-semibold text-primary leading-[100%]">43 540 ₽</span>
+                  <span class="text-[10px] font-medium line-through">43 780 ₽</span>
+                </a>
+                <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary text-xs 
+                  font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+                  <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.95889 8.83398L7.06956 4.83398H4.49756" stroke="white"
+                      style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.3078 19.7807L7.9585 8.83398H24.8358C25.6852 8.83398 26.3172 9.61665 26.1398 10.4473L24.1372 19.7807C24.0052 20.3953 23.4625 20.834 22.8332 20.834H11.6105C10.9825 20.834 10.4398 20.3953 10.3078 19.7807Z"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M23.2866 25.6667C23.0106 25.6667 22.7866 25.8907 22.7892 26.1667C22.7892 26.4427 23.0132 26.6667 23.2892 26.6667C23.5652 26.6667 23.7892 26.4427 23.7892 26.1667C23.7879 25.8907 23.5639 25.6667 23.2866 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M11.8082 25.6667C11.5322 25.6667 11.3082 25.8907 11.3109 26.1667C11.3096 26.4427 11.5336 26.6667 11.8096 26.6667C12.0856 26.6667 12.3096 26.4427 12.3096 26.1667C12.3096 25.8907 12.0856 25.6667 11.8082 25.6667"
+                      stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </div>
           </div>
+          <button type="button" class="slider-nav-btn slider-prev absolute top-20 z-2" data-slider-prev="recomended">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M11 8L15 12L11 16" stroke="#323338" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <button type="button" class="slider-nav-btn slider-next absolute top-20 z-2" data-slider-next="recomended">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M13 16L9 12L13 8" stroke="#323338" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
         </div>
       </div>
     </section>
-    <section class="pt-[56px] pb-[66px] lg:pb-15 lg:pt-[50px] md:pb-8 md:pt-6">
+    <section class="pt-[66px] pb-[86px] -mb-6 bg-[#F4F6FB] md:pt-8 md:pb-[52px] md:-mb-[20px]">
       <div class="my-container">
-        <div
-          class="text-[17px] leading-[160%] font-medium lg:text-[15px] lg:leading-[140%] md:text-sm md:leading-[142%]">
-          «ВентАвтоматика» - отечественная компания, специализирующаяся на производстве щитов управления вентиляцией.
-          <br>
-          В нашем ассортименте представлен широкий спектр продукции, предназначенной для полноценного управления
-          вентиляционными установками любого типа. Оптимизированное производство оборудования по управлению
-          вентиляцией позволяет предоставить выгодные цены для наших клиентов.
-          <br>
-          Сотрудничаем с самыми надёжными транспортными компаниями — осуществляем доставку продукции по всей
-          территории России и на территорию Казахстана. Дополнительный плюс — качественная техническая поддержка
-          и бесплатные консультации по монтажу. Предлагаем, как готовые решения под ключ, так и отдельные элементы
-          управления вентиляцией любой сложности.
+        <div class="grid grid-cols-3 gap-[25px] lg:grid-cols-1 lg:gap-6">
+          <a href="#" class="flex flex-col items-center justify-between gap-8 px-8 py-6 rounded-[22px]
+             bg-white box-shadow-card lg:gap-6 md:px-4 md:py-5 group">
+            <div class="flex flex-col items-center gap-1">
+              <div class="flex items-center gap-2">
+                <img src="./img/icons/question.svg" class="size-[30px]" alt="">
+                <h3 class="font-semibold text-2xl leading-[140%] lg:text-[22px] md:text-lg">Вопрос</h3>
+              </div>
+              <div class="text-[17px] text-center text-[#323338CC] px-4 lg:text-base md:text-[15px] md:px-0">Напишите
+                нам — поможем
+                разобраться
+              </div>
+            </div>
+            <div
+              class="w-full flex item-center justify-center p-[18px] rounded-2xl border-[2px] 
+              border-[#3B8BEA] text-[#3B8BEA] font-semibold group-hover:bg-[#3B8BEA] group-hover:text-white transition-all">
+              Задать вопрос
+            </div>
+          </a>
+          <a href="#" class="flex flex-col items-center justify-between gap-8 px-8 py-6 rounded-[22px] 
+            box-shadow-card bg-white lg:gap-6 md:px-4 md:py-5 group">
+            <div class="flex flex-col items-center gap-1">
+              <div class="flex items-center gap-2">
+                <img src="./img/icons/phone-ring.svg" class="size-[30px]" alt="">
+                <h3 class="font-semibold text-2xl leading-[140%] lg:text-[22px] md:text-lg">Заказать звонок</h3>
+              </div>
+              <div class="text-[17px] text-center text-[#323338CC] px-4 lg:text-base md:text-[15px] md:px-0">
+                Оставьте контакт, мы
+                перезвоним в
+                рабочее время </div>
+            </div>
+            <div
+              class="w-full flex item-center justify-center p-[18px] rounded-2xl border-[2px] border-[#3B8BEA] text-[#3B8BEA] font-semibold group-hover:bg-[#3B8BEA] group-hover:text-white transition-all">
+              Задать вопрос
+            </div>
+          </a>
+          <a href="#" class="flex flex-col items-center justify-between gap-8 px-8 py-6 rounded-[22px] 
+            box-shadow-card bg-white lg:gap-6 md:px-4 md:py-5 group">
+            <div class="flex flex-col items-center gap-1">
+              <div class="flex items-center gap-2">
+                <img src="./img/icons/chat-cloude.svg" class="size-[30px]" alt="">
+                <h3 class="font-semibold text-2xl leading-[140%] lg:text-[22px] md:text-lg">Отзыв</h3>
+              </div>
+              <div class="text-[17px] text-center text-[#323338CC] px-4 lg:text-base md:text-[15px] md:px-0">
+                Поделитесь мнением о нашей
+                работе и
+                продукции</div>
+            </div>
+            <div
+              class="w-full flex item-center justify-center p-[18px] rounded-2xl border-[2px] 
+              border-[#3B8BEA] text-[#3B8BEA] font-semibold group-hover:bg-[#3B8BEA] group-hover:text-white transition-all">
+              Задать вопрос
+            </div>
+          </a>
         </div>
       </div>
     </section>

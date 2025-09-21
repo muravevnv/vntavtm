@@ -1,28 +1,37 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const recomendedSlider = document.querySelector('[data-slider="recomended"]');
+  const recomendedSlider = document.querySelectorAll(
+    '[data-slider="recomended"]'
+  );
 
-  if (recomendedSlider) {
-    new Swiper(recomendedSlider, {
-      slidesPerView: "auto",
-      spaceBetween: 12,
-      navigation: {
-        nextEl: "[data-slider-prev='recomended']",
-        prevEl: "[data-slider-next='recomended']",
-      },
-      breakpoints: {
-        560: {
-          slidesPerView: "auto",
-          spaceBetween: 16,
+  if (recomendedSlider.length > 0) {
+    
+    recomendedSlider.forEach((slider) => {
+
+      const sliderPrev = slider.querySelector('[data-slider-prev="recomended"]');
+      const sliderNext = slider.querySelector('[data-slider-next="recomended"]');
+
+      new Swiper(slider, {
+        slidesPerView: "auto",
+        spaceBetween: 12,
+        navigation: {
+          nextEl: sliderPrev,
+          prevEl: sliderNext,
         },
-        768: {
-          slidesPerView: "auto",
-          spaceBetween: 16,
+        breakpoints: {
+          560: {
+            slidesPerView: "auto",
+            spaceBetween: 16,
+          },
+          768: {
+            slidesPerView: "auto",
+            spaceBetween: 16,
+          },
+          1024: {
+            slidesPerView: 6,
+            spaceBetween: 16,
+          },
         },
-        1024: {
-          slidesPerView: 6,
-          spaceBetween: 16,
-        },
-      },
+      });
     });
   }
 
@@ -108,6 +117,34 @@ document.addEventListener("DOMContentLoaded", () => {
       navigation: {
         nextEl: '[data-slider-prev="article-slider"]',
         prevEl: '[data-slider-next="article-slider"]',
+      },
+    });
+  }
+
+  const productSlider = document.querySelector(
+    '[data-slider="product-slider"]'
+  );
+
+  const productThumbs = document.querySelector(
+    '[data-slider="product-thumbs"]'
+  );
+
+  if (productSlider && productThumbs) {
+    const productSwiperThumbs = new Swiper(productThumbs, {
+      slidesPerView: "auto",
+      spaceBetween: 6,
+      direction: "vertical",
+    });
+
+    const productSwiper = new Swiper(productSlider, {
+      slidesPerView: 1,
+      spaceBetween: 32,
+      navigation: {
+        nextEl: '[data-slider-next="product-slider"]',
+        prevEl: '[data-slider-prev="product-slider"]',
+      },
+      thumbs: {
+        swiper: productSwiperThumbs,
       },
     });
   }
@@ -433,4 +470,30 @@ $(document).ready(function () {
       placement: "top-end",
     });
   });
+
+  $('[data-hidden-block="controller"]').on("click", function () {
+    const content = $(this).prev('[data-hidden-block="content"]');
+    const toggleBtn = $('[data-hidden-block="btn"]');
+    const textBtnUp = toggleBtn.attr("data-text-up");
+    const textBtnDown = toggleBtn.attr("data-text-down");
+
+    $(this).toggleClass("is-active");
+
+    toggleBtn.text($(this).hasClass("is-active") ? textBtnDown : textBtnUp);
+
+    content.slideToggle();
+  });
+
+  $('[data-breadcrumbs="toggle-btn"]').on('click', function (e) {
+    e.preventDefault();
+    $(this).toggleClass('is-active');
+    $('[data-breadcrumbs="list"]').toggleClass('is-open');
+  })
+
+  $(document).on('click', function (e) {
+    if (!$(e.target).closest('[data-breadcrumbs="toggle-btn"]').length && !$(e.target).closest('[data-breadcrumbs="list"]').length) {
+      $('[data-breadcrumbs="toggle-btn"]').removeClass('is-active');
+      $('[data-breadcrumbs="list"]').removeClass('is-open');
+    }
+  })
 });

@@ -431,27 +431,36 @@
   <main>
     <section class="pt-[13px] lg:pt-3">
       <div class="my-container">
-        <ul class="flex items-center gap-3 whitespace-nowrap overflow-hidden overflow-ellipsis">
+        <ul class="flex items-center gap-3 whitespace-nowrap">
           <li class="flex items-center gap-3 text-sm leading-[140%] after:content-['/']">
             <a href="#" class=" text-[#323338] font-medium hover:underline">Главная</a>
           </li>
-          <li class="items-center hidden gap-3 lg:flex after:content-['/']">
-            <span class="flex items-center justify-center w-[46px] h-[20px] bg-[#EDEDED] rounded-3xl">
+          <li class="relative items-center gap-3 flex after:content-['/'] z-10">
+            <span class="flex items-center justify-center w-[46px] h-[20px] bg-[#EDEDED] rounded-3xl cursor-pointer"
+              data-breadcrumbs="toggle-btn">
               <span class="relative top-[-5px]">...</span>
             </span>
-          </li>
-          <li class="flex items-center gap-3 text-sm leading-[140%] after:content-['/'] lg:hidden">
-            <a href="#" class=" text-[#323338] font-medium hover:underline">Продукция</a>
-          </li>
-          <li class="flex items-center gap-3 text-sm leading-[140%] after:content-['/'] lg:hidden">
-            <a href="#" class=" text-[#323338] font-medium hover:underline">Шкафы управления вентиляцией</a>
+            <ul
+              class="min-w-[350px] max-w-[350px] w-full mt-[17px] absolute flex flex-col top-[100%] items-start 
+              gap-[10px] bg-[#F4F6FB] rounded-2xl p-4 opacity-0 z-[-1] pointer-none md:left-[-85px] md:min-w-[300px] md:max-w-[300px]
+              shadow-[0px_2px_3px_0px_#0000001A,0px_6px_6px_0px_#00000017,-1px_14px_8px_0px_#0000000D,-1px_24px_10px_0px_#00000003,-2px_38px_11px_0px_#00000000]"
+              data-breadcrumbs="list">
+              <li class="text-xs leading-[140%] font-semibold text-[#5A5B5F] whitespace-normal">
+                <a href="#" class="hover:underline">Продукция</a>
+              </li>
+              <li class="text-xs leading-[140%] font-semibold text-[#5A5B5F] whitespace-normal">
+                <a href="#" class="hover:underline">Шкафы управления вентиляцией</a>
+              </li>
+              <li class="text-xs leading-[140%] font-semibold text-[#5A5B5F] whitespace-normal">
+                <a href="#" class="hover:underline">Шкафы управления приточно-вытяжной вентиляцией</a>
+              </li>
+            </ul>
           </li>
           <li class="text-sm leading-[140%] max-w-full min-w-[1px] line-clamp-1 overflow-hidden overflow-ellipsis">
             <a href="#" class=" text-[#323338B2] font-medium pointer-events-none">
-              Шкафы управления вентиляцией по техническому заданию
+              Шкафы управления приточно-вытяжной вентиляцией
             </a>
           </li>
-
         </ul>
       </div>
     </section>
@@ -492,9 +501,10 @@
                     </h4>
                     <ul class="flex flex-col items-start gap-[8px]">
                       <li class="leading-0">
-                        <a href="#" class="flex items-start gap-[2px] text-sm leading-[140%] font-medium text-[#323338] lg:text-base">
-                          <svg class="text-[#3B8BEA] lg:size-6" width="25" height="25" viewBox="0 0 25 25"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a href="#"
+                          class="flex items-start gap-[2px] text-sm leading-[140%] font-medium text-[#323338] lg:text-base">
+                          <svg class="text-[#3B8BEA] lg:size-6" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path d="M14.5713 8.5L10.5713 12.5L14.5713 16.5" stroke="currentColor" stroke-width="1.5"
                               stroke-linecap="round" stroke-linejoin="round" />
                           </svg>
@@ -688,7 +698,8 @@
                   class="w-full pt-6 lg:pt-4 lg:bg-[#F4F6FB] lg:sticky lg:bottom-0 lg:flex lg:items-center lg:gap-[10px] lg:w-[calc(100%+48px)] lg:px-6 lg:-mx-6
                     lg:shadow-[0px_-4px_9px_0px_#00000008,0px_-16px_16px_0px_#00000008,0px_-36px_22px_0px_#00000005,0px_-65px_26px_0px_#00000000,0px_-101px_28px_0px_#00000000]"
                   data-scrollable="sticky-section">
-                  <button type="reset" class="w-full p-[9px] text-xs font-semibold flex items-center justify-center rounded-[10px] border-[1px] border-[#3B8BEA] text-[#3B8BEA]
+                  <button type="reset"
+                    class="w-full p-[9px] text-xs font-semibold flex items-center justify-center rounded-[10px] border-[1px] border-[#3B8BEA] text-[#3B8BEA]
                         lg:font-base lg:p-[15px] lg:rounded-2xl hover:bg-[#3B8BEA] hover:text-white cursor-pointer transition-colors">
                     Сбросить&nbsp;<span class="lg:hidden">фильтры</span>
                   </button>
@@ -1842,16 +1853,19 @@
             cursor-pointer hover:bg-[#3B8BEA] hover:text-white transition-colors">Пульт управления</a>
             <a href="#" class="py-2 px-4 bg-[#F4F6FB] text-sm leading-[140%] font-medium rounded-xl whitespace-nowrap
             cursor-pointer hover:bg-[#3B8BEA] hover:text-white transition-colors">Контроллер Zentec</a>
-          </div> 
+          </div>
         </div>
       </div>
     </section>
     <section class="pt-[66px] lg:pt-15 md:pt-0">
       <div class="my-container">
         <div class="w-full pt-8 lg:pt-0">
-          <div class="relative p-6 bg-[#3B8BEA] rounded-3xl md:w-[calc(100%+48px)] md:-mx-6 md:px-6 md:pb-8 md:pt-6 md:rounded-none">
-            <h3 class="text-2xl leading-[140%] text-white font-semibold mb-[10px] md:text-lg">Не нашли нужный шкаф управления?</h3>
-            <div class="text-[17px] leading-[140%] font-medium text-white mb-6 md:text-sm">Закажите разработку индивидуального решения</div>
+          <div
+            class="relative p-6 bg-[#3B8BEA] rounded-3xl md:w-[calc(100%+48px)] md:-mx-6 md:px-6 md:pb-8 md:pt-6 md:rounded-none">
+            <h3 class="text-2xl leading-[140%] text-white font-semibold mb-[10px] md:text-lg">Не нашли нужный шкаф
+              управления?</h3>
+            <div class="text-[17px] leading-[140%] font-medium text-white mb-6 md:text-sm">Закажите разработку
+              индивидуального решения</div>
             <a href="#" class="w-[305px] shrink-0 bg-[#323338] inline-flex items-center justify-center p-5 
                 rounded-2xl text-white font-semibold lg:px-10 md:w-full md:py-[21px] cursor-pointer 
                 hover:bg-[#050506] transition-all">Отправить проект</a>
@@ -2137,7 +2151,8 @@
     </section>
     <section class="bg-[#F4F6FB] pt-[56px] pb-[86px] -mb-[20px] lg:pt-[50px] lg:pb-[80px] md:pt-6 md:pb-[52px]">
       <div class="my-container">
-        <div class="text-[17px] leading-[160%] font-medium text-[#5A5B5F] lg:text-base lg:leading-[162%] md:text-sm md:leading-[142%]">
+        <div
+          class="text-[17px] leading-[160%] font-medium text-[#5A5B5F] lg:text-base lg:leading-[162%] md:text-sm md:leading-[142%]">
           «ВентАвтоматика» - отечественная компания, специализирующаяся на производстве щитов управления вентиляцией.
           <br>
           В нашем ассортименте представлен широкий спектр продукции, предназначенной для полноценного управления
@@ -2150,7 +2165,7 @@
           управления вентиляцией любой сложности.
         </div>
       </div>
-    </section> 
+    </section>
   </main>
   <footer class="py-16 bg-[#323338] text-white rounded-t-3xl lg:py-10 md:py-8 relative z-1">
   <div class="my-container">
