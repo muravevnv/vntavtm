@@ -1757,6 +1757,9 @@
   .pb-\[63px\] {
     padding-bottom: 63px;
   }
+  .pb-\[64px\] {
+    padding-bottom: 64px;
+  }
   .pb-\[66px\] {
     padding-bottom: 66px;
   }
@@ -3838,6 +3841,11 @@
       padding-bottom: calc(var(--spacing) * 30);
     }
   }
+  .lg\:pb-\[34px\] {
+    @media (max-width: 1023px) {
+      padding-bottom: 34px;
+    }
+  }
   .lg\:pb-\[50px\] {
     @media (max-width: 1023px) {
       padding-bottom: 50px;
@@ -3856,6 +3864,11 @@
   .lg\:pb-\[72px\] {
     @media (max-width: 1023px) {
       padding-bottom: 72px;
+    }
+  }
+  .lg\:pb-\[73px\] {
+    @media (max-width: 1023px) {
+      padding-bottom: 73px;
     }
   }
   .lg\:pb-\[80px\] {
@@ -4686,6 +4699,11 @@
       gap: 3px;
     }
   }
+  .md\:gap-\[5px\] {
+    @media (max-width: 767px) {
+      gap: 5px;
+    }
+  }
   .md\:gap-\[10px\] {
     @media (max-width: 767px) {
       gap: 10px;
@@ -4902,6 +4920,11 @@
       padding-inline: calc(var(--spacing) * 8);
     }
   }
+  .md\:px-\[14px\] {
+    @media (max-width: 767px) {
+      padding-inline: 14px;
+    }
+  }
   .md\:px-\[15px\] {
     @media (max-width: 767px) {
       padding-inline: 15px;
@@ -4940,6 +4963,11 @@
   .md\:py-\[10px\] {
     @media (max-width: 767px) {
       padding-block: 10px;
+    }
+  }
+  .md\:py-\[13px\] {
+    @media (max-width: 767px) {
+      padding-block: 13px;
     }
   }
   .md\:py-\[14px\] {

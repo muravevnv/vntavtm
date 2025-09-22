@@ -4,11 +4,13 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   if (recomendedSlider.length > 0) {
-    
     recomendedSlider.forEach((slider) => {
-
-      const sliderPrev = slider.querySelector('[data-slider-prev="recomended"]');
-      const sliderNext = slider.querySelector('[data-slider-next="recomended"]');
+      const sliderPrev = slider.querySelector(
+        '[data-slider-prev="recomended"]'
+      );
+      const sliderNext = slider.querySelector(
+        '[data-slider-next="recomended"]'
+      );
 
       new Swiper(slider, {
         slidesPerView: "auto",
@@ -414,10 +416,26 @@ $(document).ready(function () {
   $("[data-tabs-btn]").on("click", function () {
     const tabId = $(this).attr("data-tabs-btn");
     console.log(tabId);
+
+    // Убираем активный класс у всех кнопок
     $("[data-tabs-btn]").removeClass("is-active");
     $(this).addClass("is-active");
-    $("[data-tabs-content]").hide();
-    $(`[data-tabs-content="${tabId}"]`).show();
+
+    // Скрываем все табы (сразу убираем opacity)
+    $("[data-tabs-content]").css("opacity", "0");
+
+    // После завершения анимации скрытия скрываем display
+    setTimeout(() => {
+      $("[data-tabs-content]").hide();
+
+      // Показываем нужный таб
+      $(`[data-tabs-content="${tabId}"]`).show();
+
+      // Добавляем opacity с задержкой для плавности
+      setTimeout(() => {
+        $(`[data-tabs-content="${tabId}"]`).css("opacity", "1");
+      }, 10);
+    }, 300); // Задержка должна соответствовать времени CSS-перехода
   });
 
   $('input[type="tel"]').mask("+7 (999) 999-99-99", {
@@ -484,16 +502,19 @@ $(document).ready(function () {
     content.slideToggle();
   });
 
-  $('[data-breadcrumbs="toggle-btn"]').on('click', function (e) {
+  $('[data-breadcrumbs="toggle-btn"]').on("click", function (e) {
     e.preventDefault();
-    $(this).toggleClass('is-active');
-    $('[data-breadcrumbs="list"]').toggleClass('is-open');
-  })
+    $(this).toggleClass("is-active");
+    $('[data-breadcrumbs="list"]').toggleClass("is-open");
+  });
 
-  $(document).on('click', function (e) {
-    if (!$(e.target).closest('[data-breadcrumbs="toggle-btn"]').length && !$(e.target).closest('[data-breadcrumbs="list"]').length) {
-      $('[data-breadcrumbs="toggle-btn"]').removeClass('is-active');
-      $('[data-breadcrumbs="list"]').removeClass('is-open');
+  $(document).on("click", function (e) {
+    if (
+      !$(e.target).closest('[data-breadcrumbs="toggle-btn"]').length &&
+      !$(e.target).closest('[data-breadcrumbs="list"]').length
+    ) {
+      $('[data-breadcrumbs="toggle-btn"]').removeClass("is-active");
+      $('[data-breadcrumbs="list"]').removeClass("is-open");
     }
-  })
+  });
 });
