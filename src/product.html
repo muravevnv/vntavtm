@@ -343,25 +343,21 @@
         <div class="w-full flex flex-col gap-4 mt-11 md:mt-8">
           <nav class="grid grid-cols-4 bg-[#F4F6FB] rounded-2xl overflow-hidden sticky top-0 z-2
             md:flex md:overflow-x-auto md:w-[calc(100% + 48px)] md:static md:px-6 md:-mx-6 md:bg-white 
-            md:gap-[10px] md:rounded-none [&amp;::-webkit-scrollbar]:hidden">
-            <a href="#v_01" class="flex items-center justify-center text-base leading-[150%] font-semibold text-center p-[10px] 
-            lg:text-sm lg:leading-[120%]
-            md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0 md:leading-[150%]
-            hover:bg-[#3B8BEA] hover:text-white transition-all">Характеристики</a>
-            <a href="#v_02" class="flex items-center justify-center text-base leading-[150%] font-semibold text-center p-[10px] 
-            lg:text-sm lg:leading-[120%]
-            md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0 md:leading-[150%]
-            hover:bg-[#3B8BEA] hover:text-white transition-all">Описание товара</a>
-            <a href="#v_03" class="flex items-center justify-center text-base leading-[150%] font-semibold text-center p-[10px] 
-            lg:text-sm lg:leading-[120%]
-            md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0 md:leading-[150%]
-            hover:bg-[#3B8BEA] hover:text-white transition-all">Документация</a>
-            <a href="#v_04" class="flex items-center justify-center text-base leading-[150%] font-semibold text-center p-[10px] 
-            lg:text-sm lg:leading-[120%]
-            md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0 md:leading-[150%]
-            hover:bg-[#3B8BEA] hover:text-white transition-all">Сопутствующие товары</a>
+            md:gap-[10px] md:rounded-none [&amp;::-webkit-scrollbar]:hidden" data-nav-links>
+            <a href="#nav-section-01" class="flex items-center justify-center text-base leading-[150%] font-semibold text-center p-[10px] 
+            lg:text-sm lg:leading-[120%] md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0 md:leading-[150%]
+            hover:text-[#3B8BEA] transition-all" data-nav-link>Характеристики</a>
+            <a href="#nav-section-02" class="flex items-center justify-center text-base leading-[150%] font-semibold text-center p-[10px] 
+            lg:text-sm lg:leading-[120%] md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0 md:leading-[150%]
+            hover:text-[#3B8BEA] transition-all" data-nav-link>Описание товара</a>
+            <a href="#nav-section-03" class="flex items-center justify-center text-base leading-[150%] font-semibold text-center p-[10px] 
+            lg:text-sm lg:leading-[120%] md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0 md:leading-[150%]
+            hover:text-[#3B8BEA] transition-all" data-nav-link>Документация</a>
+            <a href="#nav-section-04" class="flex items-center justify-center text-base leading-[150%] font-semibold text-center p-[10px] 
+            lg:text-sm lg:leading-[120%] md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0 md:leading-[150%]
+            hover:text-[#3B8BEA] transition-all" data-nav-link>Сопутствующие товары</a>
           </nav>
-          <div
+          <div data-nav-section id="nav-section-01"
             class="w-full p-[39px] bg-white border-[1px] border-[#EDEDED] rounded-2xl lg:p-[23px] md:px-[14px]
             shadow-[0px_2px_4px_0px_#CCCCCC1A,0px_7px_7px_0px_#CDCDCD17,0px_16px_10px_0px_#D6D6D60D,0px_29px_12px_0px_#DFDFDF03,0px_45px_13px_0px_#E3E3E300]">
             <h3
@@ -640,7 +636,7 @@
               </div>
             </div>
           </div>
-          <div
+          <div data-nav-section id="nav-section-02"
             class="w-full p-[39px] bg-white border-[1px] border-[#EDEDED] rounded-2xl lg:p-[23px] md:px-[15px]
             shadow-[0px_2px_4px_0px_#CCCCCC1A,0px_7px_7px_0px_#CDCDCD17,0px_16px_10px_0px_#D6D6D60D,0px_29px_12px_0px_#DFDFDF03,0px_45px_13px_0px_#E3E3E300]">
             <h3 class="text-[34px] leading-[130%] font-bold text-[#3B8BEA] mb-8 lg:text-[30px] md:text-2xl md:mb-6">
@@ -659,7 +655,7 @@
               </p>
             </div>
           </div>
-          <div
+          <div data-nav-section id="nav-section-03"
             class="w-full p-[39px] bg-white border-[1px] border-[#EDEDED] rounded-2xl lg:p-[23px] md:px-[15px]
             shadow-[0px_2px_4px_0px_#CCCCCC1A,0px_7px_7px_0px_#CDCDCD17,0px_16px_10px_0px_#D6D6D60D,0px_29px_12px_0px_#DFDFDF03,0px_45px_13px_0px_#E3E3E300]">
             <div class="flex items-start justify-between gap-4 mb-8 md:mb-6 md:flex-col md:gap-4">
@@ -756,7 +752,7 @@
         </div>
       </div>
     </section>
-    <section class="pt-[56px] overflow-hidden lg:pt-[50px] md:pt-6">
+    <section class="pt-[56px] overflow-hidden lg:pt-[50px] md:pt-6" data-nav-section id="nav-section-04">
       <div class="my-container">
         <div class="flex flex-col gap-2 mb-8 lg:mb-6 md:gap-[5px]">
           <h2 class="text-[34px] leading-[130%] text-primary font-bold lg:text-[30px] md:text-2xl">

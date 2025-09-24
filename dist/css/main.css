@@ -239,9 +239,6 @@
   .top-5 {
     top: calc(var(--spacing) * 5);
   }
-  .top-6 {
-    top: calc(var(--spacing) * 6);
-  }
   .top-20 {
     top: calc(var(--spacing) * 20);
   }
@@ -1221,9 +1218,6 @@
   .gap-\[30px\] {
     gap: 30px;
   }
-  .gap-\[31px\] {
-    gap: 31px;
-  }
   .gap-\[44px\] {
     gap: 44px;
   }
@@ -1747,6 +1741,9 @@
   }
   .pb-\[21px\] {
     padding-bottom: 21px;
+  }
+  .pb-\[31px\] {
+    padding-bottom: 31px;
   }
   .pb-\[44px\] {
     padding-bottom: 44px;
@@ -6135,6 +6132,10 @@
 }
 [data-breadcrumbs="toggle-btn"].is-active {
   background-color: #5A5B5F;
+  color: #FFFFFF;
+}
+[data-nav-link].is-active {
+  background-color: #3B8BEA;
   color: #FFFFFF;
 }
 @property --tw-translate-x {

@@ -29,34 +29,35 @@
         </ul>
       </div>
     </section>
-    <section class="pt-[31px] lg:pt-6">
-      <div class="my-container flex flex-col gap-[31px] lg:gap-6">
+    <section class="pt-[31px] pb-[31px] lg:pt-6 lg:pb-6">
+      <div class="my-container flex flex-col">
         <h1 class="text-[34px] leading-[130%] font-bold text-[#3B8BEA] lg:text-[30px] md:text-2xl">Как оформить заказ
         </h1>
-        <nav
-          class="grid grid-cols-4 bg-[#F4F6FB] rounded-2xl overflow-hidden 
+      </div>
+    </section>
+    <section class="sticky top-0 z-2 md:static">
+      <div class="my-container">
+        <nav data-nav-links
+          class="grid grid-cols-4 bg-[#F4F6FB] rounded-2xl overflow-hidden
           md:flex md:overflow-x-auto md:w-[calc(100% + 48px)] md:px-6 md:-mx-6 md:bg-transparent md:gap-[10px] md:rounded-none [&::-webkit-scrollbar]:hidden">
-          <a href="#v_01" class="text-base leading-[150%] font-semibold text-center p-[10px] 
-            lg:text-sm
+          <a href="#v_01" data-nav-link class="text-base leading-[150%] font-semibold text-center p-[10px] 
+            lg:text-sm md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0
+            hover:text-[#3B8BEA] transition-all">Онлайн</a>
+          <a href="#v_02" data-nav-link class="text-base leading-[150%] font-semibold text-center p-[10px] 
             md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0
-            hover:bg-[#3B8BEA] hover:text-white transition-all">Онлайн</a>
-          <a href="#v_02" class="text-base leading-[150%] font-semibold text-center p-[10px] 
-            md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0
-            hover:bg-[#3B8BEA] hover:text-white transition-all">Калькулятор</a>
-          <a href="#v_03" class="text-base leading-[150%] font-semibold text-center p-[10px] 
-            lg:text-sm
-            md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0
-            hover:bg-[#3B8BEA] hover:text-white transition-all">Опросный
+            hover:text-[#3B8BEA] transition-all">Калькулятор</a>
+          <a href="#v_03" data-nav-link class="text-base leading-[150%] font-semibold text-center p-[10px] 
+            lg:text-sm md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0
+            hover:text-[#3B8BEA] transition-all">Опросный
             лист</a>
-          <a href="#v_04" class="text-base leading-[150%] font-semibold text-center p-[10px] 
-            lg:text-sm
-            md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0
-            hover:bg-[#3B8BEA] hover:text-white transition-all">Файл
+          <a href="#v_04" data-nav-link class="text-base leading-[150%] font-semibold text-center p-[10px] 
+            lg:text-sm md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0
+            hover:text-[#3B8BEA] transition-all">Файл
             проекта</a>
         </nav>
       </div>
     </section>
-    <section class="pt-[66px] lg:pt-8 md:pt-6" id="v_01">
+    <section class="pt-[66px] lg:pt-8 md:pt-6" id="v_01" data-nav-section>
       <div class="my-container">
         <div class="grid grid-cols-[0.94fr_1fr] items-center gap-12 lg:grid-cols-1 lg:gap-8 md:gap-6">
           <div class="w-full">
@@ -91,7 +92,7 @@
         </div>
       </div>
     </section>
-    <section class="pt-[66px] lg:pt-15 md:pt-8" id="v_02">
+    <section class="pt-[66px] lg:pt-15 md:pt-8" id="v_02" data-nav-section>
       <div class="my-container">
         <div class="grid grid-cols-[0.94fr_1fr] items-center gap-12 lg:grid-cols-1 lg:gap-8 md:gap-6">
           <div class="w-full">
@@ -100,7 +101,8 @@
             <h3 class="text-2xl leading-[140%] font-semibold mb-6 lg:mb-4 lg:text-[22px] md:text-lg">
               Калькулятор стоимости
             </h3>
-            <div class="text-[17px] leading-[140%] font-medium lg:max-w-[540px] lg:text-base lg:leading-[136%] md:text-[15px]">
+            <div
+              class="text-[17px] leading-[140%] font-medium lg:max-w-[540px] lg:text-base lg:leading-[136%] md:text-[15px]">
               Рассчитайте шкаф управления по своим параметрам. Перейдите в калькулятор — получите коммерческое
               предложение за 2 минуты без участия менеджера
             </div>
@@ -119,7 +121,7 @@
         </div>
       </div>
     </section>
-    <section class="pt-[66px] lg:pt-15 md:pt-8" id="v_03">
+    <section class="pt-[66px] lg:pt-15 md:pt-8" id="v_03" data-nav-section>
       <div class="my-container">
         <div class="grid grid-cols-2 items-center gap-12 p-10 bg-[#F4F6FB] rounded-3xl lg:p-8 lg:pb-10 lg:grid-cols-1 lg:gap-4
           md:px-4 md:py-5">
@@ -141,7 +143,8 @@
             <ol class="list-decimal pl-[21px] flex flex-col items-start gap-3">
               <li
                 class="text-[17px] leading-[140%] font-medium lg:text-base md:text-[15px] lg:leading-[136%] md:leading-[140%]">
-                Скачать PDF / DOCX из раздела <a href="#" class="text-[#3B8BEA] hover:text-[#2C6CB8] transition-colors">Документация</a>
+                Скачать PDF / DOCX из раздела <a href="#"
+                  class="text-[#3B8BEA] hover:text-[#2C6CB8] transition-colors">Документация</a>
               </li>
               <li
                 class="text-[17px] leading-[140%] font-medium lg:text-base md:text-[15px] lg:leading-[136%] md:leading-[140%]">
@@ -149,7 +152,8 @@
               </li>
               <li
                 class="text-[17px] leading-[140%] font-medium lg:text-base md:text-[15px] lg:leading-[136%] md:leading-[140%]">
-                Отправить файл на <a href="mailto:info@ventavtomatika.ru" class="text-[#3B8BEA] hover:text-[#2C6CB8] transition-colors">info@ventavtomatika.ru</a>
+                Отправить файл на <a href="mailto:info@ventavtomatika.ru"
+                  class="text-[#3B8BEA] hover:text-[#2C6CB8] transition-colors">info@ventavtomatika.ru</a>
               </li>
               <li
                 class="text-[17px] leading-[140%] font-medium lg:text-base md:text-[15px] lg:leading-[136%] md:leading-[140%]">
@@ -165,7 +169,7 @@
         </div>
       </div>
     </section>
-    <section class="pt-[66px] lg:pt-15 md:pt-8" id="v_04">
+    <section class="pt-[66px] lg:pt-15 md:pt-8" id="v_04" data-nav-section>
       <div class="my-container md:px-0">
         <div
           class="grid grid-cols-[0.985fr_1fr] gap-10 p-10 bg-[#F4F6FB] rounded-3xl lg:p-8 lg:pb-10 lg:grid-cols-1 lg:gap-6 md:p-0">

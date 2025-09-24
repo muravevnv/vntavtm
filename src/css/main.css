@@ -752,3 +752,8 @@
   background-color: #5A5B5F;
   color: #FFFFFF;
 }
+
+[data-nav-link].is-active {
+  background-color: #3B8BEA;
+  color: #FFFFFF;
+}

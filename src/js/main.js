@@ -517,4 +517,94 @@ $(document).ready(function () {
       $('[data-breadcrumbs="list"]').removeClass("is-open");
     }
   });
+
+
+
+   // Элементы страницы
+    const $nav = $('[data-nav-links]');
+    const $navLinks = $('[data-nav-link]');
+    const $sections = $('[data-nav-section]');
+
+    // Проверяем, есть ли с чем работать
+    if ($nav.length === 0 || $sections.length === 0) {
+        return;
+    }
+
+    // Высота навигационной панели (для отступа при скролле)
+    const navHeight = $nav.outerHeight();
+
+    // 1. ФУНКЦИЯ ПЛАВНОГО СКРОЛЛА ПО КЛИКУ (работает всегда)
+    $navLinks.on('click', function(e) {
+        e.preventDefault(); // Отменяем стандартное поведение якоря
+
+        const targetId = $(this).attr('href'); // Получаем ID целевой секции (например, "#section-1")
+        const $targetSection = $(targetId); // Находим саму секцию по ID
+
+        if ($targetSection.length) {
+            // Вычисляем позицию, куда скроллить: отступ секции сверху минус высота навигации
+            const targetScrollTop = $targetSection.offset().top;
+
+            // Плавный скролл к вычисленной позиции
+            $('html, body').animate({
+                scrollTop: targetScrollTop
+            }, 800); // 800ms - длительность анимации
+
+            // На мобильных устройствах просто активируем ссылку по клику
+            if ($(window).width() < 768) {
+                $navLinks.removeClass('is-active');
+                $(this).addClass('is-active');
+            }
+            // На десктопе активный класс установит Intersection Observer, чтобы не было конфликта со скроллом
+        }
+    });
+
+    // 2. ЛОГИКА ДЛЯ ДЕСКТОПА (>= 768px) С Intersection Observer
+    if ($(window).width() >= 768) {
+        let observer;
+
+        // Функция инициализации наблюдателя
+        const initObserver = () => {
+            // Настройки для Observer
+            // rootMargin в формате "0px 0px -X% 0px". Смещаем нижнюю границу области наблюдения ВВЕРХ.
+            // -Y%: отрицательное значение означает, что мы поднимаем нижнюю границу.
+            // Мы хотим, чтобы срабатывание было, когда верх секции находится на высоте `navHeight` от верха окна.
+            // Вычисляем процент от высоты окна (viewport), который занимает наша панель.
+            const rootMarginPercent = (navHeight / $(window).height()) * 100;
+            // rootMargin: "0px 0px -90% 0px" означает, что нижняя граница области наблюдения поднята на 90% высоты окна.
+            // Мы поднимаем ее на (100% - высота_панели), чтобы "зона активации" начиналась сразу под панелью.
+            const rootMargin = `0px 0px -${100 - rootMarginPercent}% 0px`;
+
+            const options = {
+                root: null, // null означает viewport (окно браузера)
+                rootMargin: rootMargin, // Критически важный параметр! Создает отступ снизу.
+                threshold: 0 // Срабатывает как только мишень (секция) начинает пересекать область
+            };
+
+            // Колбэк, который выполняется при пересечении каждой секции
+            const callback = (entries) => {
+                entries.forEach(entry => {
+                    // entry.isIntersecting = true, если секция вошла в зону видимости (под нашу панель)
+                    if (entry.isIntersecting) {
+                        // Находим ID секции, которая сейчас активна
+                        const currentActiveSectionId = '#' + entry.target.id;
+                        // Находим соответствующую ссылку и делаем ее активной
+                        $navLinks.removeClass('is-active');
+                        $navLinks.filter(`[href="${currentActiveSectionId}"]`).addClass('is-active');
+                    }
+                });
+            };
+
+            // Создаем экземпляр наблюдателя
+            observer = new IntersectionObserver(callback, options);
+
+            // Начинаем наблюдать за всеми секциями
+            $sections.each(function() {
+                observer.observe(this);
+            });
+        };
+
+        // Инициализируем наблюдатель сразу
+        initObserver();
+
+      }
 });

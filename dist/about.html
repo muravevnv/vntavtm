@@ -581,34 +581,28 @@
         </div>
       </div>
     </section>
-    <section class="sticky top-6 z-10">
+    <section class="sticky top-0 z-10">
       <div class="my-container">
-        <nav
-          class="grid grid-cols-5 bg-[#F4F6FB] rounded-2xl overflow-hidden 
-          md:flex md:overflow-x-auto md:w-[calc(100% + 48px)] md:px-6 md:-mx-6 md:bg-transparent md:gap-[10px] md:rounded-none [&::-webkit-scrollbar]:hidden">
+        <nav data-nav-links
+          class="grid grid-cols-4 bg-[#F4F6FB] rounded-2xl overflow-hidden 
+          md:flex md:overflow-x-auto md:w-[calc(100% + 48px)] md:px-6 md:-mx-6 md:bg-transparent md:gap-[10px] 
+          md:rounded-none [&::-webkit-scrollbar]:hidden">
           <a href="#why-us" class="flex items-center justify-center text-base leading-[150%] font-semibold text-center p-[10px] 
-            lg:text-sm lg:leading-[115%]
-            md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0
-            hover:bg-[#3B8BEA] hover:text-white transition-all">Почему выбирают нас</a>
+            lg:text-sm lg:leading-[115%] md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0
+            hover:text-[#3B8BEA] transition-all is-active" data-nav-link>Почему выбирают нас</a>
           <a href="#clients" class="flex items-center justify-center text-base leading-[150%] font-semibold text-center p-[10px] 
             md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0
-            hover:bg-[#3B8BEA] hover:text-white transition-all">Клиенты</a>
+            hover:text-[#3B8BEA] transition-all" data-nav-link>Клиенты</a>
           <a href="#projects" class="flex items-center justify-center text-base leading-[150%] font-semibold text-center p-[10px] 
-            lg:text-sm lg:leading-[115%]
-            md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0
-            hover:bg-[#3B8BEA] hover:text-white transition-all">Реализованные проекты</a>
-          <a href="#feedbacks" class="flex items-center justify-center text-base leading-[150%] font-semibold text-center p-[10px] 
-            lg:text-sm lg:leading-[115%]
-            md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0
-            hover:bg-[#3B8BEA] hover:text-white transition-all">Отзывы</a>
+            lg:text-sm lg:leading-[115%] md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0
+            hover:text-[#3B8BEA] transition-all" data-nav-link>Реализованные проекты</a>
           <a href="#sertificats" class="flex items-center justify-center text-base leading-[150%] font-semibold text-center p-[10px] 
-            lg:text-sm lg:leading-[115%]
-            md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0
-            hover:bg-[#3B8BEA] hover:text-white transition-all">Сертификаты</a>
+            lg:text-sm lg:leading-[115%] md:px-4 md:py-[10px] md:text-base md:bg-[#EDEDED] md:rounded-2xl md:shrink-0
+            hover:text-[#3B8BEA] transition-all" data-nav-link>Сертификаты</a>
         </nav>
       </div>
     </section>
-    <section class="pt-[56px] lg:pt-[50px] md:pt-6" id="why-us">
+    <section class="pt-[56px] lg:pt-[50px] md:pt-6" id="why-us" data-nav-section>
       <div class="my-container">
         <h2 class="text-[34px] leading-[130%] text-primary font-bold mb-10 lg:text-[30px] lg:mb-8 md:text-2xl md:mb-6">
           Почему выбирают нас
@@ -826,7 +820,7 @@
         </div>
       </div>
     </section>
-    <section class="pt-[56px] lg:pt-[50px] lg:overflow-hidden md:pt-6 md:pb-6" id="clients">
+    <section class="pt-[56px] lg:pt-[50px] lg:overflow-hidden md:pt-6 md:pb-6" data-nav-section id="clients">
       <div class="my-container">
         <h2 class="text-[34px] leading-[130%] text-primary font-bold mb-2 lg:text-[30px] md:text-2xl">
           Наши клиенты
@@ -886,7 +880,7 @@
         </div>
       </div>
     </section>
-    <section class="pt-6 lg:pt-[50px] md:pt-6 lg:overflow-hidden" id="projects">
+    <section class="pt-6 lg:pt-[50px] md:pt-6 lg:overflow-hidden" data-nav-section id="projects">
       <div class="my-container">
         <h2 class="text-[34px] leading-[130%] text-primary font-bold mb-10 lg:text-[30px] lg:mb-8 md:text-2xl md:mb-4">
           Реализованные проекты
@@ -1152,7 +1146,7 @@
         </div>
       </div>
     </section>
-    <section class="pt-[40px] overflow-hidden lg:pt-15 md:pt-8" id="sertificats">
+    <section class="pt-[40px] overflow-hidden lg:pt-15 md:pt-8" data-nav-section id="sertificats">
       <div class="my-container md:p-0">
         <div class="p-10 bg-[#F4F6FB] rounded-3xl flex items-start gap-6 lg:flex-col lg:p-6 md:rounded-none">
           <div class="max-w-[465px] w-full lg:max-w-full">
