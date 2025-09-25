@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
-
 <body class="text-graphite">
   @@include('header.html')
   @@include('menu.html')
@@ -46,6 +45,13 @@
             Задать вопрос
           </button>
           @@include('popups/ask-question.html')
+        </div>
+        <div x-data="{openSentProjectPopup: false}">
+          <button @click='openSentProjectPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+                font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+            Отправить проект
+          </button>
+          @@include('popups/sent-project.html')
         </div>
       </div>
     </section>

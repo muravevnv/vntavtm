@@ -473,7 +473,8 @@
             class="flex items-start gap-5 w-[calc(100%-348px)] xl:flex-col xl:w-[calc(100%-500px)] lg:w-[calc(100%-341px)] md:w-full md:contents">
             <div class="w-[53%] xl:w-full md:order-0">
               <div class="w-full max-w-full flex items-stretch gap-2 overflow-hidden md:overflow-visible">
-                <div class="w-20 h-[96px] shrink-0 flex flex-col gap-[6px] md:hidden" data-slider="product-thumbs">
+                <div class="w-20 h-[427px] lg:h-[336px] shrink-0 flex flex-col gap-[6px] md:hidden"
+                  data-slider="product-thumbs">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide border-[2px] border-[#EDEDED] rounded-2xl overflow-hidden">
                       <picture class="size-full flex items-center justify-center">
@@ -640,23 +641,23 @@
                 <div
                   class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
                   <div class="font-medium text-[#323338B2]">Автоматика</div>
-                  <div class="font-semibold text-[#3B8BEA]">
+                  <a href="#" class="font-semibold text-[#3B8BEA] cursor-pointer">
                     Zentec
-                  </div>
+                  </a>
                 </div>
                 <div
                   class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
                   <div class="font-medium text-[#323338B2]">Гарантия</div>
-                  <div class="font-semibold text-[#3B8BEA]">
+                  <a href="#" class="font-semibold text-[#3B8BEA] cursor-pointer">
                     2 года
-                  </div>
+                  </a>
                 </div>
                 <div
                   class="grid grid-cols-[130px_1fr] items-start gap-4 text-sm leading-[143%] md:grid-cols-[110px_1fr]">
                   <div class="font-medium text-[#323338B2]">Габариты</div>
-                  <div class="font-semibold text-[#3B8BEA]">
+                  <a href="#" class="font-semibold text-[#3B8BEA] cursor-pointer">
                     408 × 278 × 153
-                  </div>
+                  </a>
                 </div>
               </div>
               <button
@@ -686,20 +687,22 @@
                   <div class="text-lg leading-[130%] font-semibold lg:text-xs">5%</div>
                 </div>
                 <div class="flex items-center gap-[10px]">
-                  <div
+                  <div data-counter="block"
                     class="w-[120px] flex items-center justify-between py-[14px] px-4 bg-[#DBDBDB] rounded-xl shrink-0">
-                    <button type="button" class="flex items-center justify-center size-[15px] cursor-pointer">
+                    <button type="button" class="flex items-center justify-center size-[15px] cursor-pointer"
+                      data-counter="minus">
                       <svg class="size-[15px]" width="16" height="16" viewBox="0 0 16 16" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4297 8H2.42969V7H13.4297V8Z"
                           fill="#323338" />
                       </svg>
                     </button>
-                    <input type="text"
+                    <input type="text" data-counter="input" data-count="1"
                       class="block w-full h-[15px] text-[11px] leading-[150%] font-semibold text-center outline-none"
                       value="1 шт">
                     <button type="button"
-                      class="flex items-center justify-center size-[15px] outline-none cursor-pointer">
+                      class="flex items-center justify-center size-[15px] outline-none cursor-pointer"
+                      data-counter="plus">
                       <svg class="size-[15px]" width="16" height="16" viewBox="0 0 16 16" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -745,9 +748,9 @@
                   </span>
                 </div>
               </div>
-              <div class="text-sm font-medium leading-[140%] mt-3 text-[#3B8BEA] lg:mt-[10px]">
+              <a href="#" class="text-sm font-medium leading-[140%] mt-3 text-[#3B8BEA] lg:mt-[10px] cursor-pointer">
                 Ознакомиться с условиями доставки и оплаты
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -784,7 +787,7 @@
                       <span
                         class="relative text-sm leading-[140%] pr-[2px] font-medium text-[#5A5B5F] bg-white z-1">Категория</span>
                     </div>
-                    <div class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium lg:w-[55%] md:w-full">Шкаф
+                    <div class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium lg:w-[55%] md:w-full md:pl-0">Шкаф
                       управления</div>
                   </div>
                   <div class="flex items-bottom leading-0 md:flex-col md:gap-1">
@@ -794,10 +797,10 @@
                       <span
                         class="relative text-sm leading-[140%] pr-[2px] font-medium text-[#5A5B5F] bg-white z-1">Производитель</span>
                     </div>
-                    <div
-                      class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium text-[#3B8BEA] lg:w-[55%] md:w-full">
+                    <a href="#"
+                      class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium text-[#3B8BEA] lg:w-[55%] md:w-full cursor-pointer">
                       ГК ВентАвтоматика,
-                      Россия</div>
+                      Россия</a>
                   </div>
                   <div class="flex items-bottom leading-0 md:flex-col md:gap-1">
                     <div class="relative w-[42%] lg:w-[45%] md:w-full
@@ -806,10 +809,10 @@
                       <span
                         class="relative text-sm leading-[140%] pr-[2px] font-medium text-[#5A5B5F] bg-white z-1">Гарантия</span>
                     </div>
-                    <div
-                      class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium text-[#3B8BEA] lg:w-[55%] md:w-full">
+                    <a href="#"
+                      class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium text-[#3B8BEA] lg:w-[55%] md:w-full cursor-pointer">
                       2 года
-                    </div>
+                    </a>
                   </div>
                   <div class="flex items-bottom leading-0 md:flex-col md:gap-1">
                     <div class="relative w-[42%] lg:w-[45%] md:w-full
@@ -821,7 +824,8 @@
                         корпус
                       </span>
                     </div>
-                    <div class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium lg:w-[55%] md:w-full">пластик</div>
+                    <div class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium lg:w-[55%] md:w-full md:pl-0">
+                      пластик</div>
                   </div>
                   <div class="flex items-bottom leading-0 md:flex-col md:gap-1">
                     <div class="relative w-[42%] lg:w-[45%] md:w-full
@@ -856,7 +860,7 @@
                         Управление однофазным приточным вентилятором
                       </span>
                     </div>
-                    <div class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium lg:w-[55%] md:w-full">
+                    <div class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium lg:w-[55%] md:w-full md:pl-0">
                       (~220В) сумарной мощностью до 1,5кВт
                     </div>
                   </div>
@@ -869,7 +873,7 @@
                         Управление однофазным втяжным вентилятором
                       </span>
                     </div>
-                    <div class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium lg:w-[55%] md:w-full">
+                    <div class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium lg:w-[55%] md:w-full md:pl-0">
                       (~220В) сумарной мощностью до 1,5кВт
                     </div>
                   </div>
@@ -882,7 +886,7 @@
                         Управление вентиляторами
                       </span>
                     </div>
-                    <div class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium lg:w-[55%] md:w-full">
+                    <div class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium lg:w-[55%] md:w-full md:pl-0">
                       Сблокированное включение
                     </div>
                   </div>
@@ -895,7 +899,7 @@
                         Тип пуска вентилятора
                       </span>
                     </div>
-                    <div class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium lg:w-[55%] md:w-full">
+                    <div class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium lg:w-[55%] md:w-full md:pl-0">
                       Прямой пуск, есть возможность управления внешними преобразователями частоты или регуляторами
                       скорости (клеммы для управления скоростью 0–10В)
                     </div>
@@ -909,7 +913,7 @@
                         Контроль работы двигателей вентилятора
                       </span>
                     </div>
-                    <div class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium lg:w-[55%] md:w-full">
+                    <div class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium lg:w-[55%] md:w-full md:pl-0">
                       По датчику перепада давления или термоконтактам
                     </div>
                   </div>
@@ -923,16 +927,17 @@
                     </div>
                     <div
                       class="w-[58%] text-sm leading-[140%] pl-[2px] font-medium self-end lg:w-[55%] md:w-full md:pl-0">
-                      <ul class="flex flex-col items-start gap-3 list-disc pl-6 font-medium pt-1 leading-0 lg:pl-3 md:pl-5 md:pt-0">
+                      <ul
+                        class="flex flex-col items-start gap-3 list-disc pl-6 font-medium pt-1 leading-0 lg:pl-3 md:pl-5 md:pt-0">
                         <li class="text-sm leading-[143%] font-medium">
                           ~220В, мощностью до 3кВт
                         </li>
                         <li class="text-sm leading-[143%] font-medium">
-                          Плавное управление однофазным (~220В) электрическим нагревателем при помощи ШИМ (0–10В),
-                          мощностью до 3кВт
+                          Плавное управление однофазным(~220В) электрическим нагревателем при помощи ШИМ (0–10В),
+                          мощностью до 3кВт
                         </li>
                         <li class="text-sm leading-[143%] font-medium">
-                          Защита электрического нагревателя по термоконтакту калорифера
+                          Защита электрического нагревателя по термоконтакту калорифера
                         </li>
                         <li class="text-sm leading-[143%] font-medium">
                           Автоматическое отключение нагревателя при отказе вентилятора (при установке реле давления
@@ -1042,7 +1047,7 @@
                       stroke="#323338" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg>
-                  <span>Оборудование поставляется предварительно настроенным — необходимо только подключить</span>
+                  <span>Оборудование поставляется предварительно настроенным — необходимо только подключить</span>
                 </div>
               </div>
             </div>
@@ -1169,7 +1174,8 @@
           <h2 class="text-[34px] leading-[130%] text-primary font-bold lg:text-[30px] md:text-2xl">
             С этим товаром покупают
           </h2>
-          <div class="text-[17px] leading-[140%] font-medium text-[#323338CC] md:text-[15px]">При покупке щита комплект поставляется со
+          <div class="text-[17px] leading-[140%] font-medium text-[#323338CC] md:text-[15px]">При покупке щита комплект
+            поставляется со
             скидкой</div>
         </div>
         <div class="overflow-hidden lg:overflow-visible lg:relative" data-slider="recomended">
@@ -1773,7 +1779,57 @@
         </div>
       </div>
     </section>
+    <section class="hidden md:block p-6 bg-white fixed bottom-0 l-0 w-full py-4 px-6 z-10
+      shadow-[0px_-3px_7px_0px_#00000008,0px_-13px_13px_0px_#00000008,0px_-30px_18px_0px_#00000005,0px_-54px_22px_0px_#00000000,0px_-84px_24px_0px_#00000000]">
+      <div class="flex flex-col items-start">
+        <div class="text-2xl leading-[140%] font-semibold text-[#5A5B5F] mb-3">43 780 ₽</div>
+        <div class="flex items-center gap-[10px] w-full">
+          <div data-counter="block"
+            class="w-[120px] flex items-center justify-between py-[14px] px-4 bg-[#DBDBDB] rounded-xl shrink-0">
+            <button type="button" class="flex items-center justify-center size-[15px] cursor-pointer"
+              data-counter="minus">
+              <svg class="size-[15px]" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4297 8H2.42969V7H13.4297V8Z" fill="#323338" />
+              </svg>
+            </button>
+            <input type="text" data-counter="input" data-count="1"
+              class="block w-full h-[15px] text-[11px] leading-[150%] font-semibold text-center outline-none"
+              value="1 шт">
+            <button type="button" class="flex items-center justify-center size-[15px] outline-none cursor-pointer"
+              data-counter="plus">
+              <svg class="size-[15px]" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4297 8.11114H2.42969V6.88892H13.4297V8.11114Z"
+                  fill="#323338" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.54058 2V13H7.31836L7.31836 2H8.54058Z"
+                  fill="#323338" />
+              </svg>
+            </button>
+          </div>
+          <button
+            class="w-full flex items-center justify-center gap-[6px] py-[13px] px-[30px] bg-[#3B8BEA] flex-grow-1
+                    rounded-xl text-white text-center font-semibold cursor-pointer hover:bg-[#323338] transition-colors">
+            <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.90598 4.96875L4.40573 2.71875H2.95898" stroke="white" stroke-width="1.2"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M6.22775 11.1262L4.90625 4.96875H14.3997C14.8775 4.96875 15.233 5.409 15.1332 5.87625L14.0067 11.1262C13.9325 11.472 13.6272 11.7187 13.2732 11.7187H6.9605C6.60725 11.7187 6.302 11.472 6.22775 11.1262Z"
+                stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M13.5278 14.4375C13.3726 14.4375 13.2466 14.5635 13.2481 14.7188C13.2481 14.874 13.3741 15 13.5293 15C13.6846 15 13.8106 14.874 13.8106 14.7188C13.8098 14.5635 13.6838 14.4375 13.5278 14.4375"
+                stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M7.07115 14.4375C6.9159 14.4375 6.7899 14.5635 6.7914 14.7188C6.79065 14.874 6.91665 15 7.0719 15C7.22715 15 7.35315 14.874 7.35315 14.7188C7.35315 14.5635 7.22715 14.4375 7.07115 14.4375"
+                stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="text-xs leading-[140%] font-semibold">В корзину</span>
+          </button>
+        </div>
+      </div>
+    </section>
   </main>
+  
   <footer class="py-16 bg-[#323338] text-white rounded-t-3xl lg:py-10 md:py-8 relative z-1">
   <div class="my-container">
     <div class="flex items-start gap-4 lg:flex-col lg:pt-0 lg:gap-0">
