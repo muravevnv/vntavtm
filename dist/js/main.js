@@ -137,12 +137,14 @@ document.addEventListener("DOMContentLoaded", () => {
       spaceBetween: 6,
       direction: "vertical",
       reverseDirection: true,
+      speed: 1000,
       loop: true,
     });
 
     const productSwiper = new Swiper(productSlider, {
       slidesPerView: 1,
       spaceBetween: 32,
+      speed: 1000,
       loop: true,
       navigation: {
         nextEl: '[data-slider-next="product-slider"]',
