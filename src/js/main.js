@@ -319,6 +319,19 @@ document.addEventListener("DOMContentLoaded", () => {
   $video.on("ended", function () {
     $playIcon.show();
   });
+
+  $("[data-select]").each(function () {
+    const $select = $(this);
+
+    const options = {
+      theme: "default",
+      width: "100%",
+      language: "ru",
+      placeholder: $select.find('option[value=""]').text(),
+    };
+
+    $select.select2(options);
+  });
 });
 
 $(document).ready(function () {
@@ -508,7 +521,7 @@ $(document).ready(function () {
   });
 
   $('[data-hidden-block="controller"]').on("click", function () {
-    const content = $(this).prev('[data-hidden-block="content"]');
+    const content = $('[data-hidden-block="content"]');
     const toggleBtn = $('[data-hidden-block="btn"]');
     const textBtnUp = toggleBtn.attr("data-text-up");
     const textBtnDown = toggleBtn.attr("data-text-down");

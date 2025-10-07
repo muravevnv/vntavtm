@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body class="text-graphite">
   @@include('header.html')
   @@include('menu.html')
@@ -52,6 +53,41 @@
             Отправить проект
           </button>
           @@include('popups/sent-project.html')
+        </div>
+        <div x-data="{openEnterPopup: false}">
+          <button @click='openEnterPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+                font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+            Войти в профиль
+          </button>
+          @@include('popups/enter.html')
+        </div>
+        <div x-data="{openAccRecoveryPopup: false}">
+          <button @click='openAccRecoveryPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+                font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+            Восстановление аккаунта
+          </button>
+          @@include('popups/account-recovery.html')
+        </div>
+        <div x-data="{openAccRecoverySuccessPopup: false}">
+          <button @click='openAccRecoverySuccessPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+                font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+            Восстановление аккаунта. Успешная отправка
+          </button>
+          @@include('popups/account-recovery-success.html')
+        </div>
+        <div x-data="{openAccNewPasswordPopup: false}">
+          <button @click='openAccNewPasswordPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+                font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+            Создание нового пароля
+          </button>
+          @@include('popups/account-password.html')
+        </div>
+        <div x-data="{openPasswordSuccessPopup: false}">
+          <button @click='openPasswordSuccessPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+                font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+            Пароль успешно сохранен
+          </button>
+          @@include('popups/account-password-success.html')
         </div>
       </div>
     </section>
