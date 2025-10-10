@@ -156,19 +156,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Сброс при открытии попапа
-  $(document).on("click", "[data-popup-scrollable]", function () {
-    const $popup = $(this);
-    setTimeout(() => {
-      const $content = $popup.find(".md\\:overflow-auto").first();
-      if ($content.length) {
-        $content.scrollTop(0);
-        $popup.find("[data-popup-top-panel]").removeClass("is-shadow");
-        $popup.find("[data-popup-bottom-panel]").addClass("is-shadow");
-      }
-    }, 100);
-  });
-
   $('[data-catalog-block="toggle-btn"]').on("click", function () {
     const $parent = $(this).closest('[data-catalog-block="block"]');
     const $content = $parent.find('[data-catalog-block="content"]');
@@ -332,6 +319,43 @@ document.addEventListener("DOMContentLoaded", () => {
 
     $select.select2(options);
   });
+
+  function initAllModalShadows() {
+    $("[data-popup-bottom-panel]").each(function () {
+      var $panel = $(this);
+      var $content = $panel.closest("[data-popup-scrollable]");
+
+      function checkScroll() {
+        var scrollTop = $content.scrollTop();
+        var innerHeight = $content.innerHeight();
+        var scrollHeight = $content[0].scrollHeight;
+
+        console.log(
+          "scrollTop:",
+          scrollTop,
+          "innerHeight:",
+          innerHeight,
+          "scrollHeight:",
+          scrollHeight
+        );
+
+        if (scrollTop + innerHeight >= scrollHeight - 2) {
+          $panel.addClass("is-end");
+        } else {
+          $panel.removeClass("is-end");
+        }
+      }
+
+      $content.off("scroll.modalShadow").on("scroll.modalShadow", checkScroll);
+      $panel.data("scroll-initialized", true);
+
+      // Первоначальная проверка
+      setTimeout(checkScroll, 50);
+    });
+  }
+
+  // Инициализируем при загрузке
+  initAllModalShadows();
 });
 
 $(document).ready(function () {

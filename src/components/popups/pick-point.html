@@ -1,0 +1,90 @@
+<div x-show="openPickPointPopup" x-cloak role="dialog" aria-modal="true"
+  class="fixed inset-0 w-[100vw] h-[100svh] z-50 overflow-y-auto md:pt-[50px]">
+  <div class="absolute inset-0 size-full bg-[#00000066] z-0"></div>
+  <div class="flex items-center justify-center w-full min-h-screen md:items-end">
+    <div x-show="openPickPointPopup" x-transition:enter="ease-out duration-300"
+      x-transition:enter-start="opacity-0 translate-y-4 sm:scale-95"
+      x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100" x-transition:leave="ease-in duration-200"
+      x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
+      x-transition:leave-end="opacity-0 translate-y-4 sm:scale-95" class="relative max-w-[963px] w-full p-8 bg-white rounded-3xl z-2 
+      lg:max-w-[680px] lg:pt-4 lg:pb-5 lg:px-6 md:max-w-full md:rounded-b-none md:p-6">
+      <div class="flex items-center justify-between mb-6 md:items-start">
+        <h2 class="text-[34px] leading-[130%] text-[#323338] font-bold lg:text-[30px] md:text-2xl">
+          Добавить адрес доставки
+        </h2>
+        <button @click='openPickPointPopup = false' type="button" class="flex items-center justify-center size-8 rounded-full 
+          bg-[#F4F6FB] text-[#323338] cursor-pointer hover:bg-[#323338] hover:text-white transition-all">
+          <svg class="size-[14px]" width="14" height="14" viewBox="0 0 14 14" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.6665 1.66699L12.3332 12.3337" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M12.3332 1.66699L1.6665 12.3337" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <form action="#" class="w-full mb-4">
+        <div class="w-full relative">
+          <svg class="size-6 absolute top-1/2 left-4 -translate-y-1/2" width="24" height="24" viewBox="0 0 24 24"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11.5127 18.3562C7.7333 18.3562 4.66797 15.2909 4.66797 11.5115C4.66797 7.73208 7.7333 4.66675 11.5127 4.66675C15.294 4.66675 18.3575 7.73208 18.3575 11.5115C18.3575 15.2909 15.294 18.3562 11.5127 18.3562"
+              stroke="#323338" style="stroke:#323338;stroke:color(display-p3 0.1961 0.2000 0.2196);stroke-opacity:1;"
+              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M19.3346 19.3334L16.3555 16.3542" stroke="#323338"
+              style="stroke:#323338;stroke:color(display-p3 0.1961 0.2000 0.2196);stroke-opacity:1;" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <input type="text" placeholder="Введите адрес" class="block w-full px-4 pl-[52px] py-[18px] bg-[#F4F6FB] 
+          text-[#323338] text-[15px] leading-[147%] font-medium rounded-2xl outline-none">
+        </div>
+      </form>
+      <div class="flex flex-col items-start gap-4 mb-5 md:mb-4">
+        <label class="flex items-start cursor-pointer">
+          <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer">
+          <span
+            class="relative inline-block shrink-0 mr-3 size-5 border-1 border-gray-300 rounded-md bg-no-repeat bg-center peer-checked:bg-[url('../img/icons/checked.svg')] peer-checked:border-[#3B8BEA]"></span>
+          <span class="text-xs text-[#78859F] leading-[140%] font-medium">
+            <span class="text-sm text-[#323338] md:text-xs">ПЭК</span> ВНИМАНИЕ! При выборе ПЭК доставка оплачивается получателем на терминале транспортной компании
+          </span>
+        </label>
+         <label class="flex items-start cursor-pointer">
+          <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer">
+          <span
+            class="relative inline-block shrink-0 mr-3 size-5 border-1 border-gray-300 rounded-md bg-no-repeat bg-center peer-checked:bg-[url('../img/icons/checked.svg')] peer-checked:border-[#3B8BEA]"></span>
+          <span class="text-xs text-[#78859F] leading-[140%] font-medium">
+            <span class="text-sm text-[#323338] md:text-xs">Деловые линии</span> ВНИМАНИЕ! При выборе ПЭК доставка оплачивается получателем на терминале транспортной компании
+          </span>
+        </label>
+         <label class="flex items-start cursor-pointer">
+          <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer">
+          <span
+            class="relative inline-block shrink-0 mr-3 size-5 border-1 border-gray-300 rounded-md bg-no-repeat bg-center peer-checked:bg-[url('../img/icons/checked.svg')] peer-checked:border-[#3B8BEA]"></span>
+          <span class="text-xs text-[#78859F] leading-[140%] font-medium">
+            <span class="text-sm text-[#323338] md:text-xs">СДЭК</span> ВНИМАНИЕ! При выборе ПЭК доставка оплачивается получателем на терминале транспортной компании
+          </span>
+        </label>
+         <label class="flex items-start cursor-pointer">
+          <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer">
+          <span
+            class="relative inline-block shrink-0 mr-3 size-5 border-1 border-gray-300 rounded-md bg-no-repeat bg-center peer-checked:bg-[url('../img/icons/checked.svg')] peer-checked:border-[#3B8BEA]"></span>
+          <span class="text-xs text-[#78859F] leading-[140%] font-medium">
+            <span class="text-sm text-[#323338] md:text-xs">Яндекс.Маркет</span> ВНИМАНИЕ! При выборе ПЭК доставка оплачивается получателем на терминале транспортной компании
+          </span>
+        </label>
+      </div>
+      <div class="flex flex-col items-start gap-[10px] mb-5 md:mb-4">
+        <div class="flex items-center gap-[6px] text-sm text-[#5A5B5F] font-medium lg:flex-col lg:items-start">
+          Выбранная транспортная:
+          <span class="text-[#323338] font-semibold">СДЭК</span>
+        </div>
+        <div class="flex items-center gap-[6px] text-sm text-[#5A5B5F] font-medium lg:flex-col lg:items-start">
+          Адрес выбранного пункта выдачи:
+          <span class="text-[#323338] font-semibold">г. Москва, Нижний Сусальный переулок, 5 стр. 1, помещение 23</span>
+        </div>
+      </div>
+      <div class="w-full h-[442px] rounded-2xl overflow-hidden lg:h-[336px] md:h-[330px] md:mb-4" id="pick-point-map">
+      </div>
+    </div>
+  </div>
+</div>
