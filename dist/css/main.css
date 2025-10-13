@@ -4406,11 +4406,6 @@
       color: #3B8BEA;
     }
   }
-  .lg\:text-\[\#5A5B5F\] {
-    @media (max-width: 1023px) {
-      color: #5A5B5F;
-    }
-  }
   .lg\:text-white {
     @media (max-width: 1023px) {
       color: var(--color-white);
@@ -6772,7 +6767,7 @@
 }
 .select2-dropdown {
   border: 1px solid #f2f2f3;
-  background-color: #f2f2f3;
+  background-color: #FFFFFF;
   border-radius: 0 0 16px 16px;
   box-shadow: 0px 2px 24px 0px #0000001f;
 }
@@ -6930,6 +6925,7 @@
   line-height: 140%;
   border-radius: 16px;
   transition: 0.3s ease;
+  cursor: pointer;
   @media (max-width: 767px) {
     right: auto;
     left: 24px;
