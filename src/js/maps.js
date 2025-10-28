@@ -99,9 +99,8 @@ $(document).ready(function () {
           // balloonContent полностью удален
         },
         {
-
           iconLayout: "default#image",
-          iconImageHref: "/img/icons/map-pin.png",
+          iconImageHref: "../dist/img/icons/map-pin.png",
           iconImageSize: [16, 24],
           iconImageOffset: [-8, -16],
         }
