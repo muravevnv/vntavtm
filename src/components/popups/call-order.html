@@ -1,58 +1,59 @@
 <div x-show="openCallOrderPopup" x-cloak role="dialog" aria-modal="true"
   class="fixed inset-0 w-[100vw] h-[100svh] z-50 overflow-y-auto">
   <div class="absolute inset-0 size-full bg-[#00000066] z-0"></div>
-  <div class="flex items-center justify-center w-full min-h-screen md:items-end">
-    <div x-show="openCallOrderPopup" x-transition:enter="ease-out duration-300"
-      x-transition:enter-start="opacity-0 translate-y-4 sm:scale-95"
-      x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100" x-transition:leave="ease-in duration-200"
-      x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
-      x-transition:leave-end="opacity-0 translate-y-4 sm:scale-95"
-      class="relative max-w-[730px] w-full p-8 bg-white rounded-3xl z-2 
+  <div class="w-full h-full min-h-full overflow-y-auto p-5 md:p-0">
+    <div class="w-full min-h-full flex flex-col items-center justify-center md:justify-end">
+      <div x-show="openCallOrderPopup" x-transition:enter="ease-out duration-300"
+        x-transition:enter-start="opacity-0 translate-y-4 sm:scale-95"
+        x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100" x-transition:leave="ease-in duration-200"
+        x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
+        x-transition:leave-end="opacity-0 translate-y-4 sm:scale-95" class="relative max-w-[730px] w-full p-8 bg-white rounded-3xl z-2 
       lg:max-w-[578px] lg:pt-4 lg:pb-5 lg:px-6 md:max-w-full md:rounded-b-none md:pt-6 md:pb-[42px]">
-      <div class="flex items-center justify-between mb-6 md:items-start">
-        <h2 class="text-[34px] leading-[130%] text-[#323338] font-bold lg:text-[30px] md:text-2xl">
-          Заказать звонок
-        </h2>
-        <button @click='openCallOrderPopup = false' type="button" class="flex items-center justify-center size-8 rounded-full 
+        <div class="flex items-center justify-between mb-6 md:items-start">
+          <h2 class="text-[34px] leading-[130%] text-[#323338] font-bold lg:text-[30px] md:text-2xl">
+            Заказать звонок
+          </h2>
+          <button @click='openCallOrderPopup = false' type="button" class="flex items-center justify-center size-8 rounded-full 
           bg-[#F4F6FB] text-[#323338] cursor-pointer hover:bg-[#323338] hover:text-white transition-all">
-          <svg class="size-[14px]" width="14" height="14" viewBox="0 0 14 14" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.6665 1.66699L12.3332 12.3337" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-            <path d="M12.3332 1.66699L1.6665 12.3337" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </button>
-      </div>
-      <form action="#" class="w-full flex items-start flex-col gap-6 md:gap-5">
-        <div class="w-full flex items-start flex-col gap-3">
-          <div class="w-full flex items-start flex-col gap-2">
-            <label for="" class="text-[#323338] text-sm leading-[140%] font-medium">Телефон</label>
-            <input type="tel" placeholder="+7"
-              class="block w-full px-4 py-[18px] bg-[#F4F6FB] text-[#323338] text-[15px] leading-[147%] font-medium rounded-2xl outline-none">
-          </div>
-          <div class="w-full flex items-start flex-col gap-2">
-            <label for="" class="text-[#323338] text-sm leading-[140%] font-medium">Имя</label>
-            <input type="text" placeholder="Имя"
-              class="block w-full px-4 py-[18px] bg-[#F4F6FB] text-[#323338] text-[15px] leading-[147%] font-medium rounded-2xl outline-none">
-          </div>
-        </div>
-        <div class="flex flex-col gap-3">
-          <label class="flex items-start cursor-pointer">
-            <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer">
-            <span
-              class="relative inline-block shrink-0 mr-3 size-5 border-1 border-gray-300 rounded-md bg-no-repeat bg-center peer-checked:bg-[url('../img/icons/checked.svg')] peer-checked:border-[#3B8BEA]"></span>
-            <span class="text-[14px] leading-[140%] font-medium">
-              Нажимая на кнопку «Отправить», вы подтверждаете своё согласие на <a href="#"
-                class="text-primary hover:underline">обработку персональных данных</a>
-            </span>
-          </label>
-          <button type="submit" class="w-full flex items-center justify-center gap-2 p-5 rounded-2xl bg-primary 
-            font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
-            Заказать
+            <svg class="size-[14px]" width="14" height="14" viewBox="0 0 14 14" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.6665 1.66699L12.3332 12.3337" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M12.3332 1.66699L1.6665 12.3337" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </button>
         </div>
-      </form>
+        <form action="#" class="w-full flex items-start flex-col gap-6 md:gap-5">
+          <div class="w-full flex items-start flex-col gap-3">
+            <div class="w-full flex items-start flex-col gap-2">
+              <label for="" class="text-[#323338] text-sm leading-[140%] font-medium">Телефон</label>
+              <input type="tel" placeholder="+7" data-required
+                class="block w-full px-4 py-[17px] bg-[#F4F6FB] border-1 border-[#F4F6F8] text-[#323338] text-[15px] leading-[147%] font-medium rounded-2xl outline-none">
+            </div>
+            <div class="w-full flex items-start flex-col gap-2">
+              <label for="" class="text-[#323338] text-sm leading-[140%] font-medium">Имя</label>
+              <input type="text" placeholder="Имя" data-required
+                class="block w-full px-4 py-[17px] bg-[#F4F6FB] border-1 border-[#F4F6F8] text-[#323338] text-[15px] leading-[147%] font-medium rounded-2xl outline-none">
+            </div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <label class="flex items-start cursor-pointer">
+              <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer" data-required>
+              <span
+                class="relative inline-block shrink-0 mr-3 size-5 border-1 border-gray-300 rounded-md bg-no-repeat bg-center peer-checked:bg-[url('../img/icons/checked.svg')] peer-checked:border-[#3B8BEA]"></span>
+              <span class="text-[14px] leading-[140%] font-medium">
+                Нажимая на кнопку «Отправить», вы подтверждаете своё согласие на <a href="#"
+                  class="text-primary hover:underline">обработку персональных данных</a>
+              </span>
+            </label>
+            <button type="submit" class="w-full flex items-center justify-center gap-2 p-5 rounded-2xl bg-primary 
+            font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+              Заказать
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </div>

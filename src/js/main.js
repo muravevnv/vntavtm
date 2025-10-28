@@ -593,6 +593,90 @@ $(document).ready(function () {
     }
   });
 
+  //Показ скрытие пароля в форме
+
+  $('[data-password="toggle"]').on("click", function () {
+    var $input = $(this)
+      .closest('[data-password="block"]')
+      .find('[data-password="input"]');
+    $input.attr(
+      "type",
+      $input.attr("type") === "password" ? "text" : "password"
+    );
+    $(this).toggleClass("is-active");
+  });
+
+  // Функция валидации формы
+  function validateForm(form) {
+    let isValid = true;
+
+    // Находим все обязательные поля в форме
+    $(form)
+      .find("[data-required]")
+      .each(function () {
+        const $field = $(this);
+        const $parent = $field.parent(); 
+
+        // Проверяем заполненность поля
+        if (!isFieldFilled($field)) {
+          isValid = false;
+          $field.addClass("is-error");
+          $parent.addClass("is-error");
+        } else {
+          $field.removeClass("is-error");
+          $parent.removeClass("is-error");
+        }
+      });
+
+    return isValid;
+  }
+
+  // Функция проверки заполненности поля в зависимости от его типа
+  function isFieldFilled($field) {
+    const fieldType = $field.attr("type");
+    const value = $field.val().trim();
+
+    if (fieldType === "checkbox" || fieldType === "radio") {
+      return $field.is(":checked");
+    }
+
+    // Для текстовых полей, textarea и других
+    return value !== "";
+  }
+
+  // Обработчик отправки формы
+  $("form").on("submit", function (e) {
+    if (!validateForm(this)) {
+      e.preventDefault();
+    }
+  });
+
+  $('[data-coockies-accept]').on('click', function () {
+    $('[data-coockies]').remove();
+  });
+
+  $('[data-contacts="toggle"]').on('click', function () {
+    $('[data-contacts="popup"]').toggleClass('opacity-0 pointer-events-none');
+  });
+
+  $(document).on('click', function (e) {
+    if (
+      !$(e.target).closest('[data-contacts="toggle"]').length &&
+      !$(e.target).closest('[data-contacts="popup"]').length
+    ) {
+      $('[data-contacts="popup"]').addClass('opacity-0 pointer-events-none');
+    }
+  })
+
+  // Обработчик фокуса на поле с ошибкой
+  $(document).on("focus", ".is-error", function () {
+    const $field = $(this);
+    const $parent = $field.parent();
+
+    $field.removeClass("is-error");
+    $parent.removeClass("is-error");
+  });
+
   // Функция обновления счетчика
   function updateCounter($input, value) {
     $input.data("count", value);

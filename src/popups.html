@@ -17,6 +17,8 @@
   @@include('header.html')
   @@include('menu.html')
   <main>
+
+
     <section class="py-[66px] lg:py-10">
       <div class="my-container">
         <div x-data="{openCallOrderPopup: false}">
@@ -47,6 +49,14 @@
           </button>
           @@include('popups/ask-question.html')
         </div>
+        <div x-data="{openReviewPopup: false}">
+          <button @click="openReviewPopup = true; document.body.classList.add('no-scroll')" type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+                font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+            Оставить отзыв
+          </button>
+          @@include('popups/review.html')
+        </div>
+        
         <div x-data="{openSentProjectPopup: false}">
           <button @click='openSentProjectPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
                 font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
@@ -54,9 +64,15 @@
           </button>
           @@include('popups/sent-project.html')
         </div>
+        <div x-data="{openSalesDepartmentPopup: false}">
+          <button @click='openSalesDepartmentPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+                font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+            Отдел продаж
+          </button>
+          @@include('popups/sales-department.html')
+        </div>
 
         <h3 class="text-xl font-semibold my-3">Авторизация</h3>
-
         <div x-data="{openEnterPopup: false}">
           <button @click='openEnterPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
                 font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
@@ -93,7 +109,6 @@
           @@include('popups/account-password-success.html')
         </div>
         <h3 class="text-xl font-semibold my-3">Авторизация</h3>
-
         <div x-data="{openDeliveryAddressPopup: false}">
           <button @click='openDeliveryAddressPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
                 font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
@@ -123,4 +138,5 @@
   @@include('scripts.html')
 
 </body>
+
 </html>

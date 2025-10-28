@@ -99,9 +99,9 @@ $(document).ready(function () {
           // balloonContent полностью удален
         },
         {
-          // Настройки внешнего вида маркера
+
           iconLayout: "default#image",
-          iconImageHref: "../img/icons/map-pin.png", // Синий круг с белым центром
+          iconImageHref: "/img/icons/map-pin.png",
           iconImageSize: [16, 24],
           iconImageOffset: [-8, -16],
         }
@@ -187,13 +187,6 @@ $(document).ready(function () {
         .addEventListener("click", function () {
           popup.style.display = "none";
         });
-
-      // Закрытие попапа при клике вне его области
-      deliveryMap.events.add("click", function (e) {
-        if (!popup.contains(e.get("target"))) {
-          popup.style.display = "none";
-        }
-      });
     }
   }
 });
