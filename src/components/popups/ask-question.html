@@ -15,7 +15,7 @@
               Добро пожаловать! <br>
               Задайте свой вопрос
             </h2>
-            <button @click='openAskQuestionPopup = false' type="button" class="flex items-center justify-center size-8 rounded-full 
+            <button @click="openAskQuestionPopup = false; document.body.classList.remove('no-scroll')" type="button" class="flex items-center justify-center size-8 rounded-full 
           bg-[#F4F6FB] text-[#323338] cursor-pointer hover:bg-[#323338] hover:text-white transition-all">
               <svg class="size-[14px]" width="14" height="14" viewBox="0 0 14 14" fill="none"
                 xmlns="http://www.w3.org/2000/svg">

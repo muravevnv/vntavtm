@@ -1049,6 +1049,14 @@
   border-color: #ff0000;
 }
 
+[data-required].is-error + [data-required-error] {
+  display: block;
+}
+
+.is-error svg {
+  color: #ff0000;
+}
+
 body.no-scroll {
   overflow: hidden;
   position: fixed;

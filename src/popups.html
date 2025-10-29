@@ -22,28 +22,28 @@
     <section class="py-[66px] lg:py-10">
       <div class="my-container">
         <div x-data="{openCallOrderPopup: false}">
-          <button @click='openCallOrderPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+          <button @click="openCallOrderPopup = true; document.body.classList.add('no-scroll')" type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
                 font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
             Заказать звонок
           </button>
           @@include('popups/call-order.html')
         </div>
         <div x-data="{openSuccessOrderPopup: false}">
-          <button @click='openSuccessOrderPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+          <button @click="openSuccessOrderPopup = true; document.body.classList.add('no-scroll')" type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
                 font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
             Заявка отправлена
           </button>
           @@include('popups/success-order.html')
         </div>
         <div x-data="{openGetCatalogPopup: false}">
-          <button @click='openGetCatalogPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+          <button @click="openGetCatalogPopup = true; document.body.classList.add('no-scroll')" type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
                 font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
             Получите каталог продукции
           </button>
           @@include('popups/get-catalog.html')
         </div>
         <div x-data="{openAskQuestionPopup: false}">
-          <button @click='openAskQuestionPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+          <button @click="openAskQuestionPopup = true; document.body.classList.add('no-scroll')" type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
                 font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
             Задать вопрос
           </button>
@@ -56,53 +56,63 @@
           </button>
           @@include('popups/review.html')
         </div>
-        
         <div x-data="{openSentProjectPopup: false}">
-          <button @click='openSentProjectPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+          <button @click="openSentProjectPopup = true; document.body.classList.add('no-scroll')" type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
                 font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
             Отправить проект
           </button>
           @@include('popups/sent-project.html')
         </div>
         <div x-data="{openSalesDepartmentPopup: false}">
-          <button @click='openSalesDepartmentPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+          <button @click="openSalesDepartmentPopup = true; document.body.classList.add('no-scroll')" type="button"
+            class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
                 font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
             Отдел продаж
           </button>
           @@include('popups/sales-department.html')
         </div>
-
+        <div x-data="{openDataSaveSuccessPopup: false}">
+          <button @click="openDataSaveSuccessPopup = true; document.body.classList.add('no-scroll')" type="button"
+            class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+                font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+            Данные сохранены
+          </button>
+          @@include('popups/data-save-success.html')
+        </div>
         <h3 class="text-xl font-semibold my-3">Авторизация</h3>
         <div x-data="{openEnterPopup: false}">
-          <button @click='openEnterPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+          <button @click="openEnterPopup = true; document.body.classList.add('no-scroll')" type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
                 font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
             Войти в профиль
           </button>
           @@include('popups/enter.html')
         </div>
+
         <div x-data="{openAccRecoveryPopup: false}">
-          <button @click='openAccRecoveryPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+          <button @click="openAccRecoveryPopup = true; document.body.classList.add('no-scroll')" type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
                 font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
             Восстановление аккаунта
           </button>
           @@include('popups/account-recovery.html')
         </div>
         <div x-data="{openAccRecoverySuccessPopup: false}">
-          <button @click='openAccRecoverySuccessPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+          <button @click="openAccRecoverySuccessPopup = true; document.body.classList.add('no-scroll')" type="button"
+            class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
                 font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
             Восстановление аккаунта. Успешная отправка
           </button>
           @@include('popups/account-recovery-success.html')
         </div>
         <div x-data="{openAccNewPasswordPopup: false}">
-          <button @click='openAccNewPasswordPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+          <button @click="openAccNewPasswordPopup = true; document.body.classList.add('no-scroll')" type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
                 font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
             Создание нового пароля
           </button>
           @@include('popups/account-password.html')
         </div>
         <div x-data="{openPasswordSuccessPopup: false}">
-          <button @click='openPasswordSuccessPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+          <button @click="openPasswordSuccessPopup = true; document.body.classList.add('no-scroll')" type="button"
+            class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
                 font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
             Пароль успешно сохранен
           </button>
@@ -110,21 +120,22 @@
         </div>
         <h3 class="text-xl font-semibold my-3">Авторизация</h3>
         <div x-data="{openDeliveryAddressPopup: false}">
-          <button @click='openDeliveryAddressPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+          <button @click="openDeliveryAddressPopup = true; document.body.classList.add('no-scroll')" type="button"
+            class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
                 font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
             Добавить адрес доставки
           </button>
           @@include('popups/delivery-address.html')
         </div>
         <div x-data="{openCompanyDataPopup: false}">
-          <button @click='openCompanyDataPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+          <button @click="openCompanyDataPopup = true; document.body.classList.add('no-scroll')" type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
                 font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
             Данные организации
           </button>
           @@include('popups/company-data.html')
         </div>
         <div x-data="{openPickPointPopup: false}">
-          <button @click='openPickPointPopup = true' type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+          <button @click="openPickPointPopup = true; document.body.classList.add('no-scroll')" type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
                 font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
             Добавить пункт выдачи
           </button>
