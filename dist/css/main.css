@@ -843,6 +843,9 @@
   .max-h-full {
     max-height: 100%;
   }
+  .min-h-6 {
+    min-height: calc(var(--spacing) * 6);
+  }
   .min-h-11 {
     min-height: calc(var(--spacing) * 11);
   }
@@ -1438,6 +1441,10 @@
     border-top-left-radius: var(--radius-3xl);
     border-top-right-radius: var(--radius-3xl);
   }
+  .rounded-b-2xl {
+    border-bottom-right-radius: var(--radius-2xl);
+    border-bottom-left-radius: var(--radius-2xl);
+  }
   .rounded-b-3xl {
     border-bottom-right-radius: var(--radius-3xl);
     border-bottom-left-radius: var(--radius-3xl);
@@ -1916,6 +1923,9 @@
   .pb-8 {
     padding-bottom: calc(var(--spacing) * 8);
   }
+  .pb-12 {
+    padding-bottom: calc(var(--spacing) * 12);
+  }
   .pb-16 {
     padding-bottom: calc(var(--spacing) * 16);
   }
@@ -2296,6 +2306,10 @@
   }
   .shadow-\[0px_2px_4px_0px_\#CCCCCC1A\,0px_7px_7px_0px_\#CDCDCD17\,0px_16px_10px_0px_\#D6D6D60D\,0px_29px_12px_0px_\#DFDFDF03\,0px_45px_13px_0px_\#E3E3E300\] {
     --tw-shadow: 0px 2px 4px 0px var(--tw-shadow-color, #CCCCCC1A), 0px 7px 7px 0px var(--tw-shadow-color, #CDCDCD17), 0px 16px 10px 0px var(--tw-shadow-color, #D6D6D60D), 0px 29px 12px 0px var(--tw-shadow-color, #DFDFDF03), 0px 45px 13px 0px var(--tw-shadow-color, #E3E3E300);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[0px_2px_24px_0px_\#0000001F\] {
+    --tw-shadow: 0px 2px 24px 0px var(--tw-shadow-color, #0000001F);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-\[7px_11px_28px_0px_\#00000014\,29px_42px_51px_0px_\#00000012\,64px_95px_69px_0px_\#0000000A\,114px_168px_81px_0px_\#00000003\,179px_263px_89px_0px_\#00000000\] {
@@ -4331,6 +4345,12 @@
     @media (max-width: 1023px) {
       font-size: var(--text-base);
       line-height: var(--tw-leading, var(--text-base--line-height));
+    }
+  }
+  .lg\:text-lg {
+    @media (max-width: 1023px) {
+      font-size: var(--text-lg);
+      line-height: var(--tw-leading, var(--text-lg--line-height));
     }
   }
   .lg\:text-sm {

@@ -227,6 +227,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const $searchInput = $('[data-search="input"]');
   const $clearBtn = $('[data-search="clear-btn"]');
+  const $searchResults = $('[data-search="results"]');
 
   // Функция для троттлинга
   function throttle(func, limit) {
@@ -253,8 +254,12 @@ document.addEventListener("DOMContentLoaded", () => {
   function handleInput() {
     if ($searchInput.val().trim() !== "") {
       $clearBtn.show();
+      
+      $searchResults.show();
     } else {
       $clearBtn.hide();
+
+      $searchResults.hide();
     }
     console.log("Search for:", $searchInput.val());
   }

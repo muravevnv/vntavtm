@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Каталог</title>
+  <title>Результаты поиска</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
@@ -474,59 +474,23 @@
   </div>
 </div>
   <main>
-    <section class="pt-[13px] lg:pt-3">
-      <div class="my-container">
-        <ul class="flex items-center gap-3 whitespace-nowrap">
-          <li class="flex items-center gap-3 text-sm leading-[140%] after:content-['/']">
-            <a href="#" class=" text-[#323338] font-medium hover:underline">Главная</a>
-          </li>
-          <li class="relative items-center gap-3 flex after:content-['/'] z-10">
-            <span class="flex items-center justify-center w-[46px] h-[20px] bg-[#EDEDED] rounded-3xl cursor-pointer"
-              data-breadcrumbs="toggle-btn">
-              <span class="relative top-[-5px]">...</span>
-            </span>
-            <ul
-              class="min-w-[350px] max-w-[350px] w-full mt-[17px] absolute flex flex-col top-[100%] items-start 
-              gap-[10px] bg-[#F4F6FB] rounded-2xl p-4 opacity-0 z-[-1] pointer-none md:left-[-85px] md:min-w-[300px] md:max-w-[300px]
-              shadow-[0px_2px_3px_0px_#0000001A,0px_6px_6px_0px_#00000017,-1px_14px_8px_0px_#0000000D,-1px_24px_10px_0px_#00000003,-2px_38px_11px_0px_#00000000]"
-              data-breadcrumbs="list">
-              <li class="text-xs leading-[140%] font-semibold text-[#5A5B5F] whitespace-normal">
-                <a href="#" class="hover:underline">Продукция</a>
-              </li>
-              <li class="text-xs leading-[140%] font-semibold text-[#5A5B5F] whitespace-normal">
-                <a href="#" class="hover:underline">Шкафы управления вентиляцией</a>
-              </li>
-              <li class="text-xs leading-[140%] font-semibold text-[#5A5B5F] whitespace-normal">
-                <a href="#" class="hover:underline">Шкафы управления приточно-вытяжной вентиляцией</a>
-              </li>
-            </ul>
-          </li>
-          <li class="text-sm leading-[140%] max-w-full min-w-[1px] line-clamp-1 overflow-hidden overflow-ellipsis">
-            <a href="#" class=" text-[#323338B2] font-medium pointer-events-none">
-              Шкафы управления приточно-вытяжной вентиляцией
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
+
     <section class="pt-[31px] lg:pt-6 lg:pb-0 md:pb-8">
       <div class="my-container">
         <div class="flex items-center justify-between gap-8 mb-[31px] lg:items-end lg:mb-6">
-          <h1 class="text-[34px] leading-[130%] font-bold text-[#3B8BEA] lg:text-[30px] md:text-2xl">
-            Щкафы управления приточно-вытяжной вентиляцией
+          <h1 class="text-2xl leading-[130%] font-bold text-[#32333899] lg:text-lg">
+            По запросу «управление вентиляцией» найдено 34 товара
           </h1>
-          <div class="text-[17px] leading-[140%] text-[#323338B2] font-medium shrink-0 md:hidden">38 товаров</div>
         </div>
         <div class="w-full flex items-start gap-6">
           <div class="w-[263px] shrink-0 overflow-hidden  lg:w-full lg:fixed lg:h-screen lg:inset-0 lg:z-99 lg:hidden"
             data-catalog-filters="popup">
             <div class="hidden lg:block lg:size-full lg:z-1 lg:bg-black lg:opacity-50"></div>
-            <div class="w-full bg-[#F4F6FB] p-5 rounded-xl lg:w-[375px] lg:absolute lg:left-0 lg:top-0 lg:h-screen 
+            <div class="w-full bg-[#F4F6FB] p-5 pb-12 rounded-xl lg:w-[375px] lg:absolute lg:left-0 lg:top-0 lg:h-screen 
               lg:z-2 lg:p-6 lg:rounded-none md:w-full">
               <div class="w-full flex flex-col lg:max-h-full lg:h-full lg:flex-1">
                 <div class="hidden lg:w-full lg:flex lg:items-center lg:justify-between lg:mb-5">
-                  <h3 class="text-2xl font-semibold text-[#323338] leading-[130%]">Фильтры</h3>
-                  <button type="button" class="size-8 flex items-center justify-center rounded-full bg-white"
+                  <button type="button" class="ml-auto size-8 flex items-center justify-center rounded-full bg-white"
                     data-catalog-filters="btn-close">
                     <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M0.80957 1.66663L11.4762 12.3333" stroke="#78859F"
@@ -544,220 +508,28 @@
                     <h4 class="flex items-center text-lg text-[#323338] font-semibold leading-[140%] mb-4 lg:mb-6">
                       <span>Продукция</span>
                     </h4>
-                    <ul class="flex flex-col items-start gap-[8px]">
+                    <ul class="flex flex-col items-start gap-3">
                       <li class="leading-0">
-                        <a href="#"
-                          class="flex items-start gap-[2px] text-sm leading-[140%] font-medium text-[#323338] lg:text-base">
-                          <svg class="text-[#3B8BEA] lg:size-6" width="25" height="25" viewBox="0 0 25 25" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14.5713 8.5L10.5713 12.5L14.5713 16.5" stroke="currentColor" stroke-width="1.5"
-                              stroke-linecap="round" stroke-linejoin="round" />
-                          </svg>
-                          <span>Шкафы управления вентиляцией</span>
-                        </a>
-                        <ul class="pl-[46px] pt-2 flex flex-col items-start gap-[9px] lg:pl-[46px]">
-                          <li class="leading-0">
-                            <a href="#" class="text-sm leading-[140%] font-medium text-[#323338] lg:text-base">Шкафы
-                              управления
-                              вентилятором</a>
-                          </li>
-                          <li class="leading-0">
-                            <a href="#" class="text-sm leading-[140%] font-medium text-[#323338] lg:text-base">
-                              Шкафы управления приточной вентиляцией
-                            </a>
-                          </li>
-                          <li class="leading-0">
-                            <a href="#" class="text-sm leading-[140%] font-medium text-[#3B8BEA] lg:text-base">
-                              Шкафы управления приточно-вытяжной вентиляцией
-                            </a>
-                          </li>
-                          <li class="leading-0">
-                            <a href="#" class="text-sm leading-[140%] font-medium text-[#323338] lg:text-base">
-                              Шкафы управления вентиляцией по технического заданию
-                            </a>
-                          </li>
-                        </ul>
+                        <a href="#" class="text-sm leading-[140%] font-medium text-[#323338]">Шкафы управления приточной
+                          вентиляцией (10)</a>
+                      </li>
+                      <li class="leading-0">
+                        <a href="#" class="text-sm leading-[140%] font-medium text-[#323338]">Шафы управления
+                          приточно-вытяжной вентиляцией (10)</a>
+                      </li>
+                      <li class="leading-0">
+                        <a href="#" class="text-sm leading-[140%] font-medium text-[#323338]">Шкафы управления
+                          вентилятором (10)</a>
                       </li>
                     </ul>
                   </div>
-                  <div class="w-full lg:pt-5 lg:border-t lg:border-[#EDEDED]">
-                    <h4 class="text-lg font-semibold leading-[140%] mb-4 lg:mb-6">Вентилятор</h4>
-                    <div class="flex flex-col items-start gap-3 lg:gap-4">
-                      <label class="flex items-start cursor-pointer">
-                        <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer" wfd-id="id3">
-                        <span
-                          class="relative inline-block shrink-0 mr-2 size-5 border-[2px] border-[#3B8BEA] rounded-md bg-no-repeat bg-center peer-checked:bg-[url('../img/icons/checked.svg')] peer-checked:border-[#3B8BEA]"></span>
-                        <span class="text-[14px] leading-[140%] font-medium">
-                          1-фазный (~220 В)
-                        </span>
-                      </label>
-                      <label class="flex items-start cursor-pointer">
-                        <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer" wfd-id="id3">
-                        <span
-                          class="relative inline-block shrink-0 mr-2 size-5 border-[2px] border-[#3B8BEA] rounded-md bg-no-repeat bg-center peer-checked:bg-[url('../img/icons/checked.svg')] peer-checked:border-[#3B8BEA]"></span>
-                        <span class="text-[14px] leading-[140%] font-medium">
-                          3-фазный (~380 В)
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="w-full lg:pt-5 lg:border-t lg:border-[#EDEDED]">
-                    <h4 class="text-lg font-semibold leading-[140%] mb-4 lg:mb-6">Тип пуска вентилятора</h4>
-                    <div class="flex flex-col items-start gap-3 lg:gap-4">
-                      <label class="flex items-start cursor-pointer">
-                        <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer" wfd-id="id3">
-                        <span
-                          class="relative inline-block shrink-0 mr-2 size-5 border-[2px] border-[#3B8BEA] rounded-md bg-no-repeat bg-center peer-checked:bg-[url('../img/icons/checked.svg')] peer-checked:border-[#3B8BEA]"></span>
-                        <span class="text-[14px] leading-[140%] font-medium">
-                          прямой пуск
-                        </span>
-                      </label>
-                      <label class="flex items-start cursor-pointer">
-                        <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer" wfd-id="id3">
-                        <span
-                          class="relative inline-block shrink-0 mr-2 size-5 border-[2px] border-[#3B8BEA] rounded-md bg-no-repeat bg-center peer-checked:bg-[url('../img/icons/checked.svg')] peer-checked:border-[#3B8BEA]"></span>
-                        <span class="text-[14px] leading-[140%] font-medium">
-                          регулятор скорости
-                        </span>
-                      </label>
-                      <label class="flex items-start cursor-pointer">
-                        <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer" wfd-id="id3">
-                        <span
-                          class="relative inline-block shrink-0 mr-2 size-5 border-[2px] border-[#3B8BEA] rounded-md bg-no-repeat bg-center peer-checked:bg-[url('../img/icons/checked.svg')] peer-checked:border-[#3B8BEA]"></span>
-                        <span class="text-[14px] leading-[140%] font-medium">
-                          преобразователь частоты
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="w-full lg:pt-5 lg:border-t lg:border-[#EDEDED]">
-                    <h4 class="text-lg font-semibold leading-[140%] mb-4 lg:mb-6">Тип калорифера</h4>
-                    <div class="flex flex-col items-start gap-3 lg:gap-4">
-                      <label class="flex items-start cursor-pointer">
-                        <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer" wfd-id="id3">
-                        <span
-                          class="relative inline-block shrink-0 mr-2 size-5 border-[2px] border-[#3B8BEA] rounded-md bg-no-repeat bg-center peer-checked:bg-[url('../img/icons/checked.svg')] peer-checked:border-[#3B8BEA]"></span>
-                        <span class="text-[14px] leading-[140%] font-medium">
-                          водяной (насос ~220В)
-                        </span>
-                      </label>
-                      <label class="flex items-start cursor-pointer">
-                        <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer" wfd-id="id3">
-                        <span
-                          class="relative inline-block shrink-0 mr-2 size-5 border-[2px] border-[#3B8BEA] rounded-md bg-no-repeat bg-center peer-checked:bg-[url('../img/icons/checked.svg')] peer-checked:border-[#3B8BEA]"></span>
-                        <span class="text-[14px] leading-[140%] font-medium">
-                          водяной (насос ~380В)
-                        </span>
-                      </label>
-                      <label class="flex items-start cursor-pointer">
-                        <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer" wfd-id="id3">
-                        <span
-                          class="relative inline-block shrink-0 mr-2 size-5 border-[2px] border-[#3B8BEA] rounded-md bg-no-repeat bg-center peer-checked:bg-[url('../img/icons/checked.svg')] peer-checked:border-[#3B8BEA]"></span>
-                        <span class="text-[14px] leading-[140%] font-medium">
-                          электрический (насос ~220В)
-                        </span>
-                      </label>
-                      <label class="flex items-start cursor-pointer">
-                        <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer" wfd-id="id3">
-                        <span
-                          class="relative inline-block shrink-0 mr-2 size-5 border-[2px] border-[#3B8BEA] rounded-md bg-no-repeat bg-center peer-checked:bg-[url('../img/icons/checked.svg')] peer-checked:border-[#3B8BEA]"></span>
-                        <span class="text-[14px] leading-[140%] font-medium">
-                          электрический (насос ~380В)
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="w-full lg:pt-5 lg:border-t lg:border-[#EDEDED]">
-                    <h4 class="text-lg font-semibold leading-[140%] mb-4 lg:mb-6">Охладитель</h4>
-                    <div class="flex flex-col items-start gap-3 lg:gap-4">
-                      <label class="flex items-start cursor-pointer">
-                        <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer" wfd-id="id3">
-                        <span
-                          class="relative inline-block shrink-0 mr-2 size-5 border-[2px] border-[#3B8BEA] rounded-md bg-no-repeat bg-center peer-checked:bg-[url('../img/icons/checked.svg')] peer-checked:border-[#3B8BEA]"></span>
-                        <span class="text-[14px] leading-[140%] font-medium">
-                          фреоновый
-                        </span>
-                      </label>
-                      <label class="flex items-start cursor-pointer">
-                        <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer" wfd-id="id3">
-                        <span
-                          class="relative inline-block shrink-0 mr-2 size-5 border-[2px] border-[#3B8BEA] rounded-md bg-no-repeat bg-center peer-checked:bg-[url('../img/icons/checked.svg')] peer-checked:border-[#3B8BEA]"></span>
-                        <span class="text-[14px] leading-[140%] font-medium">
-                          водяной
-                        </span>
-                      </label>
-                      <label class="flex items-start cursor-pointer">
-                        <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer" wfd-id="id3">
-                        <span
-                          class="relative inline-block shrink-0 mr-2 size-5 border-[2px] border-[#3B8BEA] rounded-md bg-no-repeat bg-center peer-checked:bg-[url('../img/icons/checked.svg')] peer-checked:border-[#3B8BEA]"></span>
-                        <span class="text-[14px] leading-[140%] font-medium">
-                          нет
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="w-full lg:pt-5 lg:border-t lg:border-[#EDEDED]">
-                    <h4 class="text-lg font-semibold leading-[140%] mb-4 lg:mb-6">
-                      Материал корпуса <br> шкафа управления
-                    </h4>
-                    <div class="flex flex-col items-start gap-3 lg:gap-4">
-                      <label class="flex items-start cursor-pointer">
-                        <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer" wfd-id="id3">
-                        <span
-                          class="relative inline-block shrink-0 mr-2 size-5 border-[2px] border-[#3B8BEA] rounded-md bg-no-repeat bg-center peer-checked:bg-[url('../img/icons/checked.svg')] peer-checked:border-[#3B8BEA]"></span>
-                        <span class="text-[14px] leading-[140%] font-medium">
-                          пластиковый
-                        </span>
-                      </label>
-                      <label class="flex items-start cursor-pointer">
-                        <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer" wfd-id="id3">
-                        <span
-                          class="relative inline-block shrink-0 mr-2 size-5 border-[2px] border-[#3B8BEA] rounded-md bg-no-repeat bg-center peer-checked:bg-[url('../img/icons/checked.svg')] peer-checked:border-[#3B8BEA]"></span>
-                        <span class="text-[14px] leading-[140%] font-medium">
-                          металлический
-                        </span>
-                      </label>
-                      <label class="flex items-start cursor-pointer">
-                        <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer" wfd-id="id3">
-                        <span
-                          class="relative inline-block shrink-0 mr-2 size-5 border-[2px] border-[#3B8BEA] rounded-md bg-no-repeat bg-center peer-checked:bg-[url('../img/icons/checked.svg')] peer-checked:border-[#3B8BEA]"></span>
-                        <span class="text-[14px] leading-[140%] font-medium">
-                          нет
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="w-full lg:pt-5 lg:border-t lg:border-[#EDEDED]">
-                    <h4 class="text-lg font-semibold leading-[140%] mb-4 lg:mb-6">
-                      Цена
-                    </h4>
-                    <div class="flex items-center gap-3">
-                      <input type="text" placeholder="От"
-                        class="w-full p-4 text-[15px] leading-[140%] text-[#323338] font-medium bg-white rounded-2xl placeholder:text-[#A4A4A4]">
-                      <input type="text" placeholder="До"
-                        class="w-full p-4 text-[15px] leading-[140%] text-[#323338] font-medium bg-white rounded-2xl placeholder:text-[#A4A4A4]">
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="w-full pt-6 lg:pt-4 lg:bg-[#F4F6FB] lg:sticky lg:bottom-0 lg:flex lg:items-center lg:gap-[10px] lg:w-[calc(100%+48px)] lg:px-6 lg:-mx-6
-                    lg:shadow-[0px_-4px_9px_0px_#00000008,0px_-16px_16px_0px_#00000008,0px_-36px_22px_0px_#00000005,0px_-65px_26px_0px_#00000000,0px_-101px_28px_0px_#00000000]"
-                  data-scrollable="sticky-section">
-                  <button type="reset"
-                    class="w-full p-[9px] text-xs font-semibold flex items-center justify-center rounded-[10px] border-[1px] border-[#3B8BEA] text-[#3B8BEA]
-                        lg:font-base lg:p-[15px] lg:rounded-2xl hover:bg-[#3B8BEA] hover:text-white cursor-pointer transition-colors">
-                    Сбросить&nbsp;<span class="lg:hidden">фильтры</span>
-                  </button>
-                  <button type="reset" class="hidden w-full p-[9px] text-xs font-semibold  items-center justify-center rounded-[10px] border-[1px] border-[#3B8BEA] bg-[#3B8BEA] text-white hover:bg-[#2C6CB8] lg:flex
-                        lg:font-base lg:p-[15px] lg:rounded-2xl">
-                    Применить
-                  </button>
                 </div>
               </div>
             </div>
           </div>
           <div class="w-[calc(100%-287px)] lg:w-full">
-            <div class="w-full relative flex items-center gap-[10px] flex-wrap pr-[74px] mb-6 md:pr-0 md:gap-y-4">
+            <div
+              class="min-h-6 w-full relative flex items-center gap-[10px] flex-wrap pr-[74px] mb-6 md:pr-0 md:gap-y-4">
               <button class="hidden lg:w-10 h-[33px] lg:bg-[#EDEDED] lg:rounded-[10px] lg:flex lg:items-center lg:justify-center
                 lg:cursor-pointer md:order-[-3]" data-catalog-filters="btn-open">
                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -784,24 +556,6 @@
                     style="stroke:#3B8BEA;stroke:color(display-p3 0.2314 0.5451 0.9176);stroke-opacity:1;"
                     stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-              </button>
-              <div
-                class="contents md:flex md:gap-[10px] md:w-[calc(100%+48px)] md:-mx-6 md:px-6 md:overflow-x-auto [&::-webkit-scrollbar]:hidden">
-                <div
-                  class="py-2 px-3 flex items-center gap-[10px] rounded-lg bg-[#3B8BEA] text-white whitespace-nowrap  cursor-pointer">
-                  <span class="text-xs font-semibold leading-[140%]">Вентилятор: 3-фазный</span>
-                  <button class="size-[10px]">
-                    <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M1.27284 9.90276L0.592285 9.22221L4.33534 5.47915L0.592285 1.7361L1.27284 1.05554L5.0159 4.7986L8.75895 1.05554L9.43951 1.7361L5.69645 5.47915L9.43951 9.22221L8.75895 9.90276L5.0159 6.15971L1.27284 9.90276Z"
-                        fill="currentColor" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <button
-                class="py-2 px-3 flex items-center gap-[10px] rounded-lg bg-[#EDEDED] text-[#3B8BEA] cursor-pointer md:order-[-2] hover:bg-[#2C6CB8] hover:text-white transition-all">
-                <span class="text-xs font-semibold leading-[140%]">Сбросить фильтры</span>
               </button>
               <div class="absolute top-0 right-0 flex items-center gap-[10px] shrink-0 lg:top-[5px] md:order-[-1]">
                 <button type="button" class="size-6 cursor-pointer text-[#A4A4A4] is-active" data-catalog-layout="grid">
@@ -2194,20 +1948,39 @@
         </div>
       </div>
     </section>
-    <section class="bg-[#F4F6FB] pt-[56px] pb-[86px] -mb-[20px] lg:pt-[50px] lg:pb-[80px] md:pt-6 md:pb-[52px]">
+    <section class="pt-[66px] pb-[86px] -mb-[20px] bg-[#F4F6FB] lg:pb-[73px] md:pt-8 md:pb-[52px] md:-mb-[20px]">
       <div class="my-container">
-        <div
-          class="text-[17px] leading-[160%] font-medium text-[#5A5B5F] lg:text-base lg:leading-[162%] md:text-sm md:leading-[142%]">
-          «ВентАвтоматика» - отечественная компания, специализирующаяся на производстве щитов управления вентиляцией.
-          <br>
-          В нашем ассортименте представлен широкий спектр продукции, предназначенной для полноценного управления
-          вентиляционными установками любого типа. Оптимизированное производство оборудования по управлению
-          вентиляцией позволяет предоставить выгодные цены для наших клиентов.
-          <br>
-          Сотрудничаем с самыми надёжными транспортными компаниями — осуществляем доставку продукции по всей
-          территории России и на территорию Казахстана. Дополнительный плюс — качественная техническая поддержка
-          и бесплатные консультации по монтажу. Предлагаем, как готовые решения под ключ, так и отдельные элементы
-          управления вентиляцией любой сложности.
+        <div class="grid grid-cols-2 gap-4 lg:grid-cols-1 lg:gap-4">
+          <a href="#" class="flex flex-col items-center justify-between gap-8 px-8 py-6 rounded-[22px]
+             bg-white box-shadow-card lg:gap-6 md:px-4 md:py-5 group">
+            <div class="flex flex-col items-center gap-1">
+              <div class="flex items-center gap-2">
+                <h3 class="font-semibold text-2xl leading-[140%] lg:text-[22px] md:text-lg">Остались вопросы?</h3>
+              </div>
+              <div class="text-[17px] text-center text-[#323338CC] px-4 lg:text-base md:text-[15px] md:px-0">
+                Напишите нам — поможем разобраться
+              </div>
+            </div>
+            <div
+              class="w-full flex item-center justify-center p-[18px] rounded-2xl border-[2px] md:py-[13px]
+              border-[#3B8BEA] text-[#3B8BEA] font-semibold group-hover:bg-[#3B8BEA] group-hover:text-white transition-all">
+              Задать вопрос
+            </div>
+          </a>
+          <a href="#" class="flex flex-col items-center justify-between gap-8 px-8 py-6 rounded-[22px] 
+            box-shadow-card bg-white lg:gap-6 md:px-4 md:py-5 group">
+            <div class="flex flex-col items-center gap-1">
+              <div class="flex items-center gap-2">
+                <h3 class="font-semibold text-2xl leading-[140%] lg:text-[22px] md:text-lg">Вы можете
+                  заказать звонок</h3>
+              </div>
+            </div>
+            <div
+              class="w-full flex item-center justify-center p-[18px] rounded-2xl border-[2px] md:py-[13px]
+              border-[#3B8BEA] text-[#3B8BEA] font-semibold group-hover:bg-[#3B8BEA] group-hover:text-white transition-all">
+              Заказать звонок
+            </div>
+          </a>
         </div>
       </div>
     </section>
