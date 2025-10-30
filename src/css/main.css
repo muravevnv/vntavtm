@@ -1057,6 +1057,10 @@
   color: #ff0000;
 }
 
+input[type="checkbox"].is-error + span {
+  border-color: #ff0000;
+}
+
 body.no-scroll {
   overflow: hidden;
   position: fixed;

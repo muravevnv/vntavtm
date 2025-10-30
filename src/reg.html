@@ -49,32 +49,32 @@
           <div class="flex flex-col gap-5">
             <div class="w-full flex items-start flex-col gap-2">
               <label for="" class="text-[#323338] text-sm leading-[140%] font-medium">Имя</label>
-              <input type="text" placeholder="Имя"
+              <input type="text" placeholder="Имя" data-required
                 class="block w-full px-4 py-[17px] bg-[#F4F6FB] border-[1px] border-[#F4F6FB] text-[#323338] text-[15px] leading-[147%] font-medium rounded-2xl outline-none">
             </div>
             <div class="w-full flex items-start flex-col gap-2">
               <label for="" class="text-[#323338] text-sm leading-[140%] font-medium">Фамилия</label>
-              <input type="text" placeholder="Фамилия"
+              <input type="text" placeholder="Фамилия" data-required
                 class="block w-full px-4 py-[17px] bg-[#F4F6FB] border-[1px] border-[#F4F6FB] text-[#323338] text-[15px] leading-[147%] font-medium rounded-2xl outline-none">
             </div>
             <div class="w-full flex items-start flex-col gap-2">
               <label for="" class="text-[#323338] text-sm leading-[140%] font-medium">Электронный адрес</label>
-              <input type="email" placeholder="Электронный адрес"
+              <input type="email" placeholder="Электронный адрес" data-required
                 class="block w-full px-4 py-[17px] bg-[#F4F6FB] border-[1px] border-[#F4F6FB] text-[#323338] text-[15px] leading-[147%] font-medium rounded-2xl outline-none">
             </div>
             <div class="w-full flex items-start flex-col gap-2">
               <label for="" class="text-[#323338] text-sm leading-[140%] font-medium">Номер телефона</label>
-              <input type="tel" placeholder="Номер телефона"
+              <input type="tel" placeholder="Номер телефона" data-required
                 class="block w-full px-4 py-[17px] bg-[#F4F6FB] border-[1px] border-[#F4F6FB] text-[#323338] text-[15px] leading-[147%] font-medium rounded-2xl outline-none">
             </div>
             <div class="w-full flex items-start flex-col gap-2">
               <label for="" class="text-[#323338] text-sm leading-[140%] font-medium">Наименование организации</label>
-              <input type="text" placeholder="Наименование организации"
+              <input type="text" placeholder="Наименование организации" data-required
                 class="block w-full px-4 py-[17px] bg-[#F4F6FB] border-[1px] border-[#F4F6FB] text-[#323338] text-[15px] leading-[147%] font-medium rounded-2xl outline-none">
             </div>
             <div class="w-full flex items-start flex-col gap-2">
               <label for="" class="text-[#323338] text-sm leading-[140%] font-medium">ИНН организации</label>
-              <input type="text" placeholder="ИНН организации"
+              <input type="text" placeholder="ИНН организации" data-required
                 class="block w-full px-4 py-[17px] bg-[#F4F6FB] border-[1px] border-[#F4F6FB] text-[#323338] text-[15px] leading-[147%] font-medium rounded-2xl outline-none">
             </div>
           </div>
@@ -149,10 +149,9 @@
                   class="block w-full px-4 py-[17px] pr-12 bg-[#F4F6FB] border-[1px] border-[#F94D4D] text-[#323338] text-[15px] leading-[147%] font-medium rounded-2xl outline-none">
                 <span class="mt-1 text-xs text-[#F94D4D] pl-4">Пароль не совпадает</span>
               </div>
-
             </div>
           </div>
-          <button class="w-full mt-6 flex items-center justify-center gap-2 p-5 rounded-2xl bg-[#3B8BEA] 
+          <button type="submit" class="w-full mt-6 flex items-center justify-center gap-2 p-5 rounded-2xl bg-[#3B8BEA] 
                 font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all
                 md:max-w-full md:w-full md:py-[15px]">Зарегистрироваться</button>
         </form>

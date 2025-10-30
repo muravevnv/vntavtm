@@ -5614,11 +5614,6 @@
       padding-top: 31px;
     }
   }
-  .md\:pt-\[50px\] {
-    @media (max-width: 767px) {
-      padding-top: 50px;
-    }
-  }
   .md\:pt-\[53px\] {
     @media (max-width: 767px) {
       padding-top: 53px;
@@ -7058,6 +7053,9 @@
 }
 .is-error svg {
   color: #ff0000;
+}
+input[type="checkbox"].is-error + span {
+  border-color: #ff0000;
 }
 body.no-scroll {
   overflow: hidden;
