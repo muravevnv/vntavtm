@@ -228,6 +228,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const $searchInput = $('[data-search="input"]');
   const $clearBtn = $('[data-search="clear-btn"]');
   const $searchResults = $('[data-search="results"]');
+  const $searchBlock = $('[data-search="block"]');
+  const $searchBtn = $('[data-search="open-btn"]');
+  const $searchBtnClose = $('[data-search="close-btn"]');
 
   // Функция для троттлинга
   function throttle(func, limit) {
@@ -271,6 +274,15 @@ document.addEventListener("DOMContentLoaded", () => {
   $clearBtn.on("click", function () {
     $searchInput.val("").trigger("input");
     $searchInput.focus();
+  });
+  
+  $searchBtn.on("click", () => {
+    $searchBlock.show();
+    $searchInput.addClass('is-open');
+  });
+
+  $searchBtnClose.on("click", () => {
+    $searchBlock.hide();
   });
 
   const $videoContainer = $('[data-video="block"]');

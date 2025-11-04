@@ -212,8 +212,9 @@
         </ul>
       </nav>
       <div class="flex items-center gap-8 xl:w-full md:w-auto md:justify-end">
-        <div class="w-[306px] relative xl:w-full md:hidden">
-          <div class="w-full relative">
+        <div class="w-[306px] relative xl:w-full md:fixed md:top-0 md:right-0 md:min-h-full md:bg-white md:hidden"
+          data-search="block">
+          <div class="w-full relative  md:py-4 md:pr-[28px] md:pl-[54px] bg-[#3B8BEA] md:rounded-b-3xl">
             <input type="text" data-search="input" class="
             w-full 
             border-b-1 
@@ -227,8 +228,18 @@
             pr-12
             placeholder:text-white
             " placeholder="Поиск по сайту" />
+            <button type="button" data-search="close-btn" class="hidden md:flex md:absolute md:top-[30px] md:left-[28px]">
+              <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.81055 5.56055L16.0605 5.56055" stroke="white" style="stroke:white;stroke-opacity:1;"
+                  stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                <path d="M5.56055 10.0605L1.06055 5.56055" stroke="white" style="stroke:white;stroke-opacity:1;"
+                  stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                <path d="M5.56055 1.06055L1.06055 5.56055" stroke="white" style="stroke:white;stroke-opacity:1;"
+                  stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+              </svg>
+            </button>
             <button type="button" data-search="clear-btn" style="display: none;"
-              class="absolute top-[7px] right-6 flex items-center justify-center size-[23px] cursor-pointer">
+              class="absolute top-[7px] right-6 flex items-center justify-center size-[23px] cursor-pointer md:flex! md:top-[24px]">
               <svg width="16" height="16" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.6665 1.66699L12.3332 12.3337" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"
                   stroke-linejoin="round" />
@@ -236,7 +247,8 @@
                   stroke-linejoin="round" />
               </svg>
             </button>
-            <button type="button" class="absolute top-[7px] right-0 flex items-center justify-center size-[23px]">
+            <button type="button"
+              class="absolute top-[7px] right-0 flex items-center justify-center size-[23px] md:hidden">
               <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="10.5978" cy="11.0978" r="6.76769" stroke="white" style="stroke:white;stroke-opacity:1;"
                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -245,22 +257,27 @@
               </svg>
             </button>
           </div>
-          <div data-search="results" class="w-full absolute top-full bg-white shadow-[0px_2px_24px_0px_#0000001F] rounded-b-2xl" style="display: none;">
+          <div data-search="results"
+            class="w-full absolute top-full bg-white shadow-[0px_2px_24px_0px_#0000001F] rounded-b-2xl md:static md:shadow-none"
+            style="display: none;">
             <div class="flex flex-col items-start">
-              <a href="#" class="w-full py-3 px-4 text-[#5A5B5F] text-sm leading-[140%] font-medium hover:text-[#3B8BEA]">
+              <a href="#"
+                class="w-full py-3 px-4 text-[#5A5B5F] text-sm leading-[140%] font-medium hover:text-[#3B8BEA]">
                 Щиты управления тепловыми пунктами
               </a>
-              <a href="#" class="w-full py-3 px-4 text-[#5A5B5F] text-sm leading-[140%] font-medium hover:text-[#3B8BEA]">
+              <a href="#"
+                class="w-full py-3 px-4 text-[#5A5B5F] text-sm leading-[140%] font-medium hover:text-[#3B8BEA]">
                 Щиты управления вентиляцией
               </a>
-              <a href="#" class="w-full py-3 px-4 text-[#5A5B5F] text-sm leading-[140%] font-medium hover:text-[#3B8BEA]">
+              <a href="#"
+                class="w-full py-3 px-4 text-[#5A5B5F] text-sm leading-[140%] font-medium hover:text-[#3B8BEA]">
                 Пульт управления ПУ2
               </a>
             </div>
           </div>
         </div>
         <div class="flex items-center gap-3">
-          <a href="#"
+          <button type="button" data-search="open-btn"
             class="items-center justify-center size-8 hidden md:flex xs:size-6 hover:opacity-[0.6] transition-opacity">
             <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="10.5978" cy="11.0978" r="6.76769" stroke="white" style="stroke:white;stroke-opacity:1;"
@@ -268,7 +285,7 @@
               <path d="M19.1698 19.6698L15.3828 15.8828" stroke="white" style="stroke:white;stroke-opacity:1;"
                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-          </a>
+          </button>
           <a href="#" class="flex items-center justify-center size-8 xs:size-6 hover:opacity-[0.6] transition-opacity">
             <svg class="w-full h-auto" width="32" height="32" viewBox="0 0 32 32" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -553,6 +570,15 @@
         </li>
         <li>
           <a href="order-complete.html">Оформление заказа. Заказ успешно оформлен</a>
+        </li>
+      </ol>
+      <h3 class="text-xl font-semibold mb-3">Поиск</h3>
+      <ol class="list-decimal pl-4 mb-6">
+        <li>
+          <a href="search.html">Поиск</a>
+        </li>
+        <li>
+          <a href="search-empty.html">Поиск. Нет результатов</a>
         </li>
       </ol>
       <h3 class="text-xl font-semibold mb-3">Поапы</h3>
