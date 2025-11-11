@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Купленные товары</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/swiper-bundle.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="text-graphite">
+  @@include('header.html')
+  @@include('menu.html')
+  <main>
+    <section class="pt-[31px] pb-16 lg:pt-6 lg:pb-12 md:pt-6 md:pb-4">
+      <div class="my-container">
+        <div class="w-full flex items-center gap-4 mb-6">
+          <div class="w-[338px] shrink-0">
+            <h1 class="text-[34px] leading-[100%] font-bold text-[#3B8BEA]">Личный кабинет</h1>
+          </div>
+          <div class="w-full flex items-center justify-between">
+            <div class="text-2xl leading-[140%] font-semibold">Организации</div>
+            <a href="#" class="inline-flex gap-[10px] py-3 pl-4 pr-5 bg-[#3B8BEA1A] rounded-[10px] text-[#3B8BEA] text-[15px] leading-[140%] font-semibold">Добавить организацию</a>
+          </div>
+        </div>
+        <div class="w-full flex items-start gap-4">
+          <div class="w-[338px] shrink-0"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include('footer.html')
+  @@include('scripts.html')
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Статья детальная</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/swiper-bundle.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="text-graphite bg-[#F4F6FB]">
+  @@include('header.html')
+  @@include('menu.html')
+  <main>
+    <section class="pt-6 lg:pt-4">
+      <div class="my-container">
+        <ul class="flex items-center gap-3 whitespace-nowrap overflow-hidden overflow-ellipsis">
+          <li class="flex items-center gap-3 text-sm leading-[140%] after:content-['/']">
+            <a href="#" class=" text-[#323338] font-medium hover:underline">Главная</a>
+          </li>
+          <li class="flex items-center gap-3 text-sm leading-[140%]">
+            <a href="#" class=" text-[#323338B2] font-medium pointer-events-none">Ошибка 404</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="pt-16 pb-[76px] lg:pt-[38px] lg:pb-12 md:pt-4 md:pb-10">
+      <div class="my-container lg:pl-0 md:pl-6">
+        <div class="flex items-center gap-11 lg:gap-3 md:flex-col md:gap-0">
+          <picture class="block max-w-[463px] w-full p-10 lg:pl-8 lg:max-w-[320px] md:max-w-[240px] md:p-6">
+            <img src="./img/404.svg" alt="">
+          </picture>
+          <div class="max-w-[400px] w-full flex flex-col items-start gap-12 shrink-0 lg:gap-8 md:max-w-full md:text-center md:gap-6">
+            <div class="w-full">
+              <div class="text-[34px] leading-[130%] font-bold text-[#A4A4A4] mb-6 lg:text-[30px]">
+                К сожалению, <br> такой страницы нет
+              </div>
+              <div class="flex items-center gap-2 md:flex-col">
+                <a href="#" class="inline-block px-[18px] py-[10px] bg-[#3B8BEA] text-white text-base leading-[150%] font-semibold rounded-[10px] md:w-full md:py-[15px]">Перейти на главную</a>
+                <a href="#" class="inline-block px-8 py-[10px] bg-[#3B8BEA1A] text-[#3B8BEA] text-base leading-[150%] font-semibold rounded-[10px] md:w-full md:py-[15px]">Наша продукция</a>
+              </div>
+            </div>
+            <div class="w-full p-6 bg-white rounded-3xl">
+              <div class="text-2xl leading-[140%] font-semibold text-[#5A5B5F] mb-3">Остались вопросы?</div>
+              <a href="#" class="block py-[9px]">
+                <span class="block text-lg leading-[100%] text-[#3B8BEA] font-semibold">Задайте их нам</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include('footer.html')
+  @@include('scripts.html')
+</body>
+
+</html>
