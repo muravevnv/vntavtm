@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Купленные товары</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/swiper-bundle.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="text-graphite">
+  @@include('header.html')
+  @@include('menu.html')
+  <main>
+    <section class="pt-[31px] pb-16 lg:pt-6 lg:pb-12 md:pt-6 md:pb-4">
+      <div class="my-container">
+
+        <div class="w-full flex items-start gap-4 lg:flex-col lg:gap-0">
+          <div class="w-[338px] shrink-0 lg:w-full">
+            <h1 class="text-[34px] leading-[130%] font-bold mb-[22px] text-[#3B8BEA] lg:text-[30px] md:text-2xl md:mb-4">Личный
+              кабинет</h1>
+            <div class="w-full pt-8 pb-10 px-6 bg-[#F4F6FB] rounded-2xl lg:hidden">
+              <div class="flex items-start flex-col gap-6 pb-[36px] mb-[36px] border-b-[1px] border-[#EDEDED]">
+                <a href="#"
+                  class="w-full text-lg leading-[140%] font-semibold text-[#323338] hover:opacity-60 transition-opacity">Заказы</a>
+                <a href="#"
+                  class="w-full text-lg leading-[140%] font-semibold text-[#323338] hover:opacity-60 transition-opacity">Купленные
+                  товары</a>
+                <a href="#"
+                  class="w-full text-lg leading-[140%] font-semibold text-[#323338] hover:opacity-60 transition-opacity">Организации</a>
+                <a href="#"
+                  class="w-full text-lg leading-[140%] font-semibold text-[#3B8BEA] hover:opacity-60 transition-opacity">Адреса
+                  доставки</a>
+                <a href="#"
+                  class="w-full text-lg leading-[140%] font-semibold text-[#323338] hover:opacity-60 transition-opacity">Настройки
+                  профиля</a>
+              </div>
+              <button type="button"
+                class="inline-flex items-center gap-3 text-lg leading-[140%] font-semibold text-[#32333899] cursor-pointer hover:opacity-60 transition-opacity">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.9668 18.3057H2.49168C2.0332 18.3057 1.66113 17.9336 1.66113 17.4751V2.52492C1.66113 2.06645 2.03324 1.69438 2.49168 1.69438H9.9668C10.4261 1.69438 10.7973 1.32313 10.7973 0.863828C10.7973 0.404531 10.4261 0.0332031 9.9668 0.0332031H2.49168C1.11793 0.0332031 0 1.15117 0 2.52492V17.4751C0 18.8488 1.11793 19.9668 2.49168 19.9668H9.9668C10.4261 19.9668 10.7973 19.5955 10.7973 19.1362C10.7973 18.6769 10.4261 18.3057 9.9668 18.3057Z"
+                    fill="currentColor" />
+                  <path
+                    d="M19.7525 9.40806L14.7027 4.42466C14.3771 4.1024 13.8505 4.10658 13.5282 4.43298C13.206 4.75939 13.2093 5.28513 13.5366 5.6074L17.1453 9.16884H7.47508C7.01578 9.16884 6.64453 9.54009 6.64453 9.99939C6.64453 10.4587 7.01578 10.83 7.47508 10.83H17.1453L13.5366 14.3914C13.2093 14.7137 13.2068 15.2394 13.5282 15.5658C13.691 15.7303 13.9053 15.8133 14.1196 15.8133C14.3306 15.8133 14.5415 15.7336 14.7027 15.5741L19.7525 10.5907C19.9103 10.4346 20 10.2219 20 9.99935C20 9.77685 19.9111 9.56505 19.7525 9.40806Z"
+                    fill="currentColor" />
+                </svg>
+                Выйти
+              </button>
+            </div>
+          </div>
+          <div class="w-[calc(100%-338px)] xl:w-[calc(100%-240px)] lg:w-full">
+            <div class="w-full flex flex-col gap-10 lg:gap-8 md:gap-6">
+              <div class="w-full lg:flex lg:flex-col">
+                <div class="flex items-center justify-between mb-5 lg:mb-0 lg:contents">
+                  <h2 class="text-2xl leading-[140%] font-semibold lg:mb-4 md:text-lg">Адреса доставки</h2>
+                  <a href="#" class="w-[235px] inline-flex justify-center gap-[6px] py-3 pl-4 pr-5 bg-[#3B8BEA1A] rounded-[10px] text-[#3B8BEA] 
+                    text-[15px] leading-[140%] font-semibold lg:order-10 lg:mt-3 lg:w-full">
+                    <svg class="shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10 5C9.77899 5 9.56702 5.0878 9.41074 5.24408C9.25446 5.40036 9.16667 5.61232 9.16667 5.83333V9.16667H5.83333C5.61232 9.16667 5.40036 9.25446 5.24408 9.41074C5.0878 9.56702 5 9.77899 5 10C5 10.221 5.0878 10.433 5.24408 10.5893C5.40036 10.7455 5.61232 10.8333 5.83333 10.8333H9.16667V14.1667C9.16667 14.3877 9.25446 14.5996 9.41074 14.7559C9.56702 14.9122 9.77899 15 10 15C10.221 15 10.433 14.9122 10.5893 14.7559C10.7455 14.5996 10.8333 14.3877 10.8333 14.1667V10.8333H14.1667C14.3877 10.8333 14.5996 10.7455 14.7559 10.5893C14.9122 10.433 15 10.221 15 10C15 9.77899 14.9122 9.56702 14.7559 9.41074C14.5996 9.25446 14.3877 9.16667 14.1667 9.16667H10.8333V5.83333C10.8333 5.61232 10.7455 5.40036 10.5893 5.24408C10.433 5.0878 10.221 5 10 5Z"
+                        fill="currentColor" />
+                    </svg>
+                    <span>Добавить адрес</span>
+                  </a>
+                </div>
+                <div class="w-full flex items-center justify-center p-4 bg-[#F4F6FB] 
+                rounded-2xl min-h-[142px] text-[17px] leading-[140%] font-semibold text-[#323338B2]">Нет контактов дя приемки грузов</div>
+              </div>
+              <div class="w-full flex flex-col gap-10 lg:gap-8 md:gap-6">
+                <div class="w-full lg:flex lg:flex-col">
+                  <div class="flex items-center justify-between mb-5 lg:mb-0 lg:contents">
+                    <h2 class="text-2xl leading-[140%] font-semibold lg:mb-4 md:text-lg">Контакты для приемки груза</h2>
+                    <a href="#" class="w-[235px] inline-flex justify-center gap-[6px] py-3 pl-4 pr-5 bg-[#3B8BEA1A] rounded-[10px] text-[#3B8BEA] 
+                    text-[15px] leading-[140%] font-semibold lg:order-10 lg:mt-3 lg:w-full">
+                      <svg class="shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M10 5C9.77899 5 9.56702 5.0878 9.41074 5.24408C9.25446 5.40036 9.16667 5.61232 9.16667 5.83333V9.16667H5.83333C5.61232 9.16667 5.40036 9.25446 5.24408 9.41074C5.0878 9.56702 5 9.77899 5 10C5 10.221 5.0878 10.433 5.24408 10.5893C5.40036 10.7455 5.61232 10.8333 5.83333 10.8333H9.16667V14.1667C9.16667 14.3877 9.25446 14.5996 9.41074 14.7559C9.56702 14.9122 9.77899 15 10 15C10.221 15 10.433 14.9122 10.5893 14.7559C10.7455 14.5996 10.8333 14.3877 10.8333 14.1667V10.8333H14.1667C14.3877 10.8333 14.5996 10.7455 14.7559 10.5893C14.9122 10.433 15 10.221 15 10C15 9.77899 14.9122 9.56702 14.7559 9.41074C14.5996 9.25446 14.3877 9.16667 14.1667 9.16667H10.8333V5.83333C10.8333 5.61232 10.7455 5.40036 10.5893 5.24408C10.433 5.0878 10.221 5 10 5Z"
+                          fill="currentColor" />
+                      </svg>
+                      <span>Добавить контакт</span>
+                    </a>
+                  </div>
+                  <div class="w-full flex items-center justify-center p-4 bg-[#F4F6FB] 
+                    rounded-2xl min-h-[142px] text-[17px] leading-[140%] font-semibold text-[#323338B2]">Нет контактов дя приемки грузов</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+  @@include('footer.html')
+  @@include('scripts.html')
+</body>
+
+</html>

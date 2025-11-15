@@ -79,6 +79,34 @@
           </button>
           @@include('popups/data-save-success.html')
         </div>
+        <div x-data="{openCompaniesDataPopup: false}">
+          <button @click="openCompaniesDataPopup = true; document.body.classList.add('no-scroll')" type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+                font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+            Данные организации
+          </button>
+          @@include('popups/companies-data.html')
+        </div>
+        <div x-data="{openCallBackPopup: false}">
+          <button @click="openCallBackPopup = true; document.body.classList.add('no-scroll')" type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+                font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+            Заполните форму
+          </button>
+          @@include('popups/call-back.html')
+        </div>
+        <div x-data="{openAddAddressPopup: false}">
+          <button @click="openAddAddressPopup = true; document.body.classList.add('no-scroll')" type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+                font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+            Добавить адрес
+          </button>
+          @@include('popups/add-address.html')
+        </div>
+        <div x-data="{openAddContactsDataPopup: false}">
+          <button @click="openAddContactsDataPopup = true; document.body.classList.add('no-scroll')" type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
+                font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
+            Добавить контактные данные
+          </button>
+          @@include('popups/add-contacts-data.html')
+        </div>
         <h3 class="text-xl font-semibold my-3">Авторизация</h3>
         <div x-data="{openEnterPopup: false}">
           <button @click="openEnterPopup = true; document.body.classList.add('no-scroll')" type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
@@ -87,7 +115,6 @@
           </button>
           @@include('popups/enter.html')
         </div>
-
         <div x-data="{openAccRecoveryPopup: false}">
           <button @click="openAccRecoveryPopup = true; document.body.classList.add('no-scroll')" type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
                 font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
