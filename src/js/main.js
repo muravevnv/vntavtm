@@ -285,6 +285,28 @@ document.addEventListener("DOMContentLoaded", () => {
     $searchBlock.hide();
   });
 
+
+  const hdrProfileBtn = $('[data-hdr-profile="btn"]');
+  const hdrProfileClose = $('[data-hdr-profile="close"]');
+  const hdrProfileMenu = $('[data-hdr-profile="popup"]');
+
+  hdrProfileBtn.on("click", () => {
+    hdrProfileMenu.slideToggle();
+  });
+
+  hdrProfileClose.on("click", () => {
+    hdrProfileMenu.slideUp();
+  });
+
+  $(document).on("click", function (e) {
+    if (
+      !$(e.target).closest('[data-hdr-profile="btn"]').length &&
+      !$(e.target).closest('[data-hdr-profile="popup"]').length
+    ) {
+      hdrProfileMenu.slideUp();
+    }
+  })
+
   const $videoContainer = $('[data-video="block"]');
   const $video = $videoContainer.find('[data-video="player"]');
   const $playIcon = $videoContainer.find('[data-video="play-icon"]');

@@ -552,14 +552,18 @@
   <main class="flex-1">
     <section class="pt-[31px] pb-16 lg:pt-6 lg:pb-12 md:pt-6 md:pb-11">
       <div class="my-container">
-
-        <div class="w-full flex items-start gap-4 lg:flex-col lg:gap-0">
-          <div class="w-[338px] shrink-0 lg:w-full">
-            <h1
-              class="text-[34px] leading-[130%] font-bold mb-[22px] text-[#3B8BEA] lg:text-[30px] md:text-2xl md:mb-4">
-              Личный
-              кабинет</h1>
-            <div class="w-full pt-8 pb-[35px] px-6 bg-[#F4F6FB] rounded-2xl lg:hidden">
+        <div class="w-full flex items-center gap-4 mb-6 xl:flex-col xl:items-start xl:gap-4 lg:mb-4">
+          <div class="w-[338px] shrink-0 md:w-full">
+            <h1 class="text-[34px] leading-[130%] font-bold text-[#3B8BEA] lg:text-[30px] md:text-2xl">Личный кабинет
+            </h1>
+          </div>
+          <div class="w-full flex items-center justify-between md:flex-col md:hidden">
+            <div class="text-2xl leading-[140%] font-semibold md:text-lg">Настройки профиля</div>
+          </div>
+        </div>
+        <div class="w-full flex items-start gap-4">
+          <div class="w-[338px] shrink-0 xl:w-[240px] lg:hidden">
+            <div class="w-full pt-8 pb-[35px] px-6 bg-[#F4F6FB] rounded-2xl">
               <div class="flex items-start flex-col gap-6 pb-[36px] mb-[36px] border-b-[1px] border-[#EDEDED]">
                 <a href="#"
                   class="w-full text-lg leading-[140%] font-semibold text-[#323338] hover:opacity-60 transition-opacity">Заказы</a>
@@ -569,10 +573,10 @@
                 <a href="#"
                   class="w-full text-lg leading-[140%] font-semibold text-[#323338] hover:opacity-60 transition-opacity">Организации</a>
                 <a href="#"
-                  class="w-full text-lg leading-[140%] font-semibold text-[#3B8BEA] hover:opacity-60 transition-opacity">Адреса
+                  class="w-full text-lg leading-[140%] font-semibold text-[#323338] hover:opacity-60 transition-opacity">Адреса
                   доставки</a>
                 <a href="#"
-                  class="w-full text-lg leading-[140%] font-semibold text-[#323338] hover:opacity-60 transition-opacity">Настройки
+                  class="w-full text-lg leading-[140%] font-semibold text-[#3B8BEA] hover:opacity-60 transition-opacity">Настройки
                   профиля</a>
               </div>
               <button type="button"
@@ -590,255 +594,184 @@
             </div>
           </div>
           <div class="w-[calc(100%-338px)] xl:w-[calc(100%-240px)] lg:w-full">
-            <div class="w-full flex flex-col gap-10 lg:gap-8 md:gap-6">
-              <div class="w-full lg:flex lg:flex-col">
-                <div class="flex items-center justify-between mb-5 lg:mb-0 lg:contents">
-                  <h2 class="text-2xl leading-[140%] font-semibold lg:mb-4 md:text-lg">Адреса доставки</h2>
-                  <a href="#" class="w-[235px] inline-flex justify-center gap-[6px] py-3 pl-4 pr-5 bg-[#3B8BEA1A] 
-                   rounded-[10px] text-[#3B8BEA] text-[15px] leading-[140%] font-semibold lg:order-10 lg:mt-3 lg:w-full
-                 hover:bg-[#3B8BEA] hover:text-white">
-                    <svg class="shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M10 5C9.77899 5 9.56702 5.0878 9.41074 5.24408C9.25446 5.40036 9.16667 5.61232 9.16667 5.83333V9.16667H5.83333C5.61232 9.16667 5.40036 9.25446 5.24408 9.41074C5.0878 9.56702 5 9.77899 5 10C5 10.221 5.0878 10.433 5.24408 10.5893C5.40036 10.7455 5.61232 10.8333 5.83333 10.8333H9.16667V14.1667C9.16667 14.3877 9.25446 14.5996 9.41074 14.7559C9.56702 14.9122 9.77899 15 10 15C10.221 15 10.433 14.9122 10.5893 14.7559C10.7455 14.5996 10.8333 14.3877 10.8333 14.1667V10.8333H14.1667C14.3877 10.8333 14.5996 10.7455 14.7559 10.5893C14.9122 10.433 15 10.221 15 10C15 9.77899 14.9122 9.56702 14.7559 9.41074C14.5996 9.25446 14.3877 9.16667 14.1667 9.16667H10.8333V5.83333C10.8333 5.61232 10.7455 5.40036 10.5893 5.24408C10.433 5.0878 10.221 5 10 5Z"
-                        fill="currentColor" />
-                    </svg>
-                    <span>Добавить адрес</span>
-                  </a>
-                </div>
-                <div class="grid grid-cols-2 gap-4 lg:flex lg:flex-col lg:gap-3">
-                  <div class="w-full flex flex-col gap-5 items-start p-4 bg-[#F4F6FB] rounded-2xl">
-                    <div class="text-[17px] leading-[140%] font-semibold text-[#323338]">Офис на Богатырской</div>
-                    <div class="w-full flex flex-col items-start gap-3">
-                      <div class="text-sm leading-[140%] font-semibold text-[#323338]">
-                        <span class="font-medium text-[#32333880] pr-[6px]">Тип доставки:</span>
-                        Доставка до пункта выдачи
-                      </div>
-                      <div class="text-sm leading-[140%] font-semibold text-[#323338]">
-                        <span class="font-medium text-[#32333880] pr-[6px]">Транспортная компания:</span>
-                        Деловые линии
-                      </div>
-                      <div class="text-sm leading-[140%] font-semibold text-[#323338]">
-                        г. Москва, Центральный проезд Хорошевского Серебряного бора, 6к3, 105215
-                      </div>
+            <div class="w-full flex flex-col gap-4">
+              <div class="w-full grid grid-cols-2 gap-4 md:flex md:flex-col">
+                <div class="w-full">
+                  <div class="w-full bg-[#F4F6FB] rounded-2xl flex flex-col gap-4 p-4 md:pb-6">
+                    <div class="flex items-center justify-between">
+                      <div class="text-[17px] leading-[140%] font-semibold">Личные данные</div>
                     </div>
-                    <div class="w-full flex items-center justify-between">
-                      <button type="button"
-                        class="inline-flex items-center gap-1 text-xs leading-[140%] cursor-pointer hover:opacity-50">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M3.96975 11.7139L11.7143 3.96937C12.0068 3.67687 12.4815 3.67687 12.774 3.96937L14.031 5.22638C14.3235 5.51888 14.3235 5.99362 14.031 6.28613L6.28575 14.0299C6.1455 14.1709 5.955 14.2496 5.75625 14.2496H3.75V12.2434C3.75 12.0446 3.82875 11.8541 3.96975 11.7139Z"
-                            stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M10.3125 5.36914L12.63 7.68664" stroke="currentColor" stroke-width="1.1"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        <span>Изменить</span>
-                      </button>
-                      <div
-                        class="py-1 px-[10px] text-xs leading-[140%] font-medium text-[#3B8BEA] bg-[#3B8BEA1A] rounded-2xl">
-                        По умолчанию</div>
-                      <button type="button" class="size-5 text-[#5A5B5F] cursor-pointer hover:opacity-50">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M13.4483 17.5007H6.54831C5.67581 17.5007 4.95081 16.8273 4.88581 15.9565L4.13831 5.83398H15.8333L15.1108 15.9523C15.0483 16.8248 14.3225 17.5007 13.4483 17.5007V17.5007Z"
-                            stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M10 9.16602V14.166" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M3.33337 5.83268H16.6667" stroke="currentColor" stroke-width="1.2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path
-                            d="M14.1667 5.83333L13.3225 3.58167C13.0784 2.93083 12.4567 2.5 11.7617 2.5H8.23837C7.54337 2.5 6.92171 2.93083 6.67754 3.58167L5.83337 5.83333"
-                            stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M12.8583 9.16602L12.5 14.166" stroke="currentColor" stroke-width="1.2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M7.14167 9.16602L7.50001 14.166" stroke="currentColor" stroke-width="1.2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                      </button>
+                    <div class="w-full">
+                      <div class="flex flex-col items-start gap-3">
+                        <div class="w-full flex items-start flex-col gap-2">
+                          <label for="" class="text-[#323338] text-sm leading-[140%] font-medium">Фамилия</label>
+                          <input type="text" placeholder="Фамилия" data-required=""
+                            class="block w-full px-4 py-[17px] bg-white border-[1px] border-white text-[#323338] text-[15px] leading-[147%] font-medium rounded-2xl outline-none">
+                        </div>
+                        <div class="w-full flex items-start flex-col gap-2">
+                          <label for="" class="text-[#323338] text-sm leading-[140%] font-medium">Имя</label>
+                          <input type="text" placeholder="Имя" data-required=""
+                            class="block w-full px-4 py-[17px] bg-white border-[1px] border-white text-[#323338] text-[15px] leading-[147%] font-medium rounded-2xl outline-none">
+                        </div>
+                        <div class="w-full flex items-start flex-col gap-2">
+                          <label for="" class="text-[#323338] text-sm leading-[140%] font-medium">Электронный
+                            адрес</label>
+                          <input type="email" placeholder="Электронный адрес" data-required=""
+                            class="block w-full px-4 py-[17px] bg-white border-[1px] border-white text-[#323338] text-[15px] leading-[147%] font-medium rounded-2xl outline-none">
+                        </div>
+                        <div class="w-full flex items-start flex-col gap-2">
+                          <label for="" class="text-[#323338] text-sm leading-[140%] font-medium">Номер телефона</label>
+                          <input type="tel" placeholder="+7" data-required=""
+                            class="block w-full px-4 py-[17px] bg-white border-[1px] border-white text-[#323338] text-[15px] leading-[147%] font-medium rounded-2xl outline-none">
+                        </div>
+                      </div>
+                      <div class="w-full flex items-center gap-3 mt-4">
+                        <button
+                          class="w-full px-4 py-[10px] border-[1px] border-[#3B8BEA] text-[#3B8BEA] 
+                          text-[15px] leading-[147%] font-semibold rounded-2xl cursor-pointer 
+                          hover:bg-[#3B8BEA] hover:text-white transition-colors">Отменить</button>
+                        <button class="w-full px-4 py-[11px] bg-[#3B8BEA] text-white text-[15px] leading-[147%] 
+                          font-semibold rounded-2xl cursor-pointer hover:bg-[#2C6CB8] transition-colors">Сохранить</button>
+                      </div>
                     </div>
                   </div>
-                  <div class="w-full flex flex-col gap-5 items-start p-4 bg-[#F4F6FB] rounded-2xl">
-                    <div class="text-[17px] leading-[140%] font-semibold text-[#323338]">Офис на Богатырской</div>
-                    <div class="w-full flex flex-col items-start gap-3">
-                      <div class="text-sm leading-[140%] font-semibold text-[#323338]">
-                        <span class="font-medium text-[#32333880] pr-[6px]">Тип доставки:</span>
-                        Доставка до пункта выдачи
+                </div>
+                <div class="w-full flex flex-col gap-4">
+                  <div class="w-full bg-[#F4F6FB] rounded-2xl flex flex-col gap-4 p-4">
+                    <div class="flex items-center justify-between">
+                      <div class="text-[17px] leading-[140%] font-semibold">Пароль</div>
+                    </div>
+                    <div class="flex flex-col items-start gap-5">
+                      <div class="w-full">
+                        <div class="relative w-full flex items-start flex-col gap-2" data-password="block">
+                          <label for="" class="text-[#323338] text-sm leading-[140%] font-medium">Пароль</label>
+                          <div class="relative w-full">
+                            <div class="absolute top-[18px] right-[50px] size-6">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#00B862" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </div>
+                            <button type="button" data-password="toggle"
+                              class="absolute top-[18px] right-4 size-6 flex items-center justify-center cursor-pointer">
+                              <img class="eye-closed" src="./img/icons/eye-throw.svg" alt="">
+                              <img class="eye-opened" src="./img/icons/eye.svg" alt="">
+                            </button>
+                            <input type="password" placeholder="Введите пароль" data-password="input"
+                              class="block w-full px-4 py-[17px] pr-[74px] bg-white border-[1px] border-[#00B862] text-[#323338] text-[15px] leading-[147%] font-medium rounded-2xl outline-none">
+                          </div>
+                        </div>
                       </div>
-                      <div class="text-sm leading-[140%] font-semibold text-[#323338]">
-                        <span class="font-medium text-[#32333880] pr-[6px]">Транспортная компания:</span>
-                        Деловые линии
+                      <div class="w-full">
+                        <div class="relative w-full flex items-start flex-col gap-2" data-password="block">
+                          <label for="" class="text-[#323338] text-sm leading-[140%] font-medium">Новый пароль</label>
+                          <div class="relative w-full">
+                            <button type="button" data-password="toggle"
+                              class="absolute top-[18px] right-4 size-6 flex items-center justify-center cursor-pointer">
+                              <img class="eye-closed" src="./img/icons/eye-throw.svg" alt="">
+                              <img class="eye-opened" src="./img/icons/eye.svg" alt="">
+                            </button>
+                            <input type="password" placeholder="Введите пароль" data-password="input"
+                              class="block w-full px-4 py-[17px] pr-12 bg-white border-[1px] border-white text-[#323338] text-[15px] leading-[147%] font-medium rounded-2xl outline-none">
+                          </div>
+                        </div>
+                        <div class="pl-4 pt-1">
+                          <ul class="flex flex-col gap-[2px] list-disc pl-4">
+                            <li class="text-xs leading-[140%] text-[#5A5B5F]">8 и более символов</li>
+                            <li class="text-xs leading-[140%] text-[#5A5B5F]">Строчные и прописные латинские буквы</li>
+                            <li class="text-xs leading-[140%] text-[#5A5B5F]">Цифры</li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="text-sm leading-[140%] font-semibold text-[#323338]">
-                        г. Москва, Центральный проезд Хорошевского Серебряного бора, 6к3, 105215
+                      <div class="w-full">
+                        <div class="relative w-full flex items-start flex-col gap-2" data-password="block">
+                          <label for="" class="text-[#323338] text-sm leading-[140%] font-medium">Повторите новый
+                            пароль</label>
+                          <div class="relative w-full">
+                            <button type="button" data-password="toggle"
+                              class="absolute top-[18px] right-4 size-6 flex items-center justify-center cursor-pointer">
+                              <img class="eye-closed" src="./img/icons/eye-throw.svg" alt="">
+                              <img class="eye-opened" src="./img/icons/eye.svg" alt="">
+                            </button>
+                            <input type="password" placeholder="Повторите новый пароль" data-password="input"
+                              class="block w-full px-4 py-[17px] pr-12 bg-white border-[1px] border-white text-[#323338] text-[15px] leading-[147%] font-medium rounded-2xl outline-none">
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="w-full flex items-center justify-between">
-                      <button type="button"
-                        class="inline-flex items-center gap-1 text-xs leading-[140%] cursor-pointer hover:opacity-50">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M3.96975 11.7139L11.7143 3.96937C12.0068 3.67687 12.4815 3.67687 12.774 3.96937L14.031 5.22638C14.3235 5.51888 14.3235 5.99362 14.031 6.28613L6.28575 14.0299C6.1455 14.1709 5.955 14.2496 5.75625 14.2496H3.75V12.2434C3.75 12.0446 3.82875 11.8541 3.96975 11.7139Z"
-                            stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M10.3125 5.36914L12.63 7.68664" stroke="currentColor" stroke-width="1.1"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        <span>Изменить</span>
-                      </button>
-                      <div
-                        class="py-1 px-[10px] text-xs leading-[140%] font-medium text-[#3B8BEA] bg-[#3B8BEA1A] rounded-2xl">
-                        По умолчанию</div>
-                      <button type="button" class="size-5 text-[#5A5B5F] cursor-pointer hover:opacity-50">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M13.4483 17.5007H6.54831C5.67581 17.5007 4.95081 16.8273 4.88581 15.9565L4.13831 5.83398H15.8333L15.1108 15.9523C15.0483 16.8248 14.3225 17.5007 13.4483 17.5007V17.5007Z"
-                            stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M10 9.16602V14.166" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M3.33337 5.83268H16.6667" stroke="currentColor" stroke-width="1.2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path
-                            d="M14.1667 5.83333L13.3225 3.58167C13.0784 2.93083 12.4567 2.5 11.7617 2.5H8.23837C7.54337 2.5 6.92171 2.93083 6.67754 3.58167L5.83337 5.83333"
-                            stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M12.8583 9.16602L12.5 14.166" stroke="currentColor" stroke-width="1.2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M7.14167 9.16602L7.50001 14.166" stroke="currentColor" stroke-width="1.2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                      </button>
+                    <div class="w-full flex items-center gap-3">
+                      <button
+                        class="w-full px-4 py-[10px] border-[1px] border-[#3B8BEA] text-[#3B8BEA] 
+                          text-[15px] leading-[147%] font-semibold rounded-2xl cursor-pointer 
+                          hover:bg-[#3B8BEA] hover:text-white transition-colors">Отменить</button>
+                      <button class="w-full px-4 py-[11px] bg-[#3B8BEA] text-white text-[15px] leading-[147%] 
+                          font-semibold rounded-2xl cursor-pointer hover:bg-[#2C6CB8] transition-colors">Сохранить</button>
+                    </div>
+                  </div>
+                  <div class="w-full bg-[#F4F6FB] rounded-2xl flex flex-col gap-4 p-4">
+                    <div class="flex items-center justify-between">
+                      <div class="text-[17px] leading-[140%] font-semibold">Подписки</div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-1 py-[13px] lg:flex lg:flex-col lg:gap-4 lg:py-0">
+                      <label class="flex items-start cursor-pointer">
+                        <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer" wfd-id="id3">
+                        <span
+                          class="relative inline-block shrink-0 mr-2 size-5 border-[2px] border-[#3B8BEA] rounded-md bg-no-repeat bg-center peer-checked:bg-[url('../img/icons/checked.svg')] peer-checked:border-[#3B8BEA]"></span>
+                        <span class="text-[14px] leading-[140%] font-medium">
+                          Рассылки на почту
+                        </span>
+                      </label>
+                      <label class="flex items-start cursor-pointer">
+                        <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer" wfd-id="id3">
+                        <span
+                          class="relative inline-block shrink-0 mr-2 size-5 border-[2px] border-[#3B8BEA] rounded-md bg-no-repeat bg-center peer-checked:bg-[url('../img/icons/checked.svg')] peer-checked:border-[#3B8BEA]"></span>
+                        <span class="text-[14px] leading-[140%] font-medium">
+                          Рассылки по СМС
+                        </span>
+                      </label>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="w-full flex flex-col gap-10 lg:gap-8 md:gap-6">
-                <div class="w-full lg:flex lg:flex-col">
-                  <div class="flex items-center justify-between mb-5 lg:mb-0 lg:contents">
-                    <h2 class="text-2xl leading-[140%] font-semibold lg:mb-4 md:text-lg">Контакты для приемки груза</h2>
-                    <a href="#" class="w-[235px] inline-flex justify-center gap-[6px] py-3 pl-4 pr-5 bg-[#3B8BEA1A] 
-                   rounded-[10px] text-[#3B8BEA] text-[15px] leading-[140%] font-semibold lg:order-10 lg:mt-3 lg:w-full
-                 hover:bg-[#3B8BEA] hover:text-white">
-                      <svg class="shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M10 5C9.77899 5 9.56702 5.0878 9.41074 5.24408C9.25446 5.40036 9.16667 5.61232 9.16667 5.83333V9.16667H5.83333C5.61232 9.16667 5.40036 9.25446 5.24408 9.41074C5.0878 9.56702 5 9.77899 5 10C5 10.221 5.0878 10.433 5.24408 10.5893C5.40036 10.7455 5.61232 10.8333 5.83333 10.8333H9.16667V14.1667C9.16667 14.3877 9.25446 14.5996 9.41074 14.7559C9.56702 14.9122 9.77899 15 10 15C10.221 15 10.433 14.9122 10.5893 14.7559C10.7455 14.5996 10.8333 14.3877 10.8333 14.1667V10.8333H14.1667C14.3877 10.8333 14.5996 10.7455 14.7559 10.5893C14.9122 10.433 15 10.221 15 10C15 9.77899 14.9122 9.56702 14.7559 9.41074C14.5996 9.25446 14.3877 9.16667 14.1667 9.16667H10.8333V5.83333C10.8333 5.61232 10.7455 5.40036 10.5893 5.24408C10.433 5.0878 10.221 5 10 5Z"
-                          fill="currentColor" />
-                      </svg>
-                      <span>Добавить контакт</span>
-                    </a>
+              <div class="w-full grid grid-cols-2 gap-4 lg:flex lg:flex-col">
+                <div
+                  class="flex items-center justify-between py-4 px-6 bg-[#3B8BEA1A] rounded-2xl cursor-pointer hover:opacity-50">
+                  <div class="flex items-center gap-4 text-[#3B8BEA] font-semibold">
+                    <div class="text-[46px] leading-[130%] xs:text-lg">5%</div>
+                    <div class="text-lg leading-[140%] xs:text-sm">ваша скидка <br> на щиты</div>
                   </div>
-                  <div class="grid grid-cols-2 gap-4 lg:flex lg:flex-col lg:gap-3">
-                    <div class="w-full flex flex-col gap-5 items-start p-4 bg-[#F4F6FB] rounded-2xl">
-                      <div class="text-[17px] leading-[140%] font-semibold text-[#323338]">Контакт #1</div>
-                      <div class="w-full flex flex-col items-start gap-3">
-                        <div class="text-sm leading-[140%] font-semibold text-[#323338]">
-                          <span class="font-medium text-[#32333880] pr-[6px]">Контактное лицо:</span>
-                          Лаврухина Светлана
-                        </div>
-                        <div class="text-sm leading-[140%] font-semibold text-[#323338]">
-                          <span class="font-medium text-[#32333880] pr-[6px]">Телефон:</span>
-                          +7 900 100-25-24
-                        </div>
-                        <div class="text-sm leading-[140%] font-semibold text-[#323338]">
-                          <span class="font-medium text-[#32333880] pr-[6px]">Электронный адрес:</span>
-                          svetlanavr@gmail.ru
-                        </div>
-                      </div>
-                      <div class="w-full flex items-center justify-between">
-                        <button type="button"
-                          class="inline-flex items-center gap-1 text-xs leading-[140%] cursor-pointer hover:opacity-50">
-                          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M3.96975 11.7139L11.7143 3.96937C12.0068 3.67687 12.4815 3.67687 12.774 3.96937L14.031 5.22638C14.3235 5.51888 14.3235 5.99362 14.031 6.28613L6.28575 14.0299C6.1455 14.1709 5.955 14.2496 5.75625 14.2496H3.75V12.2434C3.75 12.0446 3.82875 11.8541 3.96975 11.7139Z"
-                              stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M10.3125 5.36914L12.63 7.68664" stroke="currentColor" stroke-width="1.1"
-                              stroke-linecap="round" stroke-linejoin="round" />
-                          </svg>
-                          <span>Изменить</span>
-                        </button>
-                        <div
-                          class="py-1 px-[10px] text-xs leading-[140%] font-medium text-[#3B8BEA] bg-[#3B8BEA1A] rounded-2xl">
-                          По умолчанию</div>
-                        <button type="button" class="size-5 text-[#5A5B5F] cursor-pointer hover:opacity-50">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M13.4483 17.5007H6.54831C5.67581 17.5007 4.95081 16.8273 4.88581 15.9565L4.13831 5.83398H15.8333L15.1108 15.9523C15.0483 16.8248 14.3225 17.5007 13.4483 17.5007V17.5007Z"
-                              stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M10 9.16602V14.166" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
-                              stroke-linejoin="round" />
-                            <path d="M3.33337 5.83268H16.6667" stroke="currentColor" stroke-width="1.2"
-                              stroke-linecap="round" stroke-linejoin="round" />
-                            <path
-                              d="M14.1667 5.83333L13.3225 3.58167C13.0784 2.93083 12.4567 2.5 11.7617 2.5H8.23837C7.54337 2.5 6.92171 2.93083 6.67754 3.58167L5.83337 5.83333"
-                              stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M12.8583 9.16602L12.5 14.166" stroke="currentColor" stroke-width="1.2"
-                              stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M7.14167 9.16602L7.50001 14.166" stroke="currentColor" stroke-width="1.2"
-                              stroke-linecap="round" stroke-linejoin="round" />
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="w-full flex flex-col gap-5 items-start p-4 bg-[#F4F6FB] rounded-2xl">
-                      <div class="text-[17px] leading-[140%] font-semibold text-[#323338]">Контакт #2</div>
-                      <div class="w-full flex flex-col items-start gap-3">
-                        <div class="text-sm leading-[140%] font-semibold text-[#323338]">
-                          <span class="font-medium text-[#32333880] pr-[6px]">Контактное лицо:</span>
-                          Лаврухина Светлана
-                        </div>
-                        <div class="text-sm leading-[140%] font-semibold text-[#323338]">
-                          <span class="font-medium text-[#32333880] pr-[6px]">Телефон:</span>
-                          +7 900 100-25-24
-                        </div>
-                        <div class="text-sm leading-[140%] font-semibold text-[#323338]">
-                          <span class="font-medium text-[#32333880] pr-[6px]">Электронный адрес:</span>
-                          svetlanavr@gmail.ru
-                        </div>
-                      </div>
-                      <div class="w-full flex items-center justify-between">
-                        <button type="button"
-                          class="inline-flex items-center gap-1 text-xs leading-[140%] cursor-pointer hover:opacity-50">
-                          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M3.96975 11.7139L11.7143 3.96937C12.0068 3.67687 12.4815 3.67687 12.774 3.96937L14.031 5.22638C14.3235 5.51888 14.3235 5.99362 14.031 6.28613L6.28575 14.0299C6.1455 14.1709 5.955 14.2496 5.75625 14.2496H3.75V12.2434C3.75 12.0446 3.82875 11.8541 3.96975 11.7139Z"
-                              stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M10.3125 5.36914L12.63 7.68664" stroke="currentColor" stroke-width="1.1"
-                              stroke-linecap="round" stroke-linejoin="round" />
-                          </svg>
-                          <span>Изменить</span>
-                        </button>
-                        <div
-                          class="py-1 px-[10px] text-xs leading-[140%] font-medium text-[#3B8BEA] bg-[#3B8BEA1A] rounded-2xl">
-                          По умолчанию</div>
-                        <button type="button" class="size-5 text-[#5A5B5F] cursor-pointer hover:opacity-50">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M13.4483 17.5007H6.54831C5.67581 17.5007 4.95081 16.8273 4.88581 15.9565L4.13831 5.83398H15.8333L15.1108 15.9523C15.0483 16.8248 14.3225 17.5007 13.4483 17.5007V17.5007Z"
-                              stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M10 9.16602V14.166" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
-                              stroke-linejoin="round" />
-                            <path d="M3.33337 5.83268H16.6667" stroke="currentColor" stroke-width="1.2"
-                              stroke-linecap="round" stroke-linejoin="round" />
-                            <path
-                              d="M14.1667 5.83333L13.3225 3.58167C13.0784 2.93083 12.4567 2.5 11.7617 2.5H8.23837C7.54337 2.5 6.92171 2.93083 6.67754 3.58167L5.83337 5.83333"
-                              stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M12.8583 9.16602L12.5 14.166" stroke="currentColor" stroke-width="1.2"
-                              stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M7.14167 9.16602L7.50001 14.166" stroke="currentColor" stroke-width="1.2"
-                              stroke-linecap="round" stroke-linejoin="round" />
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-
+                  <svg class="size-6" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.75 12L4.5 12" stroke="#3B8BEA" stroke-width="1.5" stroke-linecap="square"
+                      stroke-linejoin="round" />
+                    <path d="M15 16.5L19.5 12" stroke="#3B8BEA" stroke-width="1.5" stroke-linecap="square"
+                      stroke-linejoin="round" />
+                    <path d="M15 7.5L19.5 12" stroke="#3B8BEA" stroke-width="1.5" stroke-linecap="square"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div
+                  class="flex items-center justify-between py-4 px-6 bg-[#3B8BEA1A] rounded-2xl cursor-pointer hover:opacity-50">
+                  <div class="flex items-center gap-4 text-[#3B8BEA] font-semibold">
+                    <div class="text-[46px] leading-[130%] xs:text-lg">5%</div>
+                    <div class="text-lg leading-[140%] xs:text-sm">ваша скидка <br> на щиты</div>
                   </div>
+                  <svg class="size-6" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.75 12L4.5 12" stroke="#3B8BEA" stroke-width="1.5" stroke-linecap="square"
+                      stroke-linejoin="round" />
+                    <path d="M15 16.5L19.5 12" stroke="#3B8BEA" stroke-width="1.5" stroke-linecap="square"
+                      stroke-linejoin="round" />
+                    <path d="M15 7.5L19.5 12" stroke="#3B8BEA" stroke-width="1.5" stroke-linecap="square"
+                      stroke-linejoin="round" />
+                  </svg>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
     </section>
   </main>
   <footer class="py-16 bg-[#323338] text-white rounded-t-3xl lg:py-10 md:py-8 relative z-1">
