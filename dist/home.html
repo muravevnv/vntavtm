@@ -248,7 +248,7 @@
               </svg>
             </button>
             <button type="button"
-              class="absolute top-[7px] right-0 flex items-center justify-center size-[23px] md:hidden">
+              class="absolute top-[7px] right-0 flex items-center justify-center size-[23px] cursor-pointer md:hidden">
               <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="10.5978" cy="11.0978" r="6.76769" stroke="white" style="stroke:white;stroke-opacity:1;"
                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -501,8 +501,10 @@
           class="absolute z-0 max-w-[1580px] right-[-490px] top-[-165px] lg:max-w-[1100px] lg:top-[-120px] lg:right-[-30%] md:max-w-none md:right-[-180px] md:min-w-[790px] md:top-[24px]">
           <img src="./img/hero/main-img.png" alt="">
         </picture>
-        <h1 class="relative z-1 max-w-[711px] text-[46px] leading-[130%] mb-6 text-white font-semibold multi-layer-text-shadow
-        lg:max-w-[454px] lg:text-[32px] lg:leading-[130%] md:text-[28px] md:leading-[120%] md:px-6 md:mb-12 md:relative md:z-2">Стоимость шкафа автоматики для&nbsp;вентиляции
+        <h1
+          class="relative z-1 max-w-[711px] text-[46px] leading-[130%] mb-6 text-white font-semibold multi-layer-text-shadow
+        lg:max-w-[454px] lg:text-[32px] lg:leading-[130%] md:text-[28px] md:leading-[120%] md:px-6 md:mb-12 md:relative md:z-2">
+          Стоимость шкафа автоматики для&nbsp;вентиляции
           за&nbsp;2&nbsp;минуты</h1>
         <div
           class="relative z-1 max-w-[639px] pt-4 pb-6 pr-4 pl-6 rounded-3xl bg-white lg:max-w-[611px] 
@@ -1044,6 +1046,8 @@
               </li>
             </ul>
           </div>
+
+          
           <form action="#" class="flex flex-col gap-8 bg-white rounded-[22px] w-[50%] p-8 box-shadow 
             lg:w-full lg:p-6 md:p-6 md:rounded-b-none md:!shadow-none">
             <div class="flex flex-col gap-4">
@@ -1864,28 +1868,37 @@
             <div class="text-[15px] md:text-sm">1 письмо в месяц — обзоры и практические рекомендации</div>
           </div>
           <div class="flex flex-col items-start gap-4 w-[66%] lg:w-full">
-            <div class="flex items-start gap-4 w-full md:flex-col">
+            <form action="#" class="flex items-start gap-4 w-full md:flex-col">
               <div class="w-full">
-                <div class="w-full flex items-center bg-white roder-[1px] border-white rounded-2xl p-[20px]">
-                  <span class="pr-5 mr-5 border-r-[1px] border-gray md:pr-4 md:mr-4">
-                    <img src="./img/icons/email.svg" class="size-6" alt="">
+                <div class="w-full relative">
+                  <span class="absolute top-5 left-5 pr-5 border-r-[1px] border-gray md:pr-4">
+                    <svg class="size-6 text-[#3B8BEA]" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M21.9999 16.9201V19.9201C22.0011 20.1986 21.944 20.4743 21.8324 20.7294C21.7209 20.9846 21.5572 21.2137 21.352 21.402C21.1468 21.5902 20.9045 21.7336 20.6407 21.8228C20.3769 21.912 20.0973 21.9452 19.8199 21.9201C16.7428 21.5857 13.7869 20.5342 11.1899 18.8501C8.77376 17.3148 6.72527 15.2663 5.18993 12.8501C3.49991 10.2413 2.44818 7.27109 2.11993 4.1801C2.09494 3.90356 2.12781 3.62486 2.21643 3.36172C2.30506 3.09859 2.4475 2.85679 2.6347 2.65172C2.82189 2.44665 3.04974 2.28281 3.30372 2.17062C3.55771 2.05843 3.83227 2.00036 4.10993 2.0001H7.10993C7.59524 1.99532 8.06572 2.16718 8.43369 2.48363C8.80166 2.80008 9.04201 3.23954 9.10993 3.7201C9.23656 4.68016 9.47138 5.62282 9.80993 6.5301C9.94448 6.88802 9.9736 7.27701 9.89384 7.65098C9.81408 8.02494 9.6288 8.36821 9.35993 8.6401L8.08993 9.9101C9.51349 12.4136 11.5864 14.4865 14.0899 15.9101L15.3599 14.6401C15.6318 14.3712 15.9751 14.1859 16.3491 14.1062C16.723 14.0264 17.112 14.0556 17.4699 14.1901C18.3772 14.5286 19.3199 14.7635 20.2799 14.8901C20.7657 14.9586 21.2093 15.2033 21.5265 15.5776C21.8436 15.9519 22.0121 16.4297 21.9999 16.9201Z"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
                   </span>
-                  <input type="text" placeholder="Электронная почта"
-                    class="w-full outline-0 text-[17px] leading-[140%] font-medium text-[#323338] placeholder:text-[#A4A4A4]">
+                  <input type="tel" placeholder="+7 (000) 000-00-00" data-required=""
+                    class="w-full outline-0 text-[17px] leading-[140%] bg-[#F4F6FB] border-[2px] border-[#F4F6FB] rounded-2xl p-[18px] pl-[82px] font-medium text-[#323338] placeholder:text-[#A4A4A4]"
+                    maxlength="18">
+                  <span class="hidden text-xs text-[#F55353] mt-[6px]" data-required-error="">Обязательное поле для
+                    заполнения</span>
                 </div>
-                <span class="hidden text-xs text-[#F55353] mt-[6px]">Обязательное поле для заполнения</span>
               </div>
-              <button type="button" data-request="btn"
+              <button type="submit" data-request="btn"
                 class="w-[305px] shrink-0 bg-[#323338] inline-flex items-center justify-center p-5 
                 rounded-2xl text-white font-semibold lg:w-auto lg:px-10 md:w-full cursor-pointer hover:bg-[#050506] transition-all">
                 <span>Подписаться</span>
               </button>
-            </div>
+            </form>
             <div class="text-sm lg:text-xs">
               Нажимая на кнопку «Отправить», вы подтверждаете своё согласие на обработку персональных данных
             </div>
           </div>
         </div>
+
+
         <div data-request="complete" class="hidden relative mt-6 p-6 pl-[132px] min-h-[150px] rounded-3xl bg-primary text-white
           lg:py-8 lg:px-6 md:w-[calc(100% + 48px)] md:mt-8 md:-mx-6 md:py-6 md:px-6 md:rounded-none">
           <div class="flex items-center mb-3 lg:gap-6 lg:mb-6 md:flex-col md:items-start md:mb-4">

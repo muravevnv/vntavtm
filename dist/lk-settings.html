@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body class="text-graphite">
+<body class="text-graphite flex flex-col min-h-screen">
   <header class="font-sans relative z-10">
   <div class="bg-white">
     <div class="max-w-[1234px] mx-auto flex justify-between py-[10px] px-8 md:py-2">
@@ -248,7 +248,7 @@
               </svg>
             </button>
             <button type="button"
-              class="absolute top-[7px] right-0 flex items-center justify-center size-[23px] md:hidden">
+              class="absolute top-[7px] right-0 flex items-center justify-center size-[23px] cursor-pointer md:hidden">
               <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="10.5978" cy="11.0978" r="6.76769" stroke="white" style="stroke:white;stroke-opacity:1;"
                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -489,11 +489,11 @@
     </div>
   </div>
 </div>
-  <main>
-    <section class="pt-[31px] pb-16 lg:pt-6 lg:pb-12 md:pt-6 md:pb-4">
+  <main class="flex-1">
+    <section class="pt-[31px] pb-16 lg:pt-6 lg:pb-12 md:pt-6 md:pb-11">
       <div class="my-container">
         <div class="w-full flex items-center gap-4 mb-6 xl:flex-col xl:items-start xl:gap-4 lg:mb-4">
-          <div class="w-[338px] shrink-0">
+          <div class="w-[338px] shrink-0 md:w-full">
             <h1 class="text-[34px] leading-[130%] font-bold text-[#3B8BEA] lg:text-[30px] md:text-2xl">Личный кабинет
             </h1>
           </div>
@@ -559,7 +559,8 @@
                           <div class="text-sm leading-[140%] font-semibold">Анастасия Владиморовна</div>
                         </div>
                         <div class="felx flex-col items-start gap-[6px]">
-                          <div class="text-sm leading-[140%] text-[#32333880] font-medium mb-[6px]">Электронный адрес</div>
+                          <div class="text-sm leading-[140%] text-[#32333880] font-medium mb-[6px]">Электронный адрес
+                          </div>
                           <div class="text-sm leading-[140%] font-semibold">vladimirovna@mail.ru</div>
                         </div>
                         <div class="felx flex-col items-start gap-[6px]">
@@ -622,10 +623,11 @@
                 </div>
               </div>
               <div class="w-full grid grid-cols-2 gap-4 lg:flex lg:flex-col">
-                <div class="flex items-center justify-between py-4 px-6 bg-[#3B8BEA1A] rounded-2xl">
+                <div
+                  class="flex items-center justify-between py-4 px-6 bg-[#3B8BEA1A] rounded-2xl cursor-pointer hover:opacity-50">
                   <div class="flex items-center gap-4 text-[#3B8BEA] font-semibold">
-                    <div class="text-[46px] leading-[130%]">5%</div>
-                    <div class="text-lg leading-[140%]">ваша скидка <br> на щиты</div>
+                    <div class="text-[46px] leading-[130%] xs:text-lg">5%</div>
+                    <div class="text-lg leading-[140%] xs:text-sm">ваша скидка <br> на щиты</div>
                   </div>
                   <svg class="size-6" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -637,10 +639,11 @@
                       stroke-linejoin="round" />
                   </svg>
                 </div>
-                <div class="flex items-center justify-between py-4 px-6 bg-[#3B8BEA1A] rounded-2xl">
+                <div
+                  class="flex items-center justify-between py-4 px-6 bg-[#3B8BEA1A] rounded-2xl cursor-pointer hover:opacity-50">
                   <div class="flex items-center gap-4 text-[#3B8BEA] font-semibold">
-                    <div class="text-[46px] leading-[130%]">5%</div>
-                    <div class="text-lg leading-[140%]">ваша скидка <br> на автоматику</div>
+                    <div class="text-[46px] leading-[130%] xs:text-lg">5%</div>
+                    <div class="text-lg leading-[140%] xs:text-sm">ваша скидка <br> на щиты</div>
                   </div>
                   <svg class="size-6" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">

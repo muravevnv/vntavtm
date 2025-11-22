@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body class="text-graphite">
+<body class="text-graphite flex flex-col min-h-screen">
   <header class="font-sans relative z-10">
   <div class="bg-white">
     <div class="max-w-[1234px] mx-auto flex justify-between py-[10px] px-8 md:py-2">
@@ -248,7 +248,7 @@
               </svg>
             </button>
             <button type="button"
-              class="absolute top-[7px] right-0 flex items-center justify-center size-[23px] md:hidden">
+              class="absolute top-[7px] right-0 flex items-center justify-center size-[23px] cursor-pointer md:hidden">
               <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="10.5978" cy="11.0978" r="6.76769" stroke="white" style="stroke:white;stroke-opacity:1;"
                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -489,7 +489,7 @@
     </div>
   </div>
 </div>
-  <main>
+  <main class="flex-1">
     <section class="pt-[13px] lg:pt-3">
       <div class="my-container">
         <a href="#" class="flex items-center gap-[10px] text-[#3B8BEA]">
@@ -518,7 +518,7 @@
             <input type="text" placeholder="Название товара"
               class="block w-full h-11 py-1 px-4 text-sm leading-[140%] font-semibold border-[1px] border-[#DBDBDB] rounded-l-xl rounded-r-0 borde-r-[0px] outline-none placeholder:text-[#777978]">
             <button type="button"
-              class="w-16 h-11 bg-[#3B8BEA] flex items-center justify-center rounded-l-0 rounded-r-2xl shrink-0">
+              class="w-16 h-11 bg-[#3B8BEA] flex items-center justify-center rounded-l-0 rounded-r-2xl shrink-0 cursor-pointer">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M11.5115 18.3565C7.73208 18.3565 4.66675 15.2912 4.66675 11.5117C4.66675 7.73233 7.73208 4.66699 11.5115 4.66699C15.2927 4.66699 18.3562 7.73233 18.3562 11.5117C18.3562 15.2912 15.2927 18.3565 11.5115 18.3565"
@@ -546,9 +546,9 @@
               class="text-sm font-semibold min-h-[60px] mb-[8px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
               Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
             </a>
-            <a href="#" class="flex items-center">
+            <div class="flex items-center">
               <span class="text-lg font-semibold leading-[100%]">43 540 ₽</span>
-            </a>
+            </div>
             <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary 
                   text-xs font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
               <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -586,9 +586,9 @@
               class="text-sm font-semibold min-h-[60px] mb-[8px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
               Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
             </a>
-            <a href="#" class="flex items-center">
+            <div class="flex items-center">
               <span class="text-lg font-semibold leading-[100%]">43 540 ₽</span>
-            </a>
+            </div>
             <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary 
                   text-xs font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
               <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -626,9 +626,10 @@
               class="text-sm font-semibold min-h-[60px] mb-[8px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
               Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
             </a>
-            <a href="#" class="flex items-center">
-              <span class="text-lg font-semibold leading-[100%]">43 540 ₽</span>
-            </a>
+            <div class="flex items-center gap-3">
+              <span class="text-lg font-semibold leading-[100%] text-[#3B8BEA]">43 540 ₽</span>
+              <span class="text-[10px] leading-[140%] font-medium line-through">43 780 ₽</span>
+            </div>
             <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary 
                   text-xs font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
               <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -666,9 +667,9 @@
               class="text-sm font-semibold min-h-[60px] mb-[8px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
               Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
             </a>
-            <a href="#" class="flex items-center">
+            <div class="flex items-center">
               <span class="text-lg font-semibold leading-[100%]">43 540 ₽</span>
-            </a>
+            </div>
             <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary 
                   text-xs font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
               <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -706,9 +707,9 @@
               class="text-sm font-semibold min-h-[60px] mb-[8px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
               Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
             </a>
-            <a href="#" class="flex items-center">
+            <div class="flex items-center">
               <span class="text-lg font-semibold leading-[100%]">43 540 ₽</span>
-            </a>
+            </div>
             <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary 
                   text-xs font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
               <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -746,9 +747,9 @@
               class="text-sm font-semibold min-h-[60px] mb-[8px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
               Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
             </a>
-            <a href="#" class="flex items-center">
+            <div class="flex items-center">
               <span class="text-lg font-semibold leading-[100%]">43 540 ₽</span>
-            </a>
+            </div>
             <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary 
                   text-xs font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
               <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -786,9 +787,9 @@
               class="text-sm font-semibold min-h-[60px] mb-[8px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
               Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
             </a>
-            <a href="#" class="flex items-center">
+            <div class="flex items-center">
               <span class="text-lg font-semibold leading-[100%]">43 540 ₽</span>
-            </a>
+            </div>
             <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary 
                   text-xs font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
               <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -826,9 +827,9 @@
               class="text-sm font-semibold min-h-[60px] mb-[8px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
               Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
             </a>
-            <a href="#" class="flex items-center">
+            <div class="flex items-center">
               <span class="text-lg font-semibold leading-[100%]">43 540 ₽</span>
-            </a>
+            </div>
             <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary 
                   text-xs font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
               <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -866,9 +867,9 @@
               class="text-sm font-semibold min-h-[60px] mb-[8px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
               Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
             </a>
-            <a href="#" class="flex items-center">
+            <div class="flex items-center">
               <span class="text-lg font-semibold leading-[100%]">43 540 ₽</span>
-            </a>
+            </div>
             <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary 
                   text-xs font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
               <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -906,9 +907,9 @@
               class="text-sm font-semibold min-h-[60px] mb-[8px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
               Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
             </a>
-            <a href="#" class="flex items-center">
+            <div class="flex items-center">
               <span class="text-lg font-semibold leading-[100%]">43 540 ₽</span>
-            </a>
+            </div>
             <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary 
                   text-xs font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
               <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -946,9 +947,9 @@
               class="text-sm font-semibold min-h-[60px] mb-[8px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
               Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
             </a>
-            <a href="#" class="flex items-center">
+            <div class="flex items-center">
               <span class="text-lg font-semibold leading-[100%]">43 540 ₽</span>
-            </a>
+            </div>
             <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary 
                   text-xs font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
               <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -986,9 +987,9 @@
               class="text-sm font-semibold min-h-[60px] mb-[8px] line-clamp-3 overflow-ellipsis hover:text-[#3B8BEA] transition-color">
               Щит управления приточно-вытяжной вентиляцией с электрическим калорифером ЩУВ Э130-ПРС105-ВРС105
             </a>
-            <a href="#" class="flex items-center">
+            <div class="flex items-center">
               <span class="text-lg font-semibold leading-[100%]">43 540 ₽</span>
-            </a>
+            </div>
             <button type="button" class="w-full flex items-center justify-center gap-[6px] p-[10px] mt-[15px] rounded-[10px] bg-primary 
                   text-xs font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
               <svg class="size-[18px]" width="32" height="32" viewBox="0 0 32 32" fill="none"

@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body class="text-graphite">
+<body class="text-graphite flex flex-col min-h-screen">
   <header class="font-sans relative z-10">
   <div class="bg-white">
     <div class="max-w-[1234px] mx-auto flex justify-between py-[10px] px-8 md:py-2">
@@ -248,7 +248,7 @@
               </svg>
             </button>
             <button type="button"
-              class="absolute top-[7px] right-0 flex items-center justify-center size-[23px] md:hidden">
+              class="absolute top-[7px] right-0 flex items-center justify-center size-[23px] cursor-pointer md:hidden">
               <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="10.5978" cy="11.0978" r="6.76769" stroke="white" style="stroke:white;stroke-opacity:1;"
                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -489,8 +489,8 @@
     </div>
   </div>
 </div>
-  <main>
-    <section class="pt-[31px] pb-16 lg:pt-6 lg:pb-12 md:pt-6 md:pb-4">
+  <main class="flex-1">
+    <section class="pt-[31px] pb-16 lg:pt-6 lg:pb-12 md:pt-12 md:pb-11">
       <div class="my-container">
         <div class="w-full flex items-center gap-4 mb-6 xl:flex-col xl:items-start xl:gap-4 lg:flex-row lg:gap-8 lg:items-end md:flex-col
           md:items-start md:gap-4 md:mb-4">
@@ -548,7 +548,8 @@
               <div class="w-full flex items-center">
                 <input type="text" placeholder="Название, код товара или номер заказа" class="w-full h-11 py-3 px-4 rounded-l-xl bg-white border-[1px] border-r-0 text-sm leading-[140%] font-semibold 
                   border-[#DBDBDB] outline-none">
-                <button class="w-[64px] h-11 flex items-center justify-center bg-[#3B8BEA] shrink-0 rounded-r-2xl">
+                <button
+                  class="w-[64px] h-11 flex items-center justify-center bg-[#3B8BEA] shrink-0 rounded-r-2xl cursor-pointer">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M11.5115 18.3565C7.73208 18.3565 4.66675 15.2912 4.66675 11.5117C4.66675 7.73233 7.73208 4.66699 11.5115 4.66699C15.2927 4.66699 18.3562 7.73233 18.3562 11.5117C18.3562 15.2912 15.2927 18.3565 11.5115 18.3565"
@@ -560,7 +561,7 @@
               </div>
               <div class="flex items-center gap-3 md:w-full">
                 <div class="relative w-[140px] md:w-full">
-                  <input type="text" class="w-full h-11 block bg-white border-[1px] border-[#DBDBDB] rounded-xl 
+                  <input type="text" data-input="date" class="w-full h-11 block bg-white border-[1px] border-[#DBDBDB] rounded-xl 
                   text-[15px] leading-[130%] font-medium py-[10px] pl-3 pr-11 outline-none placeholder:text-[#A4A4A4]"
                     placeholder="От">
                   <svg class="size-6 absolute top-[11px] right-3" width="22" height="22" viewBox="0 0 22 22" fill="none"
@@ -592,7 +593,7 @@
                   </svg>
                 </div>
                 <div class="relative w-[140px] md:w-full">
-                  <input type="text" class="w-full h-11 block bg-white border-[1px] border-[#DBDBDB] rounded-xl 
+                  <input type="text" data-input="date" class="w-full h-11 block bg-white border-[1px] border-[#DBDBDB] rounded-xl 
                   text-[15px] leading-[130%] font-medium py-[10px] pl-3 pr-11 outline-none placeholder:text-[#A4A4A4]"
                     placeholder="До">
                   <svg class="size-6 absolute top-[11px] right-3" width="22" height="22" viewBox="0 0 22 22" fill="none"
@@ -658,14 +659,14 @@
                           </picture>
                           <div class="w-full">
                             <div class="text-sm leading-[140%] font-medium md:line-clamp-2">
-                              Щит управления приточно-вытяжной вентиляцией с электрическим калорифером
-                              ЩУВ Э130-ПРС105-ВРС105
+                              Щит управления приточно-вытяжной вентиляцией с электрическим калорифером
+                              ЩУВ Э130-ПРС105-ВРС105
                             </div>
                             <div class="hidden md:block md:text-xs md:mt-[8px]">1 шт</div>
                           </div>
                         </div>
                         <div class="w-[10%] text-xs leading-[140%] font-medium text-center md:hidden">1 шт</div>
-                        <div class="w-[80px] text-sm leading-[140%] font-medium md:shrink-0 md:w-auto">43 620 ₽</div>
+                        <div class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto">43 620 ₽</div>
                       </div>
                       <div class="w-full flex items-center justify-between gap-3 md:items-start">
                         <div class="w-[60%] flex items-center gap-4 lg:w-[70%] md:w-full md:items-start">
@@ -681,11 +682,11 @@
                           </div>
                         </div>
                         <div class="w-[10%] text-xs leading-[140%] font-medium text-center md:hidden">2 шт</div>
-                        <div class="w-[80px] text-sm leading-[140%] font-medium md:shrink-0 md:w-auto">1 160 ₽</div>
+                        <div class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto">1 160 ₽</div>
                       </div>
                     </div>
                   </div>
-                  <div class="w-full flex items-start justify-between gap-4 mt-4 pt-4 border-t-[1px] border-[#DBDBDB]
+                  <div class="w-full flex items-start justify-between gap-4 mt-4 pt-4 border-t-[1px] border-[#EDEDED]
                   md:flex-col">
                     <div class="flex flex-col items-start gap-3">
                       <div class="flex items-start gap-1">
@@ -705,8 +706,9 @@
                         45 900 ₽
                       </div>
                       <div>
-                        <a href="#" class="inline-flex items-center py-[9px] px-[31px] gap-[6px] border-[1px] border-[#3B8BEA] 
-                       rounded-[10px] bg-transparent text-[#3B8BEA] leading-[100%]">
+                        <a href="#"
+                          class="inline-flex items-center py-[9px] px-[31px] gap-[6px] border-[1px] border-[#3B8BEA] 
+                       rounded-[10px] bg-transparent text-[#3B8BEA] leading-[100%] hover:bg-[#3B8BEA] hover:text-white transition-all">
                           <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M9 12.75V2.25" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
@@ -718,6 +720,118 @@
                               stroke-linecap="round" stroke-linejoin="round" />
                           </svg>
                           <span class="text-xs leading-[140%] font-semibold">Скачать счёт</span>
+                        </a>
+                      </div>
+                      <a href="#"
+                        class="inline-flex items-center gap-1 text-xs leading-[140%] text-[#5A5B5F] font-semibold">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.3448 5.345L12.9882 2.98833C12.6757 2.67583 12.2515 2.5 11.8098 2.5H5.83317C4.91234 2.5 4.1665 3.24583 4.1665 4.16667V15.8333C4.1665 16.7542 4.91234 17.5 5.83317 17.5H14.1665C15.0873 17.5 15.8332 16.7542 15.8332 15.8333V6.52333C15.8332 6.08167 15.6573 5.6575 15.3448 5.345V5.345Z"
+                            stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M9.24147 14.1663L7.5498 12.4746" stroke="currentColor" stroke-width="1.2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M10.8331 12.5752L9.24146 14.1669" stroke="currentColor" stroke-width="1.2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M9.24162 14.167V9.16699" stroke="currentColor" stroke-width="1.2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M15.8332 6.66667H12.4998C12.0398 6.66667 11.6665 6.29333 11.6665 5.83333V2.5"
+                            stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Скачать документацию
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full p-4 bg-[#F4F6FB] rounded-2xl">
+                  <div class="w-full flex items-center justify-between gap-3 mb-4 md:items-start md:gap-1">
+                    <div class="flex items-center gap-6 md:flex-col md:items-start md:gap-2">
+                      <div class="text-sm leading-[140%] font-semibold md:text-xs">Заказ от 16.08. 2024</div>
+                      <div class="inline-flex items-center gap-1 py-1 px-3 bg-[#5A5B5F1A] text-[#5A5B5F] rounded-2xl">
+                        <span class="text-xs leading-[140%] font-medium">Оплачен, ожидает отгрузки</span>
+                      </div>
+                    </div>
+                    <div class="text-sm leading-[140%] font-semibold md:text-xs">№742049884109</div>
+                  </div>
+                  <div class="w-full">
+                    <div class="w-full flex flex-col gap-[10px] md:gap-4">
+                      <div class="w-full flex items-center justify-between gap-3 md:items-start">
+                        <div class="w-[60%] flex items-center gap-4 lg:w-[70%] md:w-full md:items-start">
+                          <picture
+                            class="w-[57px] h-[68px] bg-white flex items-center justify-center shrink-0 rounded-lg overflow-hidden">
+                            <img src="./img/basket/basket-01.png" alt="">
+                          </picture>
+                          <div class="w-full">
+                            <div class="text-sm leading-[140%] font-medium md:line-clamp-2">
+                              Щит управления приточно-вытяжной вентиляцией с электрическим калорифером
+                              ЩУВ Э130-ПРС105-ВРС105
+                            </div>
+                            <div class="hidden md:block md:text-xs md:mt-[8px]">1 шт</div>
+                          </div>
+                        </div>
+                        <div class="w-[10%] text-xs leading-[140%] font-medium text-center md:hidden">1 шт</div>
+                        <div class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto">43 620 ₽</div>
+                      </div>
+                      <div class="w-full flex items-center justify-between gap-3 md:items-start">
+                        <div class="w-[60%] flex items-center gap-4 lg:w-[70%] md:w-full md:items-start">
+                          <picture
+                            class="w-[57px] h-[68px] bg-white flex items-center justify-center shrink-0 rounded-lg overflow-hidden">
+                            <img src="./img/basket/basket-02.png" alt="">
+                          </picture>
+                          <div class="w-full">
+                            <div class="text-sm leading-[140%] font-medium md:line-clamp-2">
+                              Датчик температуры канальный DS1-01 NTC10k
+                            </div>
+                            <div class="hidden md:block md:text-xs md:mt-[8px]">2 шт</div>
+                          </div>
+                        </div>
+                        <div class="w-[10%] text-xs leading-[140%] font-medium text-center md:hidden">2 шт</div>
+                        <div class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto">1 160 ₽</div>
+                      </div>
+                    </div>
+                    <div class="w-full hidden">
+                      <div class="w-full flex-col gap-[10px]">123</div>
+                    </div>
+                    <button type="button"
+                      class="inline-flex items-center text-sm leading-[140%] font-semibold text-[#3B8BEA] cursor-pointer mt-3">
+                      <span>Развернуть</span>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 10L12 14L8 10" stroke="#3B8BEA" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="w-full flex items-start justify-between gap-4 mt-4 pt-4 border-t-[1px] border-[#EDEDED]
+                  md:flex-col">
+                    <div class="flex flex-col items-start gap-3">
+                      <div class="flex items-start gap-1">
+                        <div class="text-sm leading-[140%] font-medium text-[#5A5B5F]">Способ получения:</div>
+                        <div class="text-sm leading-[140%] font-semibold">Самовывоз</div>
+                      </div>
+                      <div class="flex items-start gap-1">
+                        <div class="text-sm leading-[140%] font-medium text-[#5A5B5F]">Адрес:</div>
+                        <div class="text-sm leading-[140%] font-semibold">Россия, г. Москва, Наметкина, 6А</div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col items-end gap-3 md:items-start">
+                      <div class="flex items-center gap-1 text-[15px] font-semibold">
+                        <span class="text-[#5A5B5F] text-sm font-medium">Итого:</span>
+                        45 900 ₽
+                      </div>
+                      <div>
+                        <a href="#"
+                          class="inline-flex items-center py-[9px] px-[31px] gap-[6px] border-[1px] border-[#3B8BEA] 
+                       rounded-[10px] bg-transparent text-[#3B8BEA] leading-[100%] hover:bg-[#3B8BEA] hover:text-white transition-all">
+                          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 12.75V2.25" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path
+                              d="M15.75 12.75C15.75 14.4068 14.4068 15.75 12.75 15.75H5.25C3.59325 15.75 2.25 14.4068 2.25 12.75"
+                              stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12.75 9L8.99927 12.7507L5.24927 9" stroke="currentColor" stroke-width="1.2"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                          <span class="text-xs leading-[140%] font-semibold">Скачать УПД</span>
                         </a>
                       </div>
                       <a href="#"
@@ -760,14 +874,14 @@
                           </picture>
                           <div class="w-full">
                             <div class="text-sm leading-[140%] font-medium md:line-clamp-2">
-                              Щит управления приточно-вытяжной вентиляцией с электрическим калорифером
-                              ЩУВ Э130-ПРС105-ВРС105
+                              Щит управления приточно-вытяжной вентиляцией с электрическим калорифером
+                              ЩУВ Э130-ПРС105-ВРС105
                             </div>
                             <div class="hidden md:block md:text-xs md:mt-[8px]">1 шт</div>
                           </div>
                         </div>
                         <div class="w-[10%] text-xs leading-[140%] font-medium text-center md:hidden">1 шт</div>
-                        <div class="w-[80px] text-sm leading-[140%] font-medium md:shrink-0 md:w-auto">43 620 ₽</div>
+                        <div class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto">43 620 ₽</div>
                       </div>
                       <div class="w-full flex items-center justify-between gap-3 md:items-start">
                         <div class="w-[60%] flex items-center gap-4 lg:w-[70%] md:w-full md:items-start">
@@ -783,22 +897,14 @@
                           </div>
                         </div>
                         <div class="w-[10%] text-xs leading-[140%] font-medium text-center md:hidden">2 шт</div>
-                        <div class="w-[80px] text-sm leading-[140%] font-medium md:shrink-0 md:w-auto">1 160 ₽</div>
+                        <div class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto">1 160 ₽</div>
                       </div>
                     </div>
                     <div class="w-full hidden">
                       <div class="w-full flex-col gap-[10px]">123</div>
                     </div>
-                    <button type="button"
-                      class="inline-flex items-center text-sm leading-[140%] font-semibold text-[#3B8BEA] cursor-pointer mt-3">
-                      <span>Развернуть</span>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16 10L12 14L8 10" stroke="#3B8BEA" stroke-width="1.5" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                      </svg>
-                    </button>
                   </div>
-                  <div class="w-full flex items-start justify-between gap-4 mt-4 pt-4 border-t-[1px] border-[#DBDBDB]
+                  <div class="w-full flex items-start justify-between gap-4 mt-4 pt-4 border-t-[1px] border-[#EDEDED]
                   md:flex-col">
                     <div class="flex flex-col items-start gap-3">
                       <div class="flex items-start gap-1">
@@ -816,8 +922,9 @@
                         45 900 ₽
                       </div>
                       <div>
-                        <a href="#" class="inline-flex items-center py-[9px] px-[31px] gap-[6px] border-[1px] border-[#3B8BEA] 
-                       rounded-[10px] bg-transparent text-[#3B8BEA] leading-[100%]">
+                        <a href="#"
+                          class="inline-flex items-center py-[9px] px-[31px] gap-[6px] border-[1px] border-[#3B8BEA] 
+                       rounded-[10px] bg-transparent text-[#3B8BEA] leading-[100%] hover:bg-[#3B8BEA] hover:text-white transition-all">
                           <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M9 12.75V2.25" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
@@ -828,7 +935,7 @@
                             <path d="M12.75 9L8.99927 12.7507L5.24927 9" stroke="currentColor" stroke-width="1.2"
                               stroke-linecap="round" stroke-linejoin="round" />
                           </svg>
-                          <span class="text-xs leading-[140%] font-semibold">Скачать счёт</span>
+                          <span class="text-xs leading-[140%] font-semibold">Скачать УПД</span>
                         </a>
                       </div>
                       <a href="#"
@@ -871,18 +978,18 @@
                           </picture>
                           <div class="w-full">
                             <div class="text-sm leading-[140%] font-medium md:line-clamp-2">
-                              Щит управления приточно-вытяжной вентиляцией с электрическим калорифером
-                              ЩУВ Э130-ПРС105-ВРС105
+                              Щит управления приточно-вытяжной вентиляцией с электрическим калорифером
+                              ЩУВ Э130-ПРС105-ВРС-105
                             </div>
                             <div class="hidden md:block md:text-xs md:mt-[8px]">1 шт</div>
                           </div>
                         </div>
                         <div class="w-[10%] text-xs leading-[140%] font-medium text-center md:hidden">1 шт</div>
-                        <div class="w-[80px] text-sm leading-[140%] font-medium md:shrink-0 md:w-auto">43 620 ₽</div>
+                        <div class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto">43 620 ₽</div>
                       </div>
                     </div>
                   </div>
-                  <div class="w-full flex items-start justify-between gap-4 mt-4 pt-4 border-t-[1px] border-[#DBDBDB]
+                  <div class="w-full flex items-start justify-between gap-4 mt-4 pt-4 border-t-[1px] border-[#EDEDED]
                   md:flex-col">
                     <div class="flex flex-col items-start gap-3">
                       <div class="flex items-start gap-1">
@@ -900,8 +1007,9 @@
                         45 900 ₽
                       </div>
                       <div>
-                        <a href="#" class="inline-flex items-center py-[9px] px-[31px] gap-[6px] border-[1px] border-[#3B8BEA] 
-                       rounded-[10px] bg-transparent text-[#3B8BEA] leading-[100%]">
+                        <a href="#"
+                          class="inline-flex items-center py-[9px] px-[31px] gap-[6px] border-[1px] border-[#3B8BEA] 
+                       rounded-[10px] bg-transparent text-[#3B8BEA] leading-[100%] hover:bg-[#3B8BEA] hover:text-white transition-all">
                           <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M9 12.75V2.25" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
@@ -912,7 +1020,7 @@
                             <path d="M12.75 9L8.99927 12.7507L5.24927 9" stroke="currentColor" stroke-width="1.2"
                               stroke-linecap="round" stroke-linejoin="round" />
                           </svg>
-                          <span class="text-xs leading-[140%] font-semibold">Скачать счёт</span>
+                          <span class="text-xs leading-[140%] font-semibold">Скачать УПД</span>
                         </a>
                       </div>
                       <a href="#"
@@ -982,7 +1090,7 @@
                         <div class="text-xs leading-[140%] font-medium text-[#5A5B5F] mt-[2px]">Получен 19.08.2024</div>
                       </div>
                       <div
-                        class="inline-flex items-center gap-1 py-1 px-3 bg-[#00B8621A] text-[#00B862] rounded-2xl md:pl-[6px] md:pr-3">
+                        class="inline-flex items-center gap-1 py-1 px-3 bg-[#00B8621A] text-[#00B862] rounded-2xl md:px-3">
                         <span class="text-xs leading-[140%] font-medium">Доставлен</span>
                       </div>
                     </div>
@@ -998,14 +1106,14 @@
                           </picture>
                           <div class="w-full">
                             <div class="text-sm leading-[140%] font-medium md:line-clamp-2">
-                              Щит управления приточно-вытяжной вентиляцией с электрическим калорифером
-                              ЩУВ Э130-ПРС105-ВРС105
+                              Щит управления приточно-вытяжной вентиляцией с электрическим калорифером
+                              ЩУВ Э130-ПРС105-ВРС105
                             </div>
                             <div class="hidden md:block md:text-xs md:mt-[8px]">1 шт</div>
                           </div>
                         </div>
                         <div class="w-[10%] text-xs leading-[140%] font-medium text-center md:hidden">1 шт</div>
-                        <div class="w-[80px] text-sm leading-[140%] font-medium md:shrink-0 md:w-auto">43 620 ₽</div>
+                        <div class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto">43 620 ₽</div>
                       </div>
                       <div class="w-full flex items-center justify-between gap-3 md:items-start">
                         <div class="w-[60%] flex items-center gap-4 lg:w-[70%] md:w-full md:items-start">
@@ -1021,11 +1129,11 @@
                           </div>
                         </div>
                         <div class="w-[10%] text-xs leading-[140%] font-medium text-center md:hidden">2 шт</div>
-                        <div class="w-[80px] text-sm leading-[140%] font-medium md:shrink-0 md:w-auto">1 160 ₽</div>
+                        <div class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto">1 160 ₽</div>
                       </div>
                     </div>
                   </div>
-                  <div class="w-full flex items-start justify-between gap-4 mt-4 pt-4 border-t-[1px] border-[#DBDBDB]
+                  <div class="w-full flex items-start justify-between gap-4 mt-4 pt-4 border-t-[1px] border-[#EDEDED]
                   md:flex-col">
                     <div class="flex flex-col items-start gap-3">
                       <div class="flex items-start gap-1">
@@ -1044,13 +1152,13 @@
                         <span class="text-[#5A5B5F] text-sm font-medium">Итого:</span>
                         45 900 ₽
                       </div>
-                      <div class="flex items-center gap-1 md:w-full">
-                        <a href="#"
-                          class="inline-block bg-[#3B8BEA1A] text-xs text-center leading-[140%] font-semibold text-[#3B8BEA]
+                      <div class="flex items-center gap-1 md:w-full xs:flex-col">
+                        <a href="#" class="inline-block bg-[#3B8BEA1A] text-xs text-center leading-[140%] font-semibold text-[#3B8BEA]
                             py-[11px] px-6 rounded-[10px] md:p-[11px] md:w-full">Повторить
                           заказ</a>
-                        <a href="#" class="inline-flex items-center justify-center py-[9px] px-[31px] gap-[6px] border-[1px] border-[#3B8BEA] 
-                       rounded-[10px] bg-transparent text-[#3B8BEA] leading-[100%] md:p-[11px] md:w-full">
+                        <a href="#"
+                          class="inline-flex items-center justify-center py-[9px] px-[31px] gap-[6px] border-[1px] border-[#3B8BEA] 
+                       rounded-[10px] bg-transparent text-[#3B8BEA] leading-[100%] hover:bg-[#3B8BEA] hover:text-white transition-all md:p-[11px] md:w-full">
                           <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M9 12.75V2.25" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
@@ -1061,7 +1169,7 @@
                             <path d="M12.75 9L8.99927 12.7507L5.24927 9" stroke="currentColor" stroke-width="1.2"
                               stroke-linecap="round" stroke-linejoin="round" />
                           </svg>
-                          <span class="text-xs leading-[140%] font-semibold">Скачать счёт</span>
+                          <span class="text-xs leading-[140%] font-semibold">Скачать УПД</span>
                         </a>
                       </div>
                       <div>
@@ -1095,7 +1203,7 @@
                         <div class="text-xs leading-[140%] font-medium text-[#5A5B5F] mt-[2px]">Получен 19.08.2024</div>
                       </div>
                       <div
-                        class="inline-flex items-center gap-1 py-1 px-3 bg-[#FD5D5D1A] text-[#FD5D5D] rounded-2xl md:pl-[6px] md:pr-3">
+                        class="inline-flex items-center gap-1 py-1 px-3 bg-[#FD5D5D1A] text-[#FD5D5D] rounded-2xl md:px-3">
                         <span class="text-xs leading-[140%] font-medium">Отменен</span>
                       </div>
                     </div>
@@ -1111,14 +1219,14 @@
                           </picture>
                           <div class="w-full">
                             <div class="text-sm leading-[140%] font-medium md:line-clamp-2">
-                              Щит управления приточно-вытяжной вентиляцией с электрическим калорифером
-                              ЩУВ Э130-ПРС105-ВРС105
+                              Щит управления приточно-вытяжной вентиляцией с электрическим калорифером
+                              ЩУВ Э130-ПРС105-ВРС105
                             </div>
                             <div class="hidden md:block md:text-xs md:mt-[8px]">1 шт</div>
                           </div>
                         </div>
                         <div class="w-[10%] text-xs leading-[140%] font-medium text-center md:hidden">1 шт</div>
-                        <div class="w-[80px] text-sm leading-[140%] font-medium md:shrink-0 md:w-auto">43 620 ₽</div>
+                        <div class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto">43 620 ₽</div>
                       </div>
                       <div class="w-full flex items-center justify-between gap-3 md:items-start">
                         <div class="w-[60%] flex items-center gap-4 lg:w-[70%] md:w-full md:items-start">
@@ -1134,11 +1242,11 @@
                           </div>
                         </div>
                         <div class="w-[10%] text-xs leading-[140%] font-medium text-center md:hidden">2 шт</div>
-                        <div class="w-[80px] text-sm leading-[140%] font-medium md:shrink-0 md:w-auto">1 160 ₽</div>
+                        <div class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto">1 160 ₽</div>
                       </div>
                     </div>
                   </div>
-                  <div class="w-full flex items-start justify-between gap-4 mt-4 pt-4 border-t-[1px] border-[#DBDBDB]
+                  <div class="w-full flex items-start justify-between gap-4 mt-4 pt-4 border-t-[1px] border-[#EDEDED]
                   md:flex-col">
                     <div class="flex flex-col items-start gap-3">
                       <div class="flex items-start gap-1">
@@ -1155,13 +1263,13 @@
                         <span class="text-[#5A5B5F] text-sm font-medium">Итого:</span>
                         45 900 ₽
                       </div>
-                      <div class="flex items-center gap-1 md:w-full">
-                        <a href="#"
-                          class="inline-block bg-[#3B8BEA1A] text-xs text-center leading-[140%] font-semibold text-[#3B8BEA]
+                      <div class="flex items-center gap-1 md:w-full xs:flex-col">
+                        <a href="#" class="inline-block bg-[#3B8BEA1A] text-xs text-center leading-[140%] font-semibold text-[#3B8BEA]
                             py-[11px] px-6 rounded-[10px] md:p-[11px] md:w-full">Повторить
                           заказ</a>
-                        <a href="#" class="inline-flex items-center justify-center py-[9px] px-[31px] gap-[6px] border-[1px] border-[#3B8BEA] 
-                       rounded-[10px] bg-transparent text-[#3B8BEA] leading-[100%] md:p-[11px] md:w-full">
+                        <a href="#"
+                          class="inline-flex items-center justify-center py-[9px] px-[31px] gap-[6px] border-[1px] border-[#3B8BEA] 
+                       rounded-[10px] bg-transparent text-[#3B8BEA] leading-[100%] hover:bg-[#3B8BEA] hover:text-white transition-all md:p-[11px] md:w-full">
                           <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M9 12.75V2.25" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
@@ -1172,7 +1280,7 @@
                             <path d="M12.75 9L8.99927 12.7507L5.24927 9" stroke="currentColor" stroke-width="1.2"
                               stroke-linecap="round" stroke-linejoin="round" />
                           </svg>
-                          <span class="text-xs leading-[140%] font-semibold">Скачать счёт</span>
+                          <span class="text-xs leading-[140%] font-semibold">Скачать УПД</span>
                         </a>
                       </div>
                       <div>

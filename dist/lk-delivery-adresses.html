@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body class="text-graphite">
+<body class="text-graphite flex flex-col min-h-screen">
   <header class="font-sans relative z-10">
   <div class="bg-white">
     <div class="max-w-[1234px] mx-auto flex justify-between py-[10px] px-8 md:py-2">
@@ -248,7 +248,7 @@
               </svg>
             </button>
             <button type="button"
-              class="absolute top-[7px] right-0 flex items-center justify-center size-[23px] md:hidden">
+              class="absolute top-[7px] right-0 flex items-center justify-center size-[23px] cursor-pointer md:hidden">
               <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="10.5978" cy="11.0978" r="6.76769" stroke="white" style="stroke:white;stroke-opacity:1;"
                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -489,13 +489,15 @@
     </div>
   </div>
 </div>
-  <main>
+  <main class="flex-1">
     <section class="pt-[31px] pb-16 lg:pt-6 lg:pb-12 md:pt-6 md:pb-11">
       <div class="my-container">
 
         <div class="w-full flex items-start gap-4 lg:flex-col lg:gap-0">
           <div class="w-[338px] shrink-0 lg:w-full">
-            <h1 class="text-[34px] leading-[130%] font-bold mb-[22px] text-[#3B8BEA] lg:text-[30px] md:text-2xl md:mb-4">Личный
+            <h1
+              class="text-[34px] leading-[130%] font-bold mb-[22px] text-[#3B8BEA] lg:text-[30px] md:text-2xl md:mb-4">
+              Личный
               кабинет</h1>
             <div class="w-full pt-8 pb-[35px] px-6 bg-[#F4F6FB] rounded-2xl lg:hidden">
               <div class="flex items-start flex-col gap-6 pb-[36px] mb-[36px] border-b-[1px] border-[#EDEDED]">
@@ -532,8 +534,9 @@
               <div class="w-full lg:flex lg:flex-col">
                 <div class="flex items-center justify-between mb-5 lg:mb-0 lg:contents">
                   <h2 class="text-2xl leading-[140%] font-semibold lg:mb-4 md:text-lg">Адреса доставки</h2>
-                  <a href="#" class="w-[235px] inline-flex justify-center gap-[6px] py-3 pl-4 pr-5 bg-[#3B8BEA1A] rounded-[10px] text-[#3B8BEA] 
-                    text-[15px] leading-[140%] font-semibold lg:order-10 lg:mt-3 lg:w-full">
+                  <a href="#" class="w-[235px] inline-flex justify-center gap-[6px] py-3 pl-4 pr-5 bg-[#3B8BEA1A] 
+                   rounded-[10px] text-[#3B8BEA] text-[15px] leading-[140%] font-semibold lg:order-10 lg:mt-3 lg:w-full
+                 hover:bg-[#3B8BEA] hover:text-white">
                     <svg class="shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -560,7 +563,8 @@
                       </div>
                     </div>
                     <div class="w-full flex items-center justify-between">
-                      <button type="button" class="inline-flex items-center gap-1 text-xs leading-[140%]">
+                      <button type="button"
+                        class="inline-flex items-center gap-1 text-xs leading-[140%] cursor-pointer hover:opacity-50">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M3.96975 11.7139L11.7143 3.96937C12.0068 3.67687 12.4815 3.67687 12.774 3.96937L14.031 5.22638C14.3235 5.51888 14.3235 5.99362 14.031 6.28613L6.28575 14.0299C6.1455 14.1709 5.955 14.2496 5.75625 14.2496H3.75V12.2434C3.75 12.0446 3.82875 11.8541 3.96975 11.7139Z"
@@ -573,7 +577,7 @@
                       <div
                         class="py-1 px-[10px] text-xs leading-[140%] font-medium text-[#3B8BEA] bg-[#3B8BEA1A] rounded-2xl">
                         По умолчанию</div>
-                      <button type="button" class="size-5 text-[#5A5B5F]">
+                      <button type="button" class="size-5 text-[#5A5B5F] cursor-pointer hover:opacity-50">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M13.4483 17.5007H6.54831C5.67581 17.5007 4.95081 16.8273 4.88581 15.9565L4.13831 5.83398H15.8333L15.1108 15.9523C15.0483 16.8248 14.3225 17.5007 13.4483 17.5007V17.5007Z"
@@ -609,7 +613,8 @@
                       </div>
                     </div>
                     <div class="w-full flex items-center justify-between">
-                      <button type="button" class="inline-flex items-center gap-1 text-xs leading-[140%]">
+                      <button type="button"
+                        class="inline-flex items-center gap-1 text-xs leading-[140%] cursor-pointer hover:opacity-50">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M3.96975 11.7139L11.7143 3.96937C12.0068 3.67687 12.4815 3.67687 12.774 3.96937L14.031 5.22638C14.3235 5.51888 14.3235 5.99362 14.031 6.28613L6.28575 14.0299C6.1455 14.1709 5.955 14.2496 5.75625 14.2496H3.75V12.2434C3.75 12.0446 3.82875 11.8541 3.96975 11.7139Z"
@@ -622,7 +627,7 @@
                       <div
                         class="py-1 px-[10px] text-xs leading-[140%] font-medium text-[#3B8BEA] bg-[#3B8BEA1A] rounded-2xl">
                         По умолчанию</div>
-                      <button type="button" class="size-5 text-[#5A5B5F]">
+                      <button type="button" class="size-5 text-[#5A5B5F] cursor-pointer hover:opacity-50">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M13.4483 17.5007H6.54831C5.67581 17.5007 4.95081 16.8273 4.88581 15.9565L4.13831 5.83398H15.8333L15.1108 15.9523C15.0483 16.8248 14.3225 17.5007 13.4483 17.5007V17.5007Z"
@@ -648,8 +653,9 @@
                 <div class="w-full lg:flex lg:flex-col">
                   <div class="flex items-center justify-between mb-5 lg:mb-0 lg:contents">
                     <h2 class="text-2xl leading-[140%] font-semibold lg:mb-4 md:text-lg">Контакты для приемки груза</h2>
-                    <a href="#" class="w-[235px] inline-flex justify-center gap-[6px] py-3 pl-4 pr-5 bg-[#3B8BEA1A] rounded-[10px] text-[#3B8BEA] 
-                    text-[15px] leading-[140%] font-semibold lg:order-10 lg:mt-3 lg:w-full">
+                    <a href="#" class="w-[235px] inline-flex justify-center gap-[6px] py-3 pl-4 pr-5 bg-[#3B8BEA1A] 
+                   rounded-[10px] text-[#3B8BEA] text-[15px] leading-[140%] font-semibold lg:order-10 lg:mt-3 lg:w-full
+                 hover:bg-[#3B8BEA] hover:text-white">
                       <svg class="shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -677,7 +683,8 @@
                         </div>
                       </div>
                       <div class="w-full flex items-center justify-between">
-                        <button type="button" class="inline-flex items-center gap-1 text-xs leading-[140%]">
+                        <button type="button"
+                          class="inline-flex items-center gap-1 text-xs leading-[140%] cursor-pointer hover:opacity-50">
                           <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -691,7 +698,7 @@
                         <div
                           class="py-1 px-[10px] text-xs leading-[140%] font-medium text-[#3B8BEA] bg-[#3B8BEA1A] rounded-2xl">
                           По умолчанию</div>
-                        <button type="button" class="size-5 text-[#5A5B5F]">
+                        <button type="button" class="size-5 text-[#5A5B5F] cursor-pointer hover:opacity-50">
                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -729,7 +736,8 @@
                         </div>
                       </div>
                       <div class="w-full flex items-center justify-between">
-                        <button type="button" class="inline-flex items-center gap-1 text-xs leading-[140%]">
+                        <button type="button"
+                          class="inline-flex items-center gap-1 text-xs leading-[140%] cursor-pointer hover:opacity-50">
                           <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -743,7 +751,7 @@
                         <div
                           class="py-1 px-[10px] text-xs leading-[140%] font-medium text-[#3B8BEA] bg-[#3B8BEA1A] rounded-2xl">
                           По умолчанию</div>
-                        <button type="button" class="size-5 text-[#5A5B5F]">
+                        <button type="button" class="size-5 text-[#5A5B5F] cursor-pointer hover:opacity-50">
                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"

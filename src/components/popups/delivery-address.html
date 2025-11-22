@@ -8,7 +8,7 @@
         x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100" x-transition:leave="ease-in duration-200"
         x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
         x-transition:leave-end="opacity-0 translate-y-4 sm:scale-95" class="relative max-w-[730px] w-full p-8 bg-white rounded-3xl z-2 
-        lg:max-w-[578px] lg:pt-4 lg:pb-5 lg:px-6 md:max-w-full md:rounded-b-none md:pt-6 md:pb-0">
+        lg:max-w-[578px] lg:pt-4 lg:pb-5 lg:px-6 md:max-w-full md:rounded-b-none md:pt-6">
         <div class="flex items-center justify-between mb-6 md:items-start">
           <h2 class="text-[34px] leading-[130%] text-[#323338] font-bold lg:text-[30px] md:text-2xl">
             Добавить адрес доставки
@@ -28,7 +28,7 @@
           <div class="w-full h-[301px] rounded-2xl overflow-hidden lg:h-[240px] md:h-[180px] md:mb-4"
             id="delivery-address-map"></div>
         </div>
-        <form action="#" class="w-full flex items-start flex-col gap-6 lg:gap-4 md:gap-1">
+        <form action="#" class="w-full flex items-start flex-col gap-6">
           <div class="w-full flex flex-col gap-4">
             <div class="w-full flex items-start flex-col gap-3">
               <div class="w-full flex items-start flex-col gap-2">
@@ -48,15 +48,14 @@
               </div>
             </div>
             <div class="w-full flex items-start flex-col gap-2">
-              <label for="" class="text-[#323338] text-sm leading-[140%] font-medium">Ваш адрес</label>
-              <input type="password" placeholder="Ваш адрес"
+              <label for="" class="text-[#323338] text-sm leading-[140%] font-medium">Комментарий для курьера</label>
+              <input type="password" placeholder="Введите комментарий"
                 class="block w-full px-4 py-[18px] bg-[#F4F6FB] text-[#323338] text-[15px] leading-[147%] font-medium rounded-2xl outline-none">
             </div>
           </div>
-          <div data-popup-bottom-panel
-            class="w-full flex items-center gap-3 md:sticky md:bottom-0  md:bg-white md:w-[calc(100%+48px)] pt-4 md:px-6 md:pb-[18px] md:-mx-6
-          md:shadow-[0px_-3px_7px_0px_#00000008,0px_-13px_13px_0px_#00000008,0px_-30px_18px_0px_#00000005,0px_-54px_22px_0px_#00000000,0px_-84px_24px_0px_#00000000]">
-            <button type="submit" class="w-full flex items-center justify-center gap-2 p-[18px] rounded-2xl bg-white 
+          <div
+            class="w-full flex items-center gap-3">
+            <button type="button" class="w-full flex items-center justify-center gap-2 p-[18px] rounded-2xl bg-white 
             border-[2px] border-[#3B8BEA] text-[#3B8BEA]
             font-semibold cursor-pointer hover:bg-[#2C6CB8] hover:text-white transition-all md:p-[13px]">
               Отменить

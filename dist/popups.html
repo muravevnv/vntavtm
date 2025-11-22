@@ -248,7 +248,7 @@
               </svg>
             </button>
             <button type="button"
-              class="absolute top-[7px] right-0 flex items-center justify-center size-[23px] md:hidden">
+              class="absolute top-[7px] right-0 flex items-center justify-center size-[23px] cursor-pointer md:hidden">
               <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="10.5978" cy="11.0978" r="6.76769" stroke="white" style="stroke:white;stroke-opacity:1;"
                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -1177,7 +1177,7 @@
               </span>
             </label>
             <div class="w-full flex items-center gap-3">
-              <button type="submit" class="w-full flex items-center justify-center gap-2 p-5 py-[18px] rounded-2xl bg-white text-[#3B8BEA] 
+              <button type="button" class="w-full flex items-center justify-center gap-2 p-5 py-[18px] rounded-2xl bg-white text-[#3B8BEA] 
                 border-[2px] border-[#3B8BEA] font-semibold cursor-pointer hover:bg-[#2C6CB8] transition-all md:py-[13px]">
                 Отменить
               </button>
@@ -1270,7 +1270,7 @@
           </div>
           <div class="flex flex-col gap-3">
             <label class="flex items-start cursor-pointer">
-              <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer">
+              <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer" data-required>
               <span
                 class="relative inline-block shrink-0 mr-3 size-5 border-1 border-gray-300 rounded-md bg-no-repeat bg-center peer-checked:bg-[url('../img/icons/checked.svg')] peer-checked:border-[#3B8BEA]"></span>
               <span class="text-[14px] leading-[140%] font-medium">
@@ -1310,7 +1310,7 @@
             Добавить адрес доставки
           </h2>
           <button @click="openAddAddressPopup = false; document.body.classList.remove('no-scroll')" type="button" class="flex items-center justify-center size-8 rounded-full 
-          bg-[#F4F6FB] text-[#323338] cursor-pointer hover:bg-[#323338] hover:text-white transition-all">
+          bg-[#F4F6FB] text-[#323338] cursor-pointer shrink-0 hover:bg-[#323338] hover:text-white transition-all">
             <svg class="size-[14px]" width="14" height="14" viewBox="0 0 14 14" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M1.6665 1.66699L12.3332 12.3337" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
@@ -1340,24 +1340,24 @@
               <div class="w-full flex items-start flex-col gap-3">
                 <div class="w-full flex items-start flex-col gap-2">
                   <label for="" class="text-[#323338] text-sm leading-[140%] font-medium">Ваш адрес</label>
-                  <input type="password" placeholder="Ваш адрес"
+                  <input type="text" placeholder="Ваш адрес"
                     class="block w-full px-4 py-[18px] bg-[#F4F6FB] text-[#323338] text-[15px] leading-[147%] font-medium rounded-2xl outline-none">
                 </div>
                 <div class="w-full grid grid-cols-4 gap-3 md:grid-cols-2">
-                  <input type="password" placeholder="Офис"
+                  <input type="text" placeholder="Офис"
                     class="block w-full px-4 py-[18px] bg-[#F4F6FB] text-[#323338] text-[15px] leading-[147%] font-medium rounded-2xl outline-none">
-                  <input type="password" placeholder="Подъезд"
+                  <input type="text" placeholder="Подъезд"
                     class="block w-full px-4 py-[18px] bg-[#F4F6FB] text-[#323338] text-[15px] leading-[147%] font-medium rounded-2xl outline-none">
-                  <input type="password" placeholder="Этаж"
+                  <input type="text" placeholder="Этаж"
                     class="block w-full px-4 py-[18px] bg-[#F4F6FB] text-[#323338] text-[15px] leading-[147%] font-medium rounded-2xl outline-none">
-                  <input type="password" placeholder="Домофон"
+                  <input type="text" placeholder="Домофон"
                     class="block w-full px-4 py-[18px] bg-[#F4F6FB] text-[#323338] text-[15px] leading-[147%] font-medium rounded-2xl outline-none">
                 </div>
               </div>
             </div>
             <div
               class="w-full flex items-center gap-3">
-              <button type="submit" class="w-full flex items-center justify-center gap-2 p-[18px] rounded-2xl bg-white 
+              <button type="button" class="w-full flex items-center justify-center gap-2 p-[18px] rounded-2xl bg-white 
             border-[2px] border-[#3B8BEA] text-[#3B8BEA]
             font-semibold cursor-pointer hover:bg-[#2C6CB8] hover:border-[#2C6CB8] hover:text-white transition-all md:p-[13px]">
                 Отменить
@@ -1375,7 +1375,7 @@
             <div class="text-sm leading-[140%] font-semibold">СДЭК Москва, ул. Сходненская, д.8</div>
           </div>
           <button type="submit" class="w-full flex items-center justify-center gap-2 p-3 rounded-2xl bg-[#3B8BEA1A] text-[#3B8BEA]
-            font-semibold cursor-pointer hover:bg-[#2C6CB8] hover:text-white transition-all">
+            font-semibold cursor-pointer hover:bg-[#3B8BEA] hover:text-white transition-all">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7.50016 15.834V3.33398" stroke="currentColor"
                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -1465,7 +1465,7 @@
             </div>
           </div>
           <div class="flex items-center gap-3 w-full">
-            <button type="submit"
+            <button type="button"
               class="w-full flex items-center justify-center gap-2 p-[18px] rounded-2xl bg-white 
             border-[2px] border-[#3B8BEA] text-[#3B8BEA]
             font-semibold cursor-pointer hover:bg-[#2C6CB8] hover:border-[#2C6CB8] hover:text-white transition-all md:p-[13px]">
@@ -1764,7 +1764,7 @@
         x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100" x-transition:leave="ease-in duration-200"
         x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
         x-transition:leave-end="opacity-0 translate-y-4 sm:scale-95" class="relative max-w-[730px] w-full p-8 bg-white rounded-3xl z-2 
-        lg:max-w-[578px] lg:pt-4 lg:pb-5 lg:px-6 md:max-w-full md:rounded-b-none md:pt-6 md:pb-0">
+        lg:max-w-[578px] lg:pt-4 lg:pb-5 lg:px-6 md:max-w-full md:rounded-b-none md:pt-6">
         <div class="flex items-center justify-between mb-6 md:items-start">
           <h2 class="text-[34px] leading-[130%] text-[#323338] font-bold lg:text-[30px] md:text-2xl">
             Добавить адрес доставки
@@ -1784,7 +1784,7 @@
           <div class="w-full h-[301px] rounded-2xl overflow-hidden lg:h-[240px] md:h-[180px] md:mb-4"
             id="delivery-address-map"></div>
         </div>
-        <form action="#" class="w-full flex items-start flex-col gap-6 lg:gap-4 md:gap-1">
+        <form action="#" class="w-full flex items-start flex-col gap-6">
           <div class="w-full flex flex-col gap-4">
             <div class="w-full flex items-start flex-col gap-3">
               <div class="w-full flex items-start flex-col gap-2">
@@ -1804,15 +1804,14 @@
               </div>
             </div>
             <div class="w-full flex items-start flex-col gap-2">
-              <label for="" class="text-[#323338] text-sm leading-[140%] font-medium">Ваш адрес</label>
-              <input type="password" placeholder="Ваш адрес"
+              <label for="" class="text-[#323338] text-sm leading-[140%] font-medium">Комментарий для курьера</label>
+              <input type="password" placeholder="Введите комментарий"
                 class="block w-full px-4 py-[18px] bg-[#F4F6FB] text-[#323338] text-[15px] leading-[147%] font-medium rounded-2xl outline-none">
             </div>
           </div>
-          <div data-popup-bottom-panel
-            class="w-full flex items-center gap-3 md:sticky md:bottom-0  md:bg-white md:w-[calc(100%+48px)] pt-4 md:px-6 md:pb-[18px] md:-mx-6
-          md:shadow-[0px_-3px_7px_0px_#00000008,0px_-13px_13px_0px_#00000008,0px_-30px_18px_0px_#00000005,0px_-54px_22px_0px_#00000000,0px_-84px_24px_0px_#00000000]">
-            <button type="submit" class="w-full flex items-center justify-center gap-2 p-[18px] rounded-2xl bg-white 
+          <div
+            class="w-full flex items-center gap-3">
+            <button type="button" class="w-full flex items-center justify-center gap-2 p-[18px] rounded-2xl bg-white 
             border-[2px] border-[#3B8BEA] text-[#3B8BEA]
             font-semibold cursor-pointer hover:bg-[#2C6CB8] hover:text-white transition-all md:p-[13px]">
               Отменить
@@ -1881,7 +1880,7 @@
             </label>
           </div>
           <div class="w-full flex items-center gap-3">
-            <button type="submit" class="w-full flex items-center justify-center gap-2 p-[18px] rounded-2xl bg-white 
+            <button type="button" class="w-full flex items-center justify-center gap-2 p-[18px] rounded-2xl bg-white 
             border-[2px] border-[#3B8BEA] text-[#3B8BEA]
             font-semibold cursor-pointer hover:bg-[#2C6CB8] hover:text-white transition-all md:p-[13px]">
               Отменить

@@ -220,10 +220,10 @@ document.addEventListener("DOMContentLoaded", () => {
     $('[data-menu="dropdown-btn"]').removeClass("is-active");
   });
 
-  $('[data-request="btn"]').on("click", () => {
-    $('[data-request="complete"]').removeClass("hidden");
-    $('[data-request="form"]').addClass("hidden");
-  });
+  // $('[data-request="btn"]').on("click", () => {
+  //   $('[data-request="complete"]').removeClass("hidden");
+  //   $('[data-request="form"]').addClass("hidden");
+  // });
 
   const $searchInput = $('[data-search="input"]');
   const $clearBtn = $('[data-search="clear-btn"]');
@@ -257,7 +257,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function handleInput() {
     if ($searchInput.val().trim() !== "") {
       $clearBtn.show();
-      
+
       $searchResults.show();
     } else {
       $clearBtn.hide();
@@ -275,10 +275,10 @@ document.addEventListener("DOMContentLoaded", () => {
     $searchInput.val("").trigger("input");
     $searchInput.focus();
   });
-  
+
   $searchBtn.on("click", () => {
     $searchBlock.show();
-    $searchInput.addClass('is-open');
+    $searchInput.addClass("is-open");
   });
 
   $searchBtnClose.on("click", () => {
@@ -516,6 +516,12 @@ $(document).ready(function () {
     },
   });
 
+  $('[data-input="date"]').mask("99.99.9999", {
+    translation: {
+      9: { pattern: /[0-9]/ },
+    },
+  });
+
   $('[data-catalog-layout="lines"]').on("click", function () {
     $('[data-catalog-layout="container"]').addClass("is-layout-lines");
     $(this).addClass("is-active");
@@ -632,7 +638,7 @@ $(document).ready(function () {
       .find("[data-required]")
       .each(function () {
         const $field = $(this);
-        const $parent = $field.parent(); 
+        const $parent = $field.parent();
 
         // Проверяем заполненность поля
         if (!isFieldFilled($field)) {
@@ -668,22 +674,22 @@ $(document).ready(function () {
     }
   });
 
-  $('[data-coockies-accept]').on('click', function () {
-    $('[data-coockies]').remove();
+  $("[data-coockies-accept]").on("click", function () {
+    $("[data-coockies]").remove();
   });
 
-  $('[data-contacts="toggle"]').on('click', function () {
-    $('[data-contacts="popup"]').toggleClass('opacity-0 pointer-events-none');
+  $('[data-contacts="toggle"]').on("click", function () {
+    $('[data-contacts="popup"]').toggleClass("opacity-0 pointer-events-none");
   });
 
-  $(document).on('click', function (e) {
+  $(document).on("click", function (e) {
     if (
       !$(e.target).closest('[data-contacts="toggle"]').length &&
       !$(e.target).closest('[data-contacts="popup"]').length
     ) {
-      $('[data-contacts="popup"]').addClass('opacity-0 pointer-events-none');
+      $('[data-contacts="popup"]').addClass("opacity-0 pointer-events-none");
     }
-  })
+  });
 
   // Обработчик фокуса на поле с ошибкой
   $(document).on("focus", ".is-error", function () {
