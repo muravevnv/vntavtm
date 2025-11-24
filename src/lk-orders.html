@@ -156,11 +156,15 @@
             <div class="w-full block" data-tabs-content="orders-active">
               <div class="w-full flex flex-col items-start gap-4">
                 <div class="w-full p-4 bg-[#F4F6FB] rounded-2xl">
-                  <div class="w-full flex items-center justify-between gap-3 mb-4 md:items-start md:gap-1">
-                    <div class="flex items-center gap-6 md:flex-col md:items-start md:gap-2">
+                  <div class="w-full flex items-center justify-between gap-3 mb-4 md:items-start md:gap-1 xs:flex-wrap">
+                    <div class="flex items-center gap-6 md:flex-col md:items-start md:gap-2 xs:contents">
                       <div class="text-sm leading-[140%] font-semibold md:text-xs">Заказ от 16.08. 2024</div>
-                      <div
-                        class="inline-flex items-center gap-1 py-1 px-[10px] bg-[#FD5D5D1A] text-[#FD5D5D] rounded-2xl md:pl-[6px] md:pr-3">
+                      <div data-tippy-html='
+                            <div class="tooltip-single">
+                            Счет действителен в течение 3 дней
+                            </div>
+                            '
+                        class="inline-flex items-center gap-1 py-1 px-[10px] bg-[#FD5D5D1A] text-[#FD5D5D] rounded-2xl md:pl-[6px] md:pr-3 xs:order-10">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M10 2.5V2.5C14.1425 2.5 17.5 5.8575 17.5 10V10C17.5 14.1425 14.1425 17.5 10 17.5V17.5C5.8575 17.5 2.5 14.1425 2.5 10V10C2.5 5.8575 5.8575 2.5 10 2.5Z"
@@ -178,7 +182,7 @@
                   </div>
                   <div class="w-full">
                     <div class="w-full flex flex-col gap-[10px] md:gap-4">
-                      <div class="w-full flex items-center justify-between gap-3 md:items-start">
+                      <div class="w-full flex items-center justify-between gap-3 md:items-start xs:relative">
                         <div class="w-[60%] flex items-center gap-4 lg:w-[70%] md:w-full md:items-start">
                           <picture
                             class="w-[57px] h-[68px] bg-white flex items-center justify-center shrink-0 rounded-lg overflow-hidden">
@@ -193,9 +197,10 @@
                           </div>
                         </div>
                         <div class="w-[10%] text-xs leading-[140%] font-medium text-center md:hidden">1 шт</div>
-                        <div class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto">43 620 ₽</div>
+                        <div class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto
+                          xs:absolute xs:bottom-0 xs:right-0">43 620 ₽</div>
                       </div>
-                      <div class="w-full flex items-center justify-between gap-3 md:items-start">
+                      <div class="w-full flex items-center justify-between gap-3 md:items-start xs:relative">
                         <div class="w-[60%] flex items-center gap-4 lg:w-[70%] md:w-full md:items-start">
                           <picture
                             class="w-[57px] h-[68px] bg-white flex items-center justify-center shrink-0 rounded-lg overflow-hidden">
@@ -209,7 +214,9 @@
                           </div>
                         </div>
                         <div class="w-[10%] text-xs leading-[140%] font-medium text-center md:hidden">2 шт</div>
-                        <div class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto">1 160 ₽</div>
+                        <div
+                          class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto xs:absolute xs:bottom-0 xs:right-0">
+                          1 160 ₽</div>
                       </div>
                     </div>
                   </div>
@@ -270,10 +277,11 @@
                   </div>
                 </div>
                 <div class="w-full p-4 bg-[#F4F6FB] rounded-2xl">
-                  <div class="w-full flex items-center justify-between gap-3 mb-4 md:items-start md:gap-1">
-                    <div class="flex items-center gap-6 md:flex-col md:items-start md:gap-2">
+                  <div class="w-full flex items-center justify-between gap-3 mb-4 md:items-start md:gap-1 xs:flex-wrap">
+                    <div class="flex items-center gap-6 md:flex-col md:items-start md:gap-2 xs:contents">
                       <div class="text-sm leading-[140%] font-semibold md:text-xs">Заказ от 16.08. 2024</div>
-                      <div class="inline-flex items-center gap-1 py-1 px-3 bg-[#5A5B5F1A] text-[#5A5B5F] rounded-2xl">
+                      <div
+                        class="inline-flex items-center gap-1 py-1 px-3 bg-[#5A5B5F1A] text-[#5A5B5F] rounded-2xl xs:order-10">
                         <span class="text-xs leading-[140%] font-medium">Оплачен, ожидает отгрузки</span>
                       </div>
                     </div>
@@ -281,7 +289,7 @@
                   </div>
                   <div class="w-full">
                     <div class="w-full flex flex-col gap-[10px] md:gap-4">
-                      <div class="w-full flex items-center justify-between gap-3 md:items-start">
+                      <div class="w-full flex items-center justify-between gap-3 md:items-start xs:relative">
                         <div class="w-[60%] flex items-center gap-4 lg:w-[70%] md:w-full md:items-start">
                           <picture
                             class="w-[57px] h-[68px] bg-white flex items-center justify-center shrink-0 rounded-lg overflow-hidden">
@@ -296,9 +304,11 @@
                           </div>
                         </div>
                         <div class="w-[10%] text-xs leading-[140%] font-medium text-center md:hidden">1 шт</div>
-                        <div class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto">43 620 ₽</div>
+                        <div
+                          class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto xs:absolute xs:bottom-0 xs:right-0">
+                          43 620 ₽</div>
                       </div>
-                      <div class="w-full flex items-center justify-between gap-3 md:items-start">
+                      <div class="w-full flex items-center justify-between gap-3 md:items-start xs:relative">
                         <div class="w-[60%] flex items-center gap-4 lg:w-[70%] md:w-full md:items-start">
                           <picture
                             class="w-[57px] h-[68px] bg-white flex items-center justify-center shrink-0 rounded-lg overflow-hidden">
@@ -312,18 +322,59 @@
                           </div>
                         </div>
                         <div class="w-[10%] text-xs leading-[140%] font-medium text-center md:hidden">2 шт</div>
-                        <div class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto">1 160 ₽</div>
+                        <div
+                          class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto xs:absolute xs:bottom-0 xs:right-0">
+                          1 160 ₽</div>
                       </div>
                     </div>
-                    <div class="w-full hidden">
-                      <div class="w-full flex-col gap-[10px]">123</div>
+                    <div class="w-full hidden" data-hidden-block="content">
+                      <div class="w-full flex flex-col gap-[10px] mt-[10px]">
+                        <div class="w-full flex items-center justify-between gap-3 md:items-start xs:relative">
+                          <div class="w-[60%] flex items-center gap-4 lg:w-[70%] md:w-full md:items-start">
+                            <picture
+                              class="w-[57px] h-[68px] bg-white flex items-center justify-center shrink-0 rounded-lg overflow-hidden">
+                              <img src="./img/basket/basket-02.png" alt="">
+                            </picture>
+                            <div class="w-full">
+                              <div class="text-sm leading-[140%] font-medium md:line-clamp-2">
+                                Датчик температуры канальный DS1-01 NTC10k
+                              </div>
+                              <div class="hidden md:block md:text-xs md:mt-[8px]">2 шт</div>
+                            </div>
+                          </div>
+                          <div class="w-[10%] text-xs leading-[140%] font-medium text-center md:hidden">2 шт</div>
+                          <div
+                            class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto xs:absolute xs:bottom-0 xs:right-0">
+                            1 160 ₽</div>
+                        </div>
+                        <div class="w-full flex items-center justify-between gap-3 md:items-start xs:relative">
+                          <div class="w-[60%] flex items-center gap-4 lg:w-[70%] md:w-full md:items-start">
+                            <picture
+                              class="w-[57px] h-[68px] bg-white flex items-center justify-center shrink-0 rounded-lg overflow-hidden">
+                              <img src="./img/basket/basket-02.png" alt="">
+                            </picture>
+                            <div class="w-full">
+                              <div class="text-sm leading-[140%] font-medium md:line-clamp-2">
+                                Датчик температуры канальный DS1-01 NTC10k
+                              </div>
+                              <div class="hidden md:block md:text-xs md:mt-[8px]">2 шт</div>
+                            </div>
+                          </div>
+                          <div class="w-[10%] text-xs leading-[140%] font-medium text-center md:hidden">2 шт</div>
+                          <div
+                            class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto xs:absolute xs:bottom-0 xs:right-0">
+                            1 160 ₽</div>
+                        </div>
+                      </div>
                     </div>
-                    <button type="button"
-                      class="inline-flex items-center text-sm leading-[140%] font-semibold text-[#3B8BEA] cursor-pointer mt-3">
-                      <span>Развернуть</span>
+                    <button type="button" data-hidden-block="controller"
+                      class="inline-flex items-center text-[#3B8BEA] text-sm leading-[140%] font-medium cursor-pointer mt-[10px]">
+                      <span data-hidden-block="btn" data-text-up="Развернуть"
+                        data-text-down="Свернуть">Развернуть</span>
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16 10L12 14L8 10" stroke="#3B8BEA" stroke-width="1.5" stroke-linecap="round"
-                          stroke-linejoin="round" />
+                        <path d="M16 10L12 14L8 10" stroke="#3B8BEA"
+                          style="stroke:#3B8BEA;stroke:color(display-p3 0.2314 0.5451 0.9176);stroke-opacity:1;"
+                          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
                     </button>
                   </div>
@@ -382,10 +433,11 @@
                   </div>
                 </div>
                 <div class="w-full p-4 bg-[#F4F6FB] rounded-2xl">
-                  <div class="w-full flex items-center justify-between gap-3 mb-4 md:items-start md:gap-1">
-                    <div class="flex items-center gap-6 md:flex-col md:items-start md:gap-2">
+                  <div class="w-full flex items-center justify-between gap-3 mb-4 md:items-start md:gap-1 xs:flex-wrap">
+                    <div class="flex items-center gap-6 md:flex-col md:items-start md:gap-2 xs:contents">
                       <div class="text-sm leading-[140%] font-semibold md:text-xs">Заказ от 16.08. 2024</div>
-                      <div class="inline-flex items-center gap-1 py-1 px-3 bg-[#3B8BEA1A] text-[#3B8BEA] rounded-2xl">
+                      <div
+                        class="inline-flex items-center gap-1 py-1 px-3 bg-[#3B8BEA1A] text-[#3B8BEA] rounded-2xl xs:order-10">
                         <span class="text-xs leading-[140%] font-medium">Отгружен, в пути</span>
                       </div>
                     </div>
@@ -393,7 +445,7 @@
                   </div>
                   <div class="w-full">
                     <div class="w-full flex flex-col gap-[10px] md:gap-4">
-                      <div class="w-full flex items-center justify-between gap-3 md:items-start">
+                      <div class="w-full flex items-center justify-between gap-3 md:items-start xs:relative">
                         <div class="w-[60%] flex items-center gap-4 lg:w-[70%] md:w-full md:items-start">
                           <picture
                             class="w-[57px] h-[68px] bg-white flex items-center justify-center shrink-0 rounded-lg overflow-hidden">
@@ -408,9 +460,11 @@
                           </div>
                         </div>
                         <div class="w-[10%] text-xs leading-[140%] font-medium text-center md:hidden">1 шт</div>
-                        <div class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto">43 620 ₽</div>
+                        <div
+                          class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto xs:absolute xs:bottom-0 xs:right-0">
+                          43 620 ₽</div>
                       </div>
-                      <div class="w-full flex items-center justify-between gap-3 md:items-start">
+                      <div class="w-full flex items-center justify-between gap-3 md:items-start xs:relative">
                         <div class="w-[60%] flex items-center gap-4 lg:w-[70%] md:w-full md:items-start">
                           <picture
                             class="w-[57px] h-[68px] bg-white flex items-center justify-center shrink-0 rounded-lg overflow-hidden">
@@ -424,7 +478,9 @@
                           </div>
                         </div>
                         <div class="w-[10%] text-xs leading-[140%] font-medium text-center md:hidden">2 шт</div>
-                        <div class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto">1 160 ₽</div>
+                        <div
+                          class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto xs:absolute xs:bottom-0 xs:right-0">
+                          1 160 ₽</div>
                       </div>
                     </div>
                     <div class="w-full hidden">
@@ -486,10 +542,11 @@
                   </div>
                 </div>
                 <div class="w-full p-4 bg-[#F4F6FB] rounded-2xl">
-                  <div class="w-full flex items-center justify-between gap-3 mb-4 md:items-start md:gap-1">
-                    <div class="flex items-center gap-6 md:flex-col md:items-start md:gap-2">
+                  <div class="w-full flex items-center justify-between gap-3 mb-4 md:items-start md:gap-1 xs:flex-wrap">
+                    <div class="flex items-center gap-6 md:flex-col md:items-start md:gap-2 xs:contents">
                       <div class="text-sm leading-[140%] font-semibold md:text-xs">Заказ от 16.08. 2024</div>
-                      <div class="inline-flex items-center gap-1 py-1 px-3 bg-[#3B8BEA] text-white rounded-2xl">
+                      <div
+                        class="inline-flex items-center gap-1 py-1 px-3 bg-[#3B8BEA] text-white rounded-2xl xs:order-10">
                         <span class="text-xs leading-[140%] font-medium">Прибыл в пункт самовывоза</span>
                       </div>
                     </div>
@@ -497,7 +554,7 @@
                   </div>
                   <div class="w-full">
                     <div class="w-full flex flex-col gap-[10px] md:gap-4">
-                      <div class="w-full flex items-center justify-between gap-3 md:items-start">
+                      <div class="w-full flex items-center justify-between gap-3 md:items-start xs:relative">
                         <div class="w-[60%] flex items-center gap-4 lg:w-[70%] md:w-full md:items-start">
                           <picture
                             class="w-[57px] h-[68px] bg-white flex items-center justify-center shrink-0 rounded-lg overflow-hidden">
@@ -512,7 +569,9 @@
                           </div>
                         </div>
                         <div class="w-[10%] text-xs leading-[140%] font-medium text-center md:hidden">1 шт</div>
-                        <div class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto">43 620 ₽</div>
+                        <div
+                          class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto xs:absolute xs:bottom-0 xs:right-0">
+                          43 620 ₽</div>
                       </div>
                     </div>
                   </div>
@@ -610,14 +669,14 @@
             <div class="w-full hidden" data-tabs-content="orders-history">
               <div class="w-full flex flex-col items-start gap-4">
                 <div class="w-full p-4 bg-[#F4F6FB] rounded-2xl">
-                  <div class="w-full flex items-center justify-between gap-3 mb-4 md:items-start md:gap-1">
-                    <div class="flex items-start gap-6 md:flex-col md:items-start md:gap-2">
+                  <div class="w-full flex items-center justify-between gap-3 mb-4 md:items-start md:gap-1 xs:flex-wrap">
+                    <div class="flex items-center gap-6 md:flex-col md:items-start md:gap-2 xs:contents">
                       <div class="flex flex-col items-start">
                         <div class="text-sm leading-[140%] font-semibold md:text-xs">Заказ от 16.08. 2024</div>
                         <div class="text-xs leading-[140%] font-medium text-[#5A5B5F] mt-[2px]">Получен 19.08.2024</div>
                       </div>
                       <div
-                        class="inline-flex items-center gap-1 py-1 px-3 bg-[#00B8621A] text-[#00B862] rounded-2xl md:px-3">
+                        class="inline-flex items-center gap-1 py-1 px-3 bg-[#00B8621A] text-[#00B862] rounded-2xl md:px-3 xs:order-10">
                         <span class="text-xs leading-[140%] font-medium">Доставлен</span>
                       </div>
                     </div>
@@ -625,7 +684,7 @@
                   </div>
                   <div class="w-full">
                     <div class="w-full flex flex-col gap-[10px] md:gap-4">
-                      <div class="w-full flex items-center justify-between gap-3 md:items-start">
+                      <div class="w-full flex items-center justify-between gap-3 md:items-start xs:relative">
                         <div class="w-[60%] flex items-center gap-4 lg:w-[70%] md:w-full md:items-start">
                           <picture
                             class="w-[57px] h-[68px] bg-white flex items-center justify-center shrink-0 rounded-lg overflow-hidden">
@@ -640,9 +699,11 @@
                           </div>
                         </div>
                         <div class="w-[10%] text-xs leading-[140%] font-medium text-center md:hidden">1 шт</div>
-                        <div class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto">43 620 ₽</div>
+                        <div
+                          class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto xs:absolute xs:bottom-0 xs:right-0">
+                          43 620 ₽</div>
                       </div>
-                      <div class="w-full flex items-center justify-between gap-3 md:items-start">
+                      <div class="w-full flex items-center justify-between gap-3 md:items-start xs:relative">
                         <div class="w-[60%] flex items-center gap-4 lg:w-[70%] md:w-full md:items-start">
                           <picture
                             class="w-[57px] h-[68px] bg-white flex items-center justify-center shrink-0 rounded-lg overflow-hidden">
@@ -656,7 +717,9 @@
                           </div>
                         </div>
                         <div class="w-[10%] text-xs leading-[140%] font-medium text-center md:hidden">2 шт</div>
-                        <div class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto">1 160 ₽</div>
+                        <div
+                          class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto xs:absolute xs:bottom-0 xs:right-0">
+                          1 160 ₽</div>
                       </div>
                     </div>
                   </div>
@@ -723,14 +786,14 @@
                   </div>
                 </div>
                 <div class="w-full p-4 bg-[#F4F6FB] rounded-2xl">
-                  <div class="w-full flex items-center justify-between gap-3 mb-4 md:items-start md:gap-1">
-                    <div class="flex items-start gap-6 md:flex-col md:items-start md:gap-2">
+                  <div class="w-full flex items-center justify-between gap-3 mb-4 md:items-start md:gap-1 xs:flex-wrap">
+                    <div class="flex items-center gap-6 md:flex-col md:items-start md:gap-2 xs:contents">
                       <div class="flex flex-col items-start">
                         <div class="text-sm leading-[140%] font-semibold md:text-xs">Заказ от 16.08. 2024</div>
                         <div class="text-xs leading-[140%] font-medium text-[#5A5B5F] mt-[2px]">Получен 19.08.2024</div>
                       </div>
                       <div
-                        class="inline-flex items-center gap-1 py-1 px-3 bg-[#FD5D5D1A] text-[#FD5D5D] rounded-2xl md:px-3">
+                        class="inline-flex items-center gap-1 py-1 px-3 bg-[#FD5D5D1A] text-[#FD5D5D] rounded-2xl md:px-3 xs:order-10">
                         <span class="text-xs leading-[140%] font-medium">Отменен</span>
                       </div>
                     </div>
@@ -738,7 +801,7 @@
                   </div>
                   <div class="w-full">
                     <div class="w-full flex flex-col gap-[10px] md:gap-4">
-                      <div class="w-full flex items-center justify-between gap-3 md:items-start">
+                      <div class="w-full flex items-center justify-between gap-3 md:items-start xs:relative">
                         <div class="w-[60%] flex items-center gap-4 lg:w-[70%] md:w-full md:items-start">
                           <picture
                             class="w-[57px] h-[68px] bg-white flex items-center justify-center shrink-0 rounded-lg overflow-hidden">
@@ -753,9 +816,11 @@
                           </div>
                         </div>
                         <div class="w-[10%] text-xs leading-[140%] font-medium text-center md:hidden">1 шт</div>
-                        <div class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto">43 620 ₽</div>
+                        <div
+                          class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto xs:absolute xs:bottom-0 xs:right-0">
+                          43 620 ₽</div>
                       </div>
-                      <div class="w-full flex items-center justify-between gap-3 md:items-start">
+                      <div class="w-full flex items-center justify-between gap-3 md:items-start xs:relative">
                         <div class="w-[60%] flex items-center gap-4 lg:w-[70%] md:w-full md:items-start">
                           <picture
                             class="w-[57px] h-[68px] bg-white flex items-center justify-center shrink-0 rounded-lg overflow-hidden">
@@ -769,7 +834,9 @@
                           </div>
                         </div>
                         <div class="w-[10%] text-xs leading-[140%] font-medium text-center md:hidden">2 шт</div>
-                        <div class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto">1 160 ₽</div>
+                        <div
+                          class="w-[80px] text-sm leading-[140%] font-medium lg:text-right md:shrink-0 md:w-auto xs:absolute xs:bottom-0 xs:right-0">
+                          1 160 ₽</div>
                       </div>
                     </div>
                   </div>

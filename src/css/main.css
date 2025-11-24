@@ -675,7 +675,7 @@
     0px 39px 11px 0px #00000000;
   padding: 0;
   border-radius: 4px;
-  max-width: 231px !important;
+  max-width: 260px !important;
   color: #323338;
 }
 
@@ -686,6 +686,10 @@
 .tippy-arrow {
   background-color: #f4f6fb;
   color: #f4f6fb;
+}
+
+.tooltip-single {
+  font-size: 12px;
 }
 
 .tooltip {
