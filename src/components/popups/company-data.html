@@ -14,7 +14,7 @@
             Данные организации
           </h2>
           <button @click="openCompanyDataPopup = false; document.body.classList.remove('no-scroll')" type="button" class="flex items-center justify-center size-8 rounded-full 
-          bg-[#F4F6FB] text-[#323338] cursor-pointer hover:bg-[#323338] hover:text-white transition-all">
+          bg-[#F4F6FB] text-[#323338] cursor-pointer shrink-0 hover:bg-[#323338] hover:text-white transition-all">
             <svg class="size-[14px]" width="14" height="14" viewBox="0 0 14 14" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M1.6665 1.66699L12.3332 12.3337" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
@@ -48,10 +48,10 @@
           <div class="w-full flex items-center gap-3">
             <button type="button" class="w-full flex items-center justify-center gap-2 p-[18px] rounded-2xl bg-white 
             border-[2px] border-[#3B8BEA] text-[#3B8BEA]
-            font-semibold cursor-pointer hover:bg-[#2C6CB8] hover:text-white transition-all md:p-[13px]">
+            font-semibold cursor-pointer hover:bg-[#3B8BEA] hover:text-white transition-all md:p-[13px]">
               Отменить
             </button>
-            <button type="submit" class="w-full flex items-center justify-center gap-2 p-5 rounded-2xl bg-primary 
+            <button type="submit" class="w-full flex items-center justify-center gap-2 p-5 rounded-2xl bg-[#3B8BEA] 
             font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all md:p-[15px]">
               Сохранить
             </button>

@@ -264,7 +264,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       $searchResults.hide();
     }
-    console.log("Search for:", $searchInput.val());
   }
 
   const throttledHandleInput = throttle(handleInput, 300);
@@ -285,6 +284,14 @@ document.addEventListener("DOMContentLoaded", () => {
     $searchBlock.hide();
   });
 
+  $(document).on("click", function (e) {
+    if (
+      !$(e.target).closest('[data-search="open-btn"]').length &&
+      !$(e.target).closest('[data-search="block"]').length
+    ) {
+      $searchResults.hide();
+    }
+  });
 
   const hdrProfileBtn = $('[data-hdr-profile="btn"]');
   const hdrProfileClose = $('[data-hdr-profile="close"]');
@@ -305,7 +312,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ) {
       hdrProfileMenu.slideUp();
     }
-  })
+  });
 
   const $videoContainer = $('[data-video="block"]');
   const $video = $videoContainer.find('[data-video="player"]');

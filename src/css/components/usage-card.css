@@ -35,7 +35,19 @@
 }
 
 .usage-card-content {
-  @apply relative z-2 text-white flex flex-col items-start gap-[6px];
+  @apply relative z-2 text-white flex flex-col items-start gap-[6px] transition-opacity;
+}
+
+.usage-card-content-hidden {
+ @apply opacity-0 absolute bottom-0 left-0 p-6 z-2 text-white transition-opacity;
+}
+
+.usage-card:hover .usage-card-content-hidden{
+  @apply opacity-100;
+}
+
+.usage-card:hover .usage-card-content{
+  @apply opacity-0;
 }
 
 /* Специальная карточка "Все проекты" */

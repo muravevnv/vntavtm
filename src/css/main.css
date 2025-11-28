@@ -48,6 +48,17 @@
 }
 
 @layer utilities {
+  .hide-number-spinner {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    appearance: none;
+  }
+
+  .hide-number-spinner::-webkit-outer-spin-button,
+  .hide-number-spinner::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
   .text-graphite {
     color: var(--color-graphite);
   }
@@ -1050,7 +1061,7 @@
 }
 
 [data-required].is-error {
-  border-color: #ff0000;
+  border-color: #fd5d5d;
 }
 
 [data-required].is-error + [data-required-error] {
@@ -1058,11 +1069,11 @@
 }
 
 .is-error svg {
-  color: #ff0000;
+  color: #fd5d5d;
 }
 
 input[type="checkbox"].is-error + span {
-  border-color: #ff0000;
+  border-color: #fd5d5d;
 }
 
 body.no-scroll {
@@ -1073,6 +1084,6 @@ body.no-scroll {
 }
 
 [data-tabs-control].is-active {
-  background-color: #3B8BEA;
-  color: #FFFFFF;
+  background-color: #3b8bea;
+  color: #ffffff;
 }
