@@ -79,13 +79,6 @@
           </button>
           @@include('popups/data-save-success.html')
         </div>
-        <div x-data="{openCompaniesDataPopup: false}">
-          <button @click="openCompaniesDataPopup = true; document.body.classList.add('no-scroll')" type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
-                font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">
-            Данные организации
-          </button>
-          @@include('popups/companies-data.html')
-        </div>
         <div x-data="{openCallBackPopup: false}">
           <button @click="openCallBackPopup = true; document.body.classList.add('no-scroll')" type="button" class="flex items-center justify-center gap-2 p-5 mt-4 rounded-2xl bg-primary 
                 font-semibold text-white cursor-pointer hover:bg-[#2C6CB8] transition-all">

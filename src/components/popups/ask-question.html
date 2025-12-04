@@ -16,7 +16,7 @@
               Задайте свой вопрос
             </h2>
             <button @click="openAskQuestionPopup = false; document.body.classList.remove('no-scroll')" type="button" class="flex items-center justify-center size-8 rounded-full 
-          bg-[#F4F6FB] text-[#323338] cursor-pointer hover:bg-[#323338] hover:text-white transition-all">
+          bg-[#F4F6FB] text-[#323338] cursor-pointer hover:bg-[#323338] hover:text-white transition-all shrink-0">
               <svg class="size-[14px]" width="14" height="14" viewBox="0 0 14 14" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.6665 1.66699L12.3332 12.3337" stroke="currentColor" stroke-width="1.5"
@@ -76,7 +76,7 @@
           </div>
           <div class="flex flex-col gap-3">
             <label class="flex items-start cursor-pointer">
-              <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer">
+              <input type="checkbox" class="absolute opacity-0 h-0 w-0 peer" data-required>
               <span
                 class="relative inline-block shrink-0 mr-3 size-5 border-1 border-gray-300 rounded-md bg-no-repeat bg-center peer-checked:bg-[url('../img/icons/checked.svg')] peer-checked:border-[#3B8BEA]"></span>
               <span class="text-[14px] leading-[140%] font-medium">

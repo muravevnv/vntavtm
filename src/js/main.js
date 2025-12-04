@@ -299,18 +299,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   hdrProfileBtn.on("click", () => {
     hdrProfileMenu.slideToggle();
+    $('body').toggleClass("overflow-hidden");
   });
 
   hdrProfileClose.on("click", () => {
     hdrProfileMenu.slideUp();
+   $('body').removeClass("overflow-hidden");
   });
 
+  
   $(document).on("click", function (e) {
     if (
       !$(e.target).closest('[data-hdr-profile="btn"]').length &&
       !$(e.target).closest('[data-hdr-profile="popup"]').length
     ) {
       hdrProfileMenu.slideUp();
+      $('body').removeClass("overflow-hidden");
     }
   });
 
